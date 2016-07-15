@@ -1,0 +1,500 @@
+EXCEPTION AT LINE: @dwave 0, geo_1e74`  ......And now that you mention it, they are gone, aren't they.`@dwave 0, geo_1e75`  They definitely were there last year, I think."`\ 
+EXCEPTION AT LINE: dwave 0, kan_1e21:!s0`"...............I wish I could, `/
+EXCEPTION AT LINE: delay 1000:dwave 0, kan_1e22`....."`\ 
+EXCEPTION AT LINE: dwave 0, but_1e255:dwave 1, mar_1e165:`""Uu-uu-uu-uu-!!!""`\ 
+EXCEPTION AT LINE: ;eva:dwave 0, eva_1e107 
+EXCEPTION AT LINE: ;eva:dwave 0, eva_1e108
+EXCEPTION AT LINE: ros:dwave 0, ros_1e69_1`"They say that if silver is touched by poison, it dims.`@dwave 0, ros_1e69_2`  ...*giggle*, you've learned something, right, Shannon-chan?"`\ 
+EXCEPTION AT LINE: dwave 0, kum_1e41_2`There's no reason for those two to be picked on. `@
+EXCEPTION AT LINE: ;kla:dwave 0, kla_1e0
+EXCEPTION AT LINE: dwave 0, kin_1e102:`"Why must I suffer this impediment on this most precious of days!?!?`@:dwave 0, kin_1e103:`  *cough* *cough* *cough* *cough*!!`@:dwave 0, kin_1e104:`  *cough* *cough*!!!`@:dwave 0, kin_1e105:`  Call for GenjiiIii!!!`@:dwave 0, kin_1e106:`  *cough* *cough* *cough*!!"`\ 
+EXCEPTION AT LINE: kla:dwave 0, kla_1e17`"Genji-san.`@dwave 0, kla_1e18`  ......Father is calling for you.`@dwave 0, kla_1e19`  Keep him company."`\ 
+EXCEPTION AT LINE: kla:dwave 0, kla_1e27`"Hmph..., don't complain, Rudolf.`@dwave 0, kla_1e28`  I managed to see how he's doing.`@dwave 0, kla_1e29`  ......Do you want to take my place, and try to persuade our ill-humored Father to come join us?"`\ 
+EXCEPTION AT LINE: ;but:dwave 0, but_1e352:dwave 1, jes_1e197 ;+george
+EXCEPTION AT LINE: dwave 0, "voice\99\awase0001.ogg":!s0`"""HAAAaaahh, mackerel?!?!"""`\ 
+EXCEPTION AT LINE: ;but:dwave 0, but_1e355:dwave 1, mar_1e220 ;+everyone
+EXCEPTION AT LINE: dwave 0, "voice\99\awase0003.ogg":`"""Wahahahahaha!!!"""`\ 
+EXCEPTION AT LINE: ;but:dwave 0, but_1e356:dwave 1, mar_1e221 ;everyone
+EXCEPTION AT LINE: dwave 0, "voice\99\awase0004.ogg":`"""Wahahahahahaha!!!"""`\ 
+EXCEPTION AT LINE: kir:dwave 0, kir_1e67`"*giggle*, that obedience is so cu~te.`@dwave 0, kir_1e68`  Battler-kun, make sure you keep an eye out for Maria-chan, okay?"`\ 
+EXCEPTION AT LINE: eva:dwave 0, eva_1e231`"Isn't this a good opportunity.`@dwave 0, eva_1e232`  Prove the existence of this backup from friends and acquaintances that you mentioned.`@dwave 0, eva_1e233`  If you are innocent,`@dwave 0, eva_1e234` we can sportingly apologize for foolishly doubting you.`@dwave 0, eva_1e235`  Right, Rosa?"`\ 
+EXCEPTION AT LINE: kin:dwave 0, kin_1e196:;「………………ふ。@:dwave 0, kin_1e197:面白いことをする。@:dwave 0, kin_1e198:それでその、突きつけた条件というのは何か。」@
+EXCEPTION AT LINE: mar:dwave 0, mar_1e480`"Welcome to Rokkenjima, members of the Ushiromiya family.`@dwave 0, mar_1e481`  I am Beatrice, the alchemist for this family employed by Kinzo-sama himself."`\ 
+EXCEPTION AT LINE: dwave 0, kan_1e86:dwave 49, sha_1e173:!sd`""Yes, certainly, Genji-sama.""`\ 
+EXCEPTION AT LINE: eva:dwave 0, eva_1e358:`"George, take everyone and return to the mansion!!!`@:dwave 0, eva_1e359:`  Quickly!!`@:dwave 0, eva_1e360:`  Right now!!"`\ 
+EXCEPTION AT LINE: nat:dwave 0, nat_1e263:`"You mustn't, Jessica!!`@:dwave 0, nat_1e264:`  You mustn't go in!!`@:dwave 0, nat_1e265:`  You mustn't look!!!"`\ 
+EXCEPTION AT LINE: nan:dwave 0, nan_1e111:`".........Rigor mortis has set in across the entire body...`@:dwave 0, nan_1e112:`......Probably, `/
+EXCEPTION AT LINE: delay 1200:dwave 0, nan_1e113:`at least six hours have passed since death...`@:dwave 0, nan_1e114:`  As far as I can tell by looking at the damaged area, there is a high probability that they were damaged after their deaths...`@/
+EXCEPTION AT LINE: delay 800:dwave 0, geo_1e495:`it was a wonderful smile."`\ 
+EXCEPTION AT LINE: delay 2100:dwave 0, but_1e834:`maybe all of the servants were in cahoots."`\ 
+EXCEPTION AT LINE: dwave 0, mar_1e562_1`Chasan, Arel, Phorlakh, and Taliahad."`\ 
+EXCEPTION AT LINE: dwave 0, mar_1e563_1`Ariel., Seraph, Tharshis, and Cherub.`
+EXCEPTION AT LINE: kan:dwave 0, kan_1e164`"Beatrice-sama came to visit Madam's room,`@dwave 0, kan_1e165`......and tried to open the door, but`/
+EXCEPTION AT LINE: delay 3450:dwave 0, kan_1e166` couldn't...`@dwave 0, kan_1e167`  Is that what it means...?"`\ 
+EXCEPTION AT LINE: dwave 0, but_1e1021:`...No, in the first place, it was a mistake in the timing.`@:dwave 0, but_1e1022:`  If this invisible 19th person really wanted to show themselves,"`\ 
+EXCEPTION AT LINE: dwave 0, but_1e1023:`"they had to make sure that the crime took place`
+EXCEPTION AT LINE: dwave 0, but_1e1388:`Aah, `(`it's all useless`/・・・・・・・・)`..."`\ 
+DWAVE NOT 0: dwaveloop 49, mar_1e859_1
+DWAVE NOT 0: dwavestop 49
+DWAVE NOT 0: dwaveloop 49, mar_1e859_1
+DWAVE NOT 0: 	dwavestop %0
+DWAVE NOT 0: 	dwavestop %0
+DWAVE NOT 0: dwavestop 49
+EXCEPTION AT LINE: delay 900:dwave 0, nat_1e660`...let us settle this.`@dwave 0, nat_1e661`  ...Which of us will truly succeed the Ushiromiya family?`@dwave 0, nat_1e662`  ...I, Ushiromiya Natsuhi,`
+EXCEPTION AT LINE: @dwave 0, nat_1e663`............or you, `/
+EXCEPTION AT LINE: delay 600:dwave 0, nat_1e664`......Beatrice!!`@dwave 0, nat_1e665`  Allow me to respectfully accept your request for a duel...!!"`\ 
+EXCEPTION AT LINE: delay 6300:dwave 0, bea_1e11:dwave 49, mar_1e927`"*cackle*cackle*cackle*, *cackle*cackle*, `/
+EXCEPTION AT LINE: delay 4400:dwave 0, "voice\99\alcmix0001.ogg":`Ah ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha!!"`/
+WEIRDLY LONG LINE: sha:dwave 0, sha_2e157"Um, .........umm........."`\ 
+EXCEPTION AT LINE: dwave 0, bea_2e95(`The unbreakable days until today will`/・・・・・・・・・・・・・・・)
+EXCEPTION AT LINE: (`continue into tomorrow and the next day`/・・・・・・・・・・・・・・・・)`.`@dwave 0, bea_2e96`  And for eternity, in perpetuity."`\ 
+EXCEPTION AT LINE: dwave 0, bea_2e128(`That girl is the most suitable`/・・・・・・・・・・・・)` for Ushiromiya George in the entire world."`\ 
+EXCEPTION AT LINE: dwave 0, bea_2e130`She is more beautiful than you, wiser than`
+EXCEPTION AT LINE: @dwave 0, sha_2e409`  Sounds like it will become popular after a few decades, doesn't it?"`\ 
+DWAVE NOT 0: kan:dwave, 0 kan_2e90`"......Yes, Milady.`@dwave, 0 kan_2e91`  Did you call me?"`\ 
+DWAVE NOT 0: delay 1270:dwave, 0 jes_2e169`............errr."`\ 
+DWAVE NOT 0: kan:dwave 0, kan_2e93`".........I heard from Shannon.`@dwave, 0 kan_2e94`  This is about having me go with you to the school cultural festival, right, Milady?"`\ 
+DWAVE NOT 0: kan:dwave 0, kan_2e95`"...I was strictly ordered by Shannon to work specially for you on that day, Milady.`@dwave, 0 kan_2e96`  I have never been to high school, so I don't really understand, `@/
+DWAVE NOT 0: dwave, 0 kan_2e97`but I hear it's a place where girls feel very ashamed if they don't have a boy with them."`\ 
+DWAVE NOT 0: kan:dwave 0, kan_2e99`"......I didn't know where the entrance was.`@dwave, 0 kan_2e100`  I apologize for being late."`\ 
+DWAVE NOT 0: kan:dwave 0, kan_2e101`"...Shannon...said normal clothes wouldn't do, ...so we went and bought this yesterday.`@dwave, 0 kan_2e102`  It probably doesn't fit me..."`\ 
+DWAVE NOT 0: kan:dwave 0, kan_2e104`"......I get the feeling that I'm getting in the way.`@dwave, 0 kan_2e105`  Am I a burden?"`\ 
+DWAVE NOT 0: kan:dwave 0, kan_2e108`".........R, ...really?`@dwave, 0 kan_2e109`  Understood, Jessica-sama."`\ 
+EXCEPTION AT LINE: gen:dwave 0, gen_2e6`"......Understood.`@dwave 0, gen_2e7`  I will leave everything to you.`@dwave 0, gen_2e8`  ...Also, is Kumasawa there?"`\
+EXCEPTION AT LINE: gen:dwave 0, gen_2e23`"Kanon.`@dwave 0, gen_2e24`  In the truest sense, we will`
+EXCEPTION AT LINE: E_Ndwave 0, "voice\99\WATA2016.ogg"`Where we do have margin in the negotiations is the amount of settlement money, the appearance of a public apology on a major newspaper, `@dwave 0, "voice\99\WATA2016.ogg"`and the amount of time needed to carry out those things."`\
+EXCEPTION AT LINE: rud:dwave 0, rud_2e95`"...Although if he's that energetic, I wish he'd at least come to greet us.`@dwave 0, rud_2e96`  ...Isn't the point of the family conference to come and see Father's face?`@dwave 0, rud_2e97`  Now I don't know why we came."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e136`"...Ihihihi!`@dwave 0, but_2e137`  That's right.`@dwave 0, but_2e138`  I'll let you adults enjoy your happy family chat about the inheritance."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e181`"Seriously.`@dwave 0, but_2e182`  George-aniki's right.`@dwave 0, but_2e183`  ...Nothing's gonna happen.`@dwave 0, but_2e184`  Even if she pretends that she's a witch, `@dwave 0, but_2e185`what can a`
+EXCEPTION AT LINE: dwave 0, but_2e206(`that's impossible for humans`/・・・・・・・・・・・・)`, right?"`\ 
+EXCEPTION AT LINE: dwave 0, bea_2e737(`"Worship me, without a doubt, `/・・・・・・・・・・・・・)
+EXCEPTION AT LINE: dwave 0, bea_2e746(`"'Therefore, the possibility that fake`/・・・・・・・・・・・・・・)
+EXCEPTION AT LINE: dwave 0, bea_2e747(`"'As long as that possibility can't be denied`/・・・・・・・・・・・・・・・・・)
+EXCEPTION AT LINE: dwave 0, bea_2e793(`"It'll be fun to kill her and see the pained`/・・・・・・・・・・・・・・・・・)
+EXCEPTION AT LINE: but:dwave 0, but_2e305`"Well, umm, `@dwave 0, but_2e306`............they carried six human corpses all the way over here, and made these elaborate decorations.`@dwave 0, but_2e307`  ...We can't tell whether she called the six of them over here before killing them, or whether she killed them before carrying them over here,"\dwave 0, but_2e308`"...but either way, it would take a lot of effort......`@dwave 0, but_2e309`  Why did the culprit`
+EXCEPTION AT LINE: dwave 0, but_2e310(`want six people to die here`/・・・・・・・・・・・・・・・・・・・・・)`......?"`\ 
+EXCEPTION AT LINE: dwave 0, but_2e376`"......But that's `
+EXCEPTION AT LINE: (`like a closed room`/・・・・・・・・・)`!`@dwave 0, bea_2e906`  That's what you think."`\ 
+EXCEPTION AT LINE: dwave 0, bea_2e962` `/
+EXCEPTION AT LINE: but:dwave 0, but_2e412`"W, ......well, that is true.`@dwave 0, but_2e413`  ...If you were a witch, `
+EXCEPTION AT LINE: dwave 0, but_2e607`".........And something else makes even less sense.`@dwave 0, but_2e608`  ......If they're trying to say that the Legend of the Gold is actually true,"`\ 
+EXCEPTION AT LINE: dwave 0, but_2e677`...`(`It's all useless`/・・・・・・・・)`."`\ 
+EXCEPTION AT LINE: dwave 0, but_2e713`When Jessica unlocked the VIP room, she borrowed the key from Kanon-kun, `
+EXCEPTION AT LINE: ros:dwave 0, ros_2e577`"How can you make the claim that there's no way to lock the door without using a master key?`@dwave 0, ros_2e578`  Isn't that a Devil's Proof, like Rudolf nii-san was talking about?`@dwave 0, ros_2e579`  Maybe it`
+EXCEPTION AT LINE: sha:dwave 0, sha_2e724`"If you're Kanon-kun, you should be alright.`@
+EXCEPTION AT LINE: dwave 0, sha_2e725`But if `(`spiders are your natural enemy`/・・・・・・・・・・・・・)`, I thought you might hate it."`\ 
+EXCEPTION AT LINE: dwave 0, bea_2e1238`"...If the culprit had taken the master key back by the method you say,`@dwave 0, bea_2e1239` that culprit`
+EXCEPTION AT LINE: dwave 0, bea_2e1240(`master key from Jessica's body`/・・・・・・・・・・・)`."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e929`"Beato.`@dwave 0, but_2e930`  ......Before I ask you to repeat anything, I want to check`
+EXCEPTION AT LINE: gen:dwave 0, gen_2e147`"............Stop.`@dwave 0, gen_2e148`  ...What Rosa-sama says is quite right.`@dwave 0, gen_2e149`  ...Until we find the`
+EXCEPTION AT LINE: dwave 0, gen_2e150(`Nanjo and Kumasawa are innocent`/・・・・・・・・・・・・)`."`\ 
+EXCEPTION AT LINE: dwave 0, sha_2e792:dwave 1, goh_2e310:dwave 2,gen_2e183`"""Yes!"""`\ 
+EXCEPTION AT LINE: geo:dwave 0, geo_2e704`"Hurry!!`@dwave 0, geo_2e705`  We can't stand here!!"`\ 
+EXCEPTION AT LINE: goh:dwave 0, goh_2e330`"It's just something I heard...!`@dwave 0, goh_2e331`  I never knew where it actually...!"`\ 
+EXCEPTION AT LINE: dwave 0, gen_2e197`......Hmm."`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e789`"Do you have some business?`@dwave 0, ros_2e790`  We'll be fine without opening the door.`@dwave 0, ros_2e791`  Tell us from there."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1063`"Wh, ...what did you say...?!!"`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e792`"............I see.`@dwave 0, ros_2e793`  Understood, let's go and check them.`@dwave 0, ros_2e794`  ...Until I see the corpses, I won't believe anybody."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1064`"..............."`\ 
+EXCEPTION AT LINE: mar:dwave 0, mar_2e485`"......Uu-.`@dwave 0, mar_2e486`  It's alright, Battler.`@dwave 0, mar_2e487`  If Maria's there, it'll definitely be alright."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1065`"Genji-san, where are their corpses...?"`\ 
+EXCEPTION AT LINE: gen:dwave 0, gen_2e203`".........In the courtyard.`@dwave 0, gen_2e204`  I shall guide you."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1066`"..............., Maria...`@dwave 0, but_2e1067`......Is this, ...that thing?"`\ 
+EXCEPTION AT LINE: dwave 0, mar_2e489`......It's the seventh twilight and the eighth twilight."`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e798`"I, ......I see.`@dwave 0, ros_2e799`  Certainly, just as Genji-san and the others said, there are horrible wounds on their necks.`@dwave 0, ros_2e800`  ......Very sharp.`@dwave 0, ros_2e801`  Almost as though they've been sliced with a katana or something..."`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e802`"......What is this?`@dwave 0, ros_2e803`  ...It's the same as Jessica-chan.`@dwave 0, ros_2e804`  Is this supposed to be some kind of occult ceremony, I wonder?"`\ 
+EXCEPTION AT LINE: gen:dwave 0, gen_2e205`".........I do not know.`@dwave 0, gen_2e206`  The last time I saw their bodies, there was nothing like this.`@dwave 0, gen_2e207`  Maybe it was done after they were carried out of the servant room."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1068`"......There's no mistake.`@dwave 0, but_2e1069`  ...They're meant to be, sacrifices."`\ 
+EXCEPTION AT LINE: mar:dwave 0, mar_2e490`"......At the seventh twilight, gouge the knee and kill.`@dwave 0, mar_2e491`  At the eighth twilight, gouge the leg and kill."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1070`"Wait.`@dwave 0, but_2e1071`  Then, they've left out the fourth, fifth, and sixth twilights.`@dwave 0, but_2e1072`  ......C, ......could it be..."`\ 
+EXCEPTION AT LINE: gen:dwave 0, gen_2e208`".........I was told that they wanted to go to Madam Natsuhi's room to search for something, so they left.`@dwave 0, gen_2e209`  They have not returned yet."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1073`"What did you say...?`@dwave 0, but_2e1074`  Umm, you say they left, when was that?!"`\ 
+EXCEPTION AT LINE: gen:dwave 0, gen_2e210`"Two or three hours ago, I believe."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1075`"N, no way...!!`@dwave 0, but_2e1076`  Why didn't something that important, wait, no, ...why didn't you think that was suspicious?!"`\ 
+EXCEPTION AT LINE: gen:dwave 0, gen_2e211`"......There must always be one servant awaiting orders.`@dwave 0, gen_2e212`  It was my duty to wait for orders until they returned."`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e807`"...G, ...Genji-san, please open it."`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e808`"......Battler-kun, would you open it for me with this?"`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1077`"Just trusting Genji-san with something like that wouldn't..."`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e809`".....................!`@dwave 0, ros_2e810`  H, horrible......"`\ 
+EXCEPTION AT LINE: mar:dwave 0, mar_2e492`"..............."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1078`"As I thought, ......it was a reproduction of the fourth, fifth, and sixth twilights."`\ 
+EXCEPTION AT LINE: mar:dwave 0, mar_2e493`".........Uu-."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1079`"...Was gouging the chest, the fifth twilight?"`\ 
+EXCEPTION AT LINE: mar:dwave 0, mar_2e494`"............Uu-."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1087`".........The witch shall be revived and none shall be left alive, you say.`@dwave 0, but_2e1088`  .........We're going to die?`@dwave 0, but_2e1089`  Or is the ceremony of sacrifices over now, ...our journey shall end, and we should reach the Golden Land...?"`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e815`"Thank you, Genji-san.`@dwave 0, ros_2e816`  This is far enough.`@dwave 0, ros_2e817`  Please rest for the day."`\ 
+EXCEPTION AT LINE: gen:dwave 0, gen_2e213`"......Certainly.`@dwave 0, gen_2e214`  ...Then, if you will allow me to rest."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1102`"H, ...hey, Aunt Rosa...`@dwave 0, but_2e1103`......are you saying that you'll leave Genji-san all alone in a situation like this...?"`\ 
+EXCEPTION AT LINE: dwave 0, gen_2e217`"...I believe that trust will be won not with a hundred excuses, but with simple faithfulness.`@dwave 0, gen_2e218`  ......Even if I am not able to gain your trust, I wish to be faithful until the end."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1107`".....................Genji-san..."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1108`".....................`@dwave 0, but_2e1109`.........What is, this...?"`\ 
+EXCEPTION AT LINE: mar:dwave 0, mar_2e507`"...Uu-?`@dwave 0, mar_2e508`  ......Battler, `/
+EXCEPTION AT LINE: delay 500:dwave 0, mar_2e509`......what is that?"`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1110`"Ah, ......aaah, `@dwave 0, but_2e1111`when we came here just now, `/
+EXCEPTION AT LINE: delay 700:dwave 0, but_2e1112`...i, it had been set here."`\ 
+EXCEPTION AT LINE: dwave 0, ros_2e839`.........Huh?!`@dwave 0, ros_2e840`  Battler-kun, that letter?!"`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e841`".................................`@dwave 0, ros_2e842`......Maria, come here."`\ 
+EXCEPTION AT LINE: @dwave 0, mar_2e511`Sto-p i-t!!`@dwave 0, mar_2e512`  Uu-uu-uu-!!"`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e870`"You're the one who's staying silent, how do you say the letter was set here by someone other than yourself?!`@dwave 0, ros_2e871`  As long as you can't prove that, you're a wolf!!"`\ 
+EXCEPTION AT LINE: dwave 0, but_2e1164`"Then you anticipated that I would return to the place I had been sitting, and secretly placed the letter.`@dwave 0, but_2e1165`  I can also suspect that this is your trap, right?!"`\ 
+EXCEPTION AT LINE: dwave 0, mar_2e516`Mama too, Battler too, stop iiiiiiiiiiit, stop iiiiiiiiiiiiit!!!`@dwave 0, mar_2e517`  It's no one's fault!`@dwave 0, mar_2e518`  It's not Battler's or Mama's fault!!`@dwave 0, mar_2e519`  The witch did all of this!`@dwave 0, mar_2e520`  It was done with magic!!`@dwave 0, mar_2e521`  It's no one's faaaaaaaaaault!!`@dwave 0, mar_2e522`  Uu-uuuu---!!"`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e874`"Where are you, Beatrice!!`@dwave 0, ros_2e875`  Show yourself!!`@dwave 0, ros_2e876`  Beatriiiiiice!!"`\ 
+EXCEPTION AT LINE: gen:dwave 0, gen_2e266`".........Master, Beatrice-sama.`@dwave 0, gen_2e267`  It will soon be time for the banquet."`\ 
+EXCEPTION AT LINE: gen:dwave 0, gen_2e268`"......Beatrice-sama, your silk dress."`\ 
+EXCEPTION AT LINE: dwave 0, kin_2e258`.........However, you did well to remain here.`@dwave 0, kin_2e259`  ...I'm happy, my friend."`\ 
+EXCEPTION AT LINE: gen:dwave 0, gen_2e269`"......I am grateful for your words."`\ 
+EXCEPTION AT LINE: bea:dwave 0, bea_2e1548`".........Do you know why I am not embarrassed to show myself to you naked...?"`\ 
+EXCEPTION AT LINE: but:dwave 0, but_2e1265`"........................"`\ 
+EXCEPTION AT LINE: gen:dwave 0, gen_2e272`".........Tonight marks the entrance of our Golden Witch, who had achieved her revival, `@dwave 0, gen_2e273`the Lady Beatrice.`@dwave 0, gen_2e274`  Everyone, please welcome her with your applause."`\ 
+EXCEPTION AT LINE: ber:dwave 0, ber_2e1`"............How pitiful."`\ 
+EXCEPTION AT LINE: bea:dwave 0, bea_2e1572`"You're right.`@dwave 0, bea_2e1573`  *cackle*cackle*cackle*cackle*cackle*cackle* *cackle*cackle*cackle*cackle*!"`\ 
+EXCEPTION AT LINE: bea:dwave 0, bea_2e1582`"Come......, now is the time!!`@dwave 0, bea_2e1583`  Open the golden door............!!!"`\ 
+EXCEPTION AT LINE: dwave 0, but_2e1277`aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah...!!!"`\ 
+EXCEPTION AT LINE: ros:dwave 0, ros_2e896:`"......Just try laying one finger on Maria in front of me.`@:dwave 0, ros_2e897:`  I'll show you just how lukewarm the hell you came from is."`\ 
+EXCEPTION AT LINE: mar:dwave 0, mar_2e541:`"Y, yes...!`@:dwave 0, mar_2e542:`  Pick up, pick up...!!"`\ 
+EXCEPTION AT LINE: dwave 0, rg1_3e3:dwave 1, rg2_3e3:dwave 2, rg3_3e3:dwave 3, rg4_3e3:dwave 4, rg5_3e3:dwave 5, rg6_3e3:dwave 6, rg7_3e3`"""""""Iiiee!!"""""""`\
+DWAVE NOT 0: dwave 0, but_3e37`Maria, I'm sure that when you are in middle school, you'll want to say embarrassing things like that...`@dwave but_3e38`  When that happens, write it on the back of some leaflet, and read it three times before you say it out loud.`@dwave 0, but_3e39`  If you don't, you'll definitely regret it..."`\ 
+EXCEPTION AT LINE: @dwave 0, nat_3e4`It is an unshakable fact that my husband will become the next head of the Ushiromiya family!!"`\ 
+EXCEPTION AT LINE: dwave 0, kir_3e59`as well as some people to help her."`\ 
+EXCEPTION AT LINE: dwave 0, kir_3e60`"Cooking would be quite difficult.`@dwave 0, kir_3e61`  She would need clothes and makeup, the daily necessities.`@dwave 0, kir_3e62`  ...The needs of a woman aren't simple.`@dwave 0, kir_3e63`  ......Would it be possible to maintain all of that without any of the family or the servants noticing?"`\ 
+EXCEPTION AT LINE: dwave 0, rud_3e117`......Unless the inheritance is handed over by the losers`
+EXCEPTION AT LINE: dwave 0, bea_3e459`......Or should I say it `(`used to be`/・・・・・・)` wrong.  `@/
+EXCEPTION AT LINE: dwave 0, bea_3e460`......I was constructed by Kinzo, a human built by a human.`@dwave 0, bea_3e461`  ...No, maybe I should call it a cage made of flesh."`\ 
+EXCEPTION AT LINE: dwave 0, but_3e571`I definitely won't believe in that kind of magic story!`@dwave 0, but_3e572`  ......Then who are you?!`@dwave 0, but_3e573`  You fell off a cliff and died, right?!`@dwave 0, but_3e574`  Your soul slipped out, became butterflies, and went to the forest?`@dwave 0, but_3e575`  That isn't possible!!"`\ 
+EXCEPTION AT LINE: bea:dwave 0, bea_3e818`"......Kanon.`@dwave 0, bea_3e819`  I hate boredom more than anything.`@dwave 0, bea_3e820`  And it isn't interesting that those other two have obediently accepted their deaths.`@dwave 0, bea_3e821`  ......So I don't want you to betray my expectations."`\ 
+EXCEPTION AT LINE: but:dwave 0, but_3e592`".........Damn.`@dwave 0, but_3e593`  Another weird thing's happening...`@dwave 0, but_3e594`  Like I'd ever accept that it's a magic battle...!"`\ 
+EXCEPTION AT LINE: ;dwave 0, kan_3e35_3
+EXCEPTION AT LINE: dwave 0, kan_3e35_1
+DWAVE NOT 0:   dwaveload 1,"SE\A5_10315.WAV"
+DWAVE NOT 0:   dwaveplay 1
+EXCEPTION AT LINE: dwave 0, rg1_3e87_1
+EXCEPTION AT LINE: bea:dwave 0, bea_3e919`"I did promise you, didn't I?`@dwave 0, bea_3e920`  If you could defeat my furniture,`
+EXCEPTION AT LINE: sha:dwave 0, sha_3e49_1`"...Ku......!!"\
+EXCEPTION AT LINE: kan:dwave 0, kan_3e55_1`"Ah......?!"`\ 
+EXCEPTION AT LINE: sha:dwave 0, sha_3e49_2`"Gu......uu......!!"`\ 
+EXCEPTION AT LINE: sha:dwave 0, sha_3e49_3`"Hah......!!"`\ 
+EXCEPTION AT LINE: rg7:dwave 0, rg7_3e25:`".........Eeeh...?`@:dwave 0, rg7_3e26:`  .........Huh?"`\ 
+EXCEPTION AT LINE: delay 768:dwave 0, rg1_3e125:!d600`...this..."`/
+EXCEPTION AT LINE: kum:dwave 0, kum_3e9:`"............Hoh-hoh-hoh-ho.`@:dwave 0, kum_3e10:`  What naughty girls.  `@/
+EXCEPTION AT LINE: rg2:dwave 0, rg2_3e46:`"...What is this, .........you old hag...!"`\ 
+EXCEPTION AT LINE: rg3:dwave 0, rg3_3e26:`"There's got to be some mistake!!  `@/
+EXCEPTION AT LINE: dwave 0, rg3_3e27:`One more time!!"`\ 
+EXCEPTION AT LINE: rg5:dwave 0, rg5_3e23:`"Move aside!`@:dwave 0, rg5_3e24:`  One more time!!!"`\ 
+EXCEPTION AT LINE: rg4:dwave 0, rg4_3e22:`"............No matter how often you try, it's useless.  `@/
+EXCEPTION AT LINE: bea:dwave 0, bea_3e975:`"There's no need."`\ 
+EXCEPTION AT LINE: ron:dwave 0, ron_3e311:`"............It's enough to make me manifest myself.`@:dwave 0, ron_3e312:`  ...I was sure that you had awakened."`\ 
+EXCEPTION AT LINE: rg2:dwave 0, rg2_3e47:`"Sh, she's not even using 'sama' for Beatrice-sama..."`\ 
+EXCEPTION AT LINE: delay 800:dwave 0, but_3e602:`......I, I don't have a clue what's going on anymore......!`@:dwave 0, but_3e603:`  What in the world is happening right in front of my eyes...!"`\ 
+EXCEPTION AT LINE: dwave 0, wal_3e89:`  I apologize."`\ 
+EXCEPTION AT LINE: bea:dwave 0, bea_3e1019:`"Hihhyahhyahhyaaaaaa!!`@:dwave 0, bea_3e1020:`  Don't think you can dodge it by turning into butterflies, alright?`@:dwave 0, bea_3e1021:`  The density of the twin towers' barrage wouldn't just make you a pinned bug collection, it'd make you a madly stabbed pincushion, right...?"`\ 
+DWAVE NOT 0: ;  dwaveload 1,"SE\B_long.wav"
+DWAVE NOT 0: ;  dwaveplay 1
+EXCEPTION AT LINE: dwave 0, bea_3e1042:`What are you doing, you blockheads!!!"`\ 
+EXCEPTION AT LINE: dwave 0, wal_3e114:`It was fun, Beatrice!"`\ 
+EXCEPTION AT LINE: bea:dwave 0, bea_3e1254`"Wh, what did you saaaaaaaaayy...?!?!"`\ 
+EXCEPTION AT LINE: rud:dwave 0, rud_3e263`"Oh yeah, it's like 'sucker merry barrels'.`@dwave 0, rud_3e264`  Wha-t do you get when you take out the e's and r's?  `/
+EXCEPTION AT LINE: delay 1200:dwave 0, rud_3e265`Like that.`@dwave 0, rud_3e266`  Well, you were raised well, Natsuhi-san, so you probably don't know."`\ 
+EXCEPTION AT LINE: @dwave 0, ros_3e245`"He went to all the trouble of mixing in the character 'の'.`@dwave 0, ros_3e246`  It vaguely bugged me that it's only said differently here... `@dwave 0, ros_3e247`.........ah, umm, ...it's not like it means anything.`@dwave 0, ros_3e248`  This is Father we're talking about.`@dwave 0, ros_3e249`  It could just be a coincidental change in how he said the word."`\ 
+EXCEPTION AT LINE: dwave 0, wal_3e386`a difficult one `(`for you`/・・・・)`."`\ 
+EXCEPTION AT LINE: dwave 0, eva_3e407`.....................No, `/
+EXCEPTION AT LINE: delay 1900:dwave 0, eva_3e408`...but, `/
+EXCEPTION AT LINE: delay 1400:dwave 0, eva_3e409`.........`@
+EXCEPTION AT LINE: dwave 0, eva_3e410`......Huh...?"`\ 
+EXCEPTION AT LINE: eva:dwave 0, eva_3e496`"I was successful...`@dwave 0, eva_3e497`  I did it, ...dear..., George...`@dwave 0, eva_3e498`......I, ......finally succeeded, ......as a mother...`@dwave 0, eva_3e499`......After this, we won't be threatened by anyone...`@dwave 0, eva_3e500`  Whaaaaaa, whaaaaaaaaaaaaaaaaaa!!"`\ 
+EXCEPTION AT LINE: dwave 0, ros_3e354`".........I will support your position`
+EXCEPTION AT LINE: dwave 0, kir_3e321`......Just now someone,`
+EXCEPTION AT LINE: dwave 0, rg2_3e72_1:bg BLADE5P,1
+EXCEPTION AT LINE: dwave 0, kir_3e338_1:bg white,1
+EXCEPTION AT LINE: dwave 0, kir_3e338_2:bg white,1
+EXCEPTION AT LINE: kir:dwave 0, kir_3e374`"Don't make me laugh, girl."`\ 
+EXCEPTION AT LINE: dwave 0, kir_3e376`and who has burned with envy for 18 years...!!"`/
+EXCEPTION AT LINE: s41:dwave 0, s41_3e1`"Siesta 410.  Right he-re."`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e1`"Siesta 45.  Right here."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e2`"From reading a picture book out loud, to going on a date, to shooting down meteorites,`@dwave 0, s41_3e3` we'll take care of anything.  Nihihi."`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e2`"I, if we don't take care of it, Pendragon-sama will get mad at us...!`@dwave 0, s45_3e3`  Please, your orders, great Lady Beatrice!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e4`"Oh, it's Lucifer of Pride.`@dwave 0, s41_3e5`  Long time no see nyeh, how ya doin'?`@dwave 0, s41_3e6`  Let's play together again sometime.`@dwave 0, s41_3e7`  Nihhihihihihihi!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e4`"F, 410, you mustn't whisper, you'll get in trouble...!`@dwave 0, s45_3e5`  Let us carry out the great Lady Beatrice's order at once...!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e10`......410, roger.`@dwave 0, s41_3e11`  Sniping Pursuit Combat Setup."`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e6`"Terrain Data Accumulation, Firing Use Data Accumulation.`@dwave 0, s45_3e7`  Data Link with 410."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e17`"You're in the way behind us, Lucifer-chan,`@dwave 0, s41_3e18` you'll get roasted in the backfire, right?  Nihi!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e10`"45, Firing Preparations Concluded.`@dwave 0, s45_3e11`  Ammo Type Selection, Loading."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e19`"410, nihi.`@dwave 0, s41_3e20`  Firing."`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e12`"Siesta 45, 410, execution of orders completed.`@dwave 0, s45_3e13`  We await your next order, great Lady Beatrice.`@dwave 0, s45_3e14`  Please, your order...!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e21`"From babysitting, to being your opponent in an online game, `@dwave 0, s41_3e22`to shooting down a space shuttle, we'll take care of everything.`@dwave 0, s41_3e23`  Nihihi!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e24`"Nihihihihi.`@dwave 0, s41_3e25`  Predecessor-sama, please retire from this place."`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e15`"I, if you don't, we'll be scolded...!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e26`"Never, nihi.`@dwave 0, s41_3e27`  What about you, 45?"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e16`"N, no...!`@dwave 0, s45_3e17`  I have never done it, my apologies...!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e28`"Will we make this one a new toy and play?`@dwave 0, s41_3e29`  Nihi."`\ 
+EXCEPTION AT LINE: dwave 0, wal_3e513`"...For that reason, Endless Witches sometimes start playing by jumping over the gap between life and death `@dwave 0, wal_3e514`like it's a game."`\ 
+EXCEPTION AT LINE: dwave 0, wal_3e515`".........That is a very, very frightening thing.`@dwave 0, wal_3e516`  So as an Endless Witch, and out of my own desire, `
+EXCEPTION AT LINE: s41:dwave 0, s41_3e30`"Nihi.`@dwave 0, s41_3e31`  Whe-re is the target nyeh?"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e18`"......In the lobby on the first floor of the guesthouse, both targets and Ushiromiya Eva aquired.`@dwave 0, s45_3e19`  Anti-Magic Power Measurement.`@dwave 0, s45_3e20`  Data Link to 410."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e32`"410 Data Received.`@dwave 0, s41_3e33`  Anti-magic power is extremely small.`@dwave 0, s41_3e34`  If Eva just goes outside, they're tuna and abalone on a chopping board.`@dwave 0, s41_3e35`  Nihihihihi...!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e21`"What do you think, great Lady Beatrice?`@dwave 0, s45_3e22`  If you give the order, we will snipe right away...!`@dwave 0, s45_3e23`  Please, your orders...!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e24`"M, ...my apologies, I haven't noticed anything..., please forgive me......!!"`\ 
+EXCEPTION AT LINE: dwave 0, s41_3e37`...What about you, Lucifer-chaaan?`@dwave 0, s41_3e38`  Did you feel a presence?"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e25`"45, Firing Permission Received.`@dwave 0, s45_3e26`  Firing Arc Reconfirmation, Weather Error Correction.`@dwave 0, s45_3e27`  Data Link to 410."`\ 
+EXCEPTION AT LINE: dwave 0, s41_3e40`Nihihihihi, Firing!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e31`"45 Data Received.`@dwave 0, s45_3e32`  Firing Preparations Concluded.`@dwave 0, s45_3e33`  Ammo Type Selection, Loading."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e44`"410, Firing.`@dwave 0, s41_3e45`  Nihi!"`\ 
+EXCEPTION AT LINE: wal:dwave 0, wal_3e547`"Beato, escape while you can!!`@
+EXCEPTION AT LINE: dwave 0, wal_3e548(`No one can escape`/・・・・・・・・)` from the Siestas' golden bow!!!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e45`"My, my apologies, Predecessor-sama...!`@dwave 0, s45_3e46`  We were ordered to avoid vital areas...!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e59`"As soon as there's an order, we can pierce you at any time.`@dwave 0, s41_3e60`  We can pierce a hole in your ears, a hole in your belly button, any hole you like.`@dwave 0, s41_3e61`  Nihi!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e47`"W, ...we're killing her...!!`@dwave 0, s45_3e48`  Even though we've sewn her heart in place several times,`@dwave 0, s45_3e49` ......this person's heart, ...w, won't stop...!!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e64`"...Wh, ......why doesn't she die?!`@dwave 0, s41_3e65`  This is impossible...!!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e50`"Even though her heart is, ......sewn in place..., `@dwave 0, s45_3e51`......why doesn't it stop?!"`\ 
+EXCEPTION AT LINE: dwave 0, s41_3e67`How pitiful, and you could have died cleanly if you hadn't resisted us!!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e52`"Fixing Explosion Center in Heart Interior.`@dwave 0, s45_3e53`  Fuse Preparations Ready!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e68`"Explosion!!!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e54`".........Wh, .........what the, .........eeeeeek..."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e69`"M, ......monster..., ...eeeeeeeeek...!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_3e55`"I, it's impossible, my apologies!`@dwave 0, s45_3e56`  We cannot do it!!"`\ 
+EXCEPTION AT LINE: ron:dwave 0, ron_3e605`"I am afraid to say, `@dwave 0, ron_3e606`that your power cannot`
+EXCEPTION AT LINE: s41:dwave 0, s41_3e71`"Wha, .........i, i, it was deflected?!?!`@dwave 0, s41_3e72`  There's no barrier, it was deflected with resistance alone...`@dwave 0, s41_3e73`  F, 45, Target Measurement!!"`\ 
+EXCEPTION AT LINE: dwave 0, s45_3e62`A, Anti-Magic Resistance Power, Endless Nine...`@dwave 0, s45_3e63`  E, even mythical-class magical attacks won't be effective on the target!!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_3e74`"...Eeeeeeek..., `/
+EXCEPTION AT LINE: delay 1200:dwave 0, s41_3e75`...m, ......monster......"`\ 
+DWAVE NOT 0: dwave 0, but_3e1630`Beato, thank you.`@dwave, but_3e1631`  ......If you hadn't found this, I would have given up here."`\ 
+EXCEPTION AT LINE: dwave 0, but_3e1670:!s0`There's no way you can say it, `/
+EXCEPTION AT LINE: delay 2000:dwave 0, but_3e1671`it's checkmaaaaaaaaaaaaaaaaate!!"`/
+EXCEPTION AT LINE: dwave 0, wal_3e616:dwave 1, ron_3e649:!s0`"Beatrice...!!" "M, Milady...!!"`\ 
+EXCEPTION AT LINE: delay 800:dwave 0, but_3e1780`'You are definitely, `/
+EXCEPTION AT LINE: delay 1850:dwave 0, but_3e1781`...the Golden Witch'."`/
+EXCEPTION AT LINE: nan:dwave 0, nan_3e120_b`"Looks like everyone's here at last."`\ 
+EXCEPTION AT LINE: @dwave 0, s45_3e66`I really won't forgive you for speaking of Lady MARIA in that way!"`\ 
+EXCEPTION AT LINE: dwave 0, s41_3e78`Lady MARIA, we can attack at any time.`@dwave 0, s41_3e79`  Nihi!"`\ 
+EXCEPTION AT LINE: @dwave 0, but_3e1806`  Beatrice is a stylish name, so write it in cursive!`@dwave 0, but_3e1807`  You're making the quill and your name cry!"`\ 
+EXCEPTION AT LINE: wal:dwave 0, wal_3e649`"Sign."`\ 
+EXCEPTION AT LINE: @dwave 0, bea_3e2310`"Teacher, I'm counting on you to use all your strength!!`@dwave 0, bea_3e2311`  That was such a plain role to play, and I got so bored!"`\ 
+EXCEPTION AT LINE: delay 1200:dwave 0, bea_3e2353`so you are the piece Lady Bernkastel threw in.`@dwave 0, bea_3e2354`  I like it!!"`
+EXCEPTION AT LINE: dwave 0, enj_4e90`"After all, ......the player who's fighting in a game against the witch`
+EXCEPTION AT LINE: mar:dwave 0, mar_4e132`"Uu-☆`@dwave 0, mar_4e133`  Now, Ange and Sakutaro are already friends!`@dwave 0, mar_4e134`  Two people are more fun than one, and three people are more fun than two.`@dwave 0, mar_4e135`  Uu-!"`\ 
+EXCEPTION AT LINE: sak:dwave 0, sak_4e11`『Uryu~!』`\
+EXCEPTION AT LINE: dwave 0, mar_4e205:dwave 1, sak_4e32`"Uu-!" 『Uryu-!』`\ 
+EXCEPTION AT LINE: @dwave 0, mar_4e216`  So Maria can buy you whatever you want too, Sakutaro.`@dwave 0, mar_4e217`  Let's eat together!  `@/
+EXCEPTION AT LINE: dwave 0, mar_4e266`"Also together after school, and of course, I am always by your side when you return to the dormitory.`@dwave 0, mar_4e267`  ...It's just that you don't`
+EXCEPTION AT LINE: oko:dwave 0, oko_4e32`"There was no need for anyone to solve that epitaph.`@dwave 0, oko_4e33`  Once it had been displayed for an appropriate amount of time, Kinzo-san would just call Eva-san, who he truly wanted to succeed him,
+EXCEPTION AT LINE: delay 2000:dwave 0, enj_4e258 (`couldn't find`/・・・・・・・)` evidence that it was a crime, right?"`\ 
+EXCEPTION AT LINE: dwave 0, oko_4e120`"Because`
+EXCEPTION AT LINE: dwave 0, "voice\99\mafmd4020.ogg"`"My apologies, we lost sight of them...`@dwave 0, "voice\99\mafmd4001.ogg"`  A single man thought to be an associate assisted in her escape.`@dwave 0, "voice\99\mafmd4002.ogg"`  Judging by his possession of a stun gun and his driving skills, he is no amateur."`\ 
+EXCEPTION AT LINE: enj:dwave 0, enj_4e410`"............If Kinzo dies, the distribution of the inheritance occurs.`@dwave 0, enj_4e411`  However, if Kinzo doesn't die,`@dwave 0, enj_4e412` ......no, `
+EXCEPTION AT LINE: kla:dwave 0, kla_4e53`".........I have no idea what you are-"`\ 
+EXCEPTION AT LINE: (`borrow it from Father`/・・・・・・・・・)`, right?`@dwave 0, kir_4e112`  ...There's no need for an obvious charade."`\ 
+EXCEPTION AT LINE: sak:dwave 0, sak_4e86`『So Maria, you aren't lonely at all!`@dwave 0, sak_4e87`  Uryu!』`\ 
+EXCEPTION AT LINE: sak:dwave 0, sak_4e136`『.........Uryu.`@dwave 0, sak_4e137`  ...Does it suit me......?』`\ 
+EXCEPTION AT LINE: @dwave 0, bea_4e203`  It is not uncommon for a spirit to be made to reside in them if they are spoken to by an innocent child that has no toxin."`\ 
+EXCEPTION AT LINE: bea:dwave 0, bea_4e205`".........How incredible.`@dwave 0, bea_4e206`  This Sakutarou, with a cloth and cotton vessel as a shell, has completely materialized into the human world.`@dwave 0, bea_4e207`  He has his own character, talks with the summoner freely, 
+EXCEPTION AT LINE: dwave 0, enj_4e647_1
+DWAVE NOT 0: delay 1200:rg7:dwave 1, rg7_4e10`"Ange-sama, awesome, awesome!!"`\ 
+EXCEPTION AT LINE: `where `(`Battler did not return`/・・・・・・・・)`.`@dwave 0, lam_4e40`  Know what that means?"`\
+EXCEPTION AT LINE: @dwave 0, mar_4e781`  Maria was told that it was wrong because you don't learn katakana in first grade.`@dwave 0, mar_4e782`  ......Maria didn't really get it,`@dwave 0, mar_4e783` so from that day on, on tests, Maria wrote everything in hiragana.`@dwave 0, mar_4e784`  But got in trouble with Mama for some reason."`\ 
+EXCEPTION AT LINE: dwave 0, mar_4e785`"Got in trouble with the teachers too."`\ 
+EXCEPTION AT LINE: enj:dwave 0, enj_4e972`"........................"`\ 
+EXCEPTION AT LINE: sak:dwave 0, sak_4e304`『..................Uryu...`@dwave 0, sak_4e305`.........Maria, ...won't you answer......?』`\ 
+EXCEPTION AT LINE: sak:dwave 0, sak_4e391`『............!!!』`\ 
+EXCEPTION AT LINE: delay 1100:dwave 0, sak_4e426`...at that time, Maria saw my stuffed animal torn,`@dwave 0, sak_4e427` and `
+EXCEPTION AT LINE: ;dwave 0, sak_4e428
+EXCEPTION AT LINE: dwave 0, enj_4e1313`......`(`I have to return`,/・・・・・・・・)`
+EXCEPTION AT LINE: s00:dwave 0, s00_4e2`"Unrestricted Firing Understood, sir.`@dwave 0, s00_4e3`  Thank you for the good targets.`@dwave 0, s00_4e4`  Everyone, Commence Unrestricted Firing."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e2`"Nihi!`@dwave 0, s41_4e3`  First one in, nyeh!!`@dwave 0, s41_4e4`  Hyahhah!!"`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e5`"00, Firing."`\ 
+EXCEPTION AT LINE: dwave 0, "voice\99\awase0027.ogg"!s0`""Waaaaaaaaaaaaaaaaaaaaahhhh!!""`
+EXCEPTION AT LINE: s45:dwave 0, s45_4e2`"45, Impact, Hit...!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e5`"Nihi!  You sure are slow nye~h.`@dwave 0, s41_4e6`  Did you thiink I'd let you escape nye~h♪"`\ 
+EXCEPTION AT LINE: kum:dwave 0, kum_4e8`"Hiieeeeeeeeeehhhh!!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e7`"What a scary woman nyeh.`@dwave 0, s41_4e8`  You really want to go the same way as your husband that muuch?"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_4e3`"45, Impact, Hit...!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e9`"We-ll then, whoo'll we go for next nye~h.`@dwave 0, s41_4e10`  Nihhihi!!"`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e6`"......Defensive Firing.`@dwave 0, s00_4e7`  I apologize for the discourtesy of a point-blank shot, sir."`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e8`"Yes, Lord Goldsmith.`@dwave 0, s00_4e9`  This makes six people."`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_4e4`"It was an instant death from a direct hit to the head...!`@dwave 0, s45_4e5`  He didn't have the time to feel the pain."`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e10`"Don't worry, we are currently locking onto the escapee targets."`\ 
+EXCEPTION AT LINE: dwave 0, s41_4e12`Nihi!`@dwave 0, s41_4e13`  Shall we snipe?"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_4e6`"Great Lord Goldsmith...!`@dwave 0, s45_4e7`  We await your orders...!"`\ 
+EXCEPTION AT LINE: sak:dwave 0, sak_4e456`『.........The one who made me, `/
+EXCEPTION AT LINE: delay 1400:dwave 0, sak_4e457`......is Mama, right...?』`\ 
+EXCEPTION AT LINE: `haaate you...`@dwave 0, ros_4e470`  Fuhihiha, haha......"`\ 
+EXCEPTION AT LINE: goh:dwave 0, goh_4e12`"I, it was, it was...!!`@dwave 0, goh_4e13`  Th th the Master and Krauss-sama, and everyone,`@dwave 0, goh_4e14` awawawawawawawawawa"`
+EXCEPTION AT LINE: na2:dwave 0, na2_4e57`"They probably wrote a nonsense number which clearly didn't exist.`@dwave 0, na2_4e58`  I think it's natural to assume that, from the very beginning, this envelope was sent to a non-existant residence to which`
+EXCEPTION AT LINE: dwave 0, geo_4e115("`I'm just worried you guys'll get there first`/・・・・・・・・・・・・・・・・・・・)
+EXCEPTION AT LINE: s45:dwave 0, s45_4e14`"N, no, no, my apologies, I don't know, Lord Goldsmith!"`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e27`"......I would sacrifice the first one, 'your life', sir.`@dwave 0, s00_4e28`  Weapons fight and die in battle.`@dwave 0, s00_4e29`  And weapons exist to destroy enemies and protect allies.`@dwave 0, s00_4e30`  Being able to protect those we love and then die is our satisfaction, sir."`\ 
+EXCEPTION AT LINE: dwave 0, s00_4e32`...Yes sir!`@dwave 0, s00_4e33`  Animal fodder...would be an honor......!"`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e34`".........Th, thank you very much...sir......"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e21`"Nihi.`@dwave 0, s41_4e22`  Without wavering, I'd chose the second one."`\ 
+EXCEPTION AT LINE: dwave 0, s41_4e25`So,`@dwave 0, s41_4e26` the person you love right now isn't worth that much at all, nyeh.`@dwave 0, s41_4e27`  ...Nihi!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e28`"Y, ...yes, I can choose it...`@dwave 0, s41_4e29`  I can choose it...!!`@dwave 0, s41_4e30`  Nihi, .........nihihihihihihihihihiiihii......"`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e35`"L, Lord Goldsmith...!`@dwave 0, s00_4e36`  Please, forgive us for something like this.......!!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e31`"Hihiiihiii...`@dwave 0, s41_4e32`......Hiiiiiiiiiiiiiiiiiiinn...!!"`\ 
+EXCEPTION AT LINE: !sd@dwave 0, s41_4e34`Eeeeeiiii!!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_4e15`"So mean, so mean, Lord Goldsmith is so meeeeeeeeaan, waaaaaaaaahhhh!"`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e37`"But I'm......doing the best I can......`@dwave 0, s00_4e38`  Crushing me for animal fodder...that's just too much.`@dwave 0, s00_4e39`  ......Uuuuuuuuuuuuuu!!"`\ 
+EXCEPTION AT LINE: dwave 0, geo_4e188_1
+EXCEPTION AT LINE: dwave 0, jes_4e212_1
+EXCEPTION AT LINE: dwave 0, jes_4e222_1
+EXCEPTION AT LINE: dwave 0, geo_4e232_1
+EXCEPTION AT LINE: dwave 0, geo_4e265_2
+EXCEPTION AT LINE: dwave 0, jes_4e238_1
+EXCEPTION AT LINE: s45:dwave 0, s45_4e16`"V, Virgilia-sama!!`@dwave 0, s45_4e17`  Response from lookout web, jailbreak!`@dwave 0, s45_4e18`  The goat guards aren't there for some reason...!!"`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e40`"......Confirming Battle Regulations.`@dwave 0, s00_4e41`  Request permission to fire at the escapees."`\ 
+EXCEPTION AT LINE: dwave 0, s00_4e45`......Virgilia-sama, the escape prevention barrier."`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_4e19`"45, Data Received.`@dwave 0, s45_4e20`  Target Lock Acquired.  Terrain Calculation Error Correction.`@dwave 0, s45_4e21`  Firing Curve Formation, Control Point Capture Completed.`@dwave 0, s45_4e22`  Data Link to 410."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e35`"410, Data Received.`@dwave 0, s41_4e36`  Checking Danger Area, no problems."`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e46`"00, Loading 48 Sub-rounds, Individual Homing F&F.`@dwave 0, s00_4e47`  Guided Cluster Rounds, Preparations Complete."`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_4e23`"45, Firing Preparations Concluded.`@dwave 0, s45_4e24`  Loading Guided Cluster Rounds."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e37`"410, nihhihihihi!`@dwave 0, s41_4e38`  Firiiing!!"`\ 
+EXCEPTION AT LINE: sha:dwave 0, sha_4e163`"Commence Interception."`\ 
+EXCEPTION AT LINE: dwave 0, kan_3e35_1
+EXCEPTION AT LINE: s45:dwave 0, s45_4e25`"T, Target Unharmed!!`@dwave 0, s45_4e26`  I, it was intercepted...!!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e39`"Nihyah?!`@dwave 0, s41_4e40`  All 48?!"`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e48`"Calm down, Reload.`@dwave 0, s00_4e49`  ......Updating Ammo Type.`@dwave 0, s00_4e50`  Precision Light-speed Sniper Rounds.`@dwave 0, s00_4e51`  Preparing for Precision Sniping."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e41`"Sounds good nyeh, impossible to intercept super high-speed rounds!`@dwave 0, s41_4e42`  Impossible to defend against for a mere Gatekeeper, nyeh!"`\ 
+EXCEPTION AT LINE: s45:dwave 0, s45_4e27`"Precision Sniping, Understood.`@dwave 0, s45_4e28`  Commencing Collection of Precision Firing-use Data........."`\ 
+EXCEPTION AT LINE: dwave 0, s45_4e30`Firing System Error!!`@dwave 0, s45_4e31`  No good, Rebooting...`@dwave 0, s45_4e32`  Huh huh?!"`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e52`"Spirit Wave Jamming!  Spirit Particle Protection, hurry!`@dwave 0, s00_4e53`  What are you doing, cover your ears quickly, 45!!!"`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e43`"45, Damaged...!`@dwave 0, s41_4e44`  Her IME is busted...!!`@dwave 0, s41_4e45`  ......U, gya, ......the noise...is also horrible for me, nyeh......"`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e61`"M, ......my apologies, sir......`@dwave 0, s00_4e62`  Rebooting.`@dwave 0, s00_4e63`  Please wait several hundred seconds......"`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e64`"M, my apologies...!!`@dwave 0, s00_4e65`  We're all different versions..."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e50`"45 had the user code nyeh."`\ 
+EXCEPTION AT LINE: s00:dwave 0, s00_4e69`"I, I can't hear anything except #86ef9c9999#ffffff......`/
+EXCEPTION AT LINE: @dwave 0, s00_4e70`  Have her write it on some paper."`\ 
+EXCEPTION AT LINE: s41:dwave 0, s41_4e51`"She can't reinstall the #86ef9cIME#ffffff, so she can't write characters nyeh."`/
+EXCEPTION AT LINE: dwave 0, s00_4e71:dwave 1, s41_4e52`""Sorryyyyyyyyy~!!""`/
+EXCEPTION AT LINE: dwave 0, wal_4e135`When did this become a goats-only car?!  `/
+EXCEPTION AT LINE: delay 2700:dwave 0, but_4e822`ah, `/
+EXCEPTION AT LINE: delay 800:dwave 0, but_4e823`ngagh, `/
+EXCEPTION AT LINE: delay 1000:dwave 0, but_4e824`......nnnggghh......!!!  `/
+EXCEPTION AT LINE: !sd@dwave 0, but_4e825`............Gwah!"`\ 
+EXCEPTION AT LINE: dwave 0, kas_4e246`I, I, ...will not accept something like this!!`@dwave 0, kas_4e247`  Eeeeeeeeeeeeeeeeeeeeeeeeekk!!"
+EXCEPTION AT LINE: dwave 0, eva_4e124`Anger and hatred taught me how to work hard and persist.`@dwave 0, eva_4e125`  Completely different from this magic to escape reality that you speak of!"`\ 
+EXCEPTION AT LINE: dwave 0, lam_4e228`"DON'T WORRY.`@dwave 0, lam_4e229`  You can win, because I, the Great Lady Lambdadelta, will be watching you`
+EXCEPTION AT LINE: dwave 0, bea_4e1031`Yes, it's the promised `(`certain miracle`/・・・・・・・)"`.`\
+EXCEPTION AT LINE: dwave 0, bea_4e1033(`even a fragment of a chance at a miracle`/・・・・・・・・・・・・・・)`?"`\ 
+EXCEPTION AT LINE: dwave 0, bea_9e399;　#ff0000嘉音は死亡している。#ffffff/
+WEIRDLY LONG LINE: kin:dwave 0, kin_9e1`"*cackle*cackle*cackle*, Battler.`@dwave 0, kin_9e2  Are you capable of surpassing me...?`\
+EXCEPTION AT LINE: bea:dwave 0, bea_9e530`".........I had begun the game,`@dwave 0, bea_9e531` ...thinking I might be able to win.`@
+EXCEPTION AT LINE: dwave 0, bea_9e532`Even if I wouldn't be able to win easily,`@dwave 0, bea_9e533` I believed that in a game repeating endlessly, a miracle would eventually occur."`\ 
+EXCEPTION AT LINE: dwave 0, bea_9e613`......Hmph, ......hahahahahahaha......"`\ 
+EXCEPTION AT LINE: ;kan:dwave 0, kan_9e10
+EXCEPTION AT LINE: ;kan:dwave 0, kan_9e11
+EXCEPTION AT LINE: sha:dwave 0, sha_9e20_1`".........That may be so."`\ 
+EXCEPTION AT LINE: dwave 0, sha_9e20_2`"Maybe we should have tried solving the epitaph's riddle from the beginning, like Beatrice said."`\ 
+EXCEPTION AT LINE: dwave 0, but_9e126`......I'm so sorry."`\ 
+EXCEPTION AT LINE: dwave 0, but_9e127`"I'm so sorry I keep going on about this, but what you're doing is all useless.  I refuse.`@
+EXCEPTION AT LINE: dwave 0, but_9e128`......`(`You guys are all pressing me`/・・・・・・・・・・・・・・)`,`
+EXCEPTION AT LINE: dwave 0, bea_9e12`......The natural enemy of us witches."`\ 
+EXCEPTION AT LINE: dwave 0, bea_9e13`"...No matter how much we turn your world upside down,`
+EXCEPTION AT LINE: dwave 0, bea_9e15(`Therefore, the magic won't succeed`/・・・・・・・・・・・・・)"`.`\
+EXCEPTION AT LINE: dwave 0, bea_9e87`Fuhahahahahahahahahahahahahahahahahaha!!!"`\ 
+EXCEPTION AT LINE: but:dwave 0, but_9e222`"OoooooOOOOOOooooooooooOOOOOOOOohh!!!"`
+EXCEPTION AT LINE: dwave 0, bea_9e145`"......You don't have to say it out loud.`@dwave 0, bea_9e146`  I can understand it right away, `@dwave 0, bea_9e147`it's written on your face and in the corners of your heart, *cackle*cackle*!"`\ 
+WEIRDLY LONG LINE: bea:dwave 0, bea_9e193"It is fitting for cooking to be done in the kitchen.`@dwave 0, bea_9e194`  That is enough, stand back."`\ 
+EXCEPTION AT LINE: bea:dwave 0, bea_9e195`"......Do you understand how precious a golden drop is?`@dwave 0, bea_9e196`  To have it`
+DWAVE NOT 0: bea:dwave 0, bea_9e232`"Oh, I'm sorry, I kept the dessert a secret to surprise you, but let me reveal it anyway.`@dwave bea_9e233`  If I reveal it, maybe that will be enough incentive for you to eat up the full course."`\ 
+DWAVE NOT 0: mar:dwave 0, mar_9e91`".........Mama, thanks for everything.`@dwave mar_9e92`  Bye bye."`\ 
+DWAVE NOT 0: bea:dwave 0, bea_9e266`"Fu, fuhahahahahahahahaha, how vigorous, I like it!`@dwave bea_9e267`  I wouldn't have it any other way!!  `@/
+EXCEPTION AT LINE: dwave 0, bea_9e270`"I'll teach you, one who has licked my shoes, the taste of defeat over and over again!!"`\ 
+EXCEPTION AT LINE: @:dwave 0, lam_9e135:`  Ebaa~?`@:dwave 0, lam_9e136:`  Yes!"`\ 
+EXCEPTION AT LINE: dwave 0, ber_9e126`"......Beato saw through me, so I'll confess.`@dwave 0, ber_9e127
+EXCEPTION AT LINE: dwave 0, ber_9e161`Rather than trying to win, try not to lose."`\ 
+EXCEPTION AT LINE: dwave 0, ber_9e169`".........Umm, uh, `@
+EXCEPTION AT LINE: dwave 0, ber_9e170`.........Fi, `/
+EXCEPTION AT LINE: delay 1400:dwave 0, ber_9e171`...fight, `/
+EXCEPTION AT LINE: delay 1700:dwave 0, ber_9e172`oh~.
+EXCEPTION AT LINE: eva:dwave 0, eva_9e15`".........You know, I `/
+EXCEPTION AT LINE: delay 1250:dwave 0, eva_9e16`............hate you.`@dwave 0, eva_9e17` So much."`\ 
+EXCEPTION AT LINE: enj:dwave 0, enj_9e11`"I'm honored.`@dwave 0, enj_9e12`  Same here."`\ 
+EXCEPTION AT LINE: eva:dwave 0, eva_9e90`"*cackle*cackle*cackle*cackle*cackle*cackle*cackle*!!`@dwave 0, eva_9e91`  The cursed mass of gold and the inheritance of the Ushiromiya head,`@dwave 0, eva_9e92`......as well as, `  
+EXCEPTION AT LINE: delay 1050:dwave 0, eva_9e93`............the name of the Golden Witch, Beatrice,"`\ 
+EXCEPTION AT LINE: delay 3450:dwave 0, eva_9e94`"...I will give to you now.`@dwave 0, eva_9e95` ............Enjoy your insane, twisted life fitting for the name of the witch...!"`\ 
+EXCEPTION AT LINE: enj:dwave 0, enj_9e30`"......Everything that happened to Father and the rest of them on that day, `/
+EXCEPTION AT LINE: delay 2250:dwave 0, enj_9e31`...if only I could learn what that was, `/
+EXCEPTION AT LINE: delay 3100:dwave 0, enj_9e32`............would they come back?`@dwave 0, enj_9e33`  At least one of them...!"`\ 
+DWAVE NOT 0:   dwavestop 1                    ;まだ鳴っている演奏を止める
+DWAVE NOT 0:   dwavestop 2                    ;まだ鳴っている演奏を止める
+DWAVE NOT 0:   dwavestop 3                    ;まだ鳴っている演奏を止める
+DWAVE NOT 0:   dwavestop %Me_Play_Channel
+DWAVE NOT 0:   dwaveload %Me_Play_Channel,$Me_Play
+DWAVE NOT 0:   dwaveplayloop %Me_Play_Channel
+DWAVE NOT 0:   dwavestop 1                    ;まだ鳴っている演奏を止める
+DWAVE NOT 0:   dwavestop 2                    ;まだ鳴っている演奏を止める
+DWAVE NOT 0:   dwavestop 3                    ;まだ鳴っている演奏を止める
+DWAVE NOT 0:   dwavestop %Se_Play_Channel
+DWAVE NOT 0:   dwavestop %Se_Play_Channel
+DWAVE NOT 0:   dwaveload %Se_Play_Channel,$Se_Play
+DWAVE NOT 0:   dwaveplay %Se_Play_Channel
+DWAVE NOT 0:     dwavestop %Free1
+DWAVE NOT 0:     dwavestop %Free1
+DWAVE NOT 0:  dwavestop 1
+DWAVE NOT 0:  dwavestop 2
+DWAVE NOT 0:  dwavestop 3
+DWAVE NOT 0:  dwavestop 10
+DWAVE NOT 0:  dwavestop 11
+DWAVE NOT 0:  dwavestop 12
+DWAVE NOT 0:  dwavestop 13
+DWAVE NOT 0:  dwavestop 14
+DWAVE NOT 0:  dwavestop 15
+DWAVE NOT 0:  dwavestop 90
+DWAVE NOT 0:  dwavestop 91
+DWAVE NOT 0:  dwavestop 92
+DWAVE NOT 0:  dwavestop 93
+DWAVE NOT 0:  dwavestop 94
+DWAVE NOT 0:  dwavestop 95
+DWAVE NOT 0:  dwavestop 96
+DWAVE NOT 0:  dwavestop 97
+DWAVE NOT 0:  dwavestop 98
+DWAVE NOT 0:  dwavestop 99
+DWAVE NOT 0:  dwavestop 100
+DWAVE NOT 0:   dwavestop 10
+DWAVE NOT 0:   dwavestop 11
+DWAVE NOT 0:   dwavestop 12
+DWAVE NOT 0:   dwavestop 13
+DWAVE NOT 0:   dwavestop 14
+DWAVE NOT 0:   dwavestop 15
+DWAVE NOT 0:   dwavestop 1
+DWAVE NOT 0:   dwavestop 2
+DWAVE NOT 0:   dwavestop 3
+DWAVE NOT 0:  dwavestop 1
+DWAVE NOT 0:  dwavestop 2
+DWAVE NOT 0:  dwavestop 3
+DWAVE NOT 0:  dwavestop 10
+DWAVE NOT 0:  dwavestop 11
+DWAVE NOT 0:  dwavestop 12
+DWAVE NOT 0:  dwavestop 13
+DWAVE NOT 0:  dwavestop 14
+DWAVE NOT 0:  dwavestop 15
+DWAVE NOT 0:  dwavestop 90
+DWAVE NOT 0:  dwavestop 91
+DWAVE NOT 0:  dwavestop 92
+DWAVE NOT 0:  dwavestop 93
+DWAVE NOT 0:  dwavestop 94
+DWAVE NOT 0:  dwavestop 95
+DWAVE NOT 0:  dwavestop 96
+DWAVE NOT 0:  dwavestop 97
+DWAVE NOT 0:  dwavestop 98
+DWAVE NOT 0:  dwavestop 99
+DWAVE NOT 0:  dwavestop 100
+DWAVE NOT 0:  dwavestop 1
+DWAVE NOT 0:  dwavestop 2
+DWAVE NOT 0:  dwavestop 3
+DWAVE NOT 0:  dwavestop 10
+DWAVE NOT 0:  dwavestop 11
+DWAVE NOT 0:  dwavestop 12
+DWAVE NOT 0:  dwavestop 13
+DWAVE NOT 0:  dwavestop 14
+DWAVE NOT 0:  dwavestop 15
+DWAVE NOT 0:  dwavestop 10
+DWAVE NOT 0:  dwavestop 11
+DWAVE NOT 0:  dwavestop 12
+DWAVE NOT 0:  dwavestop 13
+DWAVE NOT 0:  dwavestop 14
+DWAVE NOT 0:  dwavestop 15
+DWAVE NOT 0:  dwavestop 16
+DWAVE NOT 0:  dwavestop 1
+DWAVE NOT 0:  dwavestop 2
+DWAVE NOT 0:  dwavestop 3
+DWAVE NOT 0:  dwavestop %Me_Play_Channel
+DWAVE NOT 0:   dwaveload %Me_Play_Channel,$Me_Play
+DWAVE NOT 0:   dwaveplayloop %Me_Play_Channel
