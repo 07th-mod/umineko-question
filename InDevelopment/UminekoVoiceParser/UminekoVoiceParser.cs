@@ -217,7 +217,7 @@ namespace UminekoVoices
                     formattedLine = formattedLine.Trim('@'); //remove any leading or trailing @s
                     String[] sentences = formattedLine.Split('@');
 
-                    if (sentences[0].StartsWith("^^")) //Some japnese lines in the new script have an unnecessary ^^ at the start of the line, remove it
+                    if (sentences[0].StartsWith("^^")) //Some japanese lines in the new script have an unnecessary ^^ at the start of the line, remove it
                         sentences[0] = sentences[0].Substring(2);
 
                     foreach (String s in sentences)
