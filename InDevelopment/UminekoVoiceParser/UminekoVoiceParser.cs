@@ -195,6 +195,8 @@ namespace UminekoVoices
             System.IO.StreamWriter errorFile =
                 new System.IO.StreamWriter(writingErrorsPath, false, Encoding.UTF8);
 
+            Regex delayLine = new Regex(@"^\^\^![dw](\d+)(\^.*)$", RegexOptions.Compiled);
+
             List<String> usedTags = new List<String>();
             int lastVoiceLineNum = 0;
             ArrayList JapaneseSentences = new ArrayList();
@@ -239,6 +241,13 @@ namespace UminekoVoices
                         sb.Append("langen");
                         string[] stringSeparators = new string[] { "@" };
                         String[] sentences = formattedLine.Split(stringSeparators, StringSplitOptions.None);
+
+                        Match m = delayLine.Match(sentences[0]); //check if line has a delay like langen^^!d800
+                        if (m.Success && m.Groups.Count>1) {
+                            int delay = Int32.Parse(m.Groups[1].Value)*2; //double delay length because :delay is different from !d
+                            sb.Append(":delay " + delay.ToString());//replace the ^^!d800 command with :delay 1600
+                            sentences[0] = m.Groups[2].Value; 
+                        }
 
                         int i = 0;
                         foreach (String englishSentence in sentences)
