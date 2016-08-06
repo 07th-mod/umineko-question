@@ -94,15 +94,15 @@ with open(args.filename, "rb") as f:
 # modifies the arguments for widescreen mode, then returns the same string with modified arguments
 # big NOTE: sometimes, the setwindow function doesn't actually fill the whole screen. I think this is the bgm
 # demo scenes,so not at all important. See 'setWindowExample.txt' for a list.
-def modifySetWindowArguments(args : str):
+def modifySetWindowArguments(setWindowArguments : str):
     #want to center the text in the middle of the screen
-    desiredRealPixelOffset = (1920 - 1280)/2
+    desiredRealPixelOffset = (args.width - 1280)/2
 
     #original width of game was 1280, which corresponded to a width of 640 in the script
     #therefore scaling factor is 640/1280 to get from real pixel offset to script offset
     scriptOffset = int(desiredRealPixelOffset * 640 / 1280)
 
-    csv_array = args.split(',')
+    csv_array = setWindowArguments.split(',')
 
     #adjust "text top left x"
     csv_array[0] = str(int(csv_array[0]) + scriptOffset)
@@ -114,11 +114,12 @@ def modifySetWindowArguments(args : str):
     #adjust "window bottom left x" - need to add 1 so that covers central region completely (otherwise small strip is left uncovered)
     #csv_array[14] = str(int(csv_array[14]) + scriptOffset + 1)
     #edit: just make it take up the whole screen
-    csv_array[14] = str(int(1920 * 640 / 1280))
+    csv_array[14] = str(int(args.width * 640 / 1280))
 
     #adjust "window bottom left y" - I found that subtracting 1 makes a small border, so don't subtract 1.
     current_window_bottom_left_y = int(csv_array[15])
-    csv_array[15] = str(int((current_window_bottom_left_y+1) / 960 * 1080))
+    if args.height != 960:
+        csv_array[15] = str(int((current_window_bottom_left_y+1) / 960 * args.height))
     #csv_array[15] = str(int((current_window_bottom_left_y+1) / 960 * 1080 - 1))
 
     return ','.join(csv_array)
