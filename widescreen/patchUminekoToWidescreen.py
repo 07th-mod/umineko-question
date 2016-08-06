@@ -31,8 +31,8 @@ Please use --width and --height if you would like a custom aspect ratio.""")
 #read in height/width/filename from command line if provided
 parser = argparse.ArgumentParser(description='Patch Umineko to use a different resolution')
 parser.add_argument('--filename', default = "Umineko1to4.exe")
-parser.add_argument('--width', type=int, default = 1920)
-parser.add_argument('--height', type=int, default = 1080)
+parser.add_argument('--width', type=int, default = 1706)
+parser.add_argument('--height', type=int, default = 960)
 parser.add_argument('--script', default ='0.utf')
 parser.add_argument('--windows_line_endings', action='store_true')
 parser.add_argument('--debug', action='store_true') #enter debug mode if '-d' given
