@@ -94,7 +94,7 @@ with open(args.filename, "rb") as f:
 # modifies the arguments for widescreen mode, then returns the same string with modified arguments
 # big NOTE: sometimes, the setwindow function doesn't actually fill the whole screen. I think this is the bgm
 # demo scenes,so not at all important. See 'setWindowExample.txt' for a list.
-def modifySetWindowArguments(setWindowArguments : str):
+def modifySetWindowArguments(setWindowArguments):
     #want to center the text in the middle of the screen
     desiredRealPixelOffset = (args.width - 1280)/2
 
