@@ -56,7 +56,7 @@ We really appreciate your help!
 
 ## Credits
 
- * @DoctorDiablo
- * @drojf
- * @enumag
- * @Forteissimo
+ @DoctorDiablo
+ @drojf
+ @enumag
+ @Forteissimo
