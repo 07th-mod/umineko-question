@@ -41,12 +41,12 @@ Installation:
 
 > The patch is currently **PLAYABLE**
 
-[x] Voices
-[x] Sprites
-[x] Backgrounds
-[x] Effects
-[ ] CGs
-[ ] Menus
+- [x] Voices
+- [x] Sprites
+- [x] Backgrounds
+- [x] Effects
+- [ ] CGs
+- [ ] Menus
 
 ## Feedback and bug reports
 
