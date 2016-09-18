@@ -56,7 +56,7 @@ We really appreciate your help!
 
 ## Credits
 
- @DoctorDiablo
- @drojf
- @enumag
- @Forteissimo
+ * [DoctorDiablo](https://github.com/DoctorDiablo)
+ * [drojf](https://github.com/drojf)
+ * [enumag](https://github.com/enumag)
+ * [Forteissimo](https://github.com/Forteissimo)
