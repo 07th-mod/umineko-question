@@ -4,10 +4,15 @@ The default resolution has been set to 1706 x 960 (original game was 1280x960). 
 ## Widescreen patch instructions
 
 0) Apply any patches to the script you want first (eg voice patches, script fixes)
+
 1) Copy the python script into the directory containing the game .exe and 0.utf file
+
 2) Run the script (from command line, "py patchUminekoToWidescreen.py"). This will generate "widescreen-Umineko1to4.exe" and "widescreen-0.utf"
+
 3) Rename your old "0.utf" to something else, like "0.original.utf". Then rename the "widescreen-0.utf" to "0.utf" (you can _try_ to use the --script argument to the game .exe, but I found it didn't work sometimes)
+
 4) Copy in the "bmp" folder containing the resized effect images and resized backgrounds. no need to repack the .nsa, the game will prefer to load the files in folders and not the .nsa files. 
+
 5) Run the widescreen version of the .exe . The main menu is not fixed yet.
 
 ## Notes:
