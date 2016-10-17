@@ -459,22 +459,22 @@ garden\rose_1dp.bmp, rose_1ep.png, , ,99.8046875
 garden\rose_1e.bmp, rose_1ef.png, , ,99.70703125
 garden\rose_1en.bmp, rose_1en2.png, , ,99.21875
 garden\rose_1ep.bmp, rose_1ep.png, , ,99.8046875
-garden\rose_2a.bmp, Special Case,use_alternate, rose_2an.png,0
+garden\rose_2a.bmp, Special Case,not_used, rose_2an.png,0
 garden\rose_2an.bmp, rose_2an.png, , ,99.8046875
 garden\rose_2ap.bmp, rose_2ap.png, , ,99.4140625
-garden\rose_2b.bmp, Special Case,use_alternate, rose_2bn.png,0
+garden\rose_2b.bmp, Special Case,not_used, rose_2bn.png,0
 garden\rose_2bn.bmp, rose_2bn.png, , ,99.8046875
 garden\rose_2bp.bmp, rose_2bp.png, , ,100
-garden\rose_2c.bmp, Special Case,use_alternate, rose_1cf.png,0
+garden\rose_2c.bmp, Special Case,not_used, rose_1cf.png,0
 garden\rose_2cn.bmp, rose_2an.png, , ,99.8046875
 garden\rose_2cp.bmp, rose_2ap.png, , ,99.4140625
-garden\rose_3a.bmp, Special Case, use_alternate, rose_3an.png,0
+garden\rose_3a.bmp, Special Case,not_used, rose_3an.png,0
 garden\rose_3an.bmp, rose_3an.png, , ,100
 garden\rose_3ap.bmp, rose_3ap.png, , ,99.8046875
-garden\rose_3b.bmp, Special Case, use_alternate, rose_3an.png,0
+garden\rose_3b.bmp, Special Case,not_used, rose_3an.png,0
 garden\rose_3bn.bmp, rose_3an.png, , ,100
 garden\rose_3bp.bmp, rose_3ap.png, , ,99.8046875
-garden\rose_3c.bmp, Special Case, use_alternate, rose_3an.png,0
+garden\rose_3c.bmp, Special Case,not_used, rose_3an.png,0
 garden\rose_3cn.bmp, rose_3an.png, , ,100
 garden\rose_3cp.bmp, rose_3ap.png, , ,99.8046875
 garden\rose_g1a.bmp, rose_g1af.png, , ,99.609375
