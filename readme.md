@@ -1,15 +1,19 @@
 # Umineko no Naku Koro ni (Question Arcs) - PS3 Voice and graphics patch
 
 This patch aims to modify the newest release of Umineko by MangaGamer, changing its assets to replicate the PS3 version of the game.
-It is compatible with the Steam version ***and*** the MangaGamer DRM-free download.
+It is compatible with the Steam version ***and*** the MangaGamer DRM-free download. See the roadmap below for current patch status.
 
-The patch is currently playable, but some features are still missing. Check [Umineko Project](https://umineko-project.org/en/) if you want to play a complete conversion of the game.
+## Latest Release
 
-## Releases
+The release page contains installation instructions and patch files.
 
-**https://github.com/07th-mod/umineko-question/releases**
+**https://github.com/07th-mod/umineko-question/releases/latest**
 
-The release page contains installation instructions and necessary files. Please check/comment in the ['issues'](https://github.com/07th-mod/umineko-question/issues) section (including closed issues) if you think a release should fix a bug, but it does not.
+## Feedback and bug reports
+
+The patch is now fully released, however we still didn't kill all the bugs. If you find anything, first check if the bug has already been reported. If you've found a new bug, open a new issue and please include as much information as you can in the ['Issues'](https://github.com/07th-mod/umineko-question/issues) section. The [Wiki](https://github.com/07th-mod/umineko-question/wiki) also contains some bug information.
+
+We really appreciate your help!
 
 ## Screenshots
 
@@ -18,28 +22,16 @@ The release page contains installation instructions and necessary files. Please 
 ![](https://i.mugi.io/SYfwa.jpg)
 ![](https://i.mugi.io/Uj7Ig.jpg)
 
-## Known issues
-
- * Graphics are fixed at 1707x960. There are a few ways of getting true 1080p, however we do not support these methods
- * Some effects and menus might not be working correctly (will be fixed later)
- * [Github Issues Page](https://github.com/07th-mod/umineko-question/issues)
-
 ## Roadmap
 
-> The patch is currently **PLAYABLE**
+The patch is currently **PLAYABLE**
 
 - [x] Voices
 - [x] Sprites
 - [x] Backgrounds
 - [x] Effects
-- [ ] CGs
+- [x] CGs
 - [ ] Menus
-
-## Feedback and bug reports
-
-The patch is now fully released, however we still didn't kill all the bugs. If you find anything, open a new issue and please include as much information as you can.
-
-We really appreciate your help!
 
 ## Credits
 
@@ -47,3 +39,6 @@ We really appreciate your help!
  * [drojf](https://github.com/drojf)
  * [enumag](https://github.com/enumag)
  * [Forteissimo](https://github.com/Forteissimo)
+ * [ReitoKanzaki](https://github.com/ReitoKanzaki)
+
+There is another 'Umineko Modification' project which has a different set of goals, see [Umineko Project](https://umineko-project.org/en/) if you are interested in that.
