@@ -1,4 +1,5 @@
-# Umineko no Naku Koro ni (Question Arcs) - PS3 Voice and graphics patch
+# Umineko no Naku Koro ni (Question Arcs) 
+## PS3 Voice and graphics patch
 
 This patch aims to modify the newest release of Umineko by MangaGamer, changing its assets to replicate the PS3 version of the game.
 It is compatible with the Steam version ***and*** the MangaGamer DRM-free download. See the roadmap below for current patch status.
@@ -23,14 +24,14 @@ We really appreciate your help!
 
 ## Roadmap
 
-The patch is currently **PLAYABLE**
+The patch is currently **FINISHED**
 
 - [x] Voices
 - [x] Sprites
 - [x] Backgrounds
 - [x] Effects
 - [x] CGs
-- [ ] Menus
+- [x] Menus
 
 ## Credits
 
