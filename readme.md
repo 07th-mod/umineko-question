@@ -3,11 +3,10 @@
 This patch aims to modify the newest release of Umineko by MangaGamer, changing its assets to replicate the PS3 version of the game.
 It is compatible with the Steam version ***and*** the MangaGamer DRM-free download. See the roadmap below for current patch status.
 
-## Latest Release
+## Installation
 
-The release page contains installation instructions and patch files.
-
-**https://github.com/07th-mod/umineko-question/releases/latest**
+#### [Automatic installer (Windows only)](https://github.com/07th-mod/umineko-question/releases/latest)
+#### [Manual installation (all platforms)](https://github.com/07th-mod/umineko-question/releases/latest)
 
 ## Feedback and bug reports
 
