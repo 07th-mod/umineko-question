@@ -5,7 +5,7 @@ It is compatible with the Steam version ***and*** the MangaGamer DRM-free downlo
 
 ## Installation
 
-#### [Automatic installer (Windows only)](https://github.com/07th-mod/umineko-question/releases/latest)
+#### [Automatic installer (Windows only)](https://github.com/07th-mod/umineko-question/releases/tag/installer)
 #### [Manual installation (all platforms)](https://github.com/07th-mod/umineko-question/releases/latest)
 
 ## Feedback and bug reports
