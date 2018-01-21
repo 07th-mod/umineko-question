@@ -6,8 +6,7 @@ It is compatible with the Steam version ***and*** the MangaGamer DRM-free downlo
 
 ## Installation
 
-#### [Automatic installer (Windows only)](https://github.com/07th-mod/guide/wiki/Umineko-Part-1---Voice-and-Graphics-Patch#installer-windows-only)
-#### [Manual installation (all platforms)](https://github.com/07th-mod/umineko-question/releases/latest)
+[Check the wiki](https://github.com/07th-mod/guide/wiki/Umineko-Getting-started) for the instructions on how to install the patch manually or using the automatic installer.
 
 ## Feedback and bug reports
 
