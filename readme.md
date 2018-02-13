@@ -10,6 +10,8 @@ It is compatible with the Steam version ***and*** the MangaGamer DRM-free downlo
 
 ## Feedback and bug reports
 
+We now have a discord server: https://discord.gg/acSbBtD . If you have a formal issue to report, please still raise a gihub issue as it helps us keep track of issues. For small problems/questions however you can just ask on discord.
+
 The patch is now fully released, however we still didn't kill all the bugs. If you find anything, first check if the bug has already been reported. If you've found a new bug, open a new issue and please include as much information as you can in the ['Issues'](https://github.com/07th-mod/umineko-question/issues) section. The [Wiki](https://github.com/07th-mod/umineko-question/wiki) also contains some bug information.
 
 We really appreciate your help!
