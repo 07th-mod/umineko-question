@@ -1,8 +1,13 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace QuestionArcsADVMode
 {
-    class CharacterCountInserter
+    internal class CharacterCountInserter
     {
         public static readonly Regex langEnAtStartOfLine = new Regex(@"^\s*langen", RegexOptions.IgnoreCase);
         public LineParser lp;
@@ -18,24 +23,38 @@ namespace QuestionArcsADVMode
         {
             //skip any non 'langen' lines
             if (!langEnAtStartOfLine.IsMatch(line))
+            {
                 return;
+            }
 
             System.Console.WriteLine(line);
 
             //iterate through all the tokens in the line
             lp.LoadLine(line);
-            foreach (NamedMatch token in lp.iter())
+            foreach (Token token in lp.Iter())
             {
                 HandleToken(token);
             }
         }
 
 
-        public void HandleToken(NamedMatch token)
+        public void HandleToken(Token token)
         {
-            if (token.Type == MatchType.text)
+            switch (token)
             {
-                characterCounter.AddPhrase(token.Match.Value);
+                case TextToken textToken:
+                    characterCounter.AddPhrase(token.RawString);
+                    break;
+
+                case GenericToken genericToken:
+                    Console.WriteLine($"Got generic token {token.RawString}");
+                    break;
+
+                default:
+                    throw new NotImplementedException();
+
+                case null:
+                    throw new ArgumentNullException();
             }
         }
     }

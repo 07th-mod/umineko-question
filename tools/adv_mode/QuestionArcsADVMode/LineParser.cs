@@ -1,12 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace QuestionArcsADVMode
 {
     //parases a line, tries to detects phrases and insert line counts
     public class LineParser
     {
+        public enum MatchType
+        {
+            langen,
+            colon,
+            dwaveAlias,
+            dwavePath,
+            voiceDelayOrWait,
+            text,
+            endOfLine,
+            textSpeed,
+            waitOrDelay,
+            disableNewLine,
+            changeColor,
+            comment,
+            whitespace,
+        }
+
         public class NamedRegex : Regex
         {
             public MatchType Type { get; }
@@ -17,13 +37,14 @@ namespace QuestionArcsADVMode
             }
         }
 
-        int cursorLocation = 0;
-        string line = null;
+        private int cursorLocation = 0;
+        private string line = null;
 
         private readonly List<NamedRegex> PossibleMatches;
 
         public LineParser()
         {
+            //NOTE: use https://regex101.com/ for testing/debugging these regexes (or rewrite using another type of pattern matching library)
             PossibleMatches = new List<NamedRegex>()
             {
                 //matches the   [langen] command
@@ -37,7 +58,7 @@ namespace QuestionArcsADVMode
                 //matches       [dwave 0, hid_1e139]
                 new NamedRegex(MatchType.voiceDelayOrWait, @"\G((voicedelay)|(voicewait)) \d+", RegexOptions.IgnoreCase),
                 //matches text, [^  And this isn't some small amount we're talkin's about.^@]
-                new NamedRegex(MatchType.text,             @"\G\^.*?(@|\\(\x10)?\s*|(/\s*$)|$)", RegexOptions.IgnoreCase),
+                new NamedRegex(MatchType.text,             @"(\^.*?)(@|\\\x10?\s*|\/\s*$|$)", RegexOptions.IgnoreCase), //@"\G\^.*?(@|\\(\x10)?\s*|(/\s*$)|$)", RegexOptions.IgnoreCase),
                 //matches the text-enders (sometimes there are text enders without a text start
                 new NamedRegex(MatchType.endOfLine,        @"\G(@|\\)", RegexOptions.IgnoreCase),
                 //matches !sd or !s0,!s100 etc.
@@ -61,7 +82,7 @@ namespace QuestionArcsADVMode
             cursorLocation = 0;
         }
 
-        public IEnumerable<NamedMatch> iter()
+        public IEnumerable<Token> Iter()
         {
             PhraseCharacterCounter characterCounter = new PhraseCharacterCounter();
 
@@ -74,7 +95,22 @@ namespace QuestionArcsADVMode
                     Match match = r.Match(line, cursorLocation);
                     if (match.Success)
                     {
-                        yield return new NamedMatch(r.Type, match);
+                        //Convert match objects to Token classes
+                        switch (r.Type)
+                        {
+                            case MatchType.text:
+                                yield return new TextToken(match.Groups[1].Value);
+                                if (match.Groups[1].Value.Trim().Length != 0)
+                                {
+                                    yield return new GenericToken(match.Groups[2].Value);
+                                }
+
+                                break;
+
+                            default:
+                                yield return new GenericToken(match.Value);
+                                break;
+                        }
 
                         //advance the cursor to the end of the match if match
                         cursorLocation = match.Index + match.Length;
