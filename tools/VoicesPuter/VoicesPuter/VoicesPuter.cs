@@ -102,7 +102,12 @@ namespace VoicesPuter
                 }
                 else
                 {
-                    if (tempJapaneseLines.Count > 0)
+                    if (tempJapaneseLines.Count <= 0)
+                    {
+                        // Put line that is not English line and Japanese line.
+                        newAllOfLines.Add(currentLine);
+                    }
+                    else
                     {
                         if (tempJapaneseLines.Count != tempEnglishLines.Count)
                         {
@@ -125,9 +130,9 @@ namespace VoicesPuter
                                 convertedVoiceScriptsToEnglish.Add(ChangeToVoiceScriptFunctionNameOfEnglish(tempEnglishLines[japaneseLinesIndex]));
                             }
                         }
+                        tempJapaneseLines.Clear();
+                        tempEnglishLines.Clear();
                     }
-                    tempJapaneseLines.Clear();
-                    tempEnglishLines.Clear();
                 }
             }
 
