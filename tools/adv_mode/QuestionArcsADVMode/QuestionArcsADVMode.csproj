@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Debug.cs" />
     <Compile Include="LineParser.cs" />
     <Compile Include="PhraseCharacterCounter.cs" />
     <Compile Include="Program.cs" />

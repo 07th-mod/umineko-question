@@ -107,6 +107,10 @@ namespace QuestionArcsADVMode
 
                                 break;
 
+                            case MatchType.colon:
+                                yield return new ColonToken(match.Value);
+                                break;
+
                             default:
                                 yield return new GenericToken(match.Value);
                                 break;

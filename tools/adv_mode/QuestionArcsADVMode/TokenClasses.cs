@@ -29,4 +29,11 @@ namespace QuestionArcsADVMode
         {
         }
     }
+
+    public class ColonToken : Token
+    {
+        public ColonToken(string text) : base(text)
+        {
+        }
+    }
 }
