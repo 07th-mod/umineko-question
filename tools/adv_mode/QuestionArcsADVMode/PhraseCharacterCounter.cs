@@ -13,7 +13,7 @@ namespace QuestionArcsADVMode
         {
         }
 
-        public int GetCharacterCount(string phrase)
+        public static int GetCharacterCount(string phrase)
         {
             return phrase.Length;
         }

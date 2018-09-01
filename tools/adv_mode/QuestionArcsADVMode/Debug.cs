@@ -17,5 +17,11 @@ namespace QuestionArcsADVMode
                 Console.WriteLine(s);
             }
         }
+
+        public static string OnDebug(string s)
+        {
+            return enabled ? s : String.Empty;
+
+        }
     }
 }
