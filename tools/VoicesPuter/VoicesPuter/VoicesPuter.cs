@@ -56,7 +56,25 @@ namespace VoicesPuter
         /// <summary>
         /// 
         /// </summary>
-        private const string REGEX_OF_VOICE_SCRIPT = BEGINNING_OF_VOICE_SCRIPT + @"[\w\W]*:";
+        private const string REGEX_OF_VOICE_SCRIPT = BEGINNING_OF_VOICE_SCRIPT + @"[^:]*:";
+        #endregion
+
+        #region REGEX_OF_VOICE_SCRIPT
+        /// <summary>
+        /// 
+        /// </summary>
+        private enum TypeOfLanguage
+        {
+            /// <summary>
+            /// 
+            /// </summary>
+            ENGLISH,
+
+            /// <summary>
+            /// 
+            /// </summary>
+            JAPANESE,
+        }
         #endregion
         #endregion
 
@@ -72,6 +90,7 @@ namespace VoicesPuter
             List<string> newAllOfLines = new List<string>();
 
             // Make new all of lines from original all of lines while putting voice scripts into Japanese line and changing to voice script's function name of English and Japan.
+            List<TypeOfLanguage> orderOfAddedTypeOfLanguage = new List<TypeOfLanguage>();
             List<string> tempJapaneseLines = new List<string>();
             List<string> tempEnglishLines = new List<string>();
             foreach (string currentLine in allOfLines)
@@ -84,6 +103,7 @@ namespace VoicesPuter
                 if (currentLine.Contains(JAPANESE_LINE_IDENTIFIER))
                 {
                     tempJapaneseLines.Add(currentLine);
+                    orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.JAPANESE);
                 }
                 else if (currentLine.Contains(ENGLISH_LINE_IDENTIFIER))
                 {
@@ -95,41 +115,52 @@ namespace VoicesPuter
                     else
                     {
                         tempEnglishLines.Add(currentLine);
+                        orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.ENGLISH);
                     }
                 }
                 else
                 {
-                    if (tempJapaneseLines.Count <= 0)
+                    if (tempJapaneseLines.Count != tempEnglishLines.Count)
                     {
-                        // Put line that is not English line and Japanese line.
-                        newAllOfLines.Add(currentLine);
+                        // TODO Have to log about current both line is not same.
+                        int countOfEnglish = 0;
+                        int countOfJapanese = 0;
+                        foreach (TypeOfLanguage typeOfLanguage in orderOfAddedTypeOfLanguage)
+                        {
+                            switch (typeOfLanguage)
+                            {
+                                case TypeOfLanguage.ENGLISH:
+                                    newAllOfLines.Add(ChangeToVoiceScriptFunctionNameOfEnglish(tempEnglishLines[countOfEnglish]));
+                                    countOfEnglish++;
+                                    break;
+
+                                case TypeOfLanguage.JAPANESE:
+                                    newAllOfLines.Add(tempJapaneseLines[countOfJapanese]);
+                                    countOfJapanese++;
+                                    break;
+                            }
+                        }
                     }
                     else
                     {
-                        if (tempJapaneseLines.Count != tempEnglishLines.Count)
+                        // Put voice scripts into Japanese line and change to voice script's function name of English and Japan.
+                        List<string> convertedVoiceScriptsToJapanese = new List<string>();
+                        List<string> convertedVoiceScriptsToEnglish = new List<string>();
+                        for (int japaneseLinesIndex = 0; japaneseLinesIndex < tempJapaneseLines.Count; japaneseLinesIndex++)
                         {
-                            // TODO Have to log about current both line is not same.
-                            newAllOfLines.AddRange(tempJapaneseLines);
-                            foreach (string englishLine in tempEnglishLines)
-                            {
-                                newAllOfLines.Add(ChangeToVoiceScriptFunctionNameOfEnglish(englishLine));
-                            }
+                            string insertedVoiceScriptsJapaneseLine = GetInsertedVoiceScroptsFromEnglishIntoJapanese(tempEnglishLines[japaneseLinesIndex], tempJapaneseLines[japaneseLinesIndex]);
+                            convertedVoiceScriptsToJapanese.Add(ChangeToVoiceScriptFunctionNameOfJapan(insertedVoiceScriptsJapaneseLine));
+                            convertedVoiceScriptsToEnglish.Add(ChangeToVoiceScriptFunctionNameOfEnglish(tempEnglishLines[japaneseLinesIndex]));
                         }
-                        else
-                        {
-                            // Put voice scripts into Japanese line and change to voice script's function name of English and Japan.
-                            List<string> convertedVoiceScriptsToJapanese = new List<string>();
-                            List<string> convertedVoiceScriptsToEnglish = new List<string>();
-                            for (int japaneseLinesIndex = 0; japaneseLinesIndex < tempJapaneseLines.Count; japaneseLinesIndex++)
-                            {
-                                string insertedVoiceScriptsJapaneseLine = GetInsertedVoiceScroptsFromEnglishIntoJapanese(tempEnglishLines[japaneseLinesIndex], tempJapaneseLines[japaneseLinesIndex]);
-                                convertedVoiceScriptsToJapanese.Add(ChangeToVoiceScriptFunctionNameOfJapan(insertedVoiceScriptsJapaneseLine));
-                                convertedVoiceScriptsToEnglish.Add(ChangeToVoiceScriptFunctionNameOfEnglish(tempEnglishLines[japaneseLinesIndex]));
-                            }
-                        }
-                        tempJapaneseLines.Clear();
-                        tempEnglishLines.Clear();
+                        newAllOfLines.AddRange(convertedVoiceScriptsToJapanese);
+                        newAllOfLines.AddRange(convertedVoiceScriptsToEnglish);
                     }
+                    orderOfAddedTypeOfLanguage.Clear();
+                    tempJapaneseLines.Clear();
+                    tempEnglishLines.Clear();
+
+                    // Put line that is not English line and Japanese line.
+                    newAllOfLines.Add(currentLine);
                 }
             }
 
@@ -171,16 +202,34 @@ namespace VoicesPuter
                 int countOfVoiceScript = 0;
                 for (int englishLineIndex = 0; englishLineIndex < splitEnglishLine.Length; englishLineIndex++)
                 {
-                    if (englishLineIndex > 0) insertedJapaneseLine += $"{insertedJapaneseLine}@";
+                    if (englishLineIndex > 0 && !string.IsNullOrEmpty(splitJapaneseLine[englishLineIndex])) insertedJapaneseLine += "@";
                     if (splitEnglishLine[englishLineIndex].Contains(BEGINNING_OF_VOICE_SCRIPT))
                     {
-                        insertedJapaneseLine += $"{voiceScripts[countOfVoiceScript]}{splitJapaneseLine[englishLineIndex]}";
-                        countOfVoiceScript++;
+                        if (splitJapaneseLine[englishLineIndex].StartsWith(JAPANESE_LINE_IDENTIFIER))
+                        {
+                            insertedJapaneseLine = splitJapaneseLine[englishLineIndex].Replace(JAPANESE_LINE_IDENTIFIER, $"{JAPANESE_LINE_IDENTIFIER}{voiceScripts[countOfVoiceScript]}");
+                            countOfVoiceScript++;
+                        }
+                        else
+                        {
+                            insertedJapaneseLine += $"{voiceScripts[countOfVoiceScript]}{splitJapaneseLine[englishLineIndex]}";
+                            countOfVoiceScript++;
+                        }
+                    }
+                    else
+                    {
+                        insertedJapaneseLine += splitJapaneseLine[englishLineIndex];
                     }
                 }
 
+                // If count of voice scripts and count of used it don't match, log about it.
+                if (countOfVoiceScript != voiceScripts.Count)
+                {
+                    // TODO Have to log about count of voice scripts and count of used it don't match, log about it.
+                }
+
                 // If japanese line has at sign in the end of line, add at sign because of split line with at sign.
-                Regex hasAtSignInEndOfLineRegex = new Regex(@"[\w\W]*@");
+                Regex hasAtSignInEndOfLineRegex = new Regex(@"[\w\W]*@$");
                 if (hasAtSignInEndOfLineRegex.IsMatch(japaneseLine)) insertedJapaneseLine += "@";
             }
             if (string.IsNullOrEmpty(insertedJapaneseLine))

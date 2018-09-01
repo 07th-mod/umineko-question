@@ -72,7 +72,7 @@ namespace VoicesPuter
         public void MakeChangedGameScript(List<string> changedGameScriptLines)
         {
             // If output directory does not exsit, make the directory.
-            string outputDirectoryPath = Path.Combine(new string[] { GameScriptPath, CHANGED_SCRIPT_OUTPUT_DIRECTORY_NAME, });
+            string outputDirectoryPath = Path.Combine(new string[] { Path.GetDirectoryName(GameScriptPath), CHANGED_SCRIPT_OUTPUT_DIRECTORY_NAME, });
             if (!Directory.Exists(outputDirectoryPath))
             {
                 Directory.CreateDirectory(outputDirectoryPath);
@@ -84,7 +84,7 @@ namespace VoicesPuter
             {
                 foreach (string currentLine in changedGameScriptLines)
                 {
-                    gameScriptWriter.Write(currentLine);
+                    gameScriptWriter.WriteLine(currentLine);
                 }
             }
         }
