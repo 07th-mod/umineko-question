@@ -60,7 +60,7 @@ namespace VoicesPuter
         #endregion
         #endregion
 
-        #region Mthods
+        #region Methods
         #region PutVoiceScriptsIntoLines
         /// <summary>
         /// 
@@ -136,7 +136,7 @@ namespace VoicesPuter
             // If counts of new all lines and original ones don't match, notice error.
             if (newAllOfLines.Count != allOfLines.Count)
             {
-                throw new UnmatchedNewLinesWithOldLines("Unmatch changed count of new all of lines and count of original ones.");
+                throw new UnmatchedNewLinesWithOriginalLinesException("Unmatch changed count of new all of lines and count of original ones.");
             }
             return newAllOfLines;
         }
@@ -172,7 +172,7 @@ namespace VoicesPuter
                 for (int englishLineIndex = 0; englishLineIndex < splitEnglishLine.Length; englishLineIndex++)
                 {
                     if (englishLineIndex > 0) insertedJapaneseLine += $"{insertedJapaneseLine}@";
-                    if (splitEnglishLine[englishLineIndex].Contains(":dwave"))
+                    if (splitEnglishLine[englishLineIndex].Contains(BEGINNING_OF_VOICE_SCRIPT))
                     {
                         insertedJapaneseLine += $"{voiceScripts[countOfVoiceScript]}{splitJapaneseLine[englishLineIndex]}";
                         countOfVoiceScript++;
@@ -242,14 +242,14 @@ namespace VoicesPuter
     /// <summary>
     /// 
     /// </summary>
-    public class UnmatchedNewLinesWithOldLines : InvalidOperationException
+    public class UnmatchedNewLinesWithOriginalLinesException : InvalidOperationException
     {
         #region Constructors
         /// <summary>
         /// 
         /// </summary>
         /// <param name="message"></param>
-        public UnmatchedNewLinesWithOldLines(string message) : base(message) { }
+        public UnmatchedNewLinesWithOriginalLinesException(string message) : base(message) { }
         #endregion
     }
 }
