@@ -138,6 +138,8 @@ namespace VoicesPuter
                 // TODO Have to log about the error.
                 throw notSupportedProblem;
             }
+            Console.WriteLine("Completed putting voice scripts into Japanese lines.");
+            Console.ReadKey();
         }
         #endregion
         #endregion
