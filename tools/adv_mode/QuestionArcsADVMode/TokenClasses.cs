@@ -8,7 +8,7 @@ namespace QuestionArcsADVMode
 {
     public class Token
     {
-        public string RawString { get; }
+        public string RawString { get; set; }
 
         public Token(string text)
         {
@@ -28,6 +28,11 @@ namespace QuestionArcsADVMode
         public TextToken(string text) : base(text)
         {
             count = PhraseCharacterCounter.GetCharacterCount(text);
+        }
+
+        public string GetTextWithoutHats()
+        {
+            return RawString.Trim(new char[] {'^'});
         }
     }
 
@@ -75,14 +80,16 @@ namespace QuestionArcsADVMode
     public class ClickWait : WaitToken
     {
         public bool? isLastClickWaitOnLine; //assigned externally
+        public string leadingWhiteSpace;
 
         public ClickWait(string text) : base(text)
         {
+            leadingWhiteSpace = string.Empty;
         }
 
         public override string ToString()
         {
-            return $"/\nadv_click_wait {textAfterClick}, {(isLastClickWaitOnLine.Value ? 1 : 0)}:";
+            return $"/\nadv_click_wait {textAfterClick}, {(isLastClickWaitOnLine.Value ? 1 : 0)}, \"{leadingWhiteSpace}\":";
         }
     }
 

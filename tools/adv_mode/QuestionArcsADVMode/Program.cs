@@ -9,6 +9,7 @@ namespace QuestionArcsADVMode
     internal class CharacterCountInserter
     {
         public static readonly Regex multipleColonsRegex = new Regex(@":+");
+        public static readonly Regex whitespaceFrontRegex = new Regex(@"^(\s*)(.*?$)");
 
         public bool gotPageWaitBeforeLastText;
 
@@ -87,63 +88,47 @@ namespace QuestionArcsADVMode
             }
         }
 
-        //This function takes as input the last two tokens, and outputs a string
-        //The returned string is intended to be used to make up the new, modified line
-        private string HandleToken(Token token, Token lastToken, bool currentLineHasNewLine)
+        //the game script sometimes has spaces at the start of a text phrase (^   this is an example)
+        //If we do a pagebreak before this text phrase, it can cause misaligned text like:
+        //
+        //This is line one
+        //   then line two
+        //  then line three
+        //
+        //store leading spaces in clickwait type command
+        //NOTE: pagewaits don't need to store leading spaces, since spaces would look dumb after a pagewait
+        //NOTE: this function also inserts DLE everywhere. should refactor so that the ^ and DLE insertion is done somewhere else.
+        public static void StoreLeadingSpacesInClickwaitAndInsertDLE(List<Token> allTokens)
         {
-            switch (token)
+            string lastTextTokensWhitespace = String.Empty;
+
+            for (int i = allTokens.Count - 1; i >= 0; i--)
             {
-                case TextToken textToken:
-                    int count = PhraseCharacterCounter.GetCharacterCount(token.RawString);
-                    Debug.Print($"Phrase [{token.RawString}] is {count} chars long");
-                    //only add a colon if the last token wasn't a colon (should make this work more generically later)
+                Token tokenAnyType = allTokens[i];
 
-                    //if there was a page wait, indicate to script a page wait occured.
-                    string pageWaitIndicator = gotPageWaitBeforeLastText ? "char_count_clear:" : String.Empty;
-                    gotPageWaitBeforeLastText = false;
+                switch(tokenAnyType)
+                {
+                    case TextToken textToken:
+                        //this regex should always match.
+                        Match match = whitespaceFrontRegex.Match(textToken.GetTextWithoutHats());
 
-                    string colonAtStartOfLine = lastToken is ColonToken ? string.Empty : ":";
+                        //Update the token's text by removing the front whitespace
+                        lastTextTokensWhitespace = match.Groups[1].Value;
+                        textToken.RawString = $"^\x10{match.Groups[2].Value}^"; //Note: this might result in double DLE sometimes TODO: remove double DLE
+                        break;
 
-                    return $"{colonAtStartOfLine}{pageWaitIndicator}char_count {count}:{token.RawString}";
-                    break;
-
-                case GenericToken genericToken:
-                    Debug.Print($"Got generic token {token.RawString}");
-                    return token.RawString;
-                    break;
-
-                case ColonToken colonToken:
-                    return token.RawString;
-                    break;
-
-                case PageWait pageWaitToken:
-                    gotPageWaitBeforeLastText = true;
-                    return "/\nadv_page_wait:"; //token.RawString + Debug.OnDebug("PWAIT");
-                    break;
-
-                case ClickWait clickWaitToken:
-                    return $"/\nadv_click_wait {(clickWaitToken.isLastClickWaitOnLine.Value && currentLineHasNewLine ? 1 : 0)}:";//clickWaitToken.RawString + Debug.OnDebug("CWAIT");
-                    break;
-
-                case NewLineToken newLineToken:
-                    //for now, newlines are handled as special cases, so return empty string
-                    return String.Empty;
-                    break;
-
-                case DisableNewLine disableNewLineToken:
-                    return disableNewLineToken.RawString + Debug.OnDebug("DISNL");
-                    break;
-
-                default:
-                    throw new NotImplementedException();
-
-                case null:
-                    throw new ArgumentNullException();
+                    case ClickWait clickWait:
+                        clickWait.leadingWhiteSpace = lastTextTokensWhitespace;
+                        lastTextTokensWhitespace = String.Empty;
+                        break;
+                }
             }
         }
     }
 
-    //TODO: need to fix all text by moving spaces at the start of a text line to the end of the previous text line!
+    //TODO: exclude regions near start of script and end of script where text shouldn't be modified
+    //TODO: instead of using above space reordering, add another command/argument which says "emit 2 spaces" at the correct locations in the script
+    //then the script can decide whether to emit the spaces or not. Could just be a string argument containing the number of spaces (that is definitely easiest).
     internal class Program
     {
         private static void Main(string[] args)
@@ -180,8 +165,10 @@ namespace QuestionArcsADVMode
                 //preprocess by line, reverse order to set the amount of text each clickwait
                 CharacterCountInserter.MarkCharacterCountOnClickOrPageWaits(allTokens);
 
+                CharacterCountInserter.StoreLeadingSpacesInClickwaitAndInsertDLE(allTokens);
+
                 //write out all tokens
-                foreach(Token t in allTokens)
+                foreach (Token t in allTokens)
                 {
                     outputFile.Write(t.ToString());
                 }
