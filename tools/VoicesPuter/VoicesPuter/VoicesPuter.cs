@@ -107,38 +107,34 @@ namespace VoicesPuter
                 // If there are lines that exist between Japanese lines and English ones, retain lines as other statement, then it would add between Japanese and English ones.
                 // If counts of both lines are not mutch, don't put voice scripts into Japanese line and just add Japanese lines to new all of lines and add English line to it after changing to voice script's function name of English.
                 // If it is not able to search Japanese lines and it found English lines, add English line after changing to voice script's function name of English.
-                if (currentLine.Contains(JAPANESE_LINE_IDENTIFIER))
-                {
-                    tempJapaneseLines.Add(currentLine);
-                    orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.JAPANESE);
-                }
-                else if (currentLine.Contains(ENGLISH_LINE_IDENTIFIER))
+                if (currentLine.Contains(ENGLISH_LINE_IDENTIFIER))
                 {
                     if (tempJapaneseLines.Count <= 0)
                     {
                         // TODO Have to log about coming here without having japanese line.
                         newAllOfLines.Add(ChangeToVoiceScriptFunctionNameOfEnglish(currentLine));
+                        continue;
                     }
                     else
                     {
                         tempEnglishLines.Add(currentLine);
                         orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.ENGLISH);
+                        continue;
                     }
                 }
-                else if (tempJapaneseLines.Count > 0 && tempEnglishLines.Count <= 0)
+                else if (tempJapaneseLines.Count > 0)
                 {
-                    tempOtherStatementLines.Add(currentLine);
-                    orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.OTHER_STATEMENTS);
-                }
-                else
-                {
-                    if (tempJapaneseLines.Count != tempEnglishLines.Count)
+                    bool shouldClearRetainedLines = false;
+                    if (tempEnglishLines.Count <= 0)
                     {
-                        // TODO Have to log about current both line is not same.
-                        List<string> orderedLines = GetOrderedLines(orderOfAddedTypeOfLanguage, tempEnglishLines, tempJapaneseLines, tempOtherStatementLines);
-                        newAllOfLines.AddRange(orderedLines);
+                        if (!currentLine.Contains(JAPANESE_LINE_IDENTIFIER))
+                        {
+                            tempOtherStatementLines.Add(currentLine);
+                            orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.OTHER_STATEMENTS);
+                            continue;
+                        }
                     }
-                    else
+                    else if (tempJapaneseLines.Count == tempEnglishLines.Count)
                     {
                         // Put voice scripts into Japanese line and change to voice script's function name of English and Japan.
                         List<string> convertedVoiceScriptsToJapanese = new List<string>();
@@ -151,15 +147,36 @@ namespace VoicesPuter
                         }
                         List<string> orderedLines = GetOrderedLines(orderOfAddedTypeOfLanguage, convertedVoiceScriptsToEnglish, convertedVoiceScriptsToJapanese, tempOtherStatementLines, false);
                         newAllOfLines.AddRange(orderedLines);
+                        shouldClearRetainedLines = true;
                     }
-                    orderOfAddedTypeOfLanguage.Clear();
-                    tempJapaneseLines.Clear();
-                    tempEnglishLines.Clear();
-                    tempOtherStatementLines.Clear();
+                    else
+                    {
+                        // TODO Have to log about current both line is not same.
+                        List<string> orderedLines = GetOrderedLines(orderOfAddedTypeOfLanguage, tempEnglishLines, tempJapaneseLines, tempOtherStatementLines);
+                        newAllOfLines.AddRange(orderedLines);
+                        shouldClearRetainedLines = true;
+                    }
 
-                    // Put line that is not English line and Japanese line.
-                    newAllOfLines.Add(currentLine);
+                    // If each line are added, clear them.
+                    if (shouldClearRetainedLines)
+                    {
+                        orderOfAddedTypeOfLanguage.Clear();
+                        tempJapaneseLines.Clear();
+                        tempEnglishLines.Clear();
+                        tempOtherStatementLines.Clear();
+                    }
                 }
+
+                // Japanese line is added here because chunk of Japanese and English line should be added one by one.
+                if (currentLine.Contains(JAPANESE_LINE_IDENTIFIER))
+                {
+                    tempJapaneseLines.Add(currentLine);
+                    orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.JAPANESE);
+                    continue;
+                }
+
+                // Put line that is not English line and Japanese line.
+                newAllOfLines.Add(currentLine);
             }
 
             // If counts of new all lines and original ones don't match, notice error.
