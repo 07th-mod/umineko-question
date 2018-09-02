@@ -74,6 +74,11 @@ namespace VoicesPuter
             /// 
             /// </summary>
             JAPANESE,
+
+            /// <summary>
+            /// Representlines that exist between langjp and langen.
+            /// </summary>
+            OTHER_STATEMENTS
         }
         #endregion
         #endregion
@@ -93,11 +98,13 @@ namespace VoicesPuter
             List<TypeOfLanguage> orderOfAddedTypeOfLanguage = new List<TypeOfLanguage>();
             List<string> tempJapaneseLines = new List<string>();
             List<string> tempEnglishLines = new List<string>();
+            List<string> tempOtherStatementLines = new List<string>();
             foreach (string currentLine in allOfLines)
             {
                 // In the first place, search Japanese line.
                 // Then if a Japanese line is found, retain the Japanese line until disappearing it.
                 // retain also the English line like a way of retained Japanese lines.
+                // If there are lines that exist between Japanese lines and English ones, retain lines as other statement, then it would add between Japanese and English ones.
                 // If counts of both lines are not mutch, don't put voice scripts into Japanese line and just add Japanese lines to new all of lines and add English line to it after changing to voice script's function name of English.
                 // If it is not able to search Japanese lines and it found English lines, add English line after changing to voice script's function name of English.
                 if (currentLine.Contains(JAPANESE_LINE_IDENTIFIER))
@@ -118,28 +125,18 @@ namespace VoicesPuter
                         orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.ENGLISH);
                     }
                 }
+                else if (tempJapaneseLines.Count > 0 && tempEnglishLines.Count <= 0)
+                {
+                    tempOtherStatementLines.Add(currentLine);
+                    orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.OTHER_STATEMENTS);
+                }
                 else
                 {
                     if (tempJapaneseLines.Count != tempEnglishLines.Count)
                     {
                         // TODO Have to log about current both line is not same.
-                        int countOfEnglish = 0;
-                        int countOfJapanese = 0;
-                        foreach (TypeOfLanguage typeOfLanguage in orderOfAddedTypeOfLanguage)
-                        {
-                            switch (typeOfLanguage)
-                            {
-                                case TypeOfLanguage.ENGLISH:
-                                    newAllOfLines.Add(ChangeToVoiceScriptFunctionNameOfEnglish(tempEnglishLines[countOfEnglish]));
-                                    countOfEnglish++;
-                                    break;
-
-                                case TypeOfLanguage.JAPANESE:
-                                    newAllOfLines.Add(tempJapaneseLines[countOfJapanese]);
-                                    countOfJapanese++;
-                                    break;
-                            }
-                        }
+                        List<string> orderedLines = GetOrderedLines(orderOfAddedTypeOfLanguage, tempEnglishLines, tempJapaneseLines, tempOtherStatementLines);
+                        newAllOfLines.AddRange(orderedLines);
                     }
                     else
                     {
@@ -152,12 +149,13 @@ namespace VoicesPuter
                             convertedVoiceScriptsToJapanese.Add(ChangeToVoiceScriptFunctionNameOfJapan(insertedVoiceScriptsJapaneseLine));
                             convertedVoiceScriptsToEnglish.Add(ChangeToVoiceScriptFunctionNameOfEnglish(tempEnglishLines[japaneseLinesIndex]));
                         }
-                        newAllOfLines.AddRange(convertedVoiceScriptsToJapanese);
-                        newAllOfLines.AddRange(convertedVoiceScriptsToEnglish);
+                        List<string> orderedLines = GetOrderedLines(orderOfAddedTypeOfLanguage, convertedVoiceScriptsToEnglish, convertedVoiceScriptsToJapanese, tempOtherStatementLines, false);
+                        newAllOfLines.AddRange(orderedLines);
                     }
                     orderOfAddedTypeOfLanguage.Clear();
                     tempJapaneseLines.Clear();
                     tempEnglishLines.Clear();
+                    tempOtherStatementLines.Clear();
 
                     // Put line that is not English line and Japanese line.
                     newAllOfLines.Add(currentLine);
@@ -170,6 +168,52 @@ namespace VoicesPuter
                 throw new UnmatchedNewLinesWithOriginalLinesException("Unmatch changed count of new all of lines and count of original ones.");
             }
             return newAllOfLines;
+        }
+        #endregion
+
+        #region GetInsertedVoiceScroptsFromEnglishIntoJapanese
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="orderOfAddedTypeOfLanguage"></param>
+        /// <param name="tempEnglishLines"></param>
+        /// <param name="tempJapaneseLines"></param>
+        /// <param name="tempOtherStatementLines"></param>
+        /// <returns></returns>
+        private List<string> GetOrderedLines(List<TypeOfLanguage> orderOfAddedTypeOfLanguage, List<string> tempEnglishLines, List<string> tempJapaneseLines, List<string> tempOtherStatementLines, bool shouldChangeToVoiceScriptFunctionNameOfEnglish = true)
+        {
+            List<string> orderedLines = new List<string>();
+            int countOfEnglish = 0;
+            int countOfJapanese = 0;
+            int countOfOtherStatement = 0;
+            foreach (TypeOfLanguage typeOfLanguage in orderOfAddedTypeOfLanguage)
+            {
+                switch (typeOfLanguage)
+                {
+                    case TypeOfLanguage.ENGLISH:
+                        if (shouldChangeToVoiceScriptFunctionNameOfEnglish)
+                        {
+                            orderedLines.Add(ChangeToVoiceScriptFunctionNameOfEnglish(tempEnglishLines[countOfEnglish]));
+                        }
+                        else
+                        {
+                            orderedLines.Add(tempEnglishLines[countOfEnglish]);
+                        }
+                        countOfEnglish++;
+                        break;
+
+                    case TypeOfLanguage.JAPANESE:
+                        orderedLines.Add(tempJapaneseLines[countOfJapanese]);
+                        countOfJapanese++;
+                        break;
+
+                    case TypeOfLanguage.OTHER_STATEMENTS:
+                        orderedLines.Add(tempOtherStatementLines[countOfOtherStatement]);
+                        countOfOtherStatement++;
+                        break;
+                }
+            }
+            return orderedLines;
         }
         #endregion
 
