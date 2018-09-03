@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Serilog;
+using Serilog.Core;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text.RegularExpressions;
 
 namespace VoicesPuter
@@ -81,6 +84,32 @@ namespace VoicesPuter
             OTHER_STATEMENTS
         }
         #endregion
+
+        #region CHANGED_SCRIPT_OUTPUT_DIRECTORY_NAME
+        /// <summary>
+        /// 
+        /// </summary>
+        private const string LOG_DIRECTORY_NAME = "Log";
+        #endregion
+
+        #region logger
+        /// <summary>
+        /// 
+        /// </summary>
+        private Logger logger;
+        #endregion
+        #endregion
+
+        #region Constructors
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gameScriptPath"></param>
+        public VoicesPuter(string gameScriptPath)
+        {
+            string logFilePath = Path.Combine(new string[] { Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, "log.txt", });
+            logger = new LoggerConfiguration().WriteTo.File(logFilePath).CreateLogger();
+        }
         #endregion
 
         #region Methods
@@ -111,8 +140,11 @@ namespace VoicesPuter
                 {
                     if (tempJapaneseLines.Count <= 0)
                     {
-                        // TODO Have to log about coming here without having japanese line.
                         newAllOfLines.Add(ChangeToVoiceScriptFunctionNameOfEnglish(currentLine));
+
+                        string warningOfLangenWithoutLangjp = "This langen starts without langjp.\n";
+                        warningOfLangenWithoutLangjp += $"{currentLine}\n";
+                        logger.Warning(warningOfLangenWithoutLangjp);
                         continue;
                     }
                     else
@@ -151,10 +183,20 @@ namespace VoicesPuter
                     }
                     else
                     {
-                        // TODO Have to log about current both line is not same.
                         List<string> orderedLines = GetOrderedLines(orderOfAddedTypeOfLanguage, tempEnglishLines, tempJapaneseLines, tempOtherStatementLines);
                         newAllOfLines.AddRange(orderedLines);
                         shouldClearRetainedLines = true;
+
+                        string warningOfUnmatchedCountOfLangjpAndLangen = "Count of langjp and langen is not same.\n";
+                        foreach (string langjp in tempJapaneseLines)
+                        {
+                            warningOfUnmatchedCountOfLangjpAndLangen += $"{langjp}\n";
+                        }
+                        foreach (string langen in tempEnglishLines)
+                        {
+                            warningOfUnmatchedCountOfLangjpAndLangen += $"{langen}\n";
+                        }
+                        logger.Warning(warningOfUnmatchedCountOfLangjpAndLangen);
                     }
 
                     // If each line are added, clear them.
@@ -255,7 +297,10 @@ namespace VoicesPuter
                 // If English line and Japanese one's structure is not same, just return not changing Japanese line.
                 if (splitEnglishLine.Length != splitJapaneseLine.Length)
                 {
-                    // TODO Have to log about English line and Japanese line's structure is not same.
+                    string warningOfUnmatchedCountOfLangjpAndLangenAtSign = "Count of langen and langjp's '@' is not same.\n";
+                    warningOfUnmatchedCountOfLangjpAndLangenAtSign += $"{englishLine}\n";
+                    warningOfUnmatchedCountOfLangjpAndLangenAtSign += $"{japaneseLine}\n";
+                    logger.Warning(warningOfUnmatchedCountOfLangjpAndLangenAtSign);
                     return japaneseLine;
                 }
 
