@@ -24,7 +24,7 @@ namespace VoicesPuter
         private const string CHANGED_SCRIPT_OUTPUT_DIRECTORY_NAME = "Output";
         #endregion
 
-        #region CHANGED_SCRIPT_OUTPUT_DIRECTORY_NAME
+        #region GameScriptPath
         /// <summary>
         /// 
         /// </summary>
