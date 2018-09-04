@@ -66,25 +66,48 @@ namespace QuestionArcsADVMode
             }
         }
 
-        //given the list of tokens in a line, marks the last clickwait in the line
-        public static void MarkLastClickWait(List<Token> tokensOnSingleLine)
+        //given the list of tokens in a line, marks the last clickwait in the line, UNLESS there is a pagewait or disable newline after last clickwait
+        //in which case none of the items get marked as the 'last' clickwait
+        //in cases like: ^this is a test @^sdrfkasdfjasd;lfkjas;fld @\n
+        //however cases like ^this is a test @^sdrfkasdfjasd;lfkjas;fld\n  should not emit a new line, since the last text will emit a new line
+        public static void MarkClickWaitHasNewlineAfterIt(List<Token> tokensOnSingleLine)
         {
-            ClickWait previousCW = null;
+            //get position of last clickwait, while marking all tokens as NO NEW LINE
+            ClickWait lastClickWaitToken = null;
+            int previousCWPosition = Int32.MinValue;
 
-            foreach (Token t in tokensOnSingleLine)
+            for (int i = 0; i < tokensOnSingleLine.Count; i++)
             {
-                switch (t)
+                if(tokensOnSingleLine[i].RawString.Contains("old physician let out a"))
+                {
+                    Console.WriteLine();
+                }
+                switch (tokensOnSingleLine[i])
                 {
                     case ClickWait cw:
                         cw.isLastClickWaitOnLine = false;
-                        previousCW = cw;
+                        previousCWPosition = i;
+                        lastClickWaitToken = cw;
                         break;
                 }
             }
 
-            if (previousCW != null)
+            //finish here if there were no clickwaits on the line
+            if (lastClickWaitToken == null)
+                return;
+
+            //Mark a newline after the last clickwait token, if a newline exists
+            //Note that the tokenizer will eliminate any whitespace before the last newline, so we don't have to worry about that
+            try
             {
-                previousCW.isLastClickWaitOnLine = true;
+                if (tokensOnSingleLine[previousCWPosition + 1] is NewLineToken)
+                {
+                    lastClickWaitToken.isLastClickWaitOnLine = true;
+                }
+            }
+            catch(IndexOutOfRangeException)
+            {
+                throw new Exception($"Clickwait was last token on the line {tokensOnSingleLine} (the last token should always be a newline)");
             }
         }
 
@@ -159,7 +182,7 @@ namespace QuestionArcsADVMode
                 //preprocess by line
                 foreach(List<Token> oneLinesTokens in allTokensByLine)
                 {
-                    CharacterCountInserter.MarkLastClickWait(oneLinesTokens);
+                    CharacterCountInserter.MarkClickWaitHasNewlineAfterIt(oneLinesTokens);
                 }
 
                 //preprocess by line, reverse order to set the amount of text each clickwait

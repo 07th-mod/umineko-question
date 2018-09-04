@@ -40,9 +40,9 @@ namespace QuestionArcsADVMode
             //matches a color change command (6 digit hex, starting with #)
             new NamedRegex(MatchType.changeColor,      @"\G#[0-9abcdef]{6}\s*", RegexOptions.IgnoreCase),
             //semicolon comment at end of line. The game script actually allows semicolons inside text, so can't pre-filter for comments
-            new NamedRegex(MatchType.comment, @"\G\s*;.*$", RegexOptions.IgnoreCase),
-            //whitespace at end of line without comment
-            new NamedRegex(MatchType.comment, @"\G[\s\x10]+$", RegexOptions.IgnoreCase),
+            new NamedRegex(MatchType.comment,          @"\G\s*;.*$", RegexOptions.IgnoreCase),
+            //whitespace at end of line. NOTE: the game ignores this, so nothing is emitted
+            new NamedRegex(MatchType.whitespace_before_newline,       @"\G[\s\x10]+$", RegexOptions.IgnoreCase),
         };
 
         public enum MatchType
@@ -60,7 +60,7 @@ namespace QuestionArcsADVMode
             disableNewLine,
             changeColor,
             comment,
-            whitespace,
+            whitespace_before_newline,
         }
 
         public class NamedRegex : Regex
@@ -164,6 +164,10 @@ namespace QuestionArcsADVMode
 
                         case MatchType.disableNewLine:
                             tokens.Add(new DisableNewLine(match.Value));
+                            break;
+
+                        case MatchType.whitespace_before_newline:
+                            //NOTE: the game ignores this, so no token should be emitted for this case
                             break;
 
                         default:
