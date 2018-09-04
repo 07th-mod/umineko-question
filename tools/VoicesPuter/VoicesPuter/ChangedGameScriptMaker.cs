@@ -5,28 +5,28 @@ using System.Text;
 namespace VoicesPuter
 {
     /// <summary>
-    /// 
+    /// Make the changed game script.
     /// </summary>
     public class ChangedGameScriptMaker
     {
         #region Members
         #region GAME_SCRIPT_FILE_NAME
         /// <summary>
-        /// 
+        /// Represent the game script file name.
         /// </summary>
         private const string GAME_SCRIPT_FILE_NAME = "0.utf";
         #endregion
 
         #region CHANGED_SCRIPT_OUTPUT_DIRECTORY_NAME
         /// <summary>
-        /// 
+        /// Represent directory that is outputted changed the game script file.
         /// </summary>
         private const string CHANGED_SCRIPT_OUTPUT_DIRECTORY_NAME = "Output";
         #endregion
 
         #region GameScriptPath
         /// <summary>
-        /// 
+        /// Path of the game script.
         /// </summary>
         private readonly string GameScriptPath;
         #endregion
@@ -34,9 +34,9 @@ namespace VoicesPuter
 
         #region Constructors
         /// <summary>
-        /// 
+        /// Retain path of the game script.
         /// </summary>
-        /// <param name="gameScriptPath"></param>
+        /// <param name="gameScriptPath">Path of the game script.</param>
         public ChangedGameScriptMaker(string gameScriptPath)
         {
             GameScriptPath = gameScriptPath;
@@ -46,9 +46,9 @@ namespace VoicesPuter
         #region Methods
         #region ReadGameScript
         /// <summary>
-        /// 
+        /// Return the game script lines as list of string.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>list of the game script line.</returns>
         public List<string> ReadGameScript()
         {
             List<string> gameScriptLines = new List<string>();
@@ -66,9 +66,9 @@ namespace VoicesPuter
 
         #region MakeChangedGameScript
         /// <summary>
-        /// 
+        /// Make the changed game script that specified with argument to output directory.
         /// </summary>
-        /// <param name="changedGameScriptLines"></param>
+        /// <param name="changedGameScriptLines">The changed game script lines.</param>
         public void MakeChangedGameScript(List<string> changedGameScriptLines)
         {
             // If output directory does not exsit, make the directory.

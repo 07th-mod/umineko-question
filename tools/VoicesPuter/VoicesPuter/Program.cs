@@ -1,21 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Security;
 
 namespace VoicesPuter
 {
     /// <summary>
-    /// 
+    /// This tool sets voice scripts into langjp using langen's voice scripts.
+    /// It also changes voice script's function name of each language.
+    /// If the line is langen, it will change dwave_eng.
+    /// If the line is langjp, it will change dwave_jp.
     /// </summary>
     public class Program
     {
         #region Methods
         #region Main
         /// <summary>
-        /// 
+        /// How to use:
+        /// Specify file path of the game script that want to change.
+        /// Then this tool will make directory as 'Output' to the same directory that specified it, output the changed game script to 'Output' directory.
+        /// If there are some problem, output log to 'Log' directory.
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">Specify file path of the game script that want to change.</param>
         public static void Main(string[] args)
         {
             // If the game script is not specified, notify usage.

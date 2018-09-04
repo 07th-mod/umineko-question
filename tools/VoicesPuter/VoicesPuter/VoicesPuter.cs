@@ -8,93 +8,94 @@ using System.Text.RegularExpressions;
 namespace VoicesPuter
 {
     /// <summary>
-    /// 
+    /// Put voice scripts into langjp using langen.
+    /// Then change script's function name of each language.
     /// </summary>
     public class VoicesPuter
     {
         #region Members
         #region JAPANESE_LINE_IDENTIFIER
         /// <summary>
-        /// 
+        /// Represent identifier of line of Japanese.
         /// </summary>
         private const string JAPANESE_LINE_IDENTIFIER = "langjp";
         #endregion
 
         #region ENGLISH_LINE_IDENTIFIER
         /// <summary>
-        /// 
+        /// Represent identifier of line of English.
         /// </summary>
         private const string ENGLISH_LINE_IDENTIFIER = "langen";
         #endregion
 
         #region VOICE_SCRIPT_FUNCTION_NAME_ORG
         /// <summary>
-        /// 
+        /// Represent voice script's function name.
         /// </summary>
         public const string VOICE_SCRIPT_FUNCTION_NAME_ORG = "dwave";
         #endregion
 
         #region VOICE_SCRIPT_FUNCTION_NAME_JP
         /// <summary>
-        /// 
+        /// Represent voice script's function name of Japanese.
         /// </summary>
         public const string VOICE_SCRIPT_FUNCTION_NAME_JP = VOICE_SCRIPT_FUNCTION_NAME_ORG + "_jp";
         #endregion
 
         #region VOICE_SCRIPT_FUNCTION_NAME_ENG
         /// <summary>
-        /// 
+        /// Represent voice script's function name of English.
         /// </summary>
         public const string VOICE_SCRIPT_FUNCTION_NAME_ENG = VOICE_SCRIPT_FUNCTION_NAME_ORG + "_eng";
         #endregion
 
         #region BEGINNING_OF_VOICE_SCRIPT
         /// <summary>
-        /// 
+        /// Represent beginning of voice script.
         /// </summary>
         private const string BEGINNING_OF_VOICE_SCRIPT = ":" + VOICE_SCRIPT_FUNCTION_NAME_ORG;
         #endregion
 
         #region REGEX_OF_VOICE_SCRIPT
         /// <summary>
-        /// 
+        /// Represent regular expression of voice script.
         /// </summary>
         private const string REGEX_OF_VOICE_SCRIPT = BEGINNING_OF_VOICE_SCRIPT + @"[^:]*:";
         #endregion
 
-        #region REGEX_OF_VOICE_SCRIPT
+        #region TypeOfLanguage
         /// <summary>
-        /// 
+        /// Represent whether which language.
         /// </summary>
         private enum TypeOfLanguage
         {
             /// <summary>
-            /// 
+            /// Represent English.
             /// </summary>
             ENGLISH,
 
             /// <summary>
-            /// 
+            /// Represent Japanese.
             /// </summary>
             JAPANESE,
 
             /// <summary>
-            /// Representlines that exist between langjp and langen.
+            /// Represent lines that exist between langjp and langen.
             /// </summary>
             OTHER_STATEMENTS
         }
         #endregion
 
-        #region CHANGED_SCRIPT_OUTPUT_DIRECTORY_NAME
+        #region LOG_DIRECTORY_NAME
         /// <summary>
-        /// 
+        /// Path that output the log.
         /// </summary>
         private const string LOG_DIRECTORY_NAME = "Log";
         #endregion
 
         #region logger
         /// <summary>
-        /// 
+        /// This logger outputs into the folder that a user specified the game script.
         /// </summary>
         private Logger logger;
         #endregion
@@ -102,9 +103,9 @@ namespace VoicesPuter
 
         #region Constructors
         /// <summary>
-        /// 
+        /// Initialize the logger.
         /// </summary>
-        /// <param name="gameScriptPath"></param>
+        /// <param name="gameScriptPath">Path of the game script.</param>
         public VoicesPuter(string gameScriptPath)
         {
             string logFilePath = Path.Combine(new string[] { Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, "log.txt", });
@@ -115,10 +116,10 @@ namespace VoicesPuter
         #region Methods
         #region PutVoiceScriptsIntoLines
         /// <summary>
-        /// 
+        /// Put voice scripts into lines that includes langen or lanjp while changing properly voice script's function name.
         /// </summary>
-        /// <param name="allOfLines"></param>
-        /// <returns></returns>
+        /// <param name="allOfLines">Lines that is used by the game.</param>
+        /// <returns>Lines that put voice scripts into langjp and changed properly voice script's function name of each language.</returns>
         public List<string> PutVoiceScriptsIntoLines(List<string> allOfLines)
         {
             List<string> newAllOfLines = new List<string>();
@@ -173,7 +174,7 @@ namespace VoicesPuter
                         List<string> convertedVoiceScriptsToEnglish = new List<string>();
                         for (int japaneseLinesIndex = 0; japaneseLinesIndex < tempJapaneseLines.Count; japaneseLinesIndex++)
                         {
-                            string insertedVoiceScriptsJapaneseLine = GetInsertedVoiceScroptsFromEnglishIntoJapanese(tempEnglishLines[japaneseLinesIndex], tempJapaneseLines[japaneseLinesIndex]);
+                            string insertedVoiceScriptsJapaneseLine = GetInsertedVoiceScriptsFromEnglishIntoJapanese(tempEnglishLines[japaneseLinesIndex], tempJapaneseLines[japaneseLinesIndex]);
                             convertedVoiceScriptsToJapanese.Add(ChangeToVoiceScriptFunctionNameOfJapan(insertedVoiceScriptsJapaneseLine));
                             convertedVoiceScriptsToEnglish.Add(ChangeToVoiceScriptFunctionNameOfEnglish(tempEnglishLines[japaneseLinesIndex]));
                         }
@@ -230,15 +231,15 @@ namespace VoicesPuter
         }
         #endregion
 
-        #region GetInsertedVoiceScroptsFromEnglishIntoJapanese
+        #region GetOrderedLines
         /// <summary>
-        /// 
+        /// Return ordered list of string as is specified with list of TypeOfLanguage.
         /// </summary>
-        /// <param name="orderOfAddedTypeOfLanguage"></param>
-        /// <param name="tempEnglishLines"></param>
-        /// <param name="tempJapaneseLines"></param>
-        /// <param name="tempOtherStatementLines"></param>
-        /// <returns></returns>
+        /// <param name="orderOfAddedTypeOfLanguage">Represent order of lines.</param>
+        /// <param name="tempEnglishLines">List of English line.</param>
+        /// <param name="tempJapaneseLines">List of Japanese line.</param>
+        /// <param name="tempOtherStatementLines">List of other line.</param>
+        /// <returns>Ordered list of string as is specified with list of TypeOfLanguage.</returns>
         private List<string> GetOrderedLines(List<TypeOfLanguage> orderOfAddedTypeOfLanguage, List<string> tempEnglishLines, List<string> tempJapaneseLines, List<string> tempOtherStatementLines, bool shouldChangeToVoiceScriptFunctionNameOfEnglish = true)
         {
             List<string> orderedLines = new List<string>();
@@ -276,14 +277,14 @@ namespace VoicesPuter
         }
         #endregion
 
-        #region GetInsertedVoiceScroptsFromEnglishIntoJapanese
+        #region GetInsertedVoiceScriptsFromEnglishIntoJapanese
         /// <summary>
-        /// 
+        /// Return line that put voice scripts from English line into Japanese line.
         /// </summary>
-        /// <param name="englishLine"></param>
-        /// <param name="japaneseLine"></param>
-        /// <returns></returns>
-        private string GetInsertedVoiceScroptsFromEnglishIntoJapanese(string englishLine, string japaneseLine)
+        /// <param name="englishLine">English line that includes voice scripts.</param>
+        /// <param name="japaneseLine">Japanese line.</param>
+        /// <returns>Line that put voice scripts from English line into Japanese line.</returns>
+        private string GetInsertedVoiceScriptsFromEnglishIntoJapanese(string englishLine, string japaneseLine)
         {
             string insertedJapaneseLine = string.Empty;
 
@@ -351,10 +352,10 @@ namespace VoicesPuter
 
         #region GetVoiceScripts
         /// <summary>
-        /// 
+        /// Return list of voice scripts from sentence.
         /// </summary>
-        /// <param name="sentence"></param>
-        /// <returns></returns>
+        /// <param name="sentence">Sentence that includes voice scripts.</param>
+        /// <returns>List of voice scripts from sentence.</returns>
         private List<string> GetVoiceScripts(string sentence)
         {
             Regex voicesRegex = new Regex(REGEX_OF_VOICE_SCRIPT);
@@ -370,10 +371,10 @@ namespace VoicesPuter
 
         #region ChangeVoiceScriptFunctionNameToJapanese
         /// <summary>
-        /// 
+        /// Return a line that changed voice script's function name to Japanese.
         /// </summary>
-        /// <param name="japaneseLine"></param>
-        /// <returns></returns>
+        /// <param name="japaneseLine">Japanese line that includes voice script's function name.</param>
+        /// <returns>A line that changed voice script's function name to Japanese.</returns>
         private string ChangeToVoiceScriptFunctionNameOfJapan(string japaneseLine)
         {
             return japaneseLine.Replace(VOICE_SCRIPT_FUNCTION_NAME_ORG, VOICE_SCRIPT_FUNCTION_NAME_JP);
@@ -382,10 +383,10 @@ namespace VoicesPuter
 
         #region ChangeVoiceScriptFunctionNameToEnglish
         /// <summary>
-        /// 
+        /// Return a line that changed voice script's function name to English.
         /// </summary>
-        /// <param name="englishLine"></param>
-        /// <returns></returns>
+        /// <param name="englishLine">English line that includes voice script's function name.</param>
+        /// <returns>A line that changed voice script's function name to English.</returns>
         private string ChangeToVoiceScriptFunctionNameOfEnglish(string englishLine)
         {
             return englishLine.Replace(VOICE_SCRIPT_FUNCTION_NAME_ORG, VOICE_SCRIPT_FUNCTION_NAME_ENG);
@@ -395,15 +396,15 @@ namespace VoicesPuter
     }
 
     /// <summary>
-    /// 
+    /// This exception occures when count of original lines and changed lines unmatch.
     /// </summary>
     public class UnmatchedNewLinesWithOriginalLinesException : InvalidOperationException
     {
         #region Constructors
         /// <summary>
-        /// 
+        /// Set the error message.
         /// </summary>
-        /// <param name="message"></param>
+        /// <param name="message">Error message.</param>
         public UnmatchedNewLinesWithOriginalLinesException(string message) : base(message) { }
         #endregion
     }
