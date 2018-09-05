@@ -13,6 +13,8 @@ namespace VoicesPuter
     /// </summary>
     public class VoicesPuter
     {
+        private readonly Regex COMMENT_OR_BLANK_LINE = new Regex(@"^\s*(;.*)?$");
+
         #region Members
         #region JAPANESE_LINE_IDENTIFIER
         /// <summary>
@@ -181,6 +183,12 @@ namespace VoicesPuter
                         List<string> orderedLines = GetOrderedLines(orderOfAddedTypeOfLanguage, convertedVoiceScriptsToEnglish, convertedVoiceScriptsToJapanese, tempOtherStatementLines, false);
                         newAllOfLines.AddRange(orderedLines);
                         shouldClearRetainedLines = true;
+                    }
+                    else if(COMMENT_OR_BLANK_LINE.IsMatch(currentLine)) //comment or whitespace line - don't end current section
+                    {
+                        tempOtherStatementLines.Add(currentLine);
+                        orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.OTHER_STATEMENTS);
+                        continue;
                     }
                     else
                     {
