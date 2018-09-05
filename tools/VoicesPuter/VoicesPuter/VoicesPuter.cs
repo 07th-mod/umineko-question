@@ -110,8 +110,8 @@ namespace VoicesPuter
         /// <param name="gameScriptPath">Path of the game script.</param>
         public VoicesPuter(string gameScriptPath)
         {
-            string logFilePath = Path.Combine(new string[] { Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, "log.txt", });
-            logger = new LoggerConfiguration().WriteTo.File(logFilePath).CreateLogger();
+            string logFilePath = Path.Combine(new string[] { Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"log {DateTime.Now.ToString(@"yyyy MM dd yyyy h mm ss tt")}.txt", });
+            logger = new LoggerConfiguration().WriteTo.File(logFilePath, outputTemplate: ">>> [{Level:u3}] {Message:lj}{NewLine}{Exception}").CreateLogger();
         }
         #endregion
 
