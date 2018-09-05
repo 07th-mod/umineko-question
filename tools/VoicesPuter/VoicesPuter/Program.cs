@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace VoicesPuter
 {
@@ -11,6 +12,7 @@ namespace VoicesPuter
     /// </summary>
     public class Program
     {
+        private const string GIT_GAME_SCRIPT_RELATIVE_PATH = @"..\..\..\..\..\InDevelopment\ManualUpdates\0.utf";
         #region Methods
         #region Main
         /// <summary>
@@ -22,16 +24,31 @@ namespace VoicesPuter
         /// <param name="args">Specify file path of the game script that want to change.</param>
         public static void Main(string[] args)
         {
+            // Read all of the game script lines.
+            string gameScriptPath = null;
+
             // If the game script is not specified, notify usage.
             if (args.Length <= 0)
             {
-                Console.WriteLine("Please specify file path of the game script that want to change.");
-                Console.WriteLine("Usage: VoicesPuter <file path>");
-                return;
+                //if no arguments specified, look in the repository for the game file
+                if(File.Exists(GIT_GAME_SCRIPT_RELATIVE_PATH))
+                {
+                    Console.WriteLine("Detected program is run from git repository - Using latest question arcs script");
+                    gameScriptPath = GIT_GAME_SCRIPT_RELATIVE_PATH;
+                }
+                else
+                {
+                    Console.WriteLine("ERROR: No arguments provided, and game script not found in default path.");
+                    Console.WriteLine("Please specify file path of the game script that want to change.");
+                    Console.WriteLine("Usage: VoicesPuter <file path>");
+                    return;
+                }
+            }
+            else
+            {
+                gameScriptPath = args[0];
             }
 
-            // Read all of the game script lines.
-            string gameScriptPath = args[0];
             ChangedGameScriptMaker changedGameScriptMaker = new ChangedGameScriptMaker(gameScriptPath);
             List<string> gameScriptLines = changedGameScriptMaker.ReadGameScript();
 
@@ -42,6 +59,7 @@ namespace VoicesPuter
             // Make the changed game script into output directory.
             changedGameScriptMaker.MakeChangedGameScript(changedGameScriptLines);
             Console.WriteLine("Completed putting voice scripts into Japanese lines.");
+            Console.WriteLine("Press any key to close this window...");
             Console.ReadKey();
         }
         #endregion
