@@ -61,6 +61,8 @@ namespace VoicesPuter
             VoicesPuter voicesPuter = new VoicesPuter(gameScriptPath, overwrite: true, voicesDatabase: voicesDatabase);
             List<string> changedGameScriptLines = voicesPuter.PutVoiceScriptsIntoLines(gameScriptLines, voicesDatabase);
 
+            FixVoiceDelay.FixVoiceDelaysInScript(changedGameScriptLines);
+
             // Make the changed game script into output directory.
             changedGameScriptMaker.MakeChangedGameScript(changedGameScriptLines);
             Console.WriteLine("Completed putting voice scripts into Japanese lines.");
