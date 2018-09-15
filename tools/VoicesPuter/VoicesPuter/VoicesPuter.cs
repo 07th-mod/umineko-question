@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Linq;
+using System.Text;
 
 namespace VoicesPuter
 {
@@ -14,6 +16,8 @@ namespace VoicesPuter
     public class VoicesPuter
     {
         private readonly Regex COMMENT_OR_BLANK_LINE = new Regex(@"^\s*(;.*)?$");
+        private readonly Regex langjpRegex = new Regex(@"(.*langjp)(.*)");
+        private readonly VoicesDatabase voicesDatabase;
 
         #region Members
         #region JAPANESE_LINE_IDENTIFIER
@@ -100,6 +104,8 @@ namespace VoicesPuter
         /// This logger outputs into the folder that a user specified the game script.
         /// </summary>
         private Logger logger;
+        private Logger warningLogger;
+        private int errorCount;
         #endregion
         #endregion
 
@@ -108,21 +114,152 @@ namespace VoicesPuter
         /// Initialize the logger.
         /// </summary>
         /// <param name="gameScriptPath">Path of the game script.</param>
-        public VoicesPuter(string gameScriptPath)
+        public VoicesPuter(string gameScriptPath, bool overwrite, VoicesDatabase voicesDatabase)
         {
-            string logFilePath = Path.Combine(new string[] { Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"log {DateTime.Now.ToString(@"yyyy MM dd yyyy h mm ss tt")}.txt", });
-            logger = new LoggerConfiguration().WriteTo.File(logFilePath, outputTemplate: ">>> [{Level:u3}] {Message:lj}{NewLine}{Exception}").CreateLogger();
+            this.voicesDatabase = voicesDatabase;
+
+            string errorLogFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"errlog {DateTime.Now.ToString(@"yyyy MM dd yyyy h mm ss tt")}.txt");
+            string warningFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"warnlog {DateTime.Now.ToString(@"yyyy MM dd yyyy h mm ss tt")}.txt");
+
+            if (overwrite)
+            {
+                errorLogFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"errlog.txt");
+                warningFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"warnlog.txt");
+                File.Delete(errorLogFilePath);
+                File.Delete(warningFilePath);
+            }
+
+            string outputTemplate = ">>> [{Level:u3}] {Message:lj}{NewLine}{Exception}";
+            logger        = new LoggerConfiguration().WriteTo.File(errorLogFilePath, outputTemplate: outputTemplate).CreateLogger();
+            warningLogger = new LoggerConfiguration().WriteTo.File(warningFilePath,  outputTemplate: outputTemplate).CreateLogger();
+
+            errorCount = 0;
         }
         #endregion
 
         #region Methods
+
+        public string GetScriptSample(List<string> allLines, int regionCenter, int numContext)
+        {
+            int regionStart = Math.Max(0, regionCenter - numContext/2);
+            int regionEnd = Math.Min(allLines.Count, regionCenter + numContext / 2);
+
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("<Script Sample>");
+
+            for (int i = regionStart; i < regionEnd; i++)
+            {
+                sb.AppendLine("    " + allLines[i]);
+            }
+            sb.AppendLine("<End Script Sample>");
+
+            return sb.ToString();
+        }
+
+        public void LogFormattedError(List<string> allLines, int index, string errorInformation)
+        {
+            string scriptSample = GetScriptSample(allLines, index, 20);
+            /*if(scriptSample.Contains("TODO"))
+            {
+                logger.Error(">>>>> NOTE: Error collapsed as marked for manual fix.");
+                return;
+            }*/
+
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("\n-----------------------------------");
+            sb.AppendLine(errorInformation);
+            sb.Append(scriptSample);
+            sb.AppendLine("-----------------------------------");
+
+            logger.Error(sb.ToString());
+        }
+
+        public void HandleErrorLangenWithoutLangjp(List<string> allLines, int currentLineIndex)
+        {
+            string currentLine = allLines[currentLineIndex];
+            string warningOfLangenWithoutLangjp = "This langen starts without langjp.\n";
+            warningOfLangenWithoutLangjp += $"{currentLine}\n";
+            if (LineOrLinesHaveDwave(currentLine))
+            {
+                LogFormattedError(allLines, currentLineIndex, warningOfLangenWithoutLangjp);
+                errorCount++;
+            }
+            else
+            {
+                warningLogger.Error(warningOfLangenWithoutLangjp);
+            }
+        }
+
+        public void HandleErrorUnmatchedCountOfLangjpAndLangen(List<string> allLines, int currentLineIndex, List<string> tempEnglishLines, List<string> tempJapaneseLines)
+        {
+            string warningOfUnmatchedCountOfLangjpAndLangen = String.Empty;
+
+            warningOfUnmatchedCountOfLangjpAndLangen += $"Number of Langen lines {tempEnglishLines.Count} and Langjp lines {tempJapaneseLines.Count} not equal\n";
+            //Tell user if we think english line was reflowed
+            if (CheckEnglishLinesHadReflow(tempEnglishLines, tempJapaneseLines))
+            {
+                warningOfUnmatchedCountOfLangjpAndLangen += $"NOTE: It appears english line was reflowed.\n";
+            }
+
+            foreach (string langjp in tempJapaneseLines)
+            {
+                warningOfUnmatchedCountOfLangjpAndLangen += $"{langjp}\n";
+            }
+            foreach (string langen in tempEnglishLines)
+            {
+                warningOfUnmatchedCountOfLangjpAndLangen += $"{langen}\n";
+            }
+
+            if (LineOrLinesHaveDwave(tempEnglishLines))
+            {
+                LogFormattedError(allLines, currentLineIndex, warningOfUnmatchedCountOfLangjpAndLangen);
+                errorCount++;
+            }
+            else
+            {
+                //we don't care about english lines with no dwave. Just log it for now.
+                warningLogger.Information(warningOfUnmatchedCountOfLangjpAndLangen);
+            }
+        }
+
+        //This is called from GetInsertedVoiceScriptsFromEnglishIntoJapanese()
+        public void HandleErrorUnmatchedCountOfLangjpAndLangenAtSign(List<string> allLines, int currentLineIndex, string englishLine, string japaneseLine, string[] splitEnglishLine, string[] splitJapaneseLine, string fixedJapaneseLine)
+        {
+            bool ErrorWasNotFixed = fixedJapaneseLine == null;
+
+            StringBuilder sb = new StringBuilder();
+            string autoFixComment = ErrorWasNotFixed ? "Could not auto-fix line" : "Will try to auto-fix";
+
+            if (splitJapaneseLine.Length == splitEnglishLine.Length + 1)
+            {
+                sb.AppendLine("NOTE: Probably english line is missing a voice");
+            }
+            sb.AppendLine($"Num '@' doesn't match. Num Sections EN: {splitEnglishLine.Length} JP: {splitJapaneseLine.Length}. {autoFixComment}");
+            sb.AppendLine(japaneseLine);
+            sb.AppendLine(englishLine);
+            if(ErrorWasNotFixed)
+            {
+                if ((splitJapaneseLine.Length - 1 == splitEnglishLine.Length) && splitJapaneseLine[splitJapaneseLine.Length - 1].Length < 4)
+                {
+                    sb.Append("NOTE: Probably @ at end of line has been replaced with / or \\...");
+                }
+                LogFormattedError(allLines, currentLineIndex, sb.ToString());
+                errorCount++;
+            }
+            else
+            {
+                sb.AppendLine($"fixed_line: {fixedJapaneseLine}");
+                warningLogger.Warning(sb.ToString());
+            }
+        }
+
         #region PutVoiceScriptsIntoLines
         /// <summary>
         /// Put voice scripts into lines that includes langen or lanjp while changing properly voice script's function name.
         /// </summary>
         /// <param name="allOfLines">Lines that is used by the game.</param>
         /// <returns>Lines that put voice scripts into langjp and changed properly voice script's function name of each language.</returns>
-        public List<string> PutVoiceScriptsIntoLines(List<string> allOfLines)
+        public List<string> PutVoiceScriptsIntoLines(List<string> allOfLines, VoicesDatabase voicesDatabase)
         {
             List<string> newAllOfLines = new List<string>();
 
@@ -131,23 +268,24 @@ namespace VoicesPuter
             List<string> tempJapaneseLines = new List<string>();
             List<string> tempEnglishLines = new List<string>();
             List<string> tempOtherStatementLines = new List<string>();
+            int lineIndex = -1; //need to count lineIndex this way because sometimes the for loop is continue'd
             foreach (string currentLine in allOfLines)
             {
+                lineIndex++;
                 // In the first place, search Japanese line.
                 // Then if a Japanese line is found, retain the Japanese line until disappearing it.
                 // retain also the English line like a way of retained Japanese lines.
                 // If there are lines that exist between Japanese lines and English ones, retain lines as other statement, then it would add between Japanese and English ones.
                 // If counts of both lines are not mutch, don't put voice scripts into Japanese line and just add Japanese lines to new all of lines and add English line to it after changing to voice script's function name of English.
                 // If it is not able to search Japanese lines and it found English lines, add English line after changing to voice script's function name of English.
-                if (currentLine.Contains(ENGLISH_LINE_IDENTIFIER))
+                // fix matching some lines which are entirely comments.
+                if (!COMMENT_OR_BLANK_LINE.IsMatch(currentLine) && currentLine.Contains(ENGLISH_LINE_IDENTIFIER))
                 {
                     if (tempJapaneseLines.Count <= 0)
                     {
                         newAllOfLines.Add(ChangeToVoiceScriptFunctionNameOfEnglish(currentLine));
 
-                        string warningOfLangenWithoutLangjp = "This langen starts without langjp.\n";
-                        warningOfLangenWithoutLangjp += $"{currentLine}\n";
-                        logger.Warning(warningOfLangenWithoutLangjp);
+                        HandleErrorLangenWithoutLangjp(allOfLines, lineIndex);
                         continue;
                     }
                     else
@@ -176,7 +314,7 @@ namespace VoicesPuter
                         List<string> convertedVoiceScriptsToEnglish = new List<string>();
                         for (int japaneseLinesIndex = 0; japaneseLinesIndex < tempJapaneseLines.Count; japaneseLinesIndex++)
                         {
-                            string insertedVoiceScriptsJapaneseLine = GetInsertedVoiceScriptsFromEnglishIntoJapanese(tempEnglishLines[japaneseLinesIndex], tempJapaneseLines[japaneseLinesIndex]);
+                            string insertedVoiceScriptsJapaneseLine = GetInsertedVoiceScriptsFromEnglishIntoJapanese(allOfLines, lineIndex, tempEnglishLines[japaneseLinesIndex], tempJapaneseLines[japaneseLinesIndex], voicesDatabase);
                             convertedVoiceScriptsToJapanese.Add(ChangeToVoiceScriptFunctionNameOfJapan(insertedVoiceScriptsJapaneseLine));
                             convertedVoiceScriptsToEnglish.Add(ChangeToVoiceScriptFunctionNameOfEnglish(tempEnglishLines[japaneseLinesIndex]));
                         }
@@ -184,7 +322,7 @@ namespace VoicesPuter
                         newAllOfLines.AddRange(orderedLines);
                         shouldClearRetainedLines = true;
                     }
-                    else if(COMMENT_OR_BLANK_LINE.IsMatch(currentLine)) //comment or whitespace line - don't end current section
+                    else if (COMMENT_OR_BLANK_LINE.IsMatch(currentLine)) //comment or whitespace line - don't end current section
                     {
                         tempOtherStatementLines.Add(currentLine);
                         orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.OTHER_STATEMENTS);
@@ -196,16 +334,7 @@ namespace VoicesPuter
                         newAllOfLines.AddRange(orderedLines);
                         shouldClearRetainedLines = true;
 
-                        string warningOfUnmatchedCountOfLangjpAndLangen = "Count of langjp and langen is not same.\n";
-                        foreach (string langjp in tempJapaneseLines)
-                        {
-                            warningOfUnmatchedCountOfLangjpAndLangen += $"{langjp}\n";
-                        }
-                        foreach (string langen in tempEnglishLines)
-                        {
-                            warningOfUnmatchedCountOfLangjpAndLangen += $"{langen}\n";
-                        }
-                        logger.Warning(warningOfUnmatchedCountOfLangjpAndLangen);
+                        HandleErrorUnmatchedCountOfLangjpAndLangen(allOfLines, lineIndex, tempEnglishLines, tempJapaneseLines);
                     }
 
                     // If each line are added, clear them.
@@ -235,9 +364,50 @@ namespace VoicesPuter
             {
                 throw new UnmatchedNewLinesWithOriginalLinesException("Unmatch changed count of new all of lines and count of original ones.");
             }
+            logger.Information($"Number of Errors: {errorCount}");
+
             return newAllOfLines;
         }
         #endregion
+
+        //check whether the english lines has one or more dwave on it
+        private bool LineOrLinesHaveDwave(List<string> englishLines)
+        {
+            foreach (string englishLine in englishLines)
+            {
+                List<string> dwave_commands = GetVoiceScripts(englishLine);
+                if (dwave_commands.Count > 0)
+                    return true;
+            }
+
+            return false;
+        }
+
+        //overload for a single string
+        private bool LineOrLinesHaveDwave(string englishLine)
+        {
+            return LineOrLinesHaveDwave(new List<string> { englishLine });
+        }
+
+        private bool CheckEnglishLinesHadReflow(List<string> englishLines, List<string> japaneseLines)
+        {
+            //count the number of @s total across english/japanese lines. If equal, english line probably was split as it was too long.
+            int enCount = 0;
+            foreach(string line in englishLines)
+            {
+                enCount += line.Count(f => f == '@');
+            }
+
+            int jpCount= 0;
+            foreach (string line in japaneseLines)
+            {
+                jpCount += line.Count(f => f == '@');
+            }
+
+            return enCount != 0 && enCount == jpCount;
+        }
+
+
 
         #region GetOrderedLines
         /// <summary>
@@ -285,6 +455,51 @@ namespace VoicesPuter
         }
         #endregion
 
+
+        private List<string> SplitAndKeepSpliton(string input, string splitOn)
+        {
+            string[] splitString = input.Split(separator: new string[] { splitOn }, options: new StringSplitOptions());
+
+            for(int i = 0; i < splitString.Length-1; i++)
+            {
+                splitString[i] = splitString[i] + splitOn;
+            }
+            return splitString.ToList();
+        }
+
+        private List<string> SplitJapaneseLineOnInsertionPoints(string s)
+        {
+            List<string> splitString = new List<string>();
+            string working_string = s;
+
+            //split after langjp
+            List<string> splitLangJP = SplitAndKeepSpliton(working_string, "langjp");
+            if(splitLangJP.Count == 2)
+            {
+                splitString.Add(splitLangJP[0]);
+                working_string = splitLangJP[1];
+            }
+            else if(splitLangJP.Count > 2) //there shouldn't be more than one lanjp on each line
+            {
+                throw new Exception();
+            }
+
+            //split just after each @ symbol, EXCEPT if there is an @ on the last 3 characters of the line, ignore it
+            List<string> splitATSymbol = SplitAndKeepSpliton(working_string, "@");
+
+            //check for @ at end of line. If it exists, merge the last two entries
+            if(splitATSymbol.Last().TrimEnd().Length < 3)
+            {
+                splitATSymbol[splitATSymbol.Count - 2] += splitATSymbol.Last();
+                splitATSymbol.RemoveAt(splitATSymbol.Count - 1);
+            }
+
+            //add the rest of the parts to the splitstring
+            splitString.AddRange(splitATSymbol);
+
+            return splitString;
+        }
+
         #region GetInsertedVoiceScriptsFromEnglishIntoJapanese
         /// <summary>
         /// Return line that put voice scripts from English line into Japanese line.
@@ -292,7 +507,7 @@ namespace VoicesPuter
         /// <param name="englishLine">English line that includes voice scripts.</param>
         /// <param name="japaneseLine">Japanese line.</param>
         /// <returns>Line that put voice scripts from English line into Japanese line.</returns>
-        private string GetInsertedVoiceScriptsFromEnglishIntoJapanese(string englishLine, string japaneseLine)
+        private string GetInsertedVoiceScriptsFromEnglishIntoJapanese(List<string> allLines, int currentLineIndex, string englishLine, string japaneseLine, VoicesDatabase voicesDatabase)
         {
             string insertedJapaneseLine = string.Empty;
 
@@ -304,13 +519,39 @@ namespace VoicesPuter
                 string[] splitJapaneseLine = japaneseLine.Split('@');
 
                 // If English line and Japanese one's structure is not same, just return not changing Japanese line.
-                if (splitEnglishLine.Length != splitJapaneseLine.Length)
+                if ((splitEnglishLine.Length != splitJapaneseLine.Length))
                 {
-                    string warningOfUnmatchedCountOfLangjpAndLangenAtSign = "Count of langen and langjp's '@' is not same.\n";
-                    warningOfUnmatchedCountOfLangjpAndLangenAtSign += $"{englishLine}\n";
-                    warningOfUnmatchedCountOfLangjpAndLangenAtSign += $"{japaneseLine}\n";
-                    logger.Warning(warningOfUnmatchedCountOfLangjpAndLangenAtSign);
-                    return japaneseLine;
+                    List<string> customSplit = SplitJapaneseLineOnInsertionPoints(japaneseLine);
+                    DwaveDatabase.AutoFixResult fixResult = voicesDatabase.DwaveDatabase.FixMissingDwaves(voiceScripts, customSplit.Count - 1, out List<string> fixedDwaves);
+
+                    switch (fixResult)
+                    {
+                        //if fix was successful, return the new japanese line
+                        case DwaveDatabase.AutoFixResult.OK: //don't count error, but log
+                            StringBuilder sb = new StringBuilder();
+                            int i = 0;
+                            for (; i < fixedDwaves.Count; i++)
+                            {
+                                sb.Append(customSplit[i]);
+                                sb.Append(fixedDwaves[i]);
+                            }
+                            sb.Append(customSplit[i]);
+
+                            string fixedJapaneseLine = sb.ToString();
+
+                            HandleErrorUnmatchedCountOfLangjpAndLangenAtSign(allLines, currentLineIndex, englishLine, japaneseLine, splitEnglishLine, splitJapaneseLine, fixedJapaneseLine);
+                            Console.WriteLine($"Auto-fixed line: ");
+                            Console.WriteLine($"   (EN): {englishLine}");
+                            Console.WriteLine($"   (JP): {japaneseLine}");
+                            Console.WriteLine($"(JPFIX): {fixedJapaneseLine}\n");
+                            return fixedJapaneseLine;
+
+                        //if fix was unsuccessful, return the original japanese line
+                        case DwaveDatabase.AutoFixResult.NeedsManualCheck: //don't apply fix, print, count as error, and log (return original japanese line)
+                        case DwaveDatabase.AutoFixResult.Failure: //don't apply fix, count as error, and log (return original japanese line)
+                            HandleErrorUnmatchedCountOfLangjpAndLangenAtSign(allLines, currentLineIndex, englishLine, japaneseLine, splitEnglishLine, splitJapaneseLine, null);
+                            return japaneseLine;
+                    }
                 }
 
                 // If a split english string has voice script, append voice script to a split japanese string.
@@ -347,6 +588,7 @@ namespace VoicesPuter
                 Regex hasAtSignInEndOfLineRegex = new Regex(@"[\w\W]*@$");
                 if (hasAtSignInEndOfLineRegex.IsMatch(japaneseLine)) insertedJapaneseLine += "@";
             }
+
             if (string.IsNullOrEmpty(insertedJapaneseLine))
             {
                 return japaneseLine;

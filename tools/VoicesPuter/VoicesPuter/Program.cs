@@ -12,7 +12,9 @@ namespace VoicesPuter
     /// </summary>
     public class Program
     {
+        private const string ANSWER_ARCS_RELATIVE_PATH = @"C:\drojf\large_projects\umineko\umineko_answer_repo\0.utf";
         private const string GIT_GAME_SCRIPT_RELATIVE_PATH = @"..\..\..\..\..\InDevelopment\ManualUpdates\0.utf";
+        private const string defaultGamePath = GIT_GAME_SCRIPT_RELATIVE_PATH;
         #region Methods
         #region Main
         /// <summary>
@@ -31,10 +33,10 @@ namespace VoicesPuter
             if (args.Length <= 0)
             {
                 //if no arguments specified, look in the repository for the game file
-                if(File.Exists(GIT_GAME_SCRIPT_RELATIVE_PATH))
+                if(File.Exists(defaultGamePath))
                 {
                     Console.WriteLine("Detected program is run from git repository - Using latest question arcs script");
-                    gameScriptPath = GIT_GAME_SCRIPT_RELATIVE_PATH;
+                    gameScriptPath = defaultGamePath;
                 }
                 else
                 {
@@ -52,9 +54,12 @@ namespace VoicesPuter
             ChangedGameScriptMaker changedGameScriptMaker = new ChangedGameScriptMaker(gameScriptPath);
             List<string> gameScriptLines = changedGameScriptMaker.ReadGameScript();
 
+            //scan script for dwave commands and construct a database of all dwave commands
+            VoicesDatabase voicesDatabase = new VoicesDatabase(gameScriptPath);
+
             // Put voice scripts into Japanese line and change voice script's function name of both.
-            VoicesPuter voicesPuter = new VoicesPuter(gameScriptPath);
-            List<string> changedGameScriptLines = voicesPuter.PutVoiceScriptsIntoLines(gameScriptLines);
+            VoicesPuter voicesPuter = new VoicesPuter(gameScriptPath, overwrite: true, voicesDatabase: voicesDatabase);
+            List<string> changedGameScriptLines = voicesPuter.PutVoiceScriptsIntoLines(gameScriptLines, voicesDatabase);
 
             // Make the changed game script into output directory.
             changedGameScriptMaker.MakeChangedGameScript(changedGameScriptLines);
