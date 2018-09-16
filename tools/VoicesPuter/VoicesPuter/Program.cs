@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Serilog;
+using Serilog.Core;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -61,7 +63,12 @@ namespace VoicesPuter
             VoicesPuter voicesPuter = new VoicesPuter(gameScriptPath, overwrite: true, voicesDatabase: voicesDatabase);
             List<string> changedGameScriptLines = voicesPuter.PutVoiceScriptsIntoLines(gameScriptLines, voicesDatabase);
 
-            FixVoiceDelay.FixVoiceDelaysInScript(changedGameScriptLines);
+            string voiceDelayLogPath = Path.Combine(Path.GetDirectoryName(gameScriptPath), "Log", $"voiceDelayLog.txt");
+            File.Delete(voiceDelayLogPath);
+            string outputTemplate = ">>> [{Level:u3}] {Message:lj}{NewLine}{Exception}";
+            Logger logger = new LoggerConfiguration().WriteTo.File(voiceDelayLogPath, outputTemplate: outputTemplate).CreateLogger();
+
+            FixVoiceDelay.FixVoiceDelaysInScript(changedGameScriptLines, logger, logNoOldDelay: false, logSuccessfulInsertions:false);
 
             // Make the changed game script into output directory.
             changedGameScriptMaker.MakeChangedGameScript(changedGameScriptLines);
