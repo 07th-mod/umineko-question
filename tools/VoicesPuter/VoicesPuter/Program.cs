@@ -16,7 +16,8 @@ namespace VoicesPuter
     {
         private const string ANSWER_ARCS_RELATIVE_PATH = @"C:\drojf\large_projects\umineko\umineko_answer_repo\0.utf";
         private const string GIT_GAME_SCRIPT_RELATIVE_PATH = @"..\..\..\..\..\InDevelopment\ManualUpdates\0.utf";
-        private const string defaultGamePath = GIT_GAME_SCRIPT_RELATIVE_PATH;
+        private const string defaultGamePath = ANSWER_ARCS_RELATIVE_PATH;
+        private const string outputTemplate = ">>> [{Level:u3}] {Message:lj}{NewLine}{Exception}";
         #region Methods
         #region Main
         /// <summary>
@@ -56,18 +57,23 @@ namespace VoicesPuter
             ChangedGameScriptMaker changedGameScriptMaker = new ChangedGameScriptMaker(gameScriptPath);
             List<string> gameScriptLines = changedGameScriptMaker.ReadGameScript();
 
+            //setup logging
+            string voiceDatabaseLogPath = Path.Combine(Path.GetDirectoryName(gameScriptPath), "Log", $"voiceDatabaseLog.utf");
+            Utils.DeleteIfExists(voiceDatabaseLogPath);
+            Logger voiceDatabaseLogger = new LoggerConfiguration().WriteTo.File(voiceDatabaseLogPath, outputTemplate: outputTemplate).CreateLogger();
+
+            string voiceDelayLogPath = Path.Combine(Path.GetDirectoryName(gameScriptPath), "Log", $"voiceDelayLog.utf");
+            Utils.DeleteIfExists(voiceDelayLogPath);
+            Logger logger = new LoggerConfiguration().WriteTo.File(voiceDelayLogPath, outputTemplate: outputTemplate).CreateLogger();
+
             //scan script for dwave commands and construct a database of all dwave commands
-            VoicesDatabase voicesDatabase = new VoicesDatabase(gameScriptPath);
+            VoicesDatabase voicesDatabase = new VoicesDatabase(gameScriptPath, voiceDatabaseLogger);
 
             // Put voice scripts into Japanese line and change voice script's function name of both.
             VoicesPuter voicesPuter = new VoicesPuter(gameScriptPath, overwrite: true, voicesDatabase: voicesDatabase);
             List<string> changedGameScriptLines = voicesPuter.PutVoiceScriptsIntoLines(gameScriptLines, voicesDatabase);
 
-            string voiceDelayLogPath = Path.Combine(Path.GetDirectoryName(gameScriptPath), "Log", $"voiceDelayLog.txt");
-            File.Delete(voiceDelayLogPath);
-            string outputTemplate = ">>> [{Level:u3}] {Message:lj}{NewLine}{Exception}";
-            Logger logger = new LoggerConfiguration().WriteTo.File(voiceDelayLogPath, outputTemplate: outputTemplate).CreateLogger();
-
+            //fix 'voiceDelay' commands
             FixVoiceDelay.FixVoiceDelaysInScript(changedGameScriptLines, logger, logNoOldDelay: false, logSuccessfulInsertions:false);
 
             // Make the changed game script into output directory.

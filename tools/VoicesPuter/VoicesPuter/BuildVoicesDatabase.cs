@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serilog.Core;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,6 +11,13 @@ namespace VoicesPuter
 {
     class DwaveArgument
     {
+        public class LastCharacterOfDwaveNotDigitException : Exception
+        {
+            public LastCharacterOfDwaveNotDigitException(string message) : base(message)
+            {
+            }
+        }
+
         readonly bool isLiteralPath;
         //readonly string rawValue;
         readonly string normalizedValue;
@@ -97,7 +105,7 @@ namespace VoicesPuter
 
             if (firstNonDigitIndex == s.Length - 1)
             {
-                throw new IndexOutOfRangeException("SplitStringOnTrailingDigits: the last character of the string is not a digit!");
+                throw new LastCharacterOfDwaveNotDigitException("SplitStringOnTrailingDigits: the last character of the string is not a digit!");
             }
 
             head = s.Substring(0, firstNonDigitIndex + 1); //length of the non-digit section is lastNonDigitIndex + 1
@@ -108,7 +116,20 @@ namespace VoicesPuter
     //need to be able to query which dwaves are used in the script (like "enj1001")
     public class DwaveDatabase
     {
+        public class PrefixOfDwaveArgNotTheSame : Exception
+        {
+            public PrefixOfDwaveArgNotTheSame(string message) : base(message)
+            {
+            }
+        }
+
+        Logger logger;
         bool debugEnabled = false;
+
+        public DwaveDatabase(Logger logger)
+        {
+            this.logger = logger;
+        }
 
         public enum AutoFixResult
         {
@@ -137,7 +158,17 @@ namespace VoicesPuter
                 string dwavePathOrAlias = match.Groups[1].Value;
 
                 DwaveArgument dwaveArgumentObject = new DwaveArgument(dwavePathOrAlias);
-                allDwaveArgs.Add(dwaveArgumentObject.GetNormalizedValue(), dwaveArgumentObject);
+
+                string normalizedDwaveArgument = dwaveArgumentObject.GetNormalizedValue();
+
+                if(allDwaveArgs.ContainsKey(normalizedDwaveArgument))
+                {
+                    logger.Warning($"Duplicate dwave command: {normalizedDwaveArgument}");
+                }
+                else
+                {
+                    allDwaveArgs.Add(dwaveArgumentObject.GetNormalizedValue(), dwaveArgumentObject);
+                }
             }
         }
 
@@ -161,7 +192,7 @@ namespace VoicesPuter
             {
                 if(dwaveArgument.GetHead() != firstHead)
                 {
-                    throw new Exception($"ERROR: head {dwaveArgument.GetHead()} is not the same as {firstHead}!");
+                    throw new PrefixOfDwaveArgNotTheSame($"ERROR: head {dwaveArgument.GetHead()} is not the same as {firstHead}!");
                 }
             }
 
@@ -283,10 +314,12 @@ namespace VoicesPuter
     //it was intended for this class to also handle voice aliases. perhaps can be removed later.
     public class VoicesDatabase
     {
-        public DwaveDatabase DwaveDatabase = new DwaveDatabase();
+        public DwaveDatabase DwaveDatabase;
 
-        public VoicesDatabase(string scriptToScan)
+        public VoicesDatabase(string scriptToScan, Logger logger)
         {
+            DwaveDatabase = new DwaveDatabase(logger);
+
             using (StreamReader reader = new StreamReader(scriptToScan))
             {
                 while (!reader.EndOfStream)

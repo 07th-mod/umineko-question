@@ -118,15 +118,15 @@ namespace VoicesPuter
         {
             this.voicesDatabase = voicesDatabase;
 
-            string errorLogFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"errlog {DateTime.Now.ToString(@"yyyy MM dd yyyy h mm ss tt")}.txt");
-            string warningFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"warnlog {DateTime.Now.ToString(@"yyyy MM dd yyyy h mm ss tt")}.txt");
+            string errorLogFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"errlog {DateTime.Now.ToString(@"yyyy MM dd yyyy h mm ss tt")}.utf");
+            string warningFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"warnlog {DateTime.Now.ToString(@"yyyy MM dd yyyy h mm ss tt")}.utf");
 
             if (overwrite)
             {
-                errorLogFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"errlog.txt");
-                warningFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"warnlog.txt");
-                File.Delete(errorLogFilePath);
-                File.Delete(warningFilePath);
+                errorLogFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"errlog.utf");
+                warningFilePath = Path.Combine(Path.GetDirectoryName(gameScriptPath), LOG_DIRECTORY_NAME, $"warnlog.utf");
+                Utils.DeleteIfExists(errorLogFilePath);
+                Utils.DeleteIfExists(warningFilePath);
             }
 
             string outputTemplate = ">>> [{Level:u3}] {Message:lj}{NewLine}{Exception}";
@@ -158,7 +158,7 @@ namespace VoicesPuter
 
         public void LogFormattedError(List<string> allLines, int index, string errorInformation)
         {
-            string scriptSample = GetScriptSample(allLines, index, 20);
+            string scriptSample = GetScriptSample(allLines, index, 10);
             /*if(scriptSample.Contains("TODO"))
             {
                 logger.Error(">>>>> NOTE: Error collapsed as marked for manual fix.");
@@ -348,7 +348,7 @@ namespace VoicesPuter
                 }
 
                 // Japanese line is added here because chunk of Japanese and English line should be added one by one.
-                if (currentLine.Contains(JAPANESE_LINE_IDENTIFIER))
+                if (!COMMENT_OR_BLANK_LINE.IsMatch(currentLine) && currentLine.Contains(JAPANESE_LINE_IDENTIFIER))
                 {
                     tempJapaneseLines.Add(currentLine);
                     orderOfAddedTypeOfLanguage.Add(TypeOfLanguage.JAPANESE);
@@ -522,7 +522,24 @@ namespace VoicesPuter
                 if ((splitEnglishLine.Length != splitJapaneseLine.Length))
                 {
                     List<string> customSplit = SplitJapaneseLineOnInsertionPoints(japaneseLine);
-                    DwaveDatabase.AutoFixResult fixResult = voicesDatabase.DwaveDatabase.FixMissingDwaves(voiceScripts, customSplit.Count - 1, out List<string> fixedDwaves);
+
+                    //note:returned dwaves are just 'dwave 0, thing' not 'dwave_jp 0, thing'
+                    List<string> fixedDwaves = new List<string>();
+                    DwaveDatabase.AutoFixResult fixResult;
+                    try
+                    {
+                        fixResult = voicesDatabase.DwaveDatabase.FixMissingDwaves(voiceScripts, customSplit.Count - 1, out fixedDwaves);
+                    }
+                    catch(DwaveArgument.LastCharacterOfDwaveNotDigitException e)
+                    {
+                        logger.Error("An error occured while trying to fix the below:\n" + e.ToString());
+                        fixResult = DwaveDatabase.AutoFixResult.Failure;
+                    }
+                    catch(DwaveDatabase.PrefixOfDwaveArgNotTheSame e)
+                    {
+                        logger.Error("An error occured while trying to fix the below:\n" + e.ToString());
+                        fixResult = DwaveDatabase.AutoFixResult.Failure;
+                    }
 
                     switch (fixResult)
                     {
