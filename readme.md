@@ -56,7 +56,6 @@ The patch is currently **FINISHED**, although some bugs may remain...
 
  * [DoctorDiablo](https://github.com/DoctorDiablo)
  * [drojf](https://github.com/drojf)
- * [enumag](https://github.com/enumag)
  * [Forteissimo](https://github.com/Forteissimo)
  * [ReitoKanzaki](https://github.com/ReitoKanzaki)
 
