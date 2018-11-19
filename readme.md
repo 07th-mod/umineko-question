@@ -5,11 +5,11 @@ It is compatible with the Steam version ***and*** the MangaGamer DRM-free downlo
 
 ## Install Instructions
 
-See the Getting Started guide: https://github.com/07th-mod/guide/wiki/Umineko-Getting-started
+See the Getting Started guide: http://07th-mod.com/wiki/Umineko/Umineko-Getting-started/
 
 ## Troubleshooting
 
-See the [Troubleshooting](https://github.com/07th-mod/guide/wiki/Umineko-Part-1---Voice-and-Graphics-Patch#troubleshooting) section of the Wiki.
+See the [Troubleshooting](http://07th-mod.com/wiki/Umineko/Umineko-Part-0-TroubleShooting-and-FAQ/) section of the Wiki.
 
 ## Feedback and bug reports
 
