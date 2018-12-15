@@ -1,1 +1,16 @@
-ffmpeg -i old_umineko_op.mpg -c:v mpeg1video -bufsize 4096k -maxrate 30000k -qscale:v 2 -vf "crop=640:360:0:60, scale=-1:480" -sws_flags lanczos+full_chroma_inp -c:a copy cropped_umineko_op.mpg
+:: NOTE: Do not let the video size exceed ~120mb. If the video file is too large
+:: it will sometimes cause the game to crash.
+
+::These are the settings I used to encode the 1080p OP videos (the 540p version is for linux/mac)
+::When I tried settings bufsize/maxrate, the game wouldn't play the video.
+::If you get choppy playback peformance, try reduction your screen resolution to 1080p and closing background programs like Chrome/Firefox
+
+ffmpeg -i umineko_op.mp4 -c:v mpeg1video -qscale:v 1 -vf "scale=-1:540" -c:a mp3 -q:a 3 umineko_op_540p.mpg
+ffmpeg -i umineko_op.mp4 -c:v mpeg1video -qscale:v 4                    -c:a mp3 -q:a 3 umineko_op_1080p.mpg
+
+ffmpeg -i umineko_op3_yt.mp4 -c:v mpeg1video -qscale:v 1 -vf "scale=-1:540" -c:a mp3 -q:a 3 umineko_op3_540p.mpg
+ffmpeg -i umineko_op3_yt.mp4 -c:v mpeg1video -qscale:v 4                    -c:a mp3 -q:a 3 umineko_op3_1080p.mpg
+pause
+
+::BAD SETTINGS:
+::ffmpeg -i old_umineko_op.mpg -c:v mpeg1video -bufsize 4096k -maxrate 30000k -qscale:v 2 -vf "crop=640:360:0:60, scale=-1:480" -sws_flags lanczos+full_chroma_inp -c:a copy cropped_umineko_op.mpg
