@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -154,7 +155,9 @@ namespace QuestionArcsADVMode
     //then the script can decide whether to emit the spaces or not. Could just be a string argument containing the number of spaces (that is definitely easiest).
     internal class Program
     {
-        private static void Main(string[] args)
+        static Regex setwindowRegex = new Regex(@"^\s*setwindow");
+
+        private static void oldMain(string[] args)
         {
             string input_script = @"C:\drojf\large_projects\umineko\umineko_question_repo\InDevelopment\ManualUpdates\0.utf";
             //string output_script = @"C:\drojf\large_projects\umineko\umineko_question_repo\InDevelopment\ManualUpdates\0_new.utf";
@@ -180,7 +183,7 @@ namespace QuestionArcsADVMode
 
 
                 //preprocess by line
-                foreach(List<Token> oneLinesTokens in allTokensByLine)
+                foreach (List<Token> oneLinesTokens in allTokensByLine)
                 {
                     CharacterCountInserter.MarkClickWaitHasNewlineAfterIt(oneLinesTokens);
                 }
@@ -196,9 +199,83 @@ namespace QuestionArcsADVMode
                     outputFile.Write(t.ToString());
                 }
             }
-
         }
 
+        private static bool lineShouldBeModified(string line)
+        {
+            if(!setwindowRegex.IsMatch(line)) {
+                return false;
+            }
+
+            string trimmedLine = line.Trim();
+
+            //skip commented lines
+            if (trimmedLine[0] == ';')
+            {
+                return false;
+            }
+
+            //manual marker indicating the line shouldn't be changed
+            if (line.Contains("utmeta-nomodify"))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private static void Main(string[] args)
+        {
+            string input_script = @"C:\drojf\large_projects\umineko\umineko-question\InDevelopment\ManualUpdates\0.utf";
+            //string input_script = @"C:\drojf\large_projects\umineko\umineko-question\dev\umineko_fullvoice.txt";
+            //string output_script = @"C:\drojf\large_projects\umineko\umineko-question\InDevelopment\ManualUpdates\0_output.utf";
+
+            TextboxNameInserter inserter = new TextboxNameInserter();
+            inserter.ReadVoiceToNameIDFile(@"C:\drojf\Dropbox\current programming\umineko_port_umitweak_to_mg\ADV_Mode\name_list.txt");
+            string[] allLines = File.ReadAllLines(input_script);
+            inserter.ReadVoiceAliases(allLines);
+            inserter.InsertIntoScript(allLines);
+            Console.WriteLine("\n\nProgram Finished");
+            Console.ReadKey();
+            return;
+
+
+
+
+            HashSet<string> uniqueLines = new HashSet<string>();
+
+            string[] lines = File.ReadAllLines(input_script);
+            List<string> outputLines = new List<string>(200000);
+            foreach(string line in lines)
+            {
+                if (!setwindowRegex.IsMatch(line))
+                {
+                    continue;
+                }
+
+                uniqueLines.Add(line.Trim());
+
+
+/*                string newLine = line;
+
+                if(lineShouldBeModified(line))
+                {
+                    newLine = "advsetwindow_initial";
+                }*/
+
+                //outputLines.Add(newLine);
+            }
+
+            Console.WriteLine("\nUnique Lines: \n\n");
+            foreach(string line in uniqueLines)
+            {
+                Console.WriteLine(line);
+            }
+
+            //File.WriteAllLines(output_script, outputLines);
+
+            Console.ReadKey();
+        }
     }
 
 }
