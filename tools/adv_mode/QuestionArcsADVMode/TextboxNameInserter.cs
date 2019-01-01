@@ -215,10 +215,24 @@ namespace QuestionArcsADVMode
         public List<string> InsertIntoScript(string[] lines)
         {
             List<string> outputLines = new List<string>(200000);
-
+            string lastid = null;
             foreach(string line in lines)
             {
-                getIDForLine(line);
+                if (line.Contains("langen") || line.Contains("langjp"))
+                {
+                    string id = getIDForLine(line);
+                    if (id != null && id != lastid)
+                    {
+                        outputLines.Add($"advchar \"{id}\"");
+                    }
+                    else if (lastid != null && id == null)
+                    {
+                        outputLines.Add($"advchar \"-1\"");
+                    }
+                    lastid = id;
+                }
+
+                outputLines.Add(line);
             }
 
             return outputLines;

@@ -224,29 +224,13 @@ namespace QuestionArcsADVMode
             return true;
         }
 
-        private static void Main(string[] args)
+        private static void replaceSetwindowCommands(string input_script)
         {
-            string input_script = @"C:\drojf\large_projects\umineko\umineko-question\InDevelopment\ManualUpdates\0.utf";
-            //string input_script = @"C:\drojf\large_projects\umineko\umineko-question\dev\umineko_fullvoice.txt";
-            //string output_script = @"C:\drojf\large_projects\umineko\umineko-question\InDevelopment\ManualUpdates\0_output.utf";
-
-            TextboxNameInserter inserter = new TextboxNameInserter();
-            inserter.ReadVoiceToNameIDFile(@"C:\drojf\Dropbox\current programming\umineko_port_umitweak_to_mg\ADV_Mode\name_list.txt");
-            string[] allLines = File.ReadAllLines(input_script);
-            inserter.ReadVoiceAliases(allLines);
-            inserter.InsertIntoScript(allLines);
-            Console.WriteLine("\n\nProgram Finished");
-            Console.ReadKey();
-            return;
-
-
-
-
             HashSet<string> uniqueLines = new HashSet<string>();
 
             string[] lines = File.ReadAllLines(input_script);
             List<string> outputLines = new List<string>(200000);
-            foreach(string line in lines)
+            foreach (string line in lines)
             {
                 if (!setwindowRegex.IsMatch(line))
                 {
@@ -256,18 +240,18 @@ namespace QuestionArcsADVMode
                 uniqueLines.Add(line.Trim());
 
 
-/*                string newLine = line;
+                /*                string newLine = line;
 
-                if(lineShouldBeModified(line))
-                {
-                    newLine = "advsetwindow_initial";
-                }*/
+                                if(lineShouldBeModified(line))
+                                {
+                                    newLine = "advsetwindow_initial";
+                                }*/
 
                 //outputLines.Add(newLine);
             }
 
             Console.WriteLine("\nUnique Lines: \n\n");
-            foreach(string line in uniqueLines)
+            foreach (string line in uniqueLines)
             {
                 Console.WriteLine(line);
             }
@@ -275,6 +259,96 @@ namespace QuestionArcsADVMode
             //File.WriteAllLines(output_script, outputLines);
 
             Console.ReadKey();
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <param name="allLines"></param>
+        /// <returns></returns>
+        private static List<string> fixCharacterChangeOnLinesWithNoText(string[] allLines)
+        {
+            Regex blankDialogueLineRegex = new Regex(@"^\s*((langen)|(langjp))[\^@\\/ \t]*$");
+            string advcharSearchString = @"advchar ""-1""";
+
+            List<string> outputLines = new List<string>(200000);
+
+            bool holdingADVChar = false;
+
+            int numMatches = 0;
+            for (int i = 0; i < allLines.Count(); i++)
+            {
+                string line = allLines[i];
+
+                bool currentLineIsADVChar = line.Trim() == advcharSearchString;
+                bool nextLineIsBlankDialogue = (i+1) < allLines.Count() ? blankDialogueLineRegex.IsMatch(allLines[i + 1]) : false;
+                
+
+                if(holdingADVChar)
+                {
+                    //State 2: waiting to release the held ADVchar command
+
+                    //Always output the current line in this mode.
+                    outputLines.Add(line);
+
+                    //if the next line is no longer a blank dialogue, it is time to output the held advchar and revert to State 1
+                    if (!nextLineIsBlankDialogue)
+                    {
+                        outputLines.Add(advcharSearchString);
+                        holdingADVChar = false;
+                    }
+                }
+                else
+                {
+                    //State 1: waiting to get a line with advchar "-1" while the next line is a blank dialogue
+                    if(currentLineIsADVChar && nextLineIsBlankDialogue)
+                    {
+                        //if you get a match hold the advchar "-1" command
+                        holdingADVChar = true;
+                    }
+                    else
+                    {
+                        //if you don't get a match, just output the line
+                        outputLines.Add(line);
+                    }
+                }
+
+
+                //for debugging only
+                if(nextLineIsBlankDialogue)
+                {
+                    Console.WriteLine(line);
+                    numMatches++;
+                }
+            }
+
+            Console.WriteLine($"Got {numMatches} matches.");
+            return outputLines;
+        }
+
+        private static void Main(string[] args)
+        {
+            string input_script = @"C:\drojf\large_projects\umineko\umineko-question\InDevelopment\ManualUpdates\0.utf";
+            //string input_script = @"C:\drojf\large_projects\umineko\umineko-question\dev\umineko_fullvoice.txt";
+            string output_script = @"C:\drojf\large_projects\umineko\umineko-question\InDevelopment\ManualUpdates\0_output.utf";
+
+            TextboxNameInserter inserter = new TextboxNameInserter();
+            inserter.ReadVoiceToNameIDFile(@"C:\drojf\Dropbox\current programming\umineko_port_umitweak_to_mg\ADV_Mode\name_list.txt");
+            string[] allLines = File.ReadAllLines(input_script);
+
+
+            List<string> outputLines = fixCharacterChangeOnLinesWithNoText(allLines);
+
+
+            ////Uncomment to insert textboxes
+            //inserter.ReadVoiceAliases(allLines);
+            //List<string> outputLines = inserter.InsertIntoScript(allLines);
+
+
+
+            File.WriteAllLines(output_script, outputLines);
+            Console.WriteLine("\n\nProgram Finished");
+            Console.ReadKey();
+            return;
         }
     }
 
