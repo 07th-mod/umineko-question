@@ -267,7 +267,7 @@ namespace QuestionArcsADVMode
         /// <returns></returns>
         private static List<string> fixCharacterChangeOnLinesWithNoText(string[] allLines)
         {
-            Regex blankDialogueLineRegex = new Regex(@"^\s*((langen)|(langjp))[\^@\\/ \t]*$");
+            Regex blankDialogueLineRegex = new Regex(@"^\s*((langen)|(langjp))(!s((d)|(\d*)))*[\^@\\/ \t]*$");
             string advcharSearchString = @"advchar ""-1""";
 
             List<string> outputLines = new List<string>(200000);
