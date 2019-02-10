@@ -1,3 +1,39 @@
+
+# [>> CLICK HERE TO INSTALL THE MOD <<](http://07th-mod.com/wiki/Umineko/Umineko-Getting-started/)
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 # Umineko no Naku Koro ni (Question Arcs) 
 
 This patch aims to modify the newest release of Umineko by MangaGamer, changing its assets to replicate the PS3 version of the game.
