@@ -34,6 +34,36 @@
 <br>
 <br>
 
+
+# Developer Information
+
+## Branches
+
+**ALL DEVELOPMENT NOW HAPPENS ON THE `1080p` BRANCH!**
+
+Do not make any code changes to the `master` branch.
+
+I'm waiting until the new installer is ready before merging the 1080p branch into master (as the old installer still relies on the 'master' branch).
+
+## Important information
+
+Generally, you only want to look at the main umineko script, on the '1080p' branch.
+
+The main umineko script file for development is located in `InDevelopment\ManualUpdates\0.utf`
+
+
+## Folder structure:
+
+- `InDevelopment\ManualUpdates\0.utf`: The main umineko script file, where development happens
+- `InDevelopment\UminekoVoiceParser`: The c# project which was initially used to merge the voice lines from the old script to the new script
+- `dev`: This folder contains the (I believe) original script files. Usually you don't use this folder unless you need to check something
+- `image_resizing`: This folder contains xnConvert scripts which can be used to resize PS3 backgrounds etc.
+- `tools\VoicePuter`: Contains a c# project which was used to port the japanese voices for the question and answer arcs.
+- `tools\adv_mod`: Contains an abandoned c# project which was used to add ADV mode - however please don't use that as reference, the final ADV mode was NOT implemented using this project.
+- `umihook`: Contains a project which was used to hook file accesses of the game and play back the PS3 .at3 files externally (as the game doesn't support .at3 files). It would probably be easier to either capture the output from debug mode or recompile the game if you really want to attempt this. The audio quality probably wouldn't be improved significantly even with this method.
+- `widescreen`: contains old python scripts used for converting widescreen (consider removal of this folder). The answer arcs repository has more up-to-date scripts.
+- `POnscripter_Video_Encode_Settings.txt`: Contains ffmpeg settings used for encoding the videos - however you may still need to play around with the settings and test within the game to make sure they work.
+
 # Umineko no Naku Koro ni (Question Arcs) 
 
 This patch aims to modify the newest release of Umineko by MangaGamer, changing its assets to replicate the PS3 version of the game.
