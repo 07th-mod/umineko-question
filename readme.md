@@ -47,7 +47,7 @@ I'm waiting until the new installer is ready before merging the 1080p branch int
 
 ## Important information
 
-Generally, you only want to look at the main umineko script, on the '1080p' branch.
+Generally, you only want to look at the main umineko script, on the master branch.
 
 The main umineko script file for development is located in `InDevelopment\ManualUpdates\0.utf`
 
