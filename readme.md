@@ -37,14 +37,6 @@
 
 # Developer Information
 
-## Branches
-
-**ALL DEVELOPMENT NOW HAPPENS ON THE `1080p` BRANCH!**
-
-Do not make any code changes to the `master` branch.
-
-I'm waiting until the new installer is ready before merging the 1080p branch into master (as the old installer still relies on the 'master' branch).
-
 ## Important information
 
 Generally, you only want to look at the main umineko script, on the master branch.
