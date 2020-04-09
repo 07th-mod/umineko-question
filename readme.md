@@ -43,7 +43,6 @@ Generally, you only want to look at the main umineko script, on the master branc
 
 The main umineko script file for development is located in `InDevelopment\ManualUpdates\0.utf`
 
-
 ## Folder structure:
 
 - `InDevelopment\ManualUpdates\0.utf`: The main umineko script file, where development happens
@@ -55,6 +54,10 @@ The main umineko script file for development is located in `InDevelopment\Manual
 - `umihook`: Contains a project which was used to hook file accesses of the game and play back the PS3 .at3 files externally (as the game doesn't support .at3 files). It would probably be easier to either capture the output from debug mode or recompile the game if you really want to attempt this. The audio quality probably wouldn't be improved significantly even with this method.
 - `widescreen`: contains old python scripts used for converting widescreen (consider removal of this folder). The answer arcs repository has more up-to-date scripts.
 - `POnscripter_Video_Encode_Settings.txt`: Contains ffmpeg settings used for encoding the videos - however you may still need to play around with the settings and test within the game to make sure they work.
+
+## Asset Backup
+
+Some large files are saved as attachments to release v0.0.0: https://github.com/07th-mod/umineko-question/releases/tag/0.0.0 . These files used to be stored using Git LFS, but we have since stopped usage of Git LFS.
 
 # Umineko no Naku Koro ni (Question Arcs) 
 
