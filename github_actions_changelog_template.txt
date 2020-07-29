@@ -1,0 +1,13 @@
+## Changes
+
+- Add your changes here
+
+## Update/Installation Instructions
+
+**We recommend only updating if you're in-between chapters, as loaded saves might break after the update, skipping you backward or forward in the game**.
+
+- Download the installer from  [**Installer Usage/Download Page**](http://07th-mod.com/wiki/Umineko/Umineko-Part-3a-Cross-Platform-Installer/)
+- Using the installer, install to the same destination as you selected previously
+- The installer should automatically detect a partial update is required and apply the update
+
+Also, be sure to [read the wiki](http://07th-mod.com/wiki/Umineko/Umineko-Getting-started/) if this is your first time installing.
