@@ -67,6 +67,11 @@ fix_count = 0
 
 with open("script_with_comments.txt", 'w', encoding='utf-8') as script_with_comments:
     for lineIndex, line in enumerate(lines):
+        # Afaik voicewait applies to both languages, so just clear both flags
+        if line.lower().startswith('voicewait'):
+            next_en_needs_voice_delay = False
+            next_jp_needs_voice_delay = False
+
         is_english = line_is_english(line)
 
         if is_english is None:
@@ -82,13 +87,16 @@ with open("script_with_comments.txt", 'w', encoding='utf-8') as script_with_comm
                 next_jp_needs_voice_delay = False
                 line_needs_voice_delay = True
 
-            # Don't apply voicedelay if
+            # Don't apply voicedelay (clear the flag!) if
             #  - there is already voicedelay on that line
             #  - there is a noclear_cw on that line
             #  - the line starts with a clickwait, ignoring langen/langjp/sd!
-            if line_needs_voice_delay and ('voicedelay' in line.lower() or 'noclear_cw' in line.lower()) or check_line_starts_with_clickwait(line):
-                line_needs_voice_delay = False
+            #  - there is a voicewait
+            if line_needs_voice_delay:
+                if 'voicedelay' in line.lower() or 'noclear_cw' in line.lower() or check_line_starts_with_clickwait(line):
+                    line_needs_voice_delay = False
 
+            # If you need to insert a voice delay but the line is not suitable, then postpone it to the next line
             if line_needs_voice_delay and 'dwave' not in line:
                 line_needs_voice_delay = False
                 next_en_needs_voice_delay = is_english
