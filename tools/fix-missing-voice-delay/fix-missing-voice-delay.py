@@ -7,7 +7,7 @@ match_dict = {}
 regex_lineEnding = re.compile(r'[@\\//]+$')
 
 def check_line_starts_with_clickwait(line):
-    trimmed_line = line.lower().replace('langen', '').replace('langjp', '').replace('!sd', '')
+    trimmed_line = line.lower().replace('langen', '').replace('langjp', '').replace('!sd', '').replace('^', '')
     return trimmed_line.startswith('@') or trimmed_line.startswith('\\')
 
 
@@ -88,6 +88,11 @@ with open("script_with_comments.txt", 'w', encoding='utf-8') as script_with_comm
             #  - the line starts with a clickwait, ignoring langen/langjp/sd!
             if line_needs_voice_delay and ('voicedelay' in line.lower() or 'noclear_cw' in line.lower()) or check_line_starts_with_clickwait(line):
                 line_needs_voice_delay = False
+
+            if line_needs_voice_delay and 'dwave' not in line:
+                line_needs_voice_delay = False
+                next_en_needs_voice_delay = is_english
+                next_jp_needs_voice_delay = not is_english
 
             if line_needs_voice_delay:
                 script_with_comments.write(f"{line.rstrip()} ; NEED VDELAY\n")
