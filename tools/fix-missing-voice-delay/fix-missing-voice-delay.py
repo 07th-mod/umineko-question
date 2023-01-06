@@ -2,9 +2,6 @@ import re
 
 script_path = 'InDevelopment/ManualUpdates/0.utf'
 
-# This regex may add some voice delays when not needed, but
-# regex_noClickWaitLine = re.compile(r'dwave[^@]*\/\s*$')
-
 match_dict = {}
 
 regex_lineEnding = re.compile(r'[@\\//]+$')
@@ -15,16 +12,23 @@ def line_is_english(line):
     japanese = 'langjp' in line
 
     if not english and not japanese:
-        raise Exception("Error: line missing language marker: {line}")
+        return None
 
     if english and japanese:
         raise Exception("Error: line has both language markers: {line}")
 
     return english
 
+def preprocess_line(line):
+    # remove comment
+    line = line.split(";", 1)[0]
+
+    # Strip all whitespace before doing line ending check as we don't care about it
+    return re.sub(r"\s+", "", line, flags=re.UNICODE)
+
 
 def line_afterwards_needs_voice_delay(line):
-    # Strip all whitespace before doing line ending check as we don't care about it
+    line = preprocess_line(line)
     line_noWhiteSpace = re.sub(r"\s+", "", line, flags=re.UNICODE)
 
     match = regex_lineEnding.search(line_noWhiteSpace)
@@ -46,26 +50,59 @@ def line_afterwards_needs_voice_delay(line):
 
     return True
 
-
 with open(script_path, encoding='utf-8') as f:
     lines = f.readlines()
+
+next_jp_needs_voice_delay = False
+next_en_needs_voice_delay = False
 
 output = []
 
 match_count = 0
-for lineIndex, line in enumerate(lines):
-    # Skip comments
-    if line.lstrip().startswith(';'):
-        continue
+fix_count = 0
 
-    if line_afterwards_needs_voice_delay(line):
-        match_count += 1
-        output.append(line)
+with open("script_with_comments.txt", 'w', encoding='utf-8') as script_with_comments:
+    for lineIndex, line in enumerate(lines):
+        is_english = line_is_english(line)
+
+        if is_english is None:
+            # Skip lines which don't have langen or langjp
+            script_with_comments.write(line)
+        else:
+            line_needs_voice_delay = False
+
+            if next_en_needs_voice_delay and is_english:
+                next_en_needs_voice_delay = False
+                line_needs_voice_delay = True
+            elif next_jp_needs_voice_delay and not is_english:
+                next_jp_needs_voice_delay = False
+                line_needs_voice_delay = True
+
+            # Don't apply voicedelay if
+            #  - there is already voicedelay on that line
+            #  - there is a noclear_cw on that line
+            if line_needs_voice_delay and ('voicedelay' in line.lower() or 'noclear_cw' in line.lower()):
+                line_needs_voice_delay = False
+
+            if line_needs_voice_delay:
+                script_with_comments.write(f"{line.rstrip()} ; NEED VDELAY\n")
+                fix_count += 1
+            else:
+                script_with_comments.write(line)
+
+            if line_afterwards_needs_voice_delay(line):
+                match_count += 1
+                output.append(line)
+                if is_english:
+                    next_en_needs_voice_delay = True
+                else:
+                    next_jp_needs_voice_delay = True
 
 
 print(match_dict)
 
 print(f"Got {match_count} matches")
+print(f"Will fix {fix_count} lines")
 
 
 with open("out.txt", 'w', encoding='utf-8') as f:
