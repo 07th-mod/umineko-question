@@ -6,6 +6,10 @@ match_dict = {}
 
 regex_lineEnding = re.compile(r'[@\\//]+$')
 
+def check_line_starts_with_clickwait(line):
+    trimmed_line = line.lower().replace('langen', '').replace('langjp', '').replace('!sd', '')
+    return trimmed_line.startswith('@') or trimmed_line.startswith('\\')
+
 
 def line_is_english(line):
     english = 'langen' in line
@@ -81,7 +85,8 @@ with open("script_with_comments.txt", 'w', encoding='utf-8') as script_with_comm
             # Don't apply voicedelay if
             #  - there is already voicedelay on that line
             #  - there is a noclear_cw on that line
-            if line_needs_voice_delay and ('voicedelay' in line.lower() or 'noclear_cw' in line.lower()):
+            #  - the line starts with a clickwait, ignoring langen/langjp/sd!
+            if line_needs_voice_delay and ('voicedelay' in line.lower() or 'noclear_cw' in line.lower()) or check_line_starts_with_clickwait(line):
                 line_needs_voice_delay = False
 
             if line_needs_voice_delay:
