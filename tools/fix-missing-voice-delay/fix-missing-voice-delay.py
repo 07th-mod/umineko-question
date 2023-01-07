@@ -2,6 +2,7 @@ from enum import Enum
 import pickle
 import re
 from voice_util import VoiceUtilClass
+import config
 
 script_path = 'InDevelopment/ManualUpdates/0.utf'
 script_with_comments = "script_with_comments.txt"
@@ -135,14 +136,10 @@ with open(script_with_comments, 'w', encoding='utf-8') as script_with_comments:
                     next_jp_needs_voice_delay = True
 
             if line_needs_voice_delay:
-                script_with_comments.write(f"{line.rstrip()} ; NEED_VDELAY\n")
+                script_with_comments.write(f"{config.VDELAY_MARKER}{line}")
                 fix_count += 1
             else:
                 output_line = line
-                if next_en_needs_voice_delay or next_jp_needs_voice_delay:
-                    if 'dwave' in line:
-                        output_line = f"{line.rstrip()} ; SOURCE_LINE_{('EN' if is_english else 'JP')}\n"
-
                 script_with_comments.write(output_line)
 
 
