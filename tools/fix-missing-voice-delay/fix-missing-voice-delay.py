@@ -4,6 +4,7 @@ import re
 from voice_util import VoiceUtilClass
 
 script_path = 'InDevelopment/ManualUpdates/0.utf'
+script_with_comments = "script_with_comments.txt"
 
 match_dict = {}
 
@@ -69,10 +70,6 @@ def line_afterwards_needs_voice_delay(line):
 
     return True
 
-# I've adapted this from https://github.com/drojf/umineko_python_scripts/tree/master/Fix_Automatic_Voice_Lines
-voice_database_path = 'tools/voice-length-database/question.pickle'
-voice_util_class = VoiceUtilClass(script_path=script_path, voice_length_pickle_path=voice_database_path)
-
 
 with open(script_path, encoding='utf-8') as f:
     lines = f.readlines()
@@ -85,7 +82,7 @@ output = []
 match_count = 0
 fix_count = 0
 
-with open("script_with_comments.txt", 'w', encoding='utf-8') as script_with_comments:
+with open(script_with_comments, 'w', encoding='utf-8') as script_with_comments:
     for lineIndex, line in enumerate(lines):
         # Afaik voicewait applies to both languages, so just clear both flags
         if line.lower().startswith('voicewait'):
@@ -128,11 +125,6 @@ with open("script_with_comments.txt", 'w', encoding='utf-8') as script_with_comm
                     next_en_needs_voice_delay = is_english
                     next_jp_needs_voice_delay = not is_english
 
-            if line_needs_voice_delay:
-                script_with_comments.write(f"{line.rstrip()} ; NEED VDELAY\n")
-                fix_count += 1
-            else:
-                script_with_comments.write(line)
 
             if line_afterwards_needs_voice_delay(line):
                 match_count += 1
@@ -142,8 +134,16 @@ with open("script_with_comments.txt", 'w', encoding='utf-8') as script_with_comm
                 else:
                     next_jp_needs_voice_delay = True
 
-                length = voice_util_class.try_get_voice_length_of_line(line.replace('dwave_jp', 'dwave').replace('dwave_eng', 'dwave'), show_output=False)
-                # print(f"Voice length: {length} of {line}")
+            if line_needs_voice_delay:
+                script_with_comments.write(f"{line.rstrip()} ; NEED_VDELAY\n")
+                fix_count += 1
+            else:
+                output_line = line
+                if next_en_needs_voice_delay or next_jp_needs_voice_delay:
+                    if 'dwave' in line:
+                        output_line = f"{line.rstrip()} ; SOURCE_LINE_{('EN' if is_english else 'JP')}\n"
+
+                script_with_comments.write(output_line)
 
 
 print(match_dict)
