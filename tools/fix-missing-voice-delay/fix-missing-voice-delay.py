@@ -1,5 +1,7 @@
 from enum import Enum
+import pickle
 import re
+from voice_util import VoiceUtilClass
 
 script_path = 'InDevelopment/ManualUpdates/0.utf'
 
@@ -66,6 +68,11 @@ def line_afterwards_needs_voice_delay(line):
         return False
 
     return True
+
+# I've adapted this from https://github.com/drojf/umineko_python_scripts/tree/master/Fix_Automatic_Voice_Lines
+voice_database_path = 'tools/voice-length-database/question.pickle'
+voice_util_class = VoiceUtilClass(script_path=script_path, voice_length_pickle_path=voice_database_path)
+
 
 with open(script_path, encoding='utf-8') as f:
     lines = f.readlines()
@@ -134,6 +141,9 @@ with open("script_with_comments.txt", 'w', encoding='utf-8') as script_with_comm
                     next_en_needs_voice_delay = True
                 else:
                     next_jp_needs_voice_delay = True
+
+                length = voice_util_class.try_get_voice_length_of_line(line.replace('dwave_jp', 'dwave').replace('dwave_eng', 'dwave'), show_output=False)
+                # print(f"Voice length: {length} of {line}")
 
 
 print(match_dict)
