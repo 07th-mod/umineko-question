@@ -1,3 +1,4 @@
+from enum import Enum
 import re
 
 script_path = 'InDevelopment/ManualUpdates/0.utf'
@@ -30,8 +31,12 @@ def preprocess_line(line):
     # Strip all whitespace before doing line ending check as we don't care about it
     return re.sub(r"\s+", "", line, flags=re.UNICODE)
 
+class LineEndingType(Enum):
+    NONE = 1
+    CLICKWAIT = 2
+    CONTINUE = 3
 
-def line_afterwards_needs_voice_delay(line):
+def get_line_ending(line):
     line = preprocess_line(line)
     line_noWhiteSpace = re.sub(r"\s+", "", line, flags=re.UNICODE)
 
@@ -39,13 +44,21 @@ def line_afterwards_needs_voice_delay(line):
 
     # Skip lines which don't have any clickwait markers at all at the end
     if not match:
-        return False
+        return LineEndingType.NONE
 
     lineEnding = match[0]
     match_dict[lineEnding] = None
 
     # Skip lines with clickwaits at the end (any character other than / at the end)
     if len(lineEnding.strip('/')) != 0:
+        return LineEndingType.CLICKWAIT
+
+    return LineEndingType.CONTINUE
+
+def line_afterwards_needs_voice_delay(line):
+    line_ending_type = get_line_ending(line)
+
+    if line_ending_type != LineEndingType.CONTINUE:
         return False
 
     # Skip lines with no voices on it (this will give some false positives but this is OK)
@@ -99,8 +112,14 @@ with open("script_with_comments.txt", 'w', encoding='utf-8') as script_with_comm
             # If you need to insert a voice delay but the line is not suitable, then postpone it to the next line
             if line_needs_voice_delay and 'dwave' not in line:
                 line_needs_voice_delay = False
-                next_en_needs_voice_delay = is_english
-                next_jp_needs_voice_delay = not is_english
+
+                if get_line_ending(line) == LineEndingType.CLICKWAIT:
+                    # If the line ends with clickwait, the voicedelay is not needed
+                    # print(f"Cancelling voicedelay due to line {line}")
+                    pass
+                else:
+                    next_en_needs_voice_delay = is_english
+                    next_jp_needs_voice_delay = not is_english
 
             if line_needs_voice_delay:
                 script_with_comments.write(f"{line.rstrip()} ; NEED VDELAY\n")
