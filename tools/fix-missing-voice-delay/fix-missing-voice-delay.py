@@ -12,7 +12,7 @@ match_dict = {}
 regex_lineEnding = re.compile(r'[@\\//]+$')
 
 def check_line_starts_with_clickwait(line):
-    trimmed_line = line.lower().replace('langen', '').replace('langjp', '').replace('!sd', '').replace('^', '')
+    trimmed_line = line.lower().replace('langen', '').replace('langjp', '').replace('!sd', '').replace('^', '').replace(':', '')
     return trimmed_line.startswith('@') or trimmed_line.startswith('\\')
 
 
