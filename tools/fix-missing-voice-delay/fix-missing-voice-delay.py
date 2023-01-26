@@ -24,7 +24,7 @@ def line_is_english(line):
         return None
 
     if english and japanese:
-        raise Exception("Error: line has both language markers: {line}")
+        raise Exception(f"Error: line has both language markers: {line}")
 
     return english
 
