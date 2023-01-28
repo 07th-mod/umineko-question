@@ -90,8 +90,10 @@ fix_count = 0
 
 with open(script_with_comments, 'w', encoding='utf-8') as script_with_comments:
     for lineIndex, line in enumerate(lines):
-        # Afaik voicewait applies to both languages, so just clear both flags
-        if line.lower().startswith('voicewait'):
+        # Clear the 'next line needs voice delay flags' if:
+        # - A voicewait is detected (voicewait applies to both languages, so just clear both flags)
+        # - You reach the end of a chapter (`mov %uminekoend` appears in the line)
+        if line.lower().startswith('voicewait') or 'mov %uminekoend' in line.lower():
             next_en_needs_voice_delay = False
             next_jp_needs_voice_delay = False
 
