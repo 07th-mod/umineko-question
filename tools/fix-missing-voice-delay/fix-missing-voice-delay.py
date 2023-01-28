@@ -65,7 +65,9 @@ def get_line_ending(line):
 def line_afterwards_needs_voice_delay(line):
     line_ending_type = get_line_ending(line)
 
-    if line_ending_type != LineEndingType.CONTINUE:
+    line_ending_needs_voicedelay = line_ending_type == LineEndingType.CONTINUE or line_ending_type == LineEndingType.NONE
+
+    if not line_ending_needs_voicedelay:
         return False
 
     # Skip lines with no voices on it (this will give some false positives but this is OK)
