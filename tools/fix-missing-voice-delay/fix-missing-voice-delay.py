@@ -29,9 +29,6 @@ def line_is_english(line):
     return english
 
 def preprocess_line(line):
-    # remove comment
-    line = line.split(";", 1)[0]
-
     # Strip all whitespace before doing line ending check as we don't care about it
     return re.sub(r"\s+", "", line, flags=re.UNICODE)
 
@@ -42,6 +39,12 @@ class LineEndingType(Enum):
 
 def get_line_ending(line):
     line = preprocess_line(line)
+
+    # Only try to detect commented lines where the whole line is a comment
+    # The engine doesn't handle partially commented text lines properly anyway
+    if line.startswith(";"):
+        return LineEndingType.NONE
+
     line_noWhiteSpace = re.sub(r"\s+", "", line, flags=re.UNICODE)
 
     match = regex_lineEnding.search(line_noWhiteSpace)
