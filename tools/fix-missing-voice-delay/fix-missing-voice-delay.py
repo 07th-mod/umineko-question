@@ -136,8 +136,10 @@ with open(script_with_comments, 'w', encoding='utf-8') as script_with_comments:
                     # print(f"Cancelling voicedelay due to line {line}")
                     pass
                 else:
-                    next_en_needs_voice_delay = is_english
-                    next_jp_needs_voice_delay = not is_english
+                    if is_english:
+                        next_en_needs_voice_delay = True
+                    else:
+                        next_jp_needs_voice_delay = True
 
 
             if line_afterwards_needs_voice_delay(line):
