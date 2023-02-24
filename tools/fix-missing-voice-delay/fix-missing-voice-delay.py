@@ -63,6 +63,12 @@ def get_line_ending(line):
     return LineEndingType.CONTINUE
 
 def line_afterwards_needs_voice_delay(line):
+    # If there is a clickwait on the line after the last voice (@), then the next line doesn't need voicedelay
+    splitline = line.rsplit("@", 1)
+
+    if len(splitline) >= 2:
+        if 'dwave' not in splitline[-1]:
+            return False
     line_ending_type = get_line_ending(line)
 
     line_ending_needs_voicedelay = line_ending_type == LineEndingType.CONTINUE or line_ending_type == LineEndingType.NONE
