@@ -3,12 +3,20 @@ import re
 from voice_util import VoiceUtilClass
 import config
 
+answer_arcs = False
+
 script_path = 'InDevelopment/ManualUpdates/0.utf'
 script_with_comments = "script_with_comments.txt"
 output_file = "output_script.txt"
+voice_database_path = 'tools/voice-length-database/question.pickle'
+
+if answer_arcs:
+    script_path = '../umineko-answer/0.utf'
+    script_with_comments = "script_with_comments_answer.txt"
+    output_file = "output_script_answer.txt"
+    voice_database_path = 'tools/voice-length-database/answer.pickle'
 
 # I've adapted this from https://github.com/drojf/umineko_python_scripts/tree/master/Fix_Automatic_Voice_Lines
-voice_database_path = 'tools/voice-length-database/question.pickle'
 voice_util_class = VoiceUtilClass(script_path=script_path, voice_length_pickle_path=voice_database_path)
 
 

@@ -4,8 +4,14 @@ import re
 from voice_util import VoiceUtilClass
 import config
 
+answer_arcs = False
+
 script_path = 'InDevelopment/ManualUpdates/0.utf'
 script_with_comments = "script_with_comments.txt"
+
+if answer_arcs:
+    script_path = '../umineko-answer/0.utf'
+    script_with_comments = "script_with_comments_answer.txt"
 
 match_dict = {}
 
