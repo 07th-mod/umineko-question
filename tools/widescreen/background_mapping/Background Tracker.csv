@@ -1,0 +1,929 @@
+Original_Filename,Matching_Filename_OR_SC,Alternate_Method,Method_Argument,Similarity_to_Fort
+airport\air_in1a.bmp, air_in1a.png, , ,99.0234375
+airport\air_in1b.bmp, air_in1a.png, , ,99.0234375
+airport\air_in1c.bmp, air_in1a.png, , ,99.0234375
+airport\air_in1d.bmp, air_in1a.png, , ,99.0234375
+airport\air_in1e.bmp, air_in1a.png, , ,99.0234375
+airport\air_in1ec.bmp, air_in1ec.png, , ,100
+airport\air_in2a.bmp, air_in1e.png, , ,100
+airport\air_in2b.bmp, air_in1ec.png, , ,100
+airport\air_out1a.bmp, air_out1a.png, , ,100
+airport\air_out2a.bmp, air_out2a.png, , ,99.8046875
+airport\air_out2b.bmp, air_out2b.png, , ,99.609375
+airport\air_out2br.bmp, Special Case, make_greyscale,air_out2b.png,0
+airport\air_t1a.bmp, air_t1a.png, , ,99.8046875
+airport\air_t2a.bmp, air_t1a.png, , ,99.8046875
+airport\airp_in1a.bmp, airp_in1a.png, , ,99.8046875
+airport\airp_in1b.bmp, airp_in1a.png, , ,99.8046875
+airport\airp_out1a.bmp, airp_out1a.png, , ,99.8046875
+airport\airp_out2a.bmp, airp_out2a.png, , ,99.8046875
+airport\airp_out2b.bmp, airp_out2b.png, , ,100
+airport\airp_w1a.bmp, airp_w1a.png, , ,99.8046875
+airport\airp_w1b.bmp, airp_w1b.png, , ,99.8046875
+airport\airp_w1c.bmp, airp_w1bc.png, , ,99.8046875
+airport\airp_w1d.bmp, airp_w1c.png, , ,100
+airport\airp_w1e.bmp, airp_w1cc.png, , ,100
+airport\airp_w1f.bmp, airp_w1d.png, , ,100
+airport\airp_w1g.bmp, airp_w1d.png, , ,100
+airport\airp_w1h.bmp, airp_w1j.png, , ,99.8046875
+airport\airp_w1i.bmp, airp_w1j.png, , ,99.8046875
+airport\airp_w1j.bmp, airp_w1k.png, , ,99.8046875
+airport\airp_w1k.bmp, airp_w1k.png, , ,99.8046875
+airport\car_i1a.bmp, car_i1a.png, , ,99.609375
+airport\car_i3a.bmp, car_i1ac.png, , ,99.8046875
+airport\car_i3b.bmp, car_i3b.png, , ,100
+airport\car_i3c.bmp, car_i3c.png, , ,99.609375
+airport\car_o2a.bmp, car_o2a.png, , ,99.8046875
+airport\car_o2b.bmp, car_o2a.png, , ,99.8046875
+airport\car_o2c.bmp, car_o2c.png, , ,100
+aquarium\aqu_i1a.bmp, aqu_i1a.png, , ,99.8046875
+aquarium\aqu_i1b.bmp, aqu_i1a.png, , ,99.8046875
+aquarium\aqu_i1c.bmp, aqu_i2a.png, , ,100
+aquarium\aqu_i2a.bmp, aqu_i2a.png, , ,100
+aquarium\aqu_i2b.bmp, aqu_i2b.png, , ,100
+aquarium\aqu_i2c.bmp, aqu_i1a.png, , ,99.8046875
+cg\ep1_1.bmp, Special Case, stretch_original, ,0
+chapel\cha_i1a.bmp, cha_i1a.png, , ,99.609375
+chapel\cha_i1b.bmp, cha_i1a.png, , ,99.609375
+chapel\cha_i1c.bmp, cha_i1a.png, , ,99.609375
+chapel\cha_i1d.bmp, cha_i1d.png, , ,99.21875
+chapel\cha_i1e.bmp, cha_i1e.png, , ,99.90234375
+chapel\cha_o1a.bmp, cha_o1a.png, , ,99.8046875
+chapel\cha_o2a.bmp, cha_o2a.png, , ,99.8046875
+chapel\cha_o2an.bmp, cha_o2an.png, , ,99.8046875
+chapel\cha_o2b.bmp, t\cha_o2b.png, , ,99.8046875
+city\amu_i1a.bmp, amu_i1a.png, , ,100
+city\amu_i1b.bmp, amu_i1a.png, , ,100
+city\amu_o1a.bmp, amu_i1a.png, , ,100
+city\bui_e1a.bmp, bui_inf1a.png, , ,100
+city\bui_inf1a.bmp, bui_inf1a.png, , ,100
+city\bui_inf1b.bmp, bui_inf1a.png, , ,100
+city\bui_inf1c.bmp, bui_inf1a.png, , ,100
+city\bui_o1a.bmp, bui_o1a.png, , ,100
+city\bui_o2a.bmp, bui_o2a.png, , ,99.609375
+city\bui_o2b.bmp, bui_o2b.png, , ,99.609375
+city\bui_r1a.bmp, bui_r1a.png, , ,99.8046875
+city\bui_r1b.bmp, bui_r1a.png, , ,99.8046875
+city\bui_r1c.bmp, bui_r1e.png, , ,99.21875
+city\bui_r1d.bmp, bui_r1d.png, , ,100
+city\cit_1a.bmp, cit_1a.png, , ,99.609375
+city\cit_2a.bmp, cit_2a.png, , ,99.8046875
+city\cit_2b.bmp, cit_2a.png, , ,99.8046875
+city\cit_3a.bmp, cit_3a.png, , ,99.8046875
+city\cof_1a.bmp, cof_1a.png, , ,99.8046875
+city\con_i1a.bmp, con_i1a.png, , ,99.609375
+city\hos_p1a.bmp, hos_p1b.png, , ,99.609375
+city\hos_p1b.bmp, hos_p1b.png, , ,99.609375
+city\hos_r1a.bmp, hos_r1a.png, , ,99.8046875
+city\hos_r1b.bmp, hos_r1a.png, , ,99.8046875
+city\hos_r1c.bmp, hos_r1c.png, , ,99.8046875
+city\hot_i1a.bmp, hot_r1a.png, , ,99.90234375
+city\hot_i1b.bmp, hot_r1a.png, , ,99.90234375
+city\hot_r1a.bmp, hot_r1a.png, , ,99.90234375
+city\hot_r1b.bmp, hot_r1c.png, , ,100
+city\hot_r1c.bmp, hot_r1c.png, , ,100
+city\off_1a.bmp, off_1a.png, , ,99.609375
+city\par_1a.bmp, par_1a.png, , ,99.8046875
+city\par_1b.bmp, par_1a.png, , ,99.8046875
+city\par_1c.bmp, par_1c.png, , ,99.609375
+city\pro_o1a.bmp, pro_o1a.png, , ,99.8046875
+city\sta_1a.bmp, sta_1a.png, , ,99.609375
+city\tra_1a.bmp, tra_1a.png, , ,99.609375
+city\tra_1b.bmp, tra_1b.png, , ,100
+city\tra_1c.bmp, tra_1b.png, , ,100
+efe\+barrierbrake1.bmp, Special Case, no_modification, ,0
+efe\+blood_1b.bmp, Special Case, stretch_original, ,0
+efe\1a.bmp, Special Case, stretch_original_double_width, ,0
+efe\1b.bmp, Special Case, stretch_original_double_width, ,0
+efe\1c.bmp, Special Case, stretch_original_double_width, ,0
+efe\1d.bmp, Special Case, stretch_original_double_width, ,0
+efe\1e.bmp, Special Case, stretch_original_double_width, ,0
+efe\1f.bmp, Special Case, stretch_original_double_width, ,0
+efe\1g.bmp, Special Case, stretch_original_double_width, ,0
+efe\armor0.bmp, Special Case, use_ps3_same_name, ,0
+efe\armor1.bmp, Special Case, use_ps3_same_name, ,0
+efe\armor2.bmp, Special Case, use_ps3_same_name, ,0
+efe\armor3.bmp, Special Case, use_ps3_same_name, ,0
+efe\armor4.bmp, Special Case, use_ps3_same_name, ,0
+efe\armor5.bmp, Special Case, use_ps3_same_name, ,0
+efe\armor6.bmp, Special Case, use_ps3_same_name, ,0
+efe\armor7.bmp, Special Case, use_ps3_same_name, ,0
+efe\armor7b.bmp, Special Case, use_ps3_same_name, ,0
+efe\barrier.png, Special Case, stretch_original, ,0
+efe\barrier1.png, Special Case, stretch_original, ,0
+efe\barrier1p.png, Special Case, stretch_original, ,0
+efe\barrierbrake1.png, Special Case, no_modification, ,0
+efe\barrierbrake1p.png, Special Case, stretch_original, ,0
+efe\barrierbrake1p1.png, Special Case, stretch_original, ,0
+efe\barrierbrake1p2.png, Special Case, stretch_original, ,0
+efe\barrierbrake1p3.png, Special Case, stretch_original, ,0
+efe\barrierbrake1p4.png, Special Case, stretch_original, ,0
+efe\barrierbrake1p6.png, Special Case, stretch_original, ,0
+efe\barrierbrake2.png, Special Case, no_modification, ,0
+efe\barrierbrake2p1.png, Special Case, stretch_original, ,0
+efe\barrierbrake2p2.png, Special Case, stretch_original, ,0
+efe\barrierbrake2p3.png, Special Case, stretch_original, ,0
+efe\barrierbrake2p4.png, Special Case, stretch_original, ,0
+efe\barrierbrake2p5.png, Special Case, stretch_original, ,0
+efe\bite.bmp, Special Case, use_ps3_same_name, ,0
+efe\black.bmp, no25_00000.png, , ,100
+efe\blade1p.png, Special Case, stretch_original, ,0
+efe\blade1r.png, Special Case, stretch_original, ,0
+efe\blade2p.png, Special Case, stretch_original, ,0
+efe\blade2r.png, Special Case, stretch_original, ,0
+efe\blade3p.png, Special Case, stretch_original, ,0
+efe\blade3r.png, Special Case, stretch_original, ,0
+efe\blade4p.png, Special Case, stretch_original, ,0
+efe\blade4r.png, Special Case, stretch_original, ,0
+efe\blade5p.png, Special Case, stretch_original, ,0
+efe\blade5r.png, Special Case, stretch_original, ,0
+efe\blade6_1p.png, Special Case, stretch_original, ,0
+efe\blade6_1r.png, Special Case, stretch_original, ,0
+efe\blade6_2p.png, Special Case, stretch_original, ,0
+efe\blade6_2r.png, Special Case, stretch_original, ,0
+efe\blade7_1r.png, Special Case, stretch_original, ,0
+efe\blade7_2r.png, Special Case, stretch_original, ,0
+efe\blood_1a.png, blood_1a.png, , ,100
+efe\blood_1ar.png, blood_1ar.png, , ,100
+efe\blood_1b.png, Special Case, stretch_original, ,0
+efe\blood_2a.png, blood_2a.png, , ,99.70703125
+efe\blood_2b.png, blood_2b.png, , ,99.8046875
+efe\blood_2c.png, blood_2c.png, , ,99.8046875
+efe\blood_2d.png, blood_2d.png, , ,99.8046875
+efe\blood_2e.png, blood_2e.png, , ,99.8046875
+efe\book1.bmp, book1.png, , ,99.609375
+efe\bullet_1a.bmp, bullet_1a.png, , ,96.875
+efe\bullet_1b.bmp, bullet_1b.png, , ,96.09375
+efe\bullet_1c.bmp, bullet_1c.png, , ,96.6796875
+efe\bullet_1d.bmp, bullet_1d.png, , ,95.703125
+efe\bullet_1e.bmp, Special Case, use_ps3_same_name, ,0
+efe\bullet1a.bmp, Special Case, use_ps3_same_name, ,0
+efe\bullet1b.bmp, Special Case, use_ps3_same_name, ,0
+efe\bullet1c.bmp, Special Case, use_ps3_same_name, ,0
+efe\bullet2a.bmp, Special Case, use_ps3_same_name, ,0
+efe\bullet2b.bmp, Special Case, use_ps3_same_name, ,0
+efe\butterfly_1a.png, Special Case, stretch_original, ,0
+efe\butterfly_2a.png, Special Case, stretch_original, ,0
+efe\butterfly_3a.png, Special Case, stretch_original, ,0
+efe\butterfly_3x.png, Special Case, stretch_original, ,0
+efe\butterfly_4a.png, Special Case, stretch_original, ,0
+efe\butterfly_4sp1.png, Special Case, stretch_original, ,0
+efe\butterfly_4sp1r.png, Special Case, stretch_original, ,0
+efe\butterfly_4sp2.png, Special Case, stretch_original, ,0
+efe\butterfly_4sp2r.png, Special Case, stretch_original, ,0
+efe\chess1.bmp, chess1.png, , ,99.8046875
+efe\cut_1a.bmp, Special Case, stretch_original, ,0
+efe\cut_1b.bmp, Special Case, stretch_original, ,0
+efe\cut_1c.bmp, Special Case, stretch_original, ,0
+efe\cut_2a.bmp, Special Case, stretch_original, ,0
+efe\cut_2b.bmp, Special Case, stretch_original, ,0
+efe\cut_3a.bmp, Special Case, stretch_original, ,0
+efe\cut_3b.bmp, Special Case, stretch_original, ,0
+efe\cut_3c.bmp, Special Case, stretch_original, ,0
+efe\different_space_1a.bmp, different_space_1a.png, , ,99.609375
+efe\different_space_1b.bmp, different_space_1a.png, , ,99.609375
+efe\different_space_1c.bmp, different_space_1c.png, , ,99.8046875
+efe\different_space_p1a.bmp, different_space_p1a.png, , ,99.609375
+efe\different_space_p1b.bmp, different_space_p1b.png, , ,100
+efe\different_spiral_1a.bmp, different_spiral_1a.png, , ,99.609375
+efe\end_1a.jpg, Special Case, english_asset, ,0
+efe\end_1b.png, Special Case, use_ps3_same_name, ,0
+efe\end_1c.jpg, Special Case, tall_image, end_1c.png,0
+efe\end_1d.png, Special Case, stretch_height_center_screen, ,0
+efe\end_2a.jpg, Special Case, english_asset, ,0
+efe\end_2c.jpg, Special Case, tall_image, end_2c.png,0
+efe\end_3a.jpg, Special Case, english_asset, ,0
+efe\end_3b.jpg, Special Case, tall_image, end_3b.png,0
+efe\end_4a.jpg, Special Case, english_asset, ,0
+efe\end_4b.jpg, Special Case, tall_image, end_4b.png,0
+efe\enj_mirai01.png, Special Case, english_asset, ,0
+efe\ep2_text.png, Special Case, english_asset, ,0
+efe\ep4last00.bmp, no25_00000.png, , ,100
+efe\ep4last01.png, ep2_text.png, , ,98.2421875
+efe\ep4last02.png, Special Case, english_asset, ,0
+efe\ep4last03.png, Special Case, english_asset, ,0
+efe\ep4last04.png, Special Case, english_asset, ,0
+efe\ep4last05.png, Special Case, english_asset, ,0
+efe\ep4last06.png, Special Case, english_asset, ,0
+efe\ep4last07.png, t\years_1998.png, , ,99.12109375
+efe\ep4last08.png, Special Case, english_asset, ,0
+efe\ep4last09.png, Special Case, english_asset, ,0
+efe\goa_memory1_en.png, Special Case, english_asset, ,0
+efe\goa_memory1.png, Special Case, english_asset, ,0
+efe\goa_memory2_en.png, Special Case, english_asset, ,0
+efe\goa_memory2.png, Special Case, english_asset, ,0
+efe\goa_memory3_en.png, Special Case, english_asset, ,0
+efe\goa_memory3.png, Special Case, english_asset, ,0
+efe\goa_memory4_en.png, Special Case, english_asset, ,0
+efe\goa_memory4.png, Special Case, english_asset, ,0
+efe\gold1.bmp, gold1.png, , ,100
+efe\gold2.bmp, gold2.png, , ,99.609375
+efe\gold3.bmp, t\gold3.png, , ,99.8046875
+efe\hana1.png, hana1.png, , ,99.609375
+efe\hana2.png, hana1.png, , ,99.609375
+efe\homing1.png, Special Case, stretch_original, ,0
+efe\homing1r.png, Special Case, stretch_original, ,0
+efe\homing1s.png, Special Case, stretch_original, ,0
+efe\homing1sr.png, Special Case, stretch_original, ,0
+efe\homing2.png, Special Case, stretch_original, ,0
+efe\homing2r.png, Special Case, stretch_original, ,0
+efe\homing2s.png, Special Case, stretch_original, ,0
+efe\homing2sr.png, Special Case, stretch_original, ,0
+efe\homing3.png, Special Case, stretch_original, ,0
+efe\homing3r.png, Special Case, stretch_original, ,0
+efe\homing3s.png, Special Case, stretch_original, ,0
+efe\homing3sr.png, Special Case, stretch_original, ,0
+efe\homing4.png, Special Case, stretch_original, ,0
+efe\homing4r.png, Special Case, stretch_original, ,0
+efe\homing4s.png, Special Case, stretch_original, ,0
+efe\homing4sr.png, Special Case, stretch_original, ,0
+efe\homing5.png, Special Case, stretch_original, ,0
+efe\homing5r.png, Special Case, stretch_original, ,0
+efe\homing5s.png, Special Case, stretch_original, ,0
+efe\homing5sr.png, Special Case, stretch_original, ,0
+efe\homing6.png, Special Case, stretch_original, ,0
+efe\homing6bs.png, Special Case, stretch_original, ,0
+efe\homing6bsr.png, Special Case, stretch_original, ,0
+efe\homing6r.png, Special Case, stretch_original, ,0
+efe\homing6s.png, Special Case, stretch_original, ,0
+efe\homing6sr.png, Special Case, stretch_original, ,0
+efe\homing7.png, Special Case, stretch_original, ,0
+efe\homing7bs.png, Special Case, stretch_original, ,0
+efe\homing7bsr.png, Special Case, stretch_original, ,0
+efe\homing7r.png, Special Case, stretch_original, ,0
+efe\homing7s.png, Special Case, stretch_original, ,0
+efe\homing7sr.png, Special Case, stretch_original, ,0
+efe\javelin1.png, Special Case, stretch_original, ,0
+efe\javelin1a.png, Special Case, stretch_original, ,0
+efe\javelin1b.png, Special Case, stretch_original, ,0
+efe\javelin1c.png, Special Case, stretch_original, ,0
+efe\javelin1d.png, Special Case, stretch_original, ,0
+efe\key1.bmp, key1.png, , ,98.14453125
+efe\key2.bmp, key2.png, , ,97.75390625
+efe\letter1.bmp, letter1.png, , ,100
+efe\magicsquare_gap.bmp, magicsquare_gap.png, , ,98.73046875
+efe\magicsquare_mars3.bmp, magicsquare_mars3.png, , ,96.2890625
+efe\magicsquare_mars5.bmp, magicsquare_mars5.png, , ,98.14453125
+efe\magicsquare_moon1.bmp, magicsquare_moon1.png, , ,95.5078125
+efe\magicsquare_sun7.bmp, magicsquare_sun7.png, , ,95.8984375
+efe\map01.bmp, Special Case, use_ps3_same_name, ,0
+efe\map02.bmp, Special Case, use_ps3_same_name, ,0
+efe\map03.bmp, Special Case, use_ps3_same_name, ,0
+efe\map04.bmp, Special Case, use_ps3_same_name, ,0
+efe\map05.bmp, Special Case, use_ps3_same_name, ,0
+efe\map06.bmp, Special Case, use_ps3_same_name, ,0
+efe\map07.bmp, Special Case, use_ps3_same_name, ,0
+efe\map08.bmp, Special Case, use_ps3_same_name, ,0
+efe\map09.bmp, Special Case, use_ps3_same_name, ,0
+efe\map10.bmp, Special Case, use_ps3_same_name, ,0
+efe\map10b.bmp, Special Case, use_ps3_same_name, ,0
+efe\map10c.bmp, Special Case, use_ps3_same_name, ,0
+efe\nails1.png, Special Case, stretch_original, ,0
+efe\note1.bmp, note1.png, , ,100
+efe\number.bmp, number.png, , ,99.609375
+efe\oct_1998.png, Special Case, english_asset, ,0
+efe\oct_4_1986.png, Special Case, english_asset, ,0
+efe\oct_4_1998.png, oct_4_1998.png, , ,99.70703125
+efe\oct_4_1998(2).png, oct_4_1998.png, , ,99.70703125
+efe\oct_4_1998b.png, t\one_year_later.png, , ,99.70703125
+efe\oct_4_1998b(2).png, t\one_year_later.png, , ,99.70703125
+efe\oct_4_1998c.png, oct_4_1998c.png, , ,100
+efe\oct_5_1986.png, oct_5_1986.png, , ,99.8046875
+efe\op0101.png, Special Case, english_asset, ,0
+efe\op0102.png, Special Case, english_asset, ,0
+efe\op0103.png, Special Case, english_asset, ,0
+efe\op0104.png, Special Case, english_asset, ,0
+efe\op0105.png, Special Case, english_asset, ,0
+efe\op0106.png, Special Case, english_asset, ,0
+efe\op0107.bmp, Special Case, no_modification, ,0
+efe\op0108.bmp, Special Case, english_asset, ,0
+efe\op0201.png, Special Case, no_modification, ,0
+efe\op0202.png, Special Case, english_asset, ,0
+efe\op0203.png, Special Case, english_asset, ,0
+efe\op0204.png, Special Case, english_asset, ,0
+efe\op0205.png, Special Case, english_asset, ,0
+efe\op0206.png, Special Case, english_asset, ,0
+efe\op0207.png, Special Case, english_asset, ,0
+efe\op0208.bmp, Special Case, english_asset, ,0
+efe\pumpkin1.bmp, pumpkin2.png, , ,99.609375
+efe\pumpkin2.bmp, pumpkin2.png, , ,99.609375
+efe\purgatorio.png, purgatorio.png, , ,100
+efe\sakutaro1a.bmp, sakutaro2ab.png, , ,99.90234375
+efe\sakutaro1b.bmp, sakutaro1bb.png, , ,99.8046875
+efe\sakutaro2a.bmp, sakutaro2ab.png, , ,99.90234375
+efe\sakutaro2b.bmp, sakutaro2bb.png, , ,100
+efe\shotgun1b.bmp, Special Case, stretch_original_double_width, ,0
+efe\shotgun2b.bmp, Special Case, stretch_original_double_width, ,0
+efe\shotgun3b.bmp, Special Case, stretch_original_double_width, ,0
+efe\shotgun4b.bmp, Special Case, stretch_original_double_width, ,0
+efe\siestabeam.png, Special Case, stretch_original, ,0
+efe\stake1a.png, Special Case, stretch_original, ,0
+efe\stake1b.png, Special Case, stretch_original, ,0
+efe\stake1c.png, Special Case, stretch_original, ,0
+efe\stake1d.png, Special Case, stretch_original, ,0
+efe\sweet1.bmp, sweet1.png, , ,99.609375
+efe\sweet2.bmp, sweet2.png, , ,100
+efe\system1.png, Special Case, stretch_original, ,0
+efe\system1t.png, Special Case, stretch_original, ,0
+efe\system2.png, Special Case, stretch_original, ,0
+efe\system2t.png, Special Case, stretch_original, ,0
+efe\system3.png, Special Case, stretch_original, ,0
+efe\system3t.png, Special Case, stretch_original, ,0
+efe\system4.png, Special Case, stretch_original, ,0
+efe\system4t.png, Special Case, stretch_original, ,0
+efe\system5.png, Special Case, stretch_original, ,0
+efe\system5t.png, Special Case, stretch_original, ,0
+efe\tel1a.bmp, tel1a.png, , ,100
+efe\text001.png, Special Case, english_asset, ,0
+efe\text002.png, Special Case, english_asset, ,0
+efe\text003.png, Special Case, english_asset, ,0
+efe\text004.png, Special Case, english_asset, ,0
+efe\text005.png, Special Case, english_asset, ,0
+efe\text006.png, Special Case, english_asset, ,0
+efe\text007.png, Special Case, english_asset, ,0
+efe\text010.png, Special Case, english_asset, ,0
+efe\text010a.png, Special Case, english_asset, ,0
+efe\text010b.png, Special Case, english_asset, ,0
+efe\text010c.png, Special Case, english_asset, ,0
+efe\text011.png, Special Case, english_asset, ,0
+efe\text012.png, Special Case, english_asset, ,0
+efe\tower1.bmp, Special Case, tall_image_original, ,0
+efe\tower2.bmp, Special Case, stretch_original, ,0
+efe\tower2r.bmp, Special Case, stretch_original, ,0
+efe\tower3.bmp, Special Case, stretch_original, ,0
+efe\tower4.bmp, Special Case, stretch_original, ,0
+efe\unknown01.png, unknown01.png, , ,98.2421875
+efe\white_waku.bmp, Special Case, stretch_original_double_width, ,0
+efe\white1.bmp, Special Case, stretch_original_double_width, ,0
+forest\beach_1a.bmp, beach_1a.png, , ,100
+forest\beach_1b.bmp, beach_1a.png, , ,100
+forest\beach_2a.bmp, beach_2af.png, , ,100
+forest\beach_2b.bmp, beach_2af.png, , ,100
+forest\beach_3a.bmp, beach_2a.png, , ,100
+forest\beach_l1a.bmp, Special Case, tall_image, ,0
+forest\beach_l2a.bmp, Special Case, tall_image, ,0
+forest\beach_s1a.bmp, beach_s1a.png, , ,99.8046875
+forest\beach_s1b.bmp, beach_s1a.png, , ,99.8046875
+forest\beach_s1c.bmp, beach_s1a.png, , ,99.8046875
+forest\beach_s2a.bmp, beach_s2a.png, , ,99.4140625
+forest\beach_s2b.bmp, beach_s2a.png, , ,99.4140625
+forest\cliff_1a.bmp, cliff_1a.png, , ,100
+forest\cliff_1b.bmp, cliff_1b.png, , ,99.609375
+forest\forest_p1a.bmp, forest_p1af.png, , ,99.8046875
+forest\forest_p1an.bmp, forest_p1ar.png, , ,99.8046875
+forest\forest_p1ar.bmp, forest_p1a.png, , ,100
+forest\forest_p1b.bmp, forest_p1bf.png, , ,100
+forest\forest_p1bn.bmp, forest_p1br.png, , ,99.8046875
+forest\forest_p1br.bmp, forest_p1b.png, , ,99.4140625
+forest\forest_p2a.bmp, forest_p2af.png, , ,99.8046875
+forest\forest_p2an.bmp, forest_p2an.png, , ,99.609375
+forest\forest_p2ar.bmp, forest_p2a.png, , ,100
+forest\forest_p2b.bmp, t\forest_p3bf.png, , ,100
+forest\forest_p2bn.bmp, t\forest_p3bn.png, , ,100
+forest\forest_p2br.bmp, t\forest_p3b.png, , ,99.609375
+forest\forest_s1a.bmp, forest_s1a.png, , ,99.609375
+forest\forest_s1b.bmp, forest_s1a.png, , ,99.609375
+forest\hill_1a.bmp, hill_1af.png, , ,100
+forest\hill_1an.bmp, hill_1an.png, , ,99.8046875
+forest\hill_1ar.bmp, hill_1a.png, , ,100
+forest\hill_1b.bmp, hill_1bf.png, , ,99.8046875
+forest\hill_1bn.bmp, hill_1bn.png, , ,100
+forest\hill_1br.bmp, hill_1b.png, , ,99.609375
+forest\hill_1c.bmp, hill_1bf.png, , ,99.8046875
+forest\hill_1cn.bmp, hill_1bn.png, , ,100
+forest\hill_1cr.bmp, hill_1b.png, , ,99.609375
+forest\moon_1a.bmp, moon_1a.png, , ,99.8046875
+forest\moon_2a.bmp, moon_2a.png, , ,99.8046875
+forest\o_beach_1a.bmp, o_beach_1ac.png, , ,99.609375
+forest\o_beach_1b.bmp, o_beach_1ac.png, , ,99.609375
+forest\o_beach_1c.bmp, o_beach_1ac.png, , ,99.609375
+forest\o_sky_1a.bmp, o_sky_1ac.png, , ,99.8046875
+forest\obs_1a.bmp, hill_1a.png, , ,100
+forest\sky_1a.bmp, sky_1a.png, , ,99.8046875
+forest\sky_2a.bmp, sky_2b.png, , ,99.8046875
+forest\sky_2b.bmp, sky_2b.png, , ,99.8046875
+forest\sky_3a.bmp, sky_3a.png, , ,99.21875
+forest\sky_4a.bmp, sky_4b.png, , ,99.609375
+forest\sky_4b.bmp, sky_4b.png, , ,99.609375
+forest\well_1a.bmp, well_1af.png, , ,99.70703125
+forest\well_1an.bmp, well_1ar.png, , ,99.609375
+forest\well_1ar.bmp, well_1a.png, , ,99.8046875
+forest\well_1b.bmp, well_1bf.png, , ,100
+forest\well_1bn.bmp, well_1br.png, , ,100
+forest\well_1br.bmp, well_1b.png, , ,99.8046875
+forest\well_1c.bmp, well_1bf.png, , ,100
+forest\well_1cn.bmp, well_1br.png, , ,100
+forest\well_1cr.bmp, well_1b.png, , ,99.8046875
+garden\different_garden1a.bmp, different_garden1a.png, , ,99.8046875
+garden\different_garden1b.bmp, different_garden1b.png, , ,99.8046875
+garden\garden_1a.bmp, garden_1af.png, , ,99.8046875
+garden\garden_1an.bmp, garden_1an.png, , ,99.8046875
+garden\garden_1ar.bmp, garden_1a.png, , ,99.609375
+garden\garden_1b.bmp, garden_1af.png, , ,99.8046875
+garden\garden_1bn.bmp, garden_1an.png, , ,99.8046875
+garden\garden_1br.bmp, garden_1a.png, , ,99.609375
+garden\garden_1c.bmp, garden_1cf.png, , ,99.609375
+garden\garden_1cn.bmp, garden_1cr.png, , ,99.609375
+garden\garden_1cr.bmp, garden_1c.png, , ,99.8046875
+garden\garden_r1a.bmp, garden_r1af.png, , ,100
+garden\garden_r1an.bmp, garden_r1an.png, , ,99.4140625
+garden\garden_r1ar.bmp, garden_r1a.png, , ,100
+garden\garden_r1b.bmp, garden_r1af.png, , ,100
+garden\garden_r1bn.bmp, garden_r1an.png, , ,99.4140625
+garden\garden_r1br.bmp, garden_r1a.png, , ,100
+garden\garden_r1c.bmp, garden_r1af.png, , ,100
+garden\garden_r1cn.bmp, garden_r1an.png, , ,99.4140625
+garden\garden_r1cr.bmp, garden_r1a.png, , ,100
+garden\garden_r1d.bmp, garden_r1df.png, , ,100
+garden\garden_r1dn.bmp, garden_r1dn.png, , ,99.8046875
+garden\garden_r1dr.bmp, garden_r1d.png, , ,100
+garden\garden_se1a.bmp, garden_seaia.png, , ,99.609375
+garden\garden_se1b.bmp, garden_se1b.png, , ,99.609375
+garden\garden_se1c.bmp, garden_se4a.png, , ,100
+garden\garden_se2a.bmp, garden_se2b.png, , ,99.8046875
+garden\garden_se2b.bmp, garden_se2b.png, , ,99.8046875
+garden\garden_se2c.bmp, garden_se2b.png, , ,99.8046875
+garden\garden_se3a.bmp, garden_se4a.png, , ,100
+garden\rose_1a.bmp, rose_1af.png, , ,99.8046875
+garden\rose_1an.bmp, rose_1ar.png, , ,99.609375
+garden\rose_1ar.bmp, rose_1a.png, , ,99.8046875
+garden\rose_1b.bmp, rose_1cf.png, , ,99.8046875
+garden\rose_1bn.bmp, rose_1cn2.png, , ,100
+garden\rose_1br.bmp, rose_1c.png, , ,99.8046875
+garden\rose_1c.bmp, rose_1cf.png, , ,99.8046875
+garden\rose_1cn.bmp, rose_1cn2.png, , ,100
+garden\rose_1cp.bmp, rose_1cp.png, , ,100
+garden\rose_1d.bmp, rose_1ef.png, , ,99.70703125
+garden\rose_1dn.bmp, rose_1er.png, , ,99.8046875
+garden\rose_1dp.bmp, rose_1ep.png, , ,99.8046875
+garden\rose_1e.bmp, rose_1ef.png, , ,99.70703125
+garden\rose_1en.bmp, rose_1en2.png, , ,99.21875
+garden\rose_1ep.bmp, rose_1ep.png, , ,99.8046875
+garden\rose_2a.bmp, Special Case,not_used, rose_2an.png,0
+garden\rose_2an.bmp, rose_2an.png, , ,99.8046875
+garden\rose_2ap.bmp, rose_2ap.png, , ,99.4140625
+garden\rose_2b.bmp, Special Case,not_used, rose_2bn.png,0
+garden\rose_2bn.bmp, rose_2bn.png, , ,99.8046875
+garden\rose_2bp.bmp, rose_2bp.png, , ,100
+garden\rose_2c.bmp, Special Case,not_used, rose_1cf.png,0
+garden\rose_2cn.bmp, rose_2an.png, , ,99.8046875
+garden\rose_2cp.bmp, rose_2ap.png, , ,99.4140625
+garden\rose_3a.bmp, Special Case,not_used, rose_3an.png,0
+garden\rose_3an.bmp, rose_3an.png, , ,100
+garden\rose_3ap.bmp, rose_3ap.png, , ,99.8046875
+garden\rose_3b.bmp, Special Case,not_used, rose_3an.png,0
+garden\rose_3bn.bmp, rose_3an.png, , ,100
+garden\rose_3bp.bmp, rose_3ap.png, , ,99.8046875
+garden\rose_3c.bmp, Special Case,not_used, rose_3an.png,0
+garden\rose_3cn.bmp, rose_3an.png, , ,100
+garden\rose_3cp.bmp, rose_3ap.png, , ,99.8046875
+garden\rose_g1a.bmp, rose_g1af.png, , ,99.609375
+garden\rose_g1an.bmp, rose_g1ar.png, , ,99.4140625
+garden\rose_g1ar.bmp, rose_g1a.png, , ,99.4140625
+garden\rose_g1b.bmp, rose_g1bf.png, , ,99.4140625
+garden\rose_g1bn.bmp, rose_g1br.png, , ,99.8046875
+garden\rose_g1br.bmp, rose_g1b.png, , ,99.8046875
+garden\rose_g1c.bmp, t\rose_g1cf.png, , ,99.609375
+garden\rose_g1d.bmp, t\rose_g1cf.png, , ,99.609375
+garden\rose_p1a.bmp, t\rose_p1af.png, , ,99.8046875
+garden\rose_p1an.bmp, t\rose_p1an.png, , ,98.828125
+garden\rose_p1ap.bmp, t\rose_p1ap2.png, , ,99.51171875
+garden\warehous_i1a.bmp, warehous_i1a.png, , ,99.609375
+garden\warehous_i1b.bmp, warehous_i1a.png, , ,99.609375
+garden\warehous_i1c.bmp, warehous_i1c.png, , ,99.8046875
+garden\warehous_i1d.bmp, warehous_i1c.png, , ,99.8046875
+garden\warehous_i1e.bmp, warehous_i1e.png, , ,100
+garden\warehous_o1a.bmp, warehous_o1a.png, , ,100
+garden\warehous_o2a.bmp, warehous_o2a.png, , ,99.609375
+guesthouse\g_o1a.bmp, g_o1af.png, , ,99.4140625
+guesthouse\g_o1an.bmp, g_o1ar.png, , ,99.8046875
+guesthouse\g_o1ar.bmp, g_o1a.png, , ,99.8046875
+guesthouse\g_o1b.bmp, g_o1af.png, , ,99.4140625
+guesthouse\g_o1bn.bmp, g_o1ar.png, , ,99.8046875
+guesthouse\g_o1br.bmp, g_o1a.png, , ,99.8046875
+guesthouse\g_o1c.bmp, g_o1cc.png, , ,99.609375
+guesthouse\g_o1cn.bmp, g_o1cr.png, , ,99.8046875
+guesthouse\g_o1coriginal.bmp, g_o1cf.png, , ,99.609375
+guesthouse\g_o1cr.bmp, g_o1c.png, , ,99.4140625
+guesthouse\g1f_p1a.bmp, t\g2f_p1af.png, , ,99.8046875
+guesthouse\g1f_p1an.bmp, g1f_p1ar.png, , ,99.609375
+guesthouse\g1f_p1ar.bmp, g2f_p1a.png, , ,99.609375
+guesthouse\g1f_p1b.bmp, t\g1f_p1bf.png, , ,100
+guesthouse\g1f_p1bn.bmp, g1f_p1br.png, , ,99.8046875
+guesthouse\g1f_p1br.bmp, g1f_p1b.png, , ,99.609375
+guesthouse\g1f_p1c.bmp, t\g1f_p1cf.png, , ,99.609375
+guesthouse\g1f_p1d.bmp, g1f_p1e.png, , ,99.609375
+guesthouse\g1f_p1e.bmp, g1f_p1e.png, , ,99.609375
+guesthouse\g1f_p2a.bmp, t\g1f_p1cf.png, , ,99.609375
+guesthouse\g1f_r1a.bmp, g1f_r1a.png, , ,100
+guesthouse\g1f_r1an.bmp, g1f_r1ar.png, , ,99.8046875
+guesthouse\g1f_r1ar.bmp, g1f_r1ar.png, , ,99.8046875
+guesthouse\g1f_r1ax.bmp, Special Case, top_black_bottom_image, g1f_r1a.png,0
+guesthouse\g1f_r1b.bmp, g1f_r1a.png, , ,100
+guesthouse\g1f_r1bn.bmp, g1f_r1a.png, , ,100
+guesthouse\g1f_r1br.bmp, g1f_r1a.png, , ,100
+guesthouse\g1f_r2a.bmp, t\g1f_r2af.png, , ,100
+guesthouse\g1f_r2an.bmp, g1f_r2ar.png, , ,100
+guesthouse\g1f_r2ar.bmp, g1f_r2a.png, , ,99.609375
+guesthouse\g1f_r2b.bmp, t\g2f_r1af.png, , ,99.8046875
+guesthouse\g1f_r2bn.bmp, g2f_r1ar.png, , ,100
+guesthouse\g1f_r2br.bmp, g2f_r1a.png, , ,99.8046875
+guesthouse\g1f_r2c.bmp, t\g2f_r1af.png, , ,99.8046875
+guesthouse\g1f_r2cn.bmp, g2f_r1ar.png, , ,100
+guesthouse\g1f_r2cr.bmp, g2f_r1a.png, , ,99.8046875
+guesthouse\g1f_s1a.bmp, g1f_s1a.png, , ,99.609375
+guesthouse\g1f_s1ap.bmp, g1f_s1ap.png, , ,99.8046875
+guesthouse\g1f_s1b.bmp, g1f_s1a.png, , ,99.609375
+guesthouse\g1f_s1bp.bmp, g1f_s1ap.png, , ,99.8046875
+guesthouse\g1f_s1c.bmp, g1f_s1a.png, , ,99.609375
+guesthouse\g1f_s1cp.bmp, g1f_s1ap.png, , ,99.8046875
+guesthouse\g1f_s2a.bmp, glob_1dr.png, , ,99.8046875
+guesthouse\g1f_s2b.bmp, glob_1dr.png, , ,99.8046875
+guesthouse\g1f_s2c.bmp, glob_1dr.png, , ,99.8046875
+guesthouse\g2f_p1a.bmp, t\g2f_p1af.png, , ,99.8046875
+guesthouse\g2f_p1an.bmp, g1f_p1ar.png, , ,99.609375
+guesthouse\g2f_p1b.bmp, t\g1f_p1bf.png, , ,100
+guesthouse\g2f_p1bn.bmp, g1f_p1br.png, , ,99.8046875
+guesthouse\g2f_p1c.bmp, t\g2f_p1af.png, , ,99.8046875
+guesthouse\g2f_r1a.bmp, g2f_r1a.png, , ,99.8046875
+guesthouse\g2f_r1an.bmp, g2f_r1ar.png, , ,100
+guesthouse\g2f_r1ar.bmp, g2f_r1a.png, , ,99.8046875
+guesthouse\g2f_r1b.bmp, t\g2f_r1bf.png, , ,100
+guesthouse\g2f_r1bn.bmp, t\g2f_r1br.png, , ,100
+guesthouse\g2f_r1br.bmp, t\g2f_r1b.png, , ,100
+guesthouse\g2f_r1c.bmp, g2f_r1c.png, , ,100
+guesthouse\g2f_r1cn.bmp, g2f_r1cr.png, , ,99.8046875
+guesthouse\g2f_r1cr.bmp, g2f_r1cr.png, , ,99.8046875
+guesthouse\gdin_1a.bmp, gdin_1ad.png, , ,99.609375
+guesthouse\gdin_1b.bmp, gdin_1ad.png, , ,99.609375
+guesthouse\gdin_1c.bmp, gdin_1ad.png, , ,99.609375
+guesthouse\glib_1a.bmp, glib_1a.png, , ,99.4140625
+guesthouse\glib_1b.bmp, glib_1a.png, , ,99.4140625
+guesthouse\glib_1bn.bmp, glib_1a.png, , ,99.4140625
+guesthouse\glib_1br.bmp, glib_1a.png, , ,99.4140625
+guesthouse\glib_1c.bmp, glib_1a.png, , ,99.4140625
+guesthouse\glib_1cn.bmp, glib_1a.png, , ,99.4140625
+guesthouse\glib_1cr.bmp, glib_1a.png, , ,99.4140625
+guesthouse\glob_1a.bmp, t\glob_1af.png, , ,99.8046875
+guesthouse\glob_1an.bmp, glob_1ar.png, , ,99.21875
+guesthouse\glob_1ar.bmp, glob_1a.png, , ,99.8046875
+guesthouse\glob_1b.bmp, t\glob_1af.png, , ,99.8046875
+guesthouse\glob_1bn.bmp, glob_1ar.png, , ,99.21875
+guesthouse\glob_1br.bmp, glob_1a.png, , ,99.8046875
+guesthouse\glob_1c.bmp, glob_1d.png, , ,100
+guesthouse\glob_1cn.bmp, glob_1dr.png, , ,99.8046875
+guesthouse\glob_1cr.bmp, glob_1d.png, , ,100
+guesthouse\glob_1d.bmp, glob_1d.png, , ,100
+guesthouse\glob_1dn.bmp, glob_1dr.png, , ,99.8046875
+guesthouse\glob_1dr.bmp, glob_1d.png, , ,100
+guesthouse\glob_1e.bmp, t\glob_1e.png, , ,99.8046875
+guesthouse\glob_1en.bmp, t\glob_1er.png, , ,100
+guesthouse\glob_1er.bmp, t\glob_1e.png, , ,99.8046875
+guesthouse\gsta_1a.bmp, t\g1f_p1cf.png, , ,99.609375
+guesthouse\gsta_1c.bmp, t\g1f_p1cf.png, , ,99.609375
+guesthouse\gsun_1a.bmp, g1f_s1a.png, , ,99.609375
+guesthouse\gsun_1b.bmp, g1f_s1a.png, , ,99.609375
+guesthouse\gsun_1c.bmp, g1f_s1a.png, , ,99.609375
+kawhouse\kaw_r1a.bmp, kaw_r1a.png, , ,99.8046875
+kawhouse\kaw_r1an.bmp, kaw_r1an.png, , ,99.4140625
+kawhouse\kaw_r1bn.bmp, kaw_r1an.png, , ,99.4140625
+kawhouse\kaw_r1cn.bmp, kaw_r1cn.png, , ,99.8046875
+kawhouse\kaw_r2a.bmp, kaw_r2a.png, , ,99.609375
+kawhouse\kaw_r2an.bmp, kaw_r2an.png, , ,99.8046875
+kawhouse\kaw_r3a.bmp, kaw_r2a.png, , ,99.609375
+kawhouse\kaw_r3an.bmp, kaw_r3bn.png, , ,99.8046875
+kawhouse\kaw_r3b.bmp, kaw_r3b.png, , ,99.8046875
+kawhouse\kaw_r3bn.bmp, kaw_r3bn.png, , ,99.8046875
+kawhouse\kaw_r3c.bmp, kaw_r3b.png, , ,99.8046875
+kawhouse\kaw_r3cn.bmp, kaw_r3bn.png, , ,99.8046875
+kumhouse\kum_r1a.bmp, kum_r1a.png, , ,99.8046875
+kumhouse\kum_r1b.bmp, kum_r1a.png, , ,99.8046875
+kumhouse\kum_r1c.bmp, kum_r1a.png, , ,99.8046875
+mainbuilding\m_door1.bmp, m_door1.png, , ,99.8046875
+mainbuilding\m_door1x.bmp, Special Case, left_image_right_door_gradient, m_door1.png,0
+mainbuilding\m_door2.bmp, m_door2.png, , ,99.8046875
+mainbuilding\m_o1a.bmp, m_o1af.png, , ,99.609375
+mainbuilding\m_o1an.bmp, m_o1ar.png, , ,99.8046875
+mainbuilding\m_o1ar.bmp, m_o1a2.png, , ,100
+mainbuilding\m_o1b.bmp, m_o1af.png, , ,99.609375
+mainbuilding\m_o1bn.bmp, m_o1ar.png, , ,99.8046875
+mainbuilding\m_o1br.bmp, m_o1a2.png, , ,100
+mainbuilding\m1f_p1a.bmp, t\m1f_p1bf.png, , ,99.609375
+mainbuilding\m1f_p1an.bmp, m1f_p1br.png, , ,99.609375
+mainbuilding\m1f_p1ar.bmp, m1f_p1b.png, , ,99.609375
+mainbuilding\m1f_p1b.bmp, t\m1f_p1bf.png, , ,99.609375
+mainbuilding\m1f_p1bn.bmp, m1f_p1b.png, , ,99.609375
+mainbuilding\m1f_p1br.bmp, m1f_p1br.png, , ,99.609375
+mainbuilding\m1f_p1c.bmp, m1f_p1c.png, , ,100
+mainbuilding\m1f_p1cn.bmp, m1f_p1cr.png, , ,99.8046875
+mainbuilding\m1f_p1cr.bmp, m1f_p1cr.png, , ,99.8046875
+mainbuilding\m1f_p1d.bmp, t\m1f_p1df.png, , ,99.4140625
+mainbuilding\m1f_p1dn.bmp, m1f_p1dr.png, , ,99.0234375
+mainbuilding\m1f_p1dr.bmp, m1f_p1d.png, , ,99.8046875
+mainbuilding\m1f_p2a.bmp, t\m1f_p1df.png, , ,99.4140625
+mainbuilding\m1f_p2b.bmp, t\m1f_p2bf.png, , ,99.4140625
+mainbuilding\m1f_p2bn.bmp, m1f_p2br.png, , ,98.6328125
+mainbuilding\m1f_p2br.bmp, m1f_p2b.png, , ,99.4140625
+mainbuilding\m1f_p2c.bmp, t\ment_1bf.png, , ,99.609375
+mainbuilding\m1f_s1a.bmp, m1f_s1af.png, , ,99.609375
+mainbuilding\m1f_s1an.bmp, m1f_s1ar.png, , ,100
+mainbuilding\m1f_s1ar.bmp, m1f_s1a.png, , ,99.8046875
+mainbuilding\m1f_s1b.bmp, m1f_s1af.png, , ,99.609375
+mainbuilding\m1f_s1bn.bmp, m1f_s1ar.png, , ,100
+mainbuilding\m1f_s1br.bmp, m1f_s1a.png, , ,99.8046875
+mainbuilding\m1f_s1c.bmp, m1f_s1c.png, , ,100
+mainbuilding\m1f_s1cn.bmp, m1f_s1cr.png, , ,100
+mainbuilding\m1f_s1cr.bmp, m1f_s1c.png, , ,100
+mainbuilding\m1f_s1d.bmp, m1f_s1df.png, , ,100
+mainbuilding\m1f_s1dn.bmp, m1f_s1d.png, , ,99.8046875
+mainbuilding\m1f_s1dr.bmp, m1f_s1dr.png, , ,99.8046875
+mainbuilding\m1f_s2a.bmp, m1f_s1c.png, , ,100
+mainbuilding\m2f_p1a.bmp, m2f_p1af.png, , ,99.609375
+mainbuilding\m2f_p1an.bmp, m2f_p1ar.png, , ,99.8046875
+mainbuilding\m2f_p1ar.bmp, m2f_p1a.png, , ,99.0234375
+mainbuilding\m2f_p1b.bmp, m2f_p1bf.png, , ,99.609375
+mainbuilding\m2f_p1bn.bmp, m2f_p1br.png, , ,99.609375
+mainbuilding\m2f_p1br.bmp, m2f_p1b.png, , ,99.4140625
+mainbuilding\m2f_p1c.bmp, m2f_p1cf.png, , ,99.8046875
+mainbuilding\m2f_p1cn.bmp, m2f_p1cr.png, , ,99.4140625
+mainbuilding\m2f_p1cr.bmp, m2f_p1c.png, , ,99.8046875
+mainbuilding\m2f_p1d.bmp, m2f_p1af.png, , ,99.609375
+mainbuilding\m2f_p1dn.bmp, m2f_p1ar.png, , ,99.8046875
+mainbuilding\m2f_p1dr.bmp, m2f_p1a.png, , ,99.0234375
+mainbuilding\m2f_r1a.bmp, t\m1f_r1af.png, , ,99.8046875
+mainbuilding\m2f_r1b.bmp, t\m1f_r1af.png, , ,99.8046875
+mainbuilding\m2f_r1c.bmp, t\m1f_r1af.png, , ,99.8046875
+mainbuilding\m2f_r1d.bmp, t\m2f_r7a.png, , ,100
+mainbuilding\m2f_r1dn.bmp, t\m2f_r7ar.png, , ,100
+mainbuilding\m2f_r1dr.bmp, t\m2f_r7a.png, , ,100
+mainbuilding\m2f_r2a.bmp, g1f_s1a.png, , ,99.609375
+mainbuilding\m2f_r2b.bmp, g1f_s1a.png, , ,99.609375
+mainbuilding\m2f_r2c.bmp, g1f_s1a.png, , ,99.609375
+mainbuilding\m2f_r3a.bmp, g1f_s1a.png, , ,99.609375
+mainbuilding\m2f_r3b.bmp, g1f_s1a.png, , ,99.609375
+mainbuilding\m2f_r3c.bmp, g1f_s1a.png, , ,99.609375
+mainbuilding\m2f_r4a.bmp, t\m2f_r4af.png, , ,100
+mainbuilding\m2f_r4an.bmp, m2f_r4ar.png, , ,100
+mainbuilding\m2f_r4ar.bmp, m2f_r4a.png, , ,99.8046875
+mainbuilding\m2f_r4b.bmp, t\m2f_r4af.png, , ,100
+mainbuilding\m2f_r4bn.bmp, m2f_r4ar.png, , ,100
+mainbuilding\m2f_r4br.bmp, m2f_r4a.png, , ,99.8046875
+mainbuilding\m2f_r4c.bmp, t\m2f_r4af.png, , ,100
+mainbuilding\m2f_r4cn.bmp, m2f_r4ar.png, , ,100
+mainbuilding\m2f_r4cr.bmp, m2f_r4a.png, , ,99.8046875
+mainbuilding\m2f_r5a.bmp, mdin_1e.png, , ,99.8046875
+mainbuilding\m2f_r5b.bmp, mdin_1e.png, , ,99.8046875
+mainbuilding\m2f_r5c.bmp, mdin_1f.png, , ,99.609375
+mainbuilding\m2f_r5d.bmp, mdin_1f.png, , ,99.609375
+mainbuilding\m2f_r5e.bmp, t\mdin_1cf.png, , ,99.609375
+mainbuilding\m2f_r5f.bmp, t\mdin_1cf.png, , ,99.609375
+mainbuilding\m2f_r6a.bmp, t\m2f_r7ar.png, , ,100
+mainbuilding\mbat_1a.bmp, mbat_1a.png, , ,99.8046875
+mainbuilding\mbat_1b.bmp, mbat_1a.png, , ,99.8046875
+mainbuilding\mbat_2a.bmp, mbat_1a.png, , ,99.8046875
+mainbuilding\mboi_1a.bmp, Special Case, use_alternate, mboi_1a.png,0
+mainbuilding\mboi_1b.bmp, Special Case, use_alternate, mboi_1a.png,0
+mainbuilding\mboi_1c.bmp, Special Case, use_alternate, mboi_1c.png,0
+mainbuilding\mboi_1d.bmp, Special Case, use_alternate, mboi_1c.png,0
+mainbuilding\mcou_1a.bmp, t\mcou_1af.png, , ,99.8046875
+mainbuilding\mcou_1an.bmp, mcou_1an.png, , ,99.609375
+mainbuilding\mcou_1ar.bmp, mcou_1a.png, , ,99.4140625
+mainbuilding\mdin_1a.bmp, mdin_1a.png, , ,99.609375
+mainbuilding\mdin_1an.bmp, mdin_1ar.png, , ,99.609375
+mainbuilding\mdin_1ar.bmp, mdin_1ar.png, , ,99.609375
+mainbuilding\mdin_1b.bmp, mdin_1a.png, , ,99.609375
+mainbuilding\mdin_1bn.bmp, mdin_1ar.png, , ,99.609375
+mainbuilding\mdin_1br.bmp, mdin_1ar.png, , ,99.609375
+mainbuilding\mdin_1c.bmp, t\mdin_1cf.png, , ,99.609375
+mainbuilding\mdin_1cn.bmp, mdin_1cr.png, , ,99.8046875
+mainbuilding\mdin_1cr.bmp, mdin_1c.png, , ,100
+mainbuilding\mdin_1d.bmp, mdin_1f.png, , ,99.609375
+mainbuilding\mdin_1dn.bmp, mdin_1fr.png, , ,99.8046875
+mainbuilding\mdin_1dr.bmp, mdin_1fr.png, , ,99.8046875
+mainbuilding\mdin_1e.bmp, mdin_1e.png, , ,99.8046875
+mainbuilding\mdin_1en.bmp, mdin_1er.png, , ,99.609375
+mainbuilding\mdin_1er.bmp, mdin_1er.png, , ,99.609375
+mainbuilding\mdin_1f.bmp, mdin_1f.png, , ,99.609375
+mainbuilding\mdin_1fn.bmp, mdin_1fr.png, , ,99.8046875
+mainbuilding\mdin_1fr.bmp, mdin_1fr.png, , ,99.8046875
+mainbuilding\mdin_1g.bmp, mdin_1g.png, , ,100
+mainbuilding\mdin_1gn.bmp, mdin_1gr.png, , ,100
+mainbuilding\mdin_1gr.bmp, mdin_1g.png, , ,100
+mainbuilding\ment_1a.bmp, t\ment_1bf.png, , ,99.609375
+mainbuilding\ment_1an.bmp, ment_1br.png, , ,99.609375
+mainbuilding\ment_1ar.bmp, ment_1b.png, , ,99.4140625
+mainbuilding\ment_1b.bmp, t\ment_1bf.png, , ,99.609375
+mainbuilding\ment_1bn.bmp, ment_1br.png, , ,99.609375
+mainbuilding\ment_1br.bmp, ment_1b.png, , ,99.4140625
+mainbuilding\mhal_1a.bmp, t\mhal_1af.png, , ,99.8046875
+mainbuilding\mhal_1an.bmp, mhal_1ar2.png, , ,99.609375
+mainbuilding\mhal_1ar.bmp, mhal_1a2.png, , ,99.8046875
+mainbuilding\mhal_1b.bmp, mhal_1cr.png, , ,99.8046875
+mainbuilding\mhal_1c.bmp, mhal_1cr.png, , ,99.8046875
+mainbuilding\mhal_2a.bmp, t\mhal_2af.png, , ,99.70703125
+mainbuilding\mhal_2an.bmp, mhal_2ar.png, , ,99.8046875
+mainbuilding\mhal_2ar.bmp, mhal_2a.png, , ,100
+mainbuilding\mhal_2b.bmp, t\mhal_2bf.png, , ,99.4140625
+mainbuilding\mhal_2bn.bmp, mhal_2br.png, , ,99.8046875
+mainbuilding\mhal_2br.bmp, mhal_2b.png, , ,99.609375
+mainbuilding\mhal_2c.bmp, mhal_2c.png, , ,100
+mainbuilding\mhal_2cn.bmp, mhal_2cr.png, , ,100
+mainbuilding\mhal_2cr.bmp, mhal_2c.png, , ,100
+mainbuilding\mhal_2d.bmp, mhal_2dr.png, , ,100
+mainbuilding\mjes_1a.bmp, mjes_1af.png, , ,99.609375
+mainbuilding\mjes_1an.bmp, mjes_1ar.png, , ,100
+mainbuilding\mjes_1ar.bmp, mjes_1a.png, , ,99.8046875
+mainbuilding\mjes_1b.bmp, mjes_1af.png, , ,99.609375
+mainbuilding\mjes_1bn.bmp, mjes_1ar.png, , ,100
+mainbuilding\mjes_1br.bmp, mjes_1a.png, , ,99.8046875
+mainbuilding\mjes_1c.bmp, t\mjes_1cf.png, , ,99.8046875
+mainbuilding\mjes_1cn.bmp, mjes_1cr.png, , ,99.609375
+mainbuilding\mjes_1cr.bmp, mjes_1c.png, , ,99.8046875
+mainbuilding\mjes_1d.bmp, t\mjes_1cf.png, , ,99.8046875
+mainbuilding\mjes_1dn.bmp, mjes_1cr.png, , ,99.609375
+mainbuilding\mjes_1dr.bmp, mjes_1c.png, , ,99.8046875
+mainbuilding\mjes_1e.bmp, mjes_1er.png, , ,100
+mainbuilding\mkit_1a.bmp, t\mkit_1af.png, , ,99.609375
+mainbuilding\mkit_1an.bmp, mkit_1ar.png, , ,100
+mainbuilding\mkit_1ar.bmp, mkit_1a.png, , ,100
+mainbuilding\mkit_1b.bmp, mkit_1c.png, , ,99.4140625
+mainbuilding\mkit_1bn.bmp, mkit_1cr.png, , ,99.8046875
+mainbuilding\mkit_1br.bmp, mkit_1cr.png, , ,99.8046875
+mainbuilding\mkit_1c.bmp, mkit_1c.png, , ,99.4140625
+mainbuilding\mkit_1cn.bmp, mkit_1cr.png, , ,99.8046875
+mainbuilding\mkit_1cr.bmp, mkit_1cr.png, , ,99.8046875
+mainbuilding\mlib_1a.bmp, t\mlib_1af.png, , ,99.8046875
+mainbuilding\mlib_1an.bmp, mlib_1ar.png, , ,99.609375
+mainbuilding\mlib_1ar.bmp, mlib_1a.png, , ,99.8046875
+mainbuilding\mlib_1b.bmp, t\mlib_1bf.png, , ,99.8046875
+mainbuilding\mlib_1bn.bmp, mlib_1br.png, , ,99.8046875
+mainbuilding\mlib_1br.bmp, mlib_1b.png, , ,99.70703125
+mainbuilding\mlib_1c.bmp, t\mlib_1cf.png, , ,99.8046875
+mainbuilding\mlib_1cn.bmp, mlib_1cr.png, , ,99.8046875
+mainbuilding\mlib_1cr.bmp, mlib_1c.png, , ,99.4140625
+mainbuilding\mlib_1d.bmp, t\mlib_1af.png, , ,99.8046875
+mainbuilding\mlib_1dn.bmp, mlib_1ar.png, , ,99.609375
+mainbuilding\mlib_1dr.bmp, mlib_1a.png, , ,99.8046875
+mainbuilding\mlib_1e.bmp, mlib_1e.png, , ,99.8046875
+mainbuilding\mnat_1a.bmp, mnat_1a.png, , ,99.90234375
+mainbuilding\mnat_1b.bmp, mnat_1a.png, , ,99.90234375
+mainbuilding\mnat_1c.bmp, t\mnat_2g.png, , ,100
+mainbuilding\mnat_2a.bmp, t\mnat_1af.png, , ,100
+mainbuilding\mnat_2an.bmp, mnat_1a.png, , ,99.90234375
+mainbuilding\mnat_2ar.bmp, mnat_1ar.png, , ,99.8046875
+mainbuilding\mnat_2b.bmp, mnat_2b.png, , ,100
+mainbuilding\mnat_2bn.bmp, mnat_2br.png, , ,99.609375
+mainbuilding\mnat_2br.bmp, mnat_2br.png, , ,99.609375
+mainbuilding\mnat_2c.bmp, mnat_2b.png, , ,100
+mainbuilding\mnat_2cn.bmp, mnat_2br.png, , ,99.609375
+mainbuilding\mnat_2cr.bmp, mnat_2br.png, , ,99.609375
+mainbuilding\mnat_2d.bmp, mnat_2br.png, , ,99.609375
+mainbuilding\mnat_2dn.bmp, mnat_2br.png, , ,99.609375
+mainbuilding\mnat_2dr.bmp, mnat_2b.png, , ,100
+mainbuilding\mnat_2e.bmp, t\mnat_1af.png, , ,100
+mainbuilding\mnat_2en.bmp, mnat_1ar.png, , ,99.8046875
+mainbuilding\mnat_2er.bmp, mnat_1a.png, , ,99.90234375
+mainbuilding\mnat_2f.bmp, t\mnat_2g.png, , ,100
+mainbuilding\msta_1a.bmp, msta_1c.png, , ,100
+mainbuilding\msta_1b.bmp, msta_1b.png, , ,99.4140625
+mainbuilding\msta_1c.bmp, msta_1c.png, , ,100
+mainbuilding\msta_2a.bmp, msta_1b.png, , ,99.4140625
+mainbuilding\mvip_1a.bmp, t\mvip_1af.png, , ,99.609375
+mainbuilding\mvip_1an.bmp, mvip_1ar.png, , ,99.8046875
+mainbuilding\mvip_1ar.bmp, mvip_1a.png, , ,99.8046875
+mainbuilding\mvip_1b.bmp, t\mvip_1af.png, , ,99.609375
+mainbuilding\mvip_1bn.bmp, mvip_1ar.png, , ,99.8046875
+mainbuilding\mvip_1br.bmp, mvip_1a.png, , ,99.8046875
+mainbuilding\mvip_1c.bmp, t\mvip_1cf.png, , ,99.8046875
+mainbuilding\mvip_1cn.bmp, mvip_1cr.png, , ,99.4140625
+mainbuilding\mvip_1cr.bmp, mvip_1c.png, , ,99.8046875
+mainbuilding\mvip_1d.bmp, t\mvip_1cf.png, , ,99.8046875
+mainbuilding\mvip_1dn.bmp, mvip_1cr.png, , ,99.4140625
+mainbuilding\mvip_1dr.bmp, mvip_1c.png, , ,99.8046875
+mainbuilding\mvip_1e.bmp, Special Case, use_alternate, t\g1f_r3a.png,0
+mainbuilding\mvip_2a.bmp, t\mvip_1af.png, , ,99.609375
+mainbuilding\mvip_2an.bmp, mvip_1ar.png, , ,99.8046875
+mainbuilding\mvip_2ar.bmp, mvip_1a.png, , ,99.8046875
+mainbuilding\portrait1.bmp, Special Case, tall_image, ,0
+mainbuilding\portrait2.bmp, portrait2.png, , ,100
+mainbuilding\portrait3.bmp, portrait3.png, , ,100
+mainbuilding\portrait4.bmp, portrait4b.png, , ,100
+mainbuilding\portrait4b.bmp, portrait4b.png, , ,100
+nanclinic\nan_r1a.bmp, nan_r1a.png, , ,99.8046875
+nanclinic\nan_r1b.bmp, nan_r1a.png, , ,99.8046875
+nanclinic\nan_r1c.bmp, nan_r1c.png, , ,100
+restaurant\res_i1a.bmp, res_i1a.png, , ,100
+restaurant\res_i1b.bmp, res_i1a.png, , ,100
+restaurant\res_i1c.bmp, res_i1c.png, , ,100
+restaurant\res_i2a.bmp, res_i1c.png, , ,100
+restaurant\res_i2b.bmp, res_i2c.png, , ,99.8046875
+restaurant\res_i2c.bmp, res_i2c.png, , ,99.8046875
+restaurant\res_i3a.bmp, res_i3a.png, , ,99.4140625
+restaurant\res_i3b.bmp, res_i3a.png, , ,99.4140625
+restaurant\res_i3c.bmp, res_i3a.png, , ,99.4140625
+restaurant\res_i3d.bmp, res_i3dr.png, , ,100
+restaurant\res_i4a.bmp, res_i4a.png, , ,99.4140625
+restaurant\res_i4b.bmp, res_i3dr.png, , ,100
+restaurant\res_i4c.bmp, res_i4a.png, , ,99.4140625
+restaurant\res_o1a.bmp, res_i1a.png, , ,100
+rosehouse\ros_m1a.bmp, ros_m1a.png, , ,99.609375
+rosehouse\ros_m1an.bmp, ros_m1ar.png, , ,99.8046875
+rosehouse\ros_m1b.bmp, ros_m1a.png, , ,99.609375
+rosehouse\ros_m1bn.bmp, ros_m1ar.png, , ,99.8046875
+rosehouse\ros_m1c.bmp, ros_m1a.png, , ,99.609375
+rosehouse\ros_m1cn.bmp, ros_m1ar.png, , ,99.8046875
+rosehouse\ros_o1an.bmp, ros_o1an.png, , ,100
+rosehouse\ros_p1a.bmp, ros_p1a.png, , ,99.609375
+rosehouse\ros_p1an.bmp, ros_p1ar.png, , ,99.8046875
+rosehouse\ros_p1ar.bmp, ros_p1ar.png, , ,99.8046875
+rosehouse\ros_r1a.bmp, ros_r1a.png, , ,99.8046875
+rosehouse\ros_r1an.bmp, ros_r1ar.png, , ,99.8046875
+rosehouse\ros_r1ar.bmp, ros_r1a.png, , ,99.8046875
+rosehouse\ros_r1b.bmp, ros_r1a.png, , ,99.8046875
+rosehouse\ros_r1bn.bmp, ros_r1ar.png, , ,99.8046875
+rosehouse\ros_r1br.bmp, ros_r1a.png, , ,99.8046875
+rosehouse\ros_ro1a.bmp, ros_ro1ar.png, , ,100
+school\cof_1a.bmp, t\cof_2a.png, , ,99.8046875
+school\schd_p1a.bmp, schd_p1a.png, , ,99.8046875
+school\schd_p1b.bmp, schd_p1a.png, , ,99.8046875
+school\schf_c1a.bmp, schf_c2br.png, , ,99.8046875
+school\schf_c1b.bmp, schf_c2ar.png, , ,100
+school\schf_c1c.bmp, schf_c2ar.png, , ,100
+school\schf_c2a.bmp, schf_c2ar.png, , ,100
+school\schf_c2b.bmp, schf_c2br.png, , ,99.8046875
+school\schf_p1a.bmp, schf_p1a.png, , ,99.8046875
+school\schf_p1b.bmp, schf_p1a.png, , ,99.8046875
+school\schf_p2a.bmp, schf_p1a.png, , ,99.8046875
+school\schf_p3a.bmp, schf_p1a.png, , ,99.8046875
+school\schf_r1a.bmp, schf_r1a.png, , ,99.609375
+school\schf_r1b.bmp, schf_r1a.png, , ,99.609375
+school\schf_r1c.bmp, schf_r1a.png, , ,99.609375
+school\schf_s1a.bmp, schf_s1a.png, , ,99.4140625
+school\schf_s1b.bmp, schf_s1a.png, , ,99.4140625
+school\schf_s1c.bmp, schf_s1a.png, , ,99.4140625
+school\schf_s1d.bmp, schf_s1a.png, , ,99.4140625
+school\schr_o1a.bmp, schr_o1a.png, , ,99.609375
+school\schr_o2a.bmp, schr_o1a.png, , ,99.609375
+school\schr_o3a.bmp, schr_o2a.png, , ,99.4140625
+school\schr_o3b.bmp, schr_o2a.png, , ,99.4140625
+school\schr_p1a.bmp, schr_p1b.png, , ,99.8046875
+school\schr_p1b.bmp, schr_p1b.png, , ,99.8046875
+school\schr_r1a.bmp, schr_r1a.png, , ,99.8046875
+school\schr_r1an.bmp, schr_r1ar.png, , ,99.8046875
+school\schr_r1b.bmp, schr_r1a.png, , ,99.8046875
+school\schr_r1bn.bmp, schr_r1ar.png, , ,99.8046875
+school\schr_r1c.bmp, schr_r1a.png, , ,99.8046875
+school\schr_r1cn.bmp, schr_r1ar.png, , ,99.8046875
+school\schr_r1d.bmp, schr_r1d.png, , ,99.8046875
+school\toi_1a.bmp, toi_1a.png, , ,99.8046875
+secrethouse\fence_1a.bmp, fence_1a.png, , ,99.609375
+secrethouse\se_o1a.bmp, se_o1a.png, , ,99.70703125
+secrethouse\se1f_s1a.bmp, se1f_s1an.png, , ,99.8046875
+secrethouse\se1f_s1an.bmp, se1f_s1an.png, , ,99.8046875
+secrethouse\se1f_s1ar.bmp, se1f_s1an.png, , ,99.8046875
+secrethouse\se1f_s1b.bmp, se1f_s1an.png, , ,99.8046875
+secrethouse\se1f_s1bn.bmp, se1f_s1an.png, , ,99.8046875
+secrethouse\se1f_s1br.bmp, se1f_s1an.png, , ,99.8046875
+secrethouse\se1f_s1c.bmp, mhal_2d.png, , ,99.609375
+secrethouse\se1f_s1cn.bmp, mhal_2dr.png, , ,100
+secrethouse\se1f_s1cr.bmp, mhal_2dr.png, , ,100
+secrethouse\sehal_1a.bmp, sehal_1a.png, , ,99.4140625
+secrethouse\sehal_1b.bmp, sehal_1a.png, , ,99.4140625
+ship\sea_1a.bmp, sea_1af.png, , ,99.609375
+ship\sea_1b.bmp, sea_1bf.png, , ,99.609375
+ship\sea_1c.bmp, sea_1cf.png, , ,99.8046875
+ship\sea_1d.bmp, sea_1cf.png, , ,99.8046875
+ship\sea_2a.bmp, sea2an.png, , ,99.8046875
+ship\sea_2b.bmp, sea2bn.png, , ,99.609375
+ship\sea_2c.bmp, sea2bn.png, , ,99.609375
+ship\sea_3a.bmp, sea_3af.png, , ,100
+ship\sea_3b.bmp, sea_3bf.png, , ,100
+ship\ship_p1a.bmp, ship_p1a.png, , ,99.4140625
+ship\ship_p1b.bmp, ship_p1a.png, , ,99.4140625
+ship\ship_p1c.bmp, ship_p1c.png, , ,100
+ship\ship_s1a.bmp, ship_s1af.png, , ,99.8046875
+ship\ship_s1b.bmp, ship_s1bf.png, , ,100
+ship\ship_s1c.bmp, ship_s1af.png, , ,99.8046875
+ship\ship_s2a.bmp, ship_s2a.png, , ,99.609375
+ship\ship_s2b.bmp, ship_s2b.png, , ,99.8046875
+ship\ship_s2c.bmp, ship_s2a.png, , ,99.609375
+ship\ship_s3a.bmp, ship_s3a.png, , ,99.609375
+ship\ship_s3b.bmp, ship_s3a.png, , ,99.609375
+ship\ship_s3c.bmp, ship_s3a.png, , ,99.609375
+ship\shr_1a.bmp, shr_1an.png, , ,99.609375
+subway\pri_efe.bmp, Special Case, left_image_right_masked_image, pri_i1a_sak.png,0
+subway\pri_i1a.bmp, pri_i1a.png, , ,100
+subway\pri_i1b.bmp, pri_i1b.png, , ,99.8046875
+subway\pri_i1c.bmp, pri_i1c.png, , ,100
+subway\pri_o1a.bmp, pri_i1ac.png, , ,99.8046875
+subway\sub_d1a.bmp, sub_d1a.png, , ,99.609375
+subway\sub_p1a.bmp, sub_p1a.png, , ,99.0234375
+subway\sub_p1b.bmp, sub_p1b.png, , ,99.4140625
+subway\sub_p1c.bmp, sub_p1b.png, , ,99.4140625
+subway\sub_r1a.bmp, sub_r1a.png, , ,100
+subway\sub_r1ap.bmp, sub_r1ap.png, , ,99.8046875
+subway\sub_r1b.bmp, sub_r1b.png, , ,99.8046875
+subway\sub_r1bp.bmp, sub_r1bp.png, , ,99.8046875
+subway\sub_r1c.bmp, sub_r1b.png, , ,99.8046875
+subway\sub_r1cp.bmp, sub_r1bp.png, , ,99.8046875
+subway\sub_sta1a.bmp, sub_sta1a.png, , ,99.8046875
