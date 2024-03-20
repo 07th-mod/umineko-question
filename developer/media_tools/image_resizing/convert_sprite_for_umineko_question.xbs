@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><XnView_script version="1.0" name="convert_sprite_for_umineko_question">
+    <Crop method="1" value_1="0" value_2="142" value_3="0" value_4="0"/>
+    <Resize mode="0" width="100" height="88.9" unit="1" ratio="true" orientation="false" enlarge="0" resample="7" gamma_correct="false"/>
+    <Canvas_resize width="1707" height="960" unit="0" relative="false" ratio="true" orientation="false" color="#00000000" alpha="0" position="7"/>
+    <Output folder="C:/temp-10-03-18/maria_working_folder/output_resized" filename="{Filename}" case="0" startIndex="1" format="PNG">
+        <Options overwrite="1" orgDate="false" keepMeta="true" keepICC="false" keepFolder="false" keepParentFolder="false" delOrg="false" multipage="false" allPages="false" openExplorer="false" openBrowser="false" clearItems="false"/>
+        <PNG level="6" interlaced="false" filter="0"/>
+    </Output>
+</XnView_script>
