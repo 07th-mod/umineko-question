@@ -50997,7 +50997,7 @@ ld r,$BUT_DefA1,24
 
 advchar "10"
 langjp:dwave_jp 0, but_1e49:「と、冷静に分析できる譲治兄貴の方がずっと大人に見えるぜ。@:dwave_jp 0, but_1e50:……俺は将来、あんなクソ親父みたいにはなりたくないねぇ。@:dwave_jp 0, but_1e51:なるなら、兄貴みてぇな知的な大人になりたいもんだぜ。」\
-langen:dwave_eng 0, but_1e49:^"You're the one who looks like an real adult, analyzing it all calmly.^@:dwave_eng 0, but_1e50:^  ......I hope I never turn out like that old bastard.^@:dwave_eng 0, but_1e51:^  I'd much rather end up as an intellectual adult like you, Aniki."^\
+langen:dwave_eng 0, but_1e49:^"You're the one who looks like a real adult, analyzing it all calmly.^@:dwave_eng 0, but_1e50:^  ......I hope I never turn out like that old bastard.^@:dwave_eng 0, but_1e51:^  I'd much rather end up as an intellectual adult like you, Aniki."^\
 
 ld l,$GEO_hohoemiA1,80
 
@@ -64745,7 +64745,7 @@ ld r,$HID_fumuA1,24
 advchar "06"
 langjp:dwave_jp 0, hid_1e175:「……蔵臼兄さん、この１割はな、あくまでも兄さんの誠意を測る数字なんやで？@:dwave_jp 0, hid_1e176:　本当なら取引の余地もない話や。@:dwave_jp 0, hid_1e177:そこを百歩譲った上で、とりあえず１割の誠意でこの場は丸く治めちゃるっちゅう大サービスなんやで。@:dwave_jp 0, hid_1e178:そう説明した上で、そこを断るっちゅうんは、互いの信頼関係にちょいと影を落とすんとちゃいますか…？」\
 ;＜秀吉
-langen:dwave_eng 0, hid_1e175:^"......Krauss nii-san, that 10% is nothin' more than a number to measure your sincerity, isn't it?^@:dwave_eng 0, hid_1e176:^  All things being equal, you shouldn't have any room to negotiate at all.^@:dwave_eng 0, hid_1e177:^"We're doin' you a huge favor by offerin' to let things slide for just ten percent in good faith money.^@:dwave_eng 0, hid_1e178:^  Now that we've explained that, you rejectin' our offer would seriously damage our trustin' relationship, right...?"^\
+langen:dwave_eng 0, hid_1e175:^"......Krauss nii-san, that 10% is nothin' more than a number to measure your sincerity, isn't it?^@:dwave_eng 0, hid_1e176:^  All things being equal, you shouldn't have any room to negotiate at all.^@:dwave_eng 0, hid_1e177:^We're doin' you a huge favor by offerin' to let things slide for just ten percent in good faith money.^@:dwave_eng 0, hid_1e178:^  Now that we've explained that, you rejectin' our offer would seriously damage our trustin' relationship, right...?"^\
 advchar "-1"
 langjp　秀吉は謙遜するような表情を浮かべながら揉み手のような仕草をするが、@その瞳は決して落ち着いたものではなかった。@
 langen^Hideyoshi had a humble expression on his face and was rubbing his hands together,^@^ but his eyes weren't calm at all.^@
