@@ -74644,7 +74644,7 @@ langen:dwave_eng 0, kin_1e329:^  ......Let them speak of such matters as much as
 
 advchar "-1"
 langjp　最後の一言には、これ以上の問答は無用だという凄みが込められていた。@
-langen^His last words carried the threat that any further questions would be not be appreciated.^@
+langen^His last words carried the threat that any further questions would not be appreciated.^@
 br
 langjp　…夏妃は、これ以上の言葉を重ねれば、今度こそ逆鱗に触れることになると感じ取った。@
 langjp　絵羽に、やはり説得できなかったかと嫌味を言われるのは癪だが、これ以上はどうしようもない…。\
@@ -89371,7 +89371,7 @@ ld l,$MAR_AkuWaraiA2,80
 
 langjp:dwave_jp 0, mar_1e846:…だからきっと大丈夫だよ。@:dwave_jp 0, mar_1e847:……真里亞は客間でテレビを見るよ。@:dwave_jp 0, mar_1e848:一緒に見ようよ。@:dwave_jp 0, mar_1e849:…ここ、テレビがなくてつまんないもん。@:dwave_jp 0, mar_1e850:…………きひひひひひひひひひひひひひひひひ。」@
 ;＜真里亞
-langen:dwave_eng 0, mar_1e846:^  ...So it'll definitely be okay.^@:dwave_eng 0, mar_1e847:^  ...I'll watch TV in the parlor.^@:dwave_eng 0, mar_1e848:^  Let's watch it together.^@:dwave_eng 0, mar_1e849:^  ...It's so boring here, without TV.^@:dwave_eng 0, mar_1e850:^  ......Kihihihihihihihihihihihihihihihi hihihi."^@
+langen:dwave_eng 0, mar_1e846:^  ...So it'll definitely be okay.^@:dwave_eng 0, mar_1e847:^  ...I'll watch TV in the parlor.^@:dwave_eng 0, mar_1e848:^  Let's watch it together.^@:dwave_eng 0, mar_1e849:^  ...It's so boring here, without TV.^@:dwave_eng 0, mar_1e850:^  ......Kihihihihihihihihihihihihihihihihihihi."^@
 advchar "-1"
 langjp　真里亞の悪戯っぽい笑いは、今の熊沢にとってさぞや恐ろしいものに見えただろう…。\
 langen^It looked like Kumasawa found Maria's roguish laugh very frightening...^\
