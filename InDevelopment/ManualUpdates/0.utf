@@ -122396,7 +122396,7 @@ print 1
 meta_ld l,$BUT_OdorokiB1,1
 
 langjp:dwave_jp 0, but_2e523:　復唱要求！！@:dwave_jp 0, but_2e524:　“昨日の昼の時点で渡した封筒と、楼座叔母さんが開封した封筒は同一のものである”。」@
-langen:dwave_eng 0, but_2e523:^  Repeat it!!^@:dwave_eng 0, but_2e524:^  `The envelope handed over midday yesterday and one Aunt Rosa opened are the same thing'."^@
+langen:dwave_eng 0, but_2e523:^  Repeat it!!^@:dwave_eng 0, but_2e524:^  `The envelope handed over midday yesterday and the one Aunt Rosa opened are the same thing'."^@
 
 mcl l,23
 meta_ld r,$BEA_aseruA1,80
