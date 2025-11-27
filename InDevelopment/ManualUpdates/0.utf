@@ -131752,7 +131752,7 @@ cl a,0
 ld c,$ROS_akuWaraiB1G,24
 
 langjp:dwave_jp 0, ros_2e730:「その私が銃とマスターキーを独占できた！@:dwave_jp 0, ros_2e731:　これで私はもう、誰も疑わずに済むの。@:dwave_jp 0, ros_2e732:あなたたちも嬉しいでしょう？@:dwave_jp 0, ros_2e733:　これでもう疑われずに済む！@/
-langen:dwave_eng 0, ros_2e730:^"I've been able get the gun and all the master keys for myself!^@:dwave_eng 0, ros_2e731:^  Now, I don't have to suspect anyone.^@:dwave_eng 0, ros_2e732:^  You all are happy too, I take it?^@:dwave_eng 0, ros_2e733:^  Now you don't have to be suspected anymore!^@/
+langen:dwave_eng 0, ros_2e730:^"I've been able to get the gun and all the master keys for myself!^@:dwave_eng 0, ros_2e731:^  Now, I don't have to suspect anyone.^@:dwave_eng 0, ros_2e732:^  You all are happy too, I take it?^@:dwave_eng 0, ros_2e733:^  Now you don't have to be suspected anymore!^@/
 se1v 37,100
 langjp:dwave_jp 0, ros_2e734:　あっははははははははは、はっはっはっはっはっはっは！」\
 ;＜楼座
