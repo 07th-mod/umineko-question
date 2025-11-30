@@ -284920,7 +284920,7 @@ ld c,$BEA_NayamuA1,2
 
 advchar "27"
 langjp:dwave_jp 0, bea_9e160:「……どうやって癒すのか。@:dwave_jp 0, bea_9e161:可能ではあるが簡単ではない。@:dwave_jp 0, bea_9e162:…時間を巻き戻し、そなたに兄と姉がいなかった世界を与えることもできよう。」\
-langen:dwave_eng 0, bea_9e160:^"...How can I heal you?^@:dwave_eng 0, bea_9e161:^  It's possible, but not easy.^@:dwave_eng 0, bea_9e162:^  ...I might rewind time, and giving you a world where you have no older siblings."^\
+langen:dwave_eng 0, bea_9e160:^"...How can I heal you?^@:dwave_eng 0, bea_9e161:^  It's possible, but not easy.^@:dwave_eng 0, bea_9e162:^  ...I might rewind time, and give you a world where you have no older siblings."^\
 
 ld c,$BEA_DefA1,80
 
