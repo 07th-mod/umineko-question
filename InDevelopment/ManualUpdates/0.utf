@@ -139603,7 +139603,7 @@ ld l,$BEA_WaraiA2,80
 
 advchar "01"
 langjp:dwave_jp 0, kin_2e246:「……心地よし！@:dwave_jp 0, kin_2e247:　実に優雅な夜だ。@:dwave_jp 0, kin_2e248:くっはっはっはっはっはっはっは…！！」\
-langen:dwave_eng 0, kin_2e246:^"...How pleasant!^@:dwave_eng 0, kin_2e247:^  What an truly elegant night.^@:dwave_eng 0, kin_2e248:^  Hehahahahahahaha...!!"^\
+langen:dwave_eng 0, kin_2e246:^"...How pleasant!^@:dwave_eng 0, kin_2e247:^  What a truly elegant night.^@:dwave_eng 0, kin_2e248:^  Hehahahahahahaha...!!"^\
 
 bfly1 0
 bg Mlib_1aN,23
