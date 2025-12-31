@@ -143528,7 +143528,7 @@ mld c,$EV2_niramuA2,80
 
 advchar "-1"
 langjp:dwave_jp 0, ev2_3e13:「ならば、その怒りを勉強に費やしましょうよ。@:dwave_jp 0, ev2_3e14:……怒りを力に換えるのが私の魔法。@:dwave_jp 0, ev2_3e15:この力で、何度もあなたの窮地を救い、あなたは成せないはずのことを成し遂げてきた。@:dwave_jp 0, ev2_3e16:私の魔法がある限り、あなたに出来ないことなど有りはしないわ。」\
-langen:dwave_eng 0, ev2_3e13:^"Then let's use that anger to fuel our learning.^@:dwave_eng 0, ev2_3e14:^  ...Changing anger into power is my magic.^@:dwave_eng 0, ev2_3e15:^  I've saved you from a bunch of tight spots with that power, letting you to succeed when you shouldn't have.^@:dwave_eng 0, ev2_3e16:^  As long as you have my magic, there's nothing you can't do."^\
+langen:dwave_eng 0, ev2_3e13:^"Then let's use that anger to fuel our learning.^@:dwave_eng 0, ev2_3e14:^  ...Changing anger into power is my magic.^@:dwave_eng 0, ev2_3e15:^  I've saved you from a bunch of tight spots with that power, letting you succeed when you shouldn't have.^@:dwave_eng 0, ev2_3e16:^  As long as you have my magic, there's nothing you can't do."^\
 advchar "05"
 langjp:dwave_jp 0, eva_3e44:「……そうね。@:dwave_jp 0, eva_3e45:怒りはいつも私の原動力だったわ。@:dwave_jp 0, eva_3e46:いつからそれを忘れてしまったのかしら…。」\
 langen:dwave_eng 0, eva_3e44:^"...That's right.^@:dwave_eng 0, eva_3e45:^  Anger has always been my driving force.^@:dwave_eng 0, eva_3e46:^  I wonder when it was I forgot that..."^\
