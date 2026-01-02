@@ -127992,7 +127992,7 @@ langen:dwave 0, bea_2e1536:^"At least call me a queen.^@:dwave 0, bea_2e1537:^  
 ld l,$BEA_WaraiA2,80
 
 langjp「……心地よし！@　実に優雅な夜だ。@くっはっはっはっはっはっはっは…！！」\
-langen:dwave 0, kin_2e246:^"...How pleasant!^@:dwave 0, kin_2e247:^  What an truly elegant night.^@:dwave 0, kin_2e248:^  Hehahahahahahaha...!!"^\
+langen:dwave 0, kin_2e246:^"...How pleasant!^@:dwave 0, kin_2e247:^  What a truly elegant night.^@:dwave 0, kin_2e248:^  Hehahahahahahaha...!!"^\
 
 bfly1 0
 bg Mlib_1aN,23
