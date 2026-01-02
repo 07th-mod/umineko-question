@@ -122085,7 +122085,7 @@ ld r,$GEO_MajimeA1,24
 
 langjp「……ならばその鍵は夏妃伯母さんが持ち歩いているはず。@…礼拝堂にはまだ夏妃伯母さんの遺体があるはずだ。@警察が来る前に勝手にいじってしまうのは悪いことだけれど、それについてはちゃんと説明しよう。」\
 ;＜譲治
-langen:dwave 0, geo_2e666:^"...In that case, Aunt Natsuhi should've had a key on her person.^@:dwave 0, geo_2e667:^  ...Aunt Natsuhi's corpse should still be in the chapel.^@:dwave 0, geo_2e668:^  We probably shouldn't be disturbing it before the police come, but we can give a full explaination later."^\
+langen:dwave 0, geo_2e666:^"...In that case, Aunt Natsuhi should've had a key on her person.^@:dwave 0, geo_2e667:^  ...Aunt Natsuhi's corpse should still be in the chapel.^@:dwave 0, geo_2e668:^  We probably shouldn't be disturbing it before the police come, but we can give a full explanation later."^\
 
 ld l,$GOH_KomaruA2,80
 
