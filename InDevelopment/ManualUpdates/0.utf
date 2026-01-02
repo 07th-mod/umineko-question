@@ -74454,7 +74454,7 @@ langen:dwave_eng 0, kin_1e329:^  ......Let them speak of such matters as much as
 
 advchar "-1"
 langjp　最後の一言には、これ以上の問答は無用だという凄みが込められていた。@
-langen^His last words carried the threat that any further questions would be not be appreciated.^@
+langen^His last words carried the threat that any further questions would not be appreciated.^@
 br
 langjp　…夏妃は、これ以上の言葉を重ねれば、今度こそ逆鱗に触れることになると感じ取った。@
 langjp　絵羽に、やはり説得できなかったかと嫌味を言われるのは癪だが、これ以上はどうしようもない…。\
@@ -88951,7 +88951,7 @@ ld l,$MAR_AkuWaraiA2,80
 
 langjp:dwave_jp 0, mar_1e846:…だからきっと大丈夫だよ。@:dwave_jp 0, mar_1e847:……真里亞は客間でテレビを見るよ。@:dwave_jp 0, mar_1e848:一緒に見ようよ。@:dwave_jp 0, mar_1e849:…ここ、テレビがなくてつまんないもん。@:dwave_jp 0, mar_1e850:…………きひひひひひひひひひひひひひひひひ。」@
 ;＜真里亞
-langen:dwave_eng 0, mar_1e846:^  ...So it'll definitely be okay.^@:dwave_eng 0, mar_1e847:^  ...I'll watch TV in the parlor.^@:dwave_eng 0, mar_1e848:^  Let's watch it together.^@:dwave_eng 0, mar_1e849:^  ...It's so boring here, without TV.^@:dwave_eng 0, mar_1e850:^  ......Kihihihihihihihihihihihihihihihi hihihi."^@
+langen:dwave_eng 0, mar_1e846:^  ...So it'll definitely be okay.^@:dwave_eng 0, mar_1e847:^  ...I'll watch TV in the parlor.^@:dwave_eng 0, mar_1e848:^  Let's watch it together.^@:dwave_eng 0, mar_1e849:^  ...It's so boring here, without TV.^@:dwave_eng 0, mar_1e850:^  ......Kihihihihihihihihihihihihihihihihihihi."^@
 advchar "-1"
 langjp　真里亞の悪戯っぽい笑いは、今の熊沢にとってさぞや恐ろしいものに見えただろう…。\
 langen^It looked like Kumasawa found Maria's roguish laugh very frightening...^\
@@ -110560,7 +110560,7 @@ mevol 1,40
 advchar "-1"
 langjp　親族会議でもっとも華やかな時間。@
 langjp　それが晩餐だった。@
-langen^This was most fabulous part of the family conference...^@
+langen^This was the most fabulous part of the family conference...^@
 langen^Dinner.^@
 br
 langjp　かつて親族会議に真剣だった頃の金蔵は、年に一度、全員が揃うこの晩餐を非常に重視していた。\
@@ -110573,7 +110573,7 @@ langjp　その為、蔵臼夫妻はやがて、料理の腕に自信のある�
 langen^Because of that, she and Krauss eventually hired Gohda, who had confidence in his cooking abilities.^\
 
 langjp　……その結果、自信の持てる素晴らしい晩餐を披露できるようになったにもかかわらず、@その頃には金蔵は書斎に引き篭もるようになっていて晩餐に姿を現さなくなったのだから、皮肉と言えたかもしれない…。\
-langen^...Thanks to that, they became able serve wonderful dinners they could be confident in,^@^ but by that time, Kinzo had closed himself up in his study and never appeared for dinner.^@^  Maybe you could call that ironic...^\
+langen^...Thanks to that, they became able to serve wonderful dinners they could be confident in,^@^ but by that time, Kinzo had closed himself up in his study and never appeared for dinner.^@^  Maybe you could call that ironic...^\
 
 bg black,24
 
@@ -111971,7 +111971,7 @@ langjp　…そう考えてしまうのは、まだまだ自分が大人にな�
 langen^...Is the fact that I think like this proof that I'm still a long way from becoming a full adult?^@
 br
 langjp　戦人は、六軒島の魔女の正体について、ようやく一定の理解を得るのだった。@
-langen^The true nature of the Rokkenjima witch was finally starting taking shape in Battler's mind.^@
+langen^The true nature of the Rokkenjima witch was finally starting to take shape in Battler's mind.^@
 br
 langjp　………だが、現在の状況は、その理解のさらに上に立ち、@しかもその前提を全てひっくり返すものだ…。\
 langen^...However, their current situation overrode this understanding,^@^ and in fact, it completely overturned its very premise...^\
@@ -121480,7 +121480,7 @@ print 1
 meta_ld l,$BUT_OdorokiB1,1
 
 langjp:dwave_jp 0, but_2e523:　復唱要求！！@:dwave_jp 0, but_2e524:　“昨日の昼の時点で渡した封筒と、楼座叔母さんが開封した封筒は同一のものである”。」@
-langen:dwave_eng 0, but_2e523:^  Repeat it!!^@:dwave_eng 0, but_2e524:^  `The envelope handed over midday yesterday and one Aunt Rosa opened are the same thing'."^@
+langen:dwave_eng 0, but_2e523:^  Repeat it!!^@:dwave_eng 0, but_2e524:^  `The envelope handed over midday yesterday and the one Aunt Rosa opened are the same thing'."^@
 
 mcl l,23
 meta_ld r,$BEA_aseruA1,80
@@ -123957,7 +123957,7 @@ me3v 17,50
 
 langjp　…いや、自分の危機感がまだ足りないのだろうか。@
 langjp　…楼座叔母さんのそれが、当然であると考えるくらいでなければ、自分には危機感が足りないのだろうか…。\
-langen^...No, it's probably because I'm not fully aware of danger we're in.^@
+langen^...No, it's probably because I'm not fully aware of the danger we're in.^@
 langen^...Maybe Aunt Rosa's attitude would seem natural if I could truly sense the peril surrounding us...^\
 
 bg MJES_1aR,0
@@ -129540,7 +129540,7 @@ langjp:dwave_jp 0, bea_2e1249_7:　私から逃れようとも、無駄。@
 langjp:dwave_jp 0, bea_2e1249_8:　私を否定しようとも、無駄なのです。@
 langen:dwave_eng 0, bea_2e1249_6:^Searching for me will prove useless.^@
 langen:dwave_eng 0, bea_2e1249_7:^Attempting to escape will prove useless.^@
-langen:dwave_eng 0, bea_2e1249_8:^Trying to deny me will prove useless^@
+langen:dwave_eng 0, bea_2e1249_8:^Trying to deny me will prove useless.^@
 br
 langjp:dwave_jp 0, bea_2e1249_9:　——黄金のベアトリーチェ。”\
 langen:dwave_eng 0, bea_2e1249_9:^--Beatrice the Golden.'^\
@@ -129945,7 +129945,7 @@ langen^It's useless it's useless it's useless it's all useless!!^@^  For a seco
 
 langjp　ベアトリーチェのヤツめ、@赤をうまく使った言葉遊びで煙に撒き、/
 langjp^^!d800俺をうまく騙せたに違いないと看破したはずだった…！！@
-langen^Dammit,^@^, I was so sure that I'd finally seen through her, ^/
+langen^Dammit,^@^ I was so sure that I'd finally seen through her, ^/
 sl
 langen^that I'd seen how she distracted me with her clever red wordplay and fooled me.^@
 br
@@ -130734,7 +130734,7 @@ cl a,0
 ld c,$ROS_akuWaraiB1G,24
 
 langjp:dwave_jp 0, ros_2e730:「その私が銃とマスターキーを独占できた！@:dwave_jp 0, ros_2e731:　これで私はもう、誰も疑わずに済むの。@:dwave_jp 0, ros_2e732:あなたたちも嬉しいでしょう？@:dwave_jp 0, ros_2e733:　これでもう疑われずに済む！@/
-langen:dwave_eng 0, ros_2e730:^"I've been able get the gun and all the master keys for myself!^@:dwave_eng 0, ros_2e731:^  Now, I don't have to suspect anyone.^@:dwave_eng 0, ros_2e732:^  You all are happy too, I take it?^@:dwave_eng 0, ros_2e733:^  Now you don't have to be suspected anymore!^@/
+langen:dwave_eng 0, ros_2e730:^"I've been able to get the gun and all the master keys for myself!^@:dwave_eng 0, ros_2e731:^  Now, I don't have to suspect anyone.^@:dwave_eng 0, ros_2e732:^  You all are happy too, I take it?^@:dwave_eng 0, ros_2e733:^  Now you don't have to be suspected anymore!^@/
 se1v 37,100
 langjp:dwave_jp 0, ros_2e734:　あっははははははははは、はっはっはっはっはっはっは！」\
 ;＜楼座
@@ -131662,7 +131662,7 @@ langjp　……魔女や悪霊の話を聞かされても、どうしても眉�
 langen^...All this talk about witches and evil spirits just sounded fake to him, even though he was trying to be open-minded.^@
 br
 langjp　それでも紗音の話を真剣に聞いたのは、彼女の心の痛みを少しでも和らげるヒントが欲しかったからだ。\
-langen^Even so, he listened seriously to Shannon's story, trying find a hint that might relieve at least a little of the pain in her heart.^\
+langen^Even so, he listened seriously to Shannon's story, trying to find a hint that might relieve at least a little of the pain in her heart.^\
 
 fede 1,3000
 
@@ -131791,7 +131791,7 @@ ld r,$GEO_MajimeA1,24
 advchar "07"
 langjp:dwave_jp 0, geo_2e666:「……ならばその鍵は夏妃伯母さんが持ち歩いているはず。@:dwave_jp 0, geo_2e667:…礼拝堂にはまだ夏妃伯母さんの遺体があるはずだ。@:dwave_jp 0, geo_2e668:警察が来る前に勝手にいじってしまうのは悪いことだけれど、それについてはちゃんと説明しよう。」\
 ;＜譲治
-langen:dwave_eng 0, geo_2e666:^"...In that case, Aunt Natsuhi should've had a key on her person.^@:dwave_eng 0, geo_2e667:^  ...Aunt Natsuhi's corpse should still be in the chapel.^@:dwave_eng 0, geo_2e668:^  We probably shouldn't be disturbing it before the police come, but we can give a full explaination later."^\
+langen:dwave_eng 0, geo_2e666:^"...In that case, Aunt Natsuhi should've had a key on her person.^@:dwave_eng 0, geo_2e667:^  ...Aunt Natsuhi's corpse should still be in the chapel.^@:dwave_eng 0, geo_2e668:^  We probably shouldn't be disturbing it before the police come, but we can give a full explanation later."^\
 
 ld l,$GOH_KomaruA2,80
 
@@ -132287,13 +132287,13 @@ ld l,$MAR_MajimeA1,80
 
 advchar "13"
 langjp:dwave_jp 0, mar_2e462:「黄金は最初からベアトのものだもん。@:dwave_jp 0, mar_2e463:自分のものを狙ったりなんかしない。」\
-langen:dwave_eng 0, mar_2e462:^"The gold has been Beatrice's from the beginning.^@:dwave_eng 0, mar_2e463:^  She wouldn't go after something that's hers."^\
+langen:dwave_eng 0, mar_2e462:^"The gold has been Beato's from the beginning.^@:dwave_eng 0, mar_2e463:^  She wouldn't go after something that's hers."^\
 
 ld r,$BUT_KomaruA1,80
 
 advchar "10"
 langjp:dwave_jp 0, but_2e1025:「……じゃ、…じゃあどうしてベアトは俺たちにこんな大ヒントを授けてくれたんだ？@:dwave_jp 0, but_2e1026:　……というか、どうしてこんなゲーム染みたことを仕掛けてきたんだ？」@
-langen:dwave_eng 0, but_2e1025:^"...Then, ...then why is Beatrice giving us all these big hints?^@:dwave_eng 0, but_2e1026:^  ...Not just that, why did she even set up this game-like thing?"^@
+langen:dwave_eng 0, but_2e1025:^"...Then, ...then why is Beato giving us all these big hints?^@:dwave_eng 0, but_2e1026:^  ...Not just that, why did she even set up this game-like thing?"^@
 
 ld l,$MAR_NiyariA2,80
 
@@ -132484,7 +132484,7 @@ langjp　……ヤツが本当に魔女で、真里亞の言うことが全て�
 langjp　俺たちのすべきことはひとつだった。@
 langen^...If she really is a witch and everything Maria said is true,^@^ then there's only one thing for us to do.^@
 langjp　…推理も仲違いも犯人探しもどうでもよかった。@
-langen^...The theory-building and discord and searching for the culprit has all been pointless.^@
+langen^...The theory-building, the discord and the searching for the culprit has all been pointless.^@
 br
 langjp　みんなで食堂にでも集まって、謎解きに知恵を出し合ってればよかったんだ。@
 langjp　あれだけの大勢で知恵を出し合えば、ひょっとしたら糸口くらい掴めたかもしれない…。\
@@ -138431,7 +138431,7 @@ ld l,$BEA_WaraiA2,80
 
 advchar "01"
 langjp:dwave_jp 0, kin_2e246:「……心地よし！@:dwave_jp 0, kin_2e247:　実に優雅な夜だ。@:dwave_jp 0, kin_2e248:くっはっはっはっはっはっはっは…！！」\
-langen:dwave_eng 0, kin_2e246:^"...How pleasant!^@:dwave_eng 0, kin_2e247:^  What an truly elegant night.^@:dwave_eng 0, kin_2e248:^  Hehahahahahahaha...!!"^\
+langen:dwave_eng 0, kin_2e246:^"...How pleasant!^@:dwave_eng 0, kin_2e247:^  What a truly elegant night.^@:dwave_eng 0, kin_2e248:^  Hehahahahahahaha...!!"^\
 
 bfly1 0
 bg Mlib_1aN,23
@@ -138547,7 +138547,7 @@ advchar "-1"
 langjp　金蔵と源次は書斎を出て行く。@
 langjp　後には魔女とドレスと家具が残った。\
 langen^Kinzo and Genji left the study.^@
-langen^After that, the witch and the dress and the furniture remained.^\
+langen^After that, the witch, the dress and the furniture remained.^\
 
 cbfly 0
 bg black,24
@@ -142289,7 +142289,7 @@ mld c,$EV2_niramuA2,80
 
 advchar "-1"
 langjp:dwave_jp 0, ev2_3e13:「ならば、その怒りを勉強に費やしましょうよ。@:dwave_jp 0, ev2_3e14:……怒りを力に換えるのが私の魔法。@:dwave_jp 0, ev2_3e15:この力で、何度もあなたの窮地を救い、あなたは成せないはずのことを成し遂げてきた。@:dwave_jp 0, ev2_3e16:私の魔法がある限り、あなたに出来ないことなど有りはしないわ。」\
-langen:dwave_eng 0, ev2_3e13:^"Then let's use that anger to fuel our learning.^@:dwave_eng 0, ev2_3e14:^  ...Changing anger into power is my magic.^@:dwave_eng 0, ev2_3e15:^  I've saved you from a bunch of tight spots with that power, letting you to succeed when you shouldn't have.^@:dwave_eng 0, ev2_3e16:^  As long as you have my magic, there's nothing you can't do."^\
+langen:dwave_eng 0, ev2_3e13:^"Then let's use that anger to fuel our learning.^@:dwave_eng 0, ev2_3e14:^  ...Changing anger into power is my magic.^@:dwave_eng 0, ev2_3e15:^  I've saved you from a bunch of tight spots with that power, letting you succeed when you shouldn't have.^@:dwave_eng 0, ev2_3e16:^  As long as you have my magic, there's nothing you can't do."^\
 advchar "05"
 langjp:dwave_jp 0, eva_3e44:「……そうね。@:dwave_jp 0, eva_3e45:怒りはいつも私の原動力だったわ。@:dwave_jp 0, eva_3e46:いつからそれを忘れてしまったのかしら…。」\
 langen:dwave_eng 0, eva_3e44:^"...That's right.^@:dwave_eng 0, eva_3e45:^  Anger has always been my driving force.^@:dwave_eng 0, eva_3e46:^  I wonder when it was I forgot that..."^\
@@ -281895,7 +281895,7 @@ ld c,$BEA_NayamuA1,2
 
 advchar "27"
 langjp:dwave_jp 0, bea_9e160:「……どうやって癒すのか。@:dwave_jp 0, bea_9e161:可能ではあるが簡単ではない。@:dwave_jp 0, bea_9e162:…時間を巻き戻し、そなたに兄と姉がいなかった世界を与えることもできよう。」\
-langen:dwave_eng 0, bea_9e160:^"...How can I heal you?^@:dwave_eng 0, bea_9e161:^  It's possible, but not easy.^@:dwave_eng 0, bea_9e162:^  ...I might rewind time, and giving you a world where you have no older siblings."^\
+langen:dwave_eng 0, bea_9e160:^"...How can I heal you?^@:dwave_eng 0, bea_9e161:^  It's possible, but not easy.^@:dwave_eng 0, bea_9e162:^  ...I might rewind time, and give you a world where you have no older siblings."^\
 
 ld c,$BEA_DefA1,80
 
