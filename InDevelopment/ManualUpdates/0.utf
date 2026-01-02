@@ -256824,7 +256824,7 @@ bfly2 0
 ld c,$BEA_NayamuA1,2
 
 langjp「……どうやって癒すのか。@可能ではあるが簡単ではない。@…時間を巻き戻し、そなたに兄と姉がいなかった世界を与えることもできよう。」\
-langen:dwave 0, bea_9e160:^"...How can I heal you?^@:dwave 0, bea_9e161:^  It's possible, but not easy.^@:dwave 0, bea_9e162:^  ...I might rewind time, and giving you a world where you have no older siblings."^\
+langen:dwave 0, bea_9e160:^"...How can I heal you?^@:dwave 0, bea_9e161:^  It's possible, but not easy.^@:dwave 0, bea_9e162:^  ...I might rewind time, and give you a world where you have no older siblings."^\
 
 ld c,$BEA_DefA1,80
 
