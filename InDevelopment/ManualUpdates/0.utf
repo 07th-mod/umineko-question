@@ -122544,12 +122544,12 @@ langen:dwave 0, but_2e1024:^"...How...can you be so sure?"^@
 ld l,$MAR_MajimeA1,80
 
 langjp「黄金は最初からベアトのものだもん。@自分のものを狙ったりなんかしない。」\
-langen:dwave 0, mar_2e462:^"The gold has been Beatrice's from the beginning.^@:dwave 0, mar_2e463:^  She wouldn't go after something that's hers."^\
+langen:dwave 0, mar_2e462:^"The gold has been Beato's from the beginning.^@:dwave 0, mar_2e463:^  She wouldn't go after something that's hers."^\
 
 ld r,$BUT_KomaruA1,80
 
 langjp「……じゃ、…じゃあどうしてベアトは俺たちにこんな大ヒントを授けてくれたんだ？@　……というか、どうしてこんなゲーム染みたことを仕掛けてきたんだ？」@
-langen:dwave 0, but_2e1025:^"...Then, ...then why is Beatrice giving us all these big hints?^@:dwave 0, but_2e1026:^  ...Not just that, why did she even set up this game-like thing?"^@
+langen:dwave 0, but_2e1025:^"...Then, ...then why is Beato giving us all these big hints?^@:dwave 0, but_2e1026:^  ...Not just that, why did she even set up this game-like thing?"^@
 
 ld l,$MAR_NiyariA2,80
 
