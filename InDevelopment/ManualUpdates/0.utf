@@ -98175,7 +98175,7 @@ langen:voicedelay 1630/
 mov %disable_adv_clear, 0
 se2 5
 langjp:dwave_jp 0, "voice\99\frefc2007.ogg":　きゃーッ！！」/
-langen:dwave_eng 0, "voice\99\frefc2007.ogg":^  Kyaa-!!"^/
+langen:dwave_eng 0, "voice\99\frefc2007.ogg":^  Kyaa-!!"^\
 mov %disable_adv_clear, 1
 langjp:voicedelay 940/
 sl
