@@ -172,11 +172,11 @@ numalias savemodePage,3001         ;セーブ画面ページ収得エリア
 numalias savedataTime,3100          ;セーブデータ用時間データ文字エリア
 numalias savedataComment,3200          ;セーブデータ用コメントエリア
 numalias savedataflg,3300          ;セーブデータ用グローバルエリア
-
 ;3500以上はあけておく
 numalias seventh_state, 3500
 numalias musicVolume, 3501
 numalias voiceVolume, 3502
+numalias dropShadow, 3506 ; Note: numalias 3503-3505 are used in the full script
 numalias scenario1_1,101   ;キャラクター説明フラグ値　シナリオ１進行度１
 numalias scenario1_2,102   ;キャラクター説明フラグ値　シナリオ１進行度２
 
@@ -49294,13 +49294,13 @@ defsub Fede
 defsub FedeXX
 defsub cross1
 defsub cross2
-
 defsub introduction_flg
 defsub dllefe
 defsub dllefe_off
 defsub csp
 defsub mono
-
+defsub update_dropshadow
+defsub toggle_dropshadow
 defsub flg_set
 defsub flg_p
 
@@ -49377,11 +49377,11 @@ mov %m_temp1,0
 saveoff
 seventh_change_voice_level 0 ;initialize voice volume
 ;if %UMINEKOEND < 50 mov %UMINEKOEND,50
+update_dropshadow
 setwindow 31,16,25,20,23,23,0,2,20,1,1,#999999,0,0,639,479
 lsph TextCC1SpNum,":bl/3,160,2;bmp\cursor0.png",0,0
 lsph TextCC2SpNum,":bl/3,160,2;bmp\cursor1.png",0,0
 ;lsph text_back,":a;bmp\introduction_back1.bmp",0,0
-
 
 notif %cur_language = 1 jumpf
 showlangjp
@@ -288688,7 +288688,7 @@ csp r_system_lsp
 ^Voices: /
 %voiceVolume /
 ^ Def: 57
-select "^Music/SoundEffect+",*seventh_music_plus,"^Music/SoundEffect-",*seventh_music_minus, "^Voice+",*seventh_voice_plus,"^Voice-",*seventh_voice_minus, "^Exit", *seventh_menu_exit
+select "^Music/SoundEffect+",*seventh_music_plus,"^Music/SoundEffect-",*seventh_music_minus, "^Voice+",*seventh_voice_plus,"^Voice-",*seventh_voice_minus, "^Toggle Drop Shadow", *seventh_toggle_dropshadow, "^Exit", *seventh_menu_exit
 
 *seventh_music_plus
 add %musicVolume, 3
@@ -288710,6 +288710,11 @@ jumpf
 *seventh_voice_minus
 seventh_change_voice_level -3
 dwave 0, kin_1e1
+jumpf
+
+*seventh_toggle_dropshadow
+toggle_dropshadow
+seplay 9,1001
 jumpf
 
 ~
@@ -313827,4 +313832,14 @@ return
 ^ ^/
         wait (%witchh7 + VOICE_DELAY_PADDING - (%witchh6 - %last_voice_play_time))
     ~
+return
+
+*update_dropshadow
+    if %dropShadow == 0 shadedistance 3,3
+    if %dropShadow != 0 shadedistance 1,1
+return
+
+*toggle_dropshadow
+    if %dropShadow == 0 mov %dropShadow, 1 : update_dropshadow : return
+    if %dropShadow != 0 mov %dropShadow, 0 : update_dropshadow : return
 return
