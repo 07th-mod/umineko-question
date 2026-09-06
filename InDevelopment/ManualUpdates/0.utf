@@ -313075,6 +313075,32 @@ if %seventh_state > 0 jumpf
     bg black,9
 ~
 
+if %seventh_state > 1 jumpf
+    ; need to reset font size/pos so drop shadow can be compared properly
+    setwindow 75,32,35,20,15,15,0,2,20,1,1,#999999,0,0,853,479 ;utmeta-ignore
+    bg beach_2a,9
+    textspeed 0
+
+*seventh_state_1_loop
+    ^2026-09-06: The Drop Shadow Thickness option has been added^
+    ^Toggle drop shadow here. Press "Exit" when finished.^
+    ^Later you can also use the mod menu to toggle drop shadow^
+    br
+
+    select "^> Toggle Drop Shadow",*seventh_state_1_toggle, "^> Exit",*seventh_state_1_finished
+    goto *seventh_state_1_loop
+
+*seventh_state_1_toggle
+    toggle_dropshadow
+    goto *seventh_state_1_loop
+
+*seventh_state_1_finished
+    btndef ""
+    mov %seventh_state, 2
+    bg black,9
+~
+
+
 return
 
 
