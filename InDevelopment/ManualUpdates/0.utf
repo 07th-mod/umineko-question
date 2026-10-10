@@ -49215,6 +49215,9 @@ stralias rud_9e2,"voice\08\91200002.ogg"
 
 
 roff
+defsub noclear_cw
+defsub dwave_jp
+defsub dwave_eng
 defsub dwave
 defsub voicedelay
 defsub voicewait
@@ -313845,6 +313848,23 @@ return
     voicevol %voiceVolume
 return
 
+;if cur_language == 1 (japanese) then don't play the voice
+*dwave_eng
+    getparam %witchh7,$witchh11
+    if %cur_language == 1 jumpf
+        _dwave %witchh7,$witchh11
+        gettimer %last_voice_play_time
+    ~
+return
+
+*dwave_jp
+    getparam %witchh7,$witchh11
+    if %cur_language == 0 jumpf
+        _dwave %witchh7,$witchh11
+        gettimer %last_voice_play_time
+    ~
+return
+
 *dwave
     getparam %witchh7,$witchh11
     _dwave %witchh7,$witchh11
@@ -313874,6 +313894,12 @@ return
 ^ ^/
         wait (%witchh7 + VOICE_DELAY_PADDING - (%witchh6 - %last_voice_play_time))
     ~
+return
+
+*noclear_cw
+;    mov %disable_adv_clear, 1
+@/
+;    mov %disable_adv_clear, 0
 return
 
 *update_dropshadow
