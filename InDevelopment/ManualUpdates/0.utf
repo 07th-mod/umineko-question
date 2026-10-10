@@ -205244,7 +205244,7 @@ bg sky_1a,25
 
 langjp:dwave_jp 0, "voice\99\stufb4003.ogg":「……言ったよね？言ったよね？@:dwave_jp 0, "voice\99\stufb4004.ogg":　マリアお姉ちゃんとか言ったよね？！」@
 langjp:dwave_jp 0, "voice\99\stufc4011.ogg":「ヤバくない？　心霊とか見えちゃってンじゃないの、あれぇ。」@
-langjp:dwave_jp 0, "voice\99\stufa4006.ogg":「ぷーくすくすくすくすくす！@:dwave_eng 0, "voice\99\stufa4007.ogg":　右代宮さんって、おッもしろ〜い…！」\
+langjp:dwave_jp 0, "voice\99\stufa4006.ogg":「ぷーくすくすくすくすくす！@:dwave_jp 0, "voice\99\stufa4007.ogg":　右代宮さんって、おッもしろ〜い…！」\
 langen:dwave_eng 0, "voice\99\stufb4003.ogg":^"...She said it, right?  She said it, right?^@:dwave_eng 0, "voice\99\stufb4004.ogg":^  She said Maria onee-chan or something, right?!"^@
 langen:dwave_eng 0, "voice\99\stufc4011.ogg":^"Isn't that creepy?  She isn't seeing spirits or something, is she?"^@
 langen:dwave_eng 0, "voice\99\stufa4006.ogg":^"*giggle*giggle*giggle*giggle*!^@:dwave_eng 0, "voice\99\stufa4007.ogg":^  Ushiromiya-san's so funny...!"\
@@ -211015,7 +211015,7 @@ langjp:dwave_jp 0, mar_4e362:「………うー。」\
 langen:dwave_eng 0, mar_4e362:^"......Uu-."^\
 
 advchar "33"
-langjp:dwave_jp 0, sak_4e88:『ママはお仕事が忙しいから、なかなか真里亞と一緒にいられないけど、真里亞はどうかそれを責めないで。@:dwave_jp 0, sak_4e89:……その代わり、ボクはいつも一緒に、そしていつまでも一緒に真里亞の側にいるから。……………だから泣かないで…？@:dwave_jp 0, sak_4e90:　………うりゅ…。@:dwave_eng 0, sak_4e91:ボクが一緒じゃ、………悲しみを止められない……？』\
+langjp:dwave_jp 0, sak_4e88:『ママはお仕事が忙しいから、なかなか真里亞と一緒にいられないけど、真里亞はどうかそれを責めないで。@:dwave_jp 0, sak_4e89:……その代わり、ボクはいつも一緒に、そしていつまでも一緒に真里亞の側にいるから。……………だから泣かないで…？@:dwave_jp 0, sak_4e90:　………うりゅ…。@:dwave_jp 0, sak_4e91:ボクが一緒じゃ、………悲しみを止められない……？』\
 langen:dwave_eng 0, sak_4e88:^『Since Mama's busy with her work, she can't be together with you very often, but please, don't blame her for that, Maria.^@:dwave_eng 0, sak_4e89:^  ...In exchange, I'll always be here, will be by your side forever.^@:dwave_eng 0, sak_4e90:^  ......So don't cry, okay...?^@:dwave_eng 0, sak_4e91:^  ......Uryu...^@^  Can't your sadness be stopped......if I'm with you...?』^\
 
 ;ld c,$MAR_NakuA1,80
