@@ -288756,7 +288756,12 @@ goto *rmenu_csutom
 	btndef ""
 
 
-	lsp r_clear_lsp,":b/2,0,3;en\bmp\r_click\r_btn_clear.png",15,400 ;320
+	lsp r_clear_lsp,":b/2,0,3;en\bmp\r_click\r_btn_clear.png",15,360 ;320
+
+	mov $witchh4, "bmp\r_click\r_btn_language.png"
+	setLangString $witchh4, "/2,0,3"
+	lsp r_language_lsp,$witchh4,15,400 ;360
+
     lsp r_sprite_lsp,":b/2,0,3;en\bmp\r_click\r_btn_system.png",440,440
 	lsp r_system_lsp,":b/2,0,3;en\bmp\r_click\r_btn_system.png",15,440
 
@@ -288768,12 +288773,14 @@ goto *rmenu_csutom
 		spbtn r_clear_lsp,r_clear_lsp
 		spbtn r_sprite_lsp,r_sprite_lsp
 		spbtn r_system_lsp,r_system_lsp
+		spbtn r_language_lsp,r_language_lsp
 
 		btnwait2 %BtnRes
 
 		if %BtnRes = r_system_lsp seplay 9,1001 : goto *rmenu_main
 		if %BtnRes = r_clear_lsp csp r_sprite_lsp : csp r_language_lsp : csp r_clear_lsp : csp r_system_lsp : seplay 9,1000 : print 1:goto *rmenu_btlp
 		if %BtnRes = r_sprite_lsp goto *seventh_menu
+		if %BtnRes = r_language_lsp toggleLanguage : savegame 15 : loadgame 15
 
 		;if %BtnRes = r_clear_lsp E_A ;デバッグでEP4に飛ぶようになっているので必ず修正する。
 
@@ -313009,8 +313016,6 @@ mov %show_cgs,0
 mov %show_cg_test,0
 mov %hide_new_sprites,0
 
-mov %shownlangselect, 1
-changeLanguage 0
 if %shownlangselect = 1 goto *postlangselect
 bg beach_2b,0
 
