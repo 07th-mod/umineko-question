@@ -1,4 +1,4 @@
-﻿;value2500,mode640@2x@umineko
+;value2500,mode640@2x@umineko
 ;gameid Umineko4hdz
 ;localsave mysav
 *define
@@ -49664,9 +49664,9 @@ langen:voicedelay 1890:dwave_eng 0, nan_1e23:^...or merely matters you wish to c
 bg Mlib_1e,22
 meplay2 1,5,40
 
-langjp「……ふ。@………受け継いでほしいことや、伝えたいことだと？@　馬鹿馬鹿しい。@この右代宮金蔵、後に残したいことも伝えたいこともただのひとつもないわッ！！@　裸一貫で生まれた。@そして裸一貫で死ぬ！@　馬鹿息子どもに残したいものなど何一つないわッ！！@　もしも訪れる最期が今日だとしても、今だとしても！@　私は何も恐れることなくその死の運命を受け容れようではないか！！@　全てを築き上げた。@富も！@　名誉も！@　全てだ！！@　それらは私とともに築き上げられ、私とともに失われよう。@後に残してやるものなど何もないわッ！！@　何もないッ！！@　あとは野となれ山となれ！@　墓も棺も何も望まぬわ！！\
+langjp:dwave_jp 0, kin_1e25:「……ふ。@:dwave_jp 0, kin_1e26:………受け継いでほしいことや、伝えたいことだと？@:dwave_jp 0, kin_1e27:　馬鹿馬鹿しい。@:dwave_jp 0, kin_1e28:この右代宮金蔵、後に残したいことも伝えたいこともただのひとつもないわッ！！@:dwave_jp 0, kin_1e29:　裸一貫で生まれた。@:dwave_jp 0, kin_1e30:そして裸一貫で死ぬ！@:dwave_jp 0, kin_1e31:　馬鹿息子どもに残したいものなど何一つないわッ！！@:dwave_jp 0, kin_1e32:　もしも訪れる最期が今日だとしても、今だとしても！@:dwave_jp 0, kin_1e33:　私は何も恐れることなくその死の運命を受け容れようではないか！！@:dwave_jp 0, kin_1e34:　全てを築き上げた。@:dwave_jp 0, kin_1e35:富も！@:dwave_jp 0, kin_1e36:　名誉も！@:dwave_jp 0, kin_1e37:　全てだ！！@:dwave_jp 0, kin_1e38:　それらは私とともに築き上げられ、私とともに失われよう。@:dwave_jp 0, kin_1e39:後に残してやるものなど何もないわッ！！@:dwave_jp 0, kin_1e40:　何もないッ！！\
 langen:dwave_eng 0, kin_1e25:^"...Hmph.^@:dwave_eng 0, kin_1e26:^  .........Things I want to pass down to others or matters I wish to communicate?^@:dwave_eng 0, kin_1e27:^  Ridiculous.^@:dwave_eng 0, kin_1e28:^  I, Ushiromiya Kinzo, have not one thing I want to tell or leave behind!!^@:dwave_eng 0, kin_1e29:^  I was born with nothing.^@:dwave_eng 0, kin_1e30:^  I will die with nothing!^@:dwave_eng 0, kin_1e31:^  There is nothing I wish to leave to my foolish children!!^@:dwave_eng 0, kin_1e32:^  Even if the end were to come today, even if it were to come right now!^@:dwave_eng 0, kin_1e33:^  I would accept that fate of death without a trace of fear!!^@:dwave_eng 0, kin_1e34:^  I created everything.^@:dwave_eng 0, kin_1e35:^  My fortune!^@:dwave_eng 0, kin_1e36:^  My prestige!^@:dwave_eng 0, kin_1e37:^  Everything!!^@:dwave_eng 0, kin_1e38:^  Those were built up by me, and they will be lost along with me.^@:dwave_eng 0, kin_1e39:^  There is nothing I wish to leave behind!!^@:dwave_eng 0, kin_1e40:^  Nothing!!"^\
-langjpそれが魔女と私の契約だ！@　私が死ぬ時に全てを失う！@　初めからその約束だからこそ、何も残らぬのだ。@何も残せぬのだ！！」\
+langjp:dwave_jp 0, kin_1e41: あとは野となれ山となれ！@:dwave_jp 0, kin_1e42:　墓も棺も何も望まぬわ！！@:dwave_jp 0, kin_1e43: それが魔女と私の契約だ！@:dwave_jp 0, kin_1e44:　私が死ぬ時に全てを失う！@:dwave_jp 0, kin_1e45:　初めからその約束だからこそ、何も残らぬのだ。@:dwave_jp 0, kin_1e46:何も残せぬのだ！！」\
 langen:dwave_eng 0, kin_1e41:^"After I'm gone, I care not if it all goes to waste!^@:dwave_eng 0, kin_1e42:^  I desire no tomb, no coffin!!^@:dwave_eng 0, kin_1e43:^  Those were the terms of the contract I made with the witch!^@:dwave_eng 0, kin_1e44:^  When I die, everything will be lost!^@:dwave_eng 0, kin_1e45:^  That has been part of the promise since the beginning, and that's why nothing will be left behind.^@:dwave_eng 0, kin_1e46:^  There is nothing I can leave behind!!"^\
 
 textoff
@@ -49678,9 +49678,7 @@ br
 langjp　…その表情は、まるで憑き物が落ちたように弱々しいものだった。\
 langen^...His expression was limp and feeble, as though an evil spirit had possessed him and then left.^\
 
-langjp「/
-langjp^^!s300/
-langjp………………/
+langjp:dwave_jp 0, kin_1e47:^「^!s150^………………^/
 langen:dwave_eng 0, kin_1e47:^"^!s150^............^/
 
 langjp:voicedelay 2310:dwave_jp 0, kin_1e48:^^!sdだが未練はある。@:dwave_jp 0, kin_1e49:残すものは何一つないが、残したまま逝けぬものが、ひとつだけある…。」\
@@ -49706,9 +49704,10 @@ meplay2 1,17,40
 
 langjp:dwave_jp 0, kin_1e51:　私が生きている内でなくてはならぬ、私は死ねば魂はすぐに契約の悪魔に食らわれて消え去ってしまう！@:dwave_jp 0, kin_1e52:　死後の世界も安らぎも私にはないのだ！@:dwave_jp 0, kin_1e53:　だから全ては私が生きている内でなければならぬ！！@:dwave_jp 0, kin_1e54:　だから遺言状など私には必要ないッ！！@:dwave_jp 0, kin_1e55:　そのようなものを書く暇があったなら……、/
 langen:dwave_eng 0, kin_1e51:^  It must be done while I still live!  At the moment of my death, my soul will be devoured by the demons of the contract and wiped out of existence!^@:dwave_eng 0, kin_1e52:^  For me, there will be no peace or another world after death!^@:dwave_eng 0, kin_1e53:^  That's why everything must be completed before I go!!^@:dwave_eng 0, kin_1e54:^  That's why a will has no meaning for me!!^@:dwave_eng 0, kin_1e55:^  And even if I had a chance to write such a thing, ^/
-langjp!w800あったならッ！！@　…私は見たい。@もう一度見たい！@　ベアトリーチェの微笑む顔がもう一度見たい！！@　あぁ、ベアトリーチェ、なぜに私をこれほどまでに拒むのか！！@　今こそお前に与えられた全てを返そう、全てを失おう！！@　だから最後にもう一度だけお前の微笑を見せてくれ…。\
+langjp:voicedelay 3390:dwave_jp 0, kin_1e56:!w800あったならッ！！\　
 langen:voicedelay 3390:dwave_eng 0, kin_1e56:^......if I did have such a chance!!"^\
 
+langjp:dwave_jp 0, kin_1e57: …私は見たい。@:dwave_jp 0, kin_1e58:もう一度見たい！@:dwave_jp 0, kin_1e59:　ベアトリーチェの微笑む顔がもう一度見たい！！@:dwave_jp 0, kin_1e60:　あぁ、ベアトリーチェ、なぜに私をこれほどまでに拒むのか！！@:dwave_jp 0, kin_1e61:　今こそお前に与えられた全てを返そう、全てを失おう！！@:dwave_jp 0, kin_1e62:　だから最後にもう一度だけお前の微笑を見せてくれ…。\
 langen:dwave_eng 0, kin_1e57:^"...I'd want to see it.^@:dwave_eng 0, kin_1e58:^  I want to see it one more time!^@:dwave_eng 0, kin_1e59:^  I want to see Beatrice's smiling face one last time!!^@:dwave_eng 0, kin_1e60:^  Oh, Beatrice, why have you resisted me for so long?!^@:dwave_eng 0, kin_1e61:^  I'll return everything you have given me!  I am prepared to lose everything!!^@:dwave_eng 0, kin_1e62:^  So please, show me your smile just one more time..."^\
 
 meplay2 2,16,40
@@ -50959,8 +50958,8 @@ langen^......However, possibly because she's more strict as a parent, she's not 
 bg black,2
 
 
-langjp!w1000
-langen!w1000
+
+wait 1000
 
 bg air_i1a,6
 
@@ -52261,7 +52260,7 @@ langen:dwave_eng 0, but_1e170:^"............Huh...?^@:dwave_eng 0, but_1e171:^  
 langjp:dwave_jp 0, jes_1e58:「へー、戦人すごいじゃねぇか。@:dwave_jp 0, jes_1e59:６年ぶりなのに、よく覚えてるもんだぜ。」@
 ;＜朱志香
 langen:dwave_eng 0, jes_1e58:^"Wow, you're amazing, Battler.^@:dwave_eng 0, jes_1e59:^  Even though it's been six years, you remembered."^@
-langjp「あったね…！@　僕も思いだしたよ。@鎮守の社と鳥居みたいなものが、岩の上にぽつんと建ててあったよ。@……そう言えばないね。@去年は確かにあったと思う。」@
+langjp:dwave_jp 0, geo_1e71:「あったね…！@:dwave_jp 0, geo_1e72:　僕も思いだしたよ。@:dwave_jp 0, geo_1e73:鎮守の社と鳥居みたいなものが、岩の上にぽつんと建ててあったよ。/
 ;＜譲治
 langen:dwave_eng 0, geo_1e71:^"It was here, wasn't it...!^@:dwave_eng 0, geo_1e72:^  I remember too.^@:dwave_eng 0, geo_1e73:^  The #fefefetutelary god#ffffff's shrine and that #fefefeTorii#ffffff-like thing were standing all alone on that crag.^/
 
@@ -54670,8 +54669,8 @@ langen^This was gonna be our temporary quarters for the night.^\
 
 bg black,2
 
-langjp!w1000
-langen!w1000
+wait 1000
+
 
 
 bg garden_1c,22
@@ -54748,8 +54747,8 @@ fede 0,3000
 
 
 
-langjp!w1000
-langen!w1000
+wait 1000
+
 
 
 bg white,2
@@ -55239,8 +55238,8 @@ langen^Aunt Rosa was right behind us, but Maria still answered, striking the air
 
 bg black,25
 
-langjp!w1000
-langen!w1000
+wait 1000
+
 
 
 bg G2F_P1a,22
@@ -59463,7 +59462,7 @@ langen:dwave_eng 0, kin_1e161:^"And so,^@:dwave_eng 0, kin_1e162:^ ......I have 
 langjp:dwave_jp 0, kin_1e169:　神話に登場する数々の奇跡は天文学的リスクに奇跡的な低確率を得て成就した驚愕すべき魔力の結晶なのだと言える！@:dwave_jp 0, kin_1e170:　モーゼが海を割ったのは神の奇跡ではない、@:dwave_jp 0, kin_1e171:虐殺の秤に載せられ軍勢によって紅海に追い詰められた絶体絶命のリスクが奇跡の魔力を生んだのだ！@:dwave_jp 0, kin_1e172:　同じことが同じ規模で繰り返されようとも、再び海が割れることはないだろう。\
 langen:dwave_eng 0, kin_1e169:^"Many miracles that happened in myth might be called the crystallization of shocking magic power, with a low probability of occurance and astronomical risk!^@:dwave_eng 0, kin_1e170:^  That Moses parted the waters of the sea was not a miracle of God--^@:dwave_eng 0, kin_1e171:^the risk of that desperate situation, cornered by soldiers on the Red Sea's shores, weighed upon the scales of slaughter and gave birth to that miraculous magic power.^@:dwave_eng 0, kin_1e172:^  If the same thing occurred again on the same scale, the sea would surely fail to part."^\
 ;gggg
-langjp　なぜならモーゼは、力ある者たちのルーレットの、阿僧祇、那由他を掛けたよりも多く存在する目の中にひとつだけ刻まれた奇跡を見事引き寄せることができたからだ。@その天文学的確率に勝利できる力！！@　そう、奇跡を掴み取る運気は即ち魔力なのだ！！@　強大な魔力を得るためには絶望的なリスクを背負わねばならぬ！！@　魔力持たぬ者はそれを賭けでなく自暴自棄と呼ぼう！@　しかし真に魔力ある者はその奇跡を掴み取り、神秘を成就させるのだッ！！@　もしも私にその魔力があるならば！@　私はその奇跡を掴み取るだろう、生涯を費やした願いを実現できるだろうッ！！」\
+langjp:dwave_jp 0, kin_1e173:　なぜならモーゼは、力ある者たちのルーレットの、阿僧祇、那由他を掛けたよりも多く存在する目の中にひとつだけ刻まれた奇跡を見事引き寄せることができたからだ。@:dwave_jp 0, kin_1e174:その天文学的確率に勝利できる力！！@:dwave_jp 0, kin_1e175:　そう、奇跡を掴み取る運気は即ち魔力なのだ！！@:dwave_jp 0, kin_1e176: 強大な魔力を得るためには絶望的なリスクを背負わねばならぬ！！@:dwave_jp 0, kin_1e177:　魔力持たぬ者はそれを賭けでなく自暴自棄と呼ぼう！\
 langen:dwave_eng 0, kin_1e173:^"After all, Moses was able to magnificently summon a miracle engraved on but one of the countless, enumerable results on the roulette of those with power.^@:dwave_eng 0, kin_1e174:^  That is the force that can triumph over astronomical odds!!^@:dwave_eng 0, kin_1e175:^  Indeed, good fortune that can grasp miracles is magical power itself!!^@:dwave_eng 0, kin_1e176:^  To obtain this mighty power, one must face the risk of despair!!^@:dwave_eng 0, kin_1e177:^  Those who possess no magical power may call that desperation rather than a bet!"^\
 
 
@@ -61085,7 +61084,8 @@ langen:dwave_eng 0, eva_1e147:^"Nii-san, I hear the times have been extremely go
 bg M1F_S1c,0
 ld r,$KLA_AkuwaraiA1,24
 
-langjp「……詳しいじゃないか。@これから日本には空前の好景気が訪れる。@親父殿が右代宮家を再興した時と同じ、朝鮮特需の再来さ。@……日本国民は死に物狂いで働き高度経済成長を実現して世界で一番豊かな国民となり、我が世の春を謳歌するようになった。@国民の消費は増大し、それを回収できる施設が泡銭を手にする時代になったのだよ。@今や国民のニーズは三種の電化製品ではない。@スキー場、ゴルフ場、総合プール。@リゾートホテルにテーマパーク！\
+langjp:dwave_jp 0, kla_1e80:「……詳しいじゃないか。@:dwave_jp 0, kla_1e81:これから日本には空前の好景気が訪れる。@:dwave_jp 0, kla_1e82:親父殿が右代宮家を再興した時と同じ、朝鮮特需の再来さ。@:dwave_jp 0, kla_1e83:……日本国民は死に物狂いで働き高度経済成長を実現して世界で一番豊かな国民となり、我が世の春を謳歌するようになった。@:dwave_jp 0, kla_1e84: 国民の消費は増大し、それを回収できる施設が泡銭を手にする時代になったのだよ。\
+langjp:dwave_jp 0, kla_1e85: 今や国民のニーズは三種の電化製品ではない。@:dwave_jp 0, kla_1e86:スキー場、ゴルフ場、総合プール。@:dwave_jp 0, kla_1e87:リゾートホテルにテーマパーク！\
 langen:dwave_eng 0, kla_1e80:^"...You certainly seem to know a lot about it.^@:dwave_eng 0, kla_1e81:^  Japan is about to experience an unprecedented boom.^@:dwave_eng 0, kla_1e82:^  It'll be a repeat of the Korean War Demands, the time during which Father revived the Ushiromiya family.^@:dwave_eng 0, kla_1e83:^  ...The people of Japan have been working like mad, achieving vast economic growth and becoming the most well-off people in the world, reaching the height of our prosperity.^@:dwave_eng 0, kla_1e84:^  We've reached an era where private spending is vast, which means easy money for institutions that can capitalize on that fact."^\
 langen:dwave_eng 0, kla_1e85:^"The three kinds of electrical appliances no longer represent the people's needs.^@:dwave_eng 0, kla_1e86:^  The people need ski resorts, golf courses, public pools.^@:dwave_eng 0, kla_1e87:^  Resort hotels and theme parks!"^\
 ld r,$KLA_AkuwaraiA2,80
@@ -61410,7 +61410,8 @@ langjp　その直前までの優雅かつ小馬鹿にしたような振る舞�
 langen^Compared to the elegance and playfulness she'd shown until a second ago, she was now unimaginably aggressive.^\
 ld c,$EVA_IkariA2,80
 
-langjp「馬鹿馬鹿しい、お前が下がりなさいッ！！@　この右代宮絵羽に！@　当主様の左肩を許されている右代宮家序列第３位のこの絵羽に下がれとッ？！@　身の程を知りなさいッ！！@　そしてお前のそのみすぼらしい姿を鏡に映してみるがいい！！@　お前の服のどこに翼が？@　どこに片翼の鷲が許されているのか？@　貴様など右代宮家の跡継ぎを残すためだけの借り腹じゃないの！！@　身の程を弁えるがいい、この端女があッ！！」@
+langjp:dwave_jp 0, eva_1e203:「馬鹿馬鹿しい、お前が下がりなさいッ！！@:dwave_jp 0, eva_1e204:　この右代宮絵羽に！\　
+langjp:dwave_jp 0, eva_1e205:当主様の左肩を許されている右代宮家序列第３位のこの絵羽に下がれとッ？！@
 langen:dwave_eng 0, eva_1e203:^"How foolish.  You stand down!!^@:dwave_eng 0, eva_1e204:^  Before Eva of the Ushiromiya family!"^\
 langen:dwave_eng 0, eva_1e205:^"You tell me to stand down?  Me, Ushiromiya Eva, the third ranked in the Ushiromiya family hierarchy and the one allowed to sit at the left shoulder of the Head?!!^@:dwave_eng 0, eva_1e206:^  Know your place!!^@:dwave_eng 0, eva_1e207:^  And then look at your shabby self in a mirror!!^@:dwave_eng 0, eva_1e208:^  Where is the symbol of the wing on your clothes?^@:dwave_eng 0, eva_1e209:^  Where are you permitted to wear the One-Winged Eagle?^@:dwave_eng 0, eva_1e210:^  Aren't you nothing more than a borrowed womb to house the next Successor to the Ushiromiya family?!!^@:dwave_eng 0, eva_1e211:^  Understand your place, you common housemaid!!"^@
 langjp　絵羽は醜く顔を歪めながら、夏妃の心に言葉で爪を突きたてて、ぎゅぅっと、捻りこむ。\
@@ -65770,7 +65771,8 @@ langen^Aunt Rosa threw her umbrella aside and hugged Maria.^\
 bg rose_1bR,0
 ld c,$MAR_fukigenA1,24
 
-langjp「……うー………。@ない。@…真里亞の薔薇がない…。@……うー……。」@
+langjp:dwave_jp 0, mar_1e426:「……うー………。@:dwave_jp 0, mar_1e427:ない。@:dwave_jp 0, mar_1e428:…真里亞の薔薇がない…。@
+langjp:dwave_jp 0, mar_1e429: ……うー……。」@
 langen:dwave_eng 0, mar_1e426:^"......Uu-.........^@:dwave_eng 0, mar_1e427:^  It's not here.^@:dwave_eng 0, mar_1e428:^  ...My rose isn't here...^@
 langen:dwave_eng 0, mar_1e429:^  ......Uu-......"^@
 ld r,$ROS_KomaruA1,24
@@ -66455,8 +66457,7 @@ cl r,23
 ld r,$SHA_komaruA1,24
 
 langjp:dwave_jp 0, sha_1e147:^^!s1「………じゃあ、まさか、/
-langjp^^!d800……お館様、/
-langjp^^!d800でしょうか？」\
+langjp:voicedelay 1630:dwave_jp 0, sha_1e148:^^……お館様、でしょうか？」\
 ;＜紗音
 langen:dwave_eng 0, sha_1e147:^^!s1^"......Then, could it actually be...^/
 langen:voicedelay 1630:dwave_eng 0, sha_1e148:^...the Master?"^\
@@ -67231,7 +67232,8 @@ langjp:dwave_jp 0, eva_1e301:「そ、それは何よ…？！」\
 langen:dwave_eng 0, eva_1e301:^"Wh-What is it...?!"^\
 bg black,22
 
-langjp「特別条項。@契約終了時に、ベアトリーチェは黄金と利子を回収する権利を持つ。@ただし、隠された契約の黄金を暴いた者が現れた時、@ベアトリーチェはこの権利を全て永遠に放棄しなければならない。@……利子の回収はこれより行ないますが、もし皆様の内の誰か一人でも特別条項を満たせたなら、@すでに回収した分も含めて全てお返しいたします。@なお、回収の手始めとしてすでに、右代宮本家の家督を受け継いだことを示す“右代宮家当主の指輪”をお預かりさせていただきました。@封印の蝋燭にてそれを、どうかご確認くださいませ。」\
+langjp:dwave_jp 0, mar_1e491:「特別条項。@:dwave_jp 0, mar_1e492:契約終了時に、ベアトリーチェは黄金と利子を回収する権利を持つ。@:dwave_jp 0, mar_1e493:ただし、隠された契約の黄金を暴いた者が現れた時、@:dwave_jp 0, mar_1e494:ベアトリーチェはこの権利を全て永遠に放棄しなければならない。\
+langjp:dwave_jp 0, mar_1e495: ……利子の回収はこれより行ないますが、もし皆様の内の誰か一人でも特別条項を満たせたなら、@:dwave_jp 0, mar_1e496:すでに回収した分も含めて全てお返しいたします。@:dwave_jp 0, mar_1e497:なお、回収の手始めとしてすでに、右代宮本家の家督を受け継いだことを示す“右代宮家当主の指輪”をお預かりさせていただきました。@:dwave_jp 0, mar_1e498:封印の蝋燭にてそれを、どうかご確認くださいませ。」\
 langen:dwave_eng 0, mar_1e491:^"Special clause.^@:dwave_eng 0, mar_1e492:^  Beatrice retains the right to collect the gold and accumulated interest upon the termination of the contract.^@:dwave_eng 0, mar_1e493:^  However, if someone is able to discover the hidden gold of this contract, ^@:dwave_eng 0, mar_1e494:^Beatrice must abandon these rights for all time."^\
 
 langen:dwave_eng 0, mar_1e495:^"......The collection of the interest will proceed shortly, but if any one of you fulfills the terms of this special clause, ^@:dwave_eng 0, mar_1e496:^I shall return everything, including the portion that has already been collected.^@:dwave_eng 0, mar_1e497:^  Furthermore, as the first step in this collection of Kinzo-sama's debt, I have taken possession of the Ushiromiya family `Head's Ring', which signifies the passage of the Ushiromiya Family Headship from one individual to another.^@:dwave_eng 0, mar_1e498:^  I ask that you confirm this for yourselves by examining the imprint on the wax seal."^\
@@ -72430,7 +72432,8 @@ langen@:dwave_eng 0, but_1e744:^  That's just great, ^/
 se1 11
 quakex 4,500
 
-langjpクソ親父のにやにやとした顔を思い出さなくていいんだからよぉ、最高だぜ最高だぜ！！/
+langjp:voicedelay 3810:dwave_jp 0, but_1e745:クソ親父のにやにやとした顔を思い出さなくていいんだからよぉ、/
+langjp最高だぜ最高だぜ！！/
 langen:voicedelay 3810:dwave_eng 0, but_1e745:^I didn't want to remember that old bastard's smug face anyway!^@
 langen^Just great, just great!!"^/
 se1 11
@@ -77745,7 +77748,8 @@ langjp:dwave_jp 0, nat_1e369:「き、聞き捨てなりません！！@:dwave_j
 langen:dwave_eng 0, nat_1e369:^"I-I can't let you get away with saying that!!^@:dwave_eng 0, nat_1e370:^  I can't let you get away with saying any more!!^@:dwave_eng 0, nat_1e371:^  I am Ushiromiya Natsuhi!!^@:dwave_eng 0, nat_1e372:^  Although I do not have the right to wear the One-Winged Eagle on my body, it is certainly engraved on my heart!!^@:dwave_eng 0, nat_1e373:^  What do you think you're saying to the wife of Krauss, Successor to the Head, and the one who will act as such in his place?!!!"^\
 ld r,$EVA_ikariA2,84
 
-langjp「なぁに？@　その銃で私を撃つのぅ？@　いいわよぅ？@　撃っちゃえばぁ？！@　どうせ、言い逃れも思いつかなくて苦し紛れなんでしょう？！@　やりなさいよ、暴力で真実を誤魔化してごらんなさいよ…？！」\
+langjp:dwave_jp 0, eva_1e580:「なぁに？@:dwave_jp 0, eva_1e581:　その銃で私を撃つのぅ？@:dwave_jp 0, eva_1e582:　いいわよぅ？@
+langjp:dwave_jp 0, eva_1e583: 撃っちゃえばぁ？！@:dwave_jp 0, eva_1e584:　どうせ、言い逃れも思いつかなくて苦し紛れなんでしょう？！@:dwave_jp 0, eva_1e585:　やりなさいよ、暴力で真実を誤魔化してごらんなさいよ…？！」\
 langen:dwave_eng 0, eva_1e580:^"What's this?^@:dwave_eng 0, eva_1e581:^  Are you going to shoot me with that gun?^@:dwave_eng 0, eva_1e582:^  Go ahead.^@:dwave_eng 0, eva_1e583:^  If only you'd just shoot!^@:dwave_eng 0, eva_1e584:^  You're just desperate because you can't think of a way out, right?!^@:dwave_eng 0, eva_1e585:^  Do it, just try to obscure the truth with violence...!!"^\
 
 bg black,2
@@ -77852,7 +77856,8 @@ langen:dwave_eng 0, kum_1e112:^"Eva-sama, ...please stop this...!!"^\
 bg M1F_S1aR,23
 ld r,$EVA_IkariA2,24
 
-langjp「その後、中庭に転落して死んだお父様の遺体は、@夏妃姉さんが屋敷内の戸締りを確認すると言って出て行った時にどこかへ隠したのよぅ！@/
+langjp:dwave_jp 0, eva_1e610:「その後、中庭に転落して死んだお父様の遺体は、@
+langjp:dwave_jp 0, eva_1e611:夏妃姉さんが屋敷内の戸締りを確認すると言って出て行った時にどこかへ隠したのよぅ！@/
 langen:dwave_eng 0, eva_1e610:^"After that, when you left and said you were going to check the doors and windows,^@:dwave_eng 0, eva_1e611:^ you took Father's corpse, which had fallen in the courtyard, and hid it!^@/
 ld r,$EVA_futekiA1,80
 
@@ -77967,7 +77972,8 @@ langjp:dwave_jp 0, but_1e1085:「あぁ、荒唐無稽かもな。@:dwave_jp 0, 
 langen:dwave_eng 0, but_1e1085:^"Yeah, it might be absurd.^@:dwave_eng 0, but_1e1086:^  However, it still shows that there's a possibility Aunt Natsuhi is being falsely accused.^@:dwave_eng 0, but_1e1087:^  Your receipt wasn't perfect.^@:dwave_eng 0, but_1e1088:^  In chess, we might call that check,^@:dwave_eng 0, but_1e1089:^ but it isn't checkmate!!"^\
 ld r,$BUT_odorokiA1,80
 
-langjp　そして、俺が最高に気に入らねぇのは、@それを夏妃伯母さんに釈明しろと迫って、それが出来なきゃクロだって断定しようとした絵羽伯母さんのその論法さ！@　それがまかり通るってんなら、この右代宮戦人、@ここでもう一回チェス盤をひっくり返させてもらおうじゃねぇかッ！！\
+langjp:dwave_jp 0, but_1e1090:　そして、俺が最高に気に入らねぇのは、@:dwave_jp 0, but_1e1091:それを夏妃伯母さんに釈明しろと迫って、それが出来なきゃクロだって断定しようとした絵羽伯母さんのその論法さ！@:dwave_jp 0, but_1e1092:　それがまかり通るってんなら、この右代宮戦人、@
+langjp:dwave_jp 0, but_1e1093: ここでもう一回チェス盤をひっくり返させてもらおうじゃねぇかッ！！\
 langen:dwave_eng 0, but_1e1090:^"But the thing that really pisses me off...^@:dwave_eng 0, but_1e1091:^is how you're pressuring Aunt Natsuhi to explain it, then claiming that she must be guilty if she doesn't!^@:dwave_eng 0, but_1e1092:^  If you wanna go down that road, then why don't you let me,^@:dwave_eng 0, but_1e1093:^ Ushiromiya Battler, spin the chessboard around one more time?!!"^\
 
 ld r,$BUT_oyaA1,80
@@ -79871,7 +79877,8 @@ ld c,$BUT_odorokiA1,23
 seplay2 3,8,100
 quakex 2,300
 
-langjp「あぁ…。@くそ、…もう流さねぇぜ…。@悔し涙も悲しみの涙も、もう二度と流さねぇぜ…。@………あぁ、全然駄目だ。@俺たちは魔女さまに詰めを食らってるわけだ。@守勢一方ってわけだ…！@　そりゃあ駄目だぜ、全然駄目だ！@　チェス盤が引っくり返っちまうぜ…！！@　野郎は俺たち羊が、明日まで逃げる手段もなく怯えてるだけだろうと思ってるだろうよ。@…だがな、引っくり返すぜ！！@　明日までこの島から逃げられねぇのは野郎も同じだ…！@　小便チビりそうになりながら逃げ隠れするのは俺たちじゃねぇ、野郎の方だ！@　暴いてやるぜ、必ずな。@明日までに…、@いや、明日なんか待たねぇ、今夜だ。@今夜中にその胸倉を掴みあげてやらぁ…！！」\
+langjp:dwave_jp 0, but_1e1146:「あぁ…。@:dwave_jp 0, but_1e1147:くそ、…もう流さねぇぜ…。@:dwave_jp 0, but_1e1148:悔し涙も悲しみの涙も、もう二度と流さねぇぜ…。@:dwave_jp 0, but_1e1149:………あぁ、全然駄目だ。@:dwave_jp 0, but_1e1150:俺たちは魔女さまに詰めを食らってるわけだ。@:dwave_jp 0, but_1e1151:守勢一方ってわけだ…！@:dwave_jp 0, but_1e1152:　そりゃあ駄目だぜ、全然駄目だ！@:dwave_jp 0, but_1e1153:　チェス盤が引っくり返っちまうぜ…！！@:dwave_jp 0, but_1e1154:　野郎は俺たち羊が、明日まで逃げる手段もなく怯えてるだけだろうと思ってるだろうよ。@:dwave_jp 0, but_1e1155:…だがな、引っくり返すぜ！！@:dwave_jp 0, but_1e1156:　明日までこの島から逃げられねぇのは野郎も同じだ…！@:dwave_jp 0, but_1e1157:　小便チビりそうになりながら逃げ隠れするのは俺たちじゃねぇ、野郎の方だ！@:dwave_jp 0, but_1e1158:　暴いてやるぜ、必ずな。@:dwave_jp 0, but_1e1159:明日までに…、@:dwave_jp 0, but_1e1160:いや、明日なんか待たねぇ、今夜だ。\
+langjp:dwave_jp 0, but_1e1161: 今夜中にその胸倉を掴みあげてやらぁ…！！」\
 langen:dwave_eng 0, but_1e1146:^"Yeah...^@:dwave_eng 0, but_1e1147:^  Damn it, ...I won't cry anymore...^@:dwave_eng 0, but_1e1148:^  Tears of regret, tears of sadness, I won't shed them again...^@:dwave_eng 0, but_1e1149:^  ...Aah, it's all useless.^@:dwave_eng 0, but_1e1150:^  The witch's got me backed into a corner.^@:dwave_eng 0, but_1e1151:^  I'm always on the defensive...!^@:dwave_eng 0, but_1e1152:^  And that's useless, it's all useless!^@:dwave_eng 0, but_1e1153:^  I'll spin the chessboard around...!!^@:dwave_eng 0, but_1e1154:^  That bastard probably thinks we'll be running scared like sheep until tomorrow before we try anything.^@:dwave_eng 0, but_1e1155:^  ...But guess what, I'll spin it around!!^@:dwave_eng 0, but_1e1156:^  That bastard can't escape this island until tomorrow either...!^@:dwave_eng 0, but_1e1157:^  We won't be hiding away, pissing ourselves, that bastard will!^@:dwave_eng 0, but_1e1158:^  I'll expose you, you'll see.^@:dwave_eng 0, but_1e1159:^  By tomorrow,^@:dwave_eng 0, but_1e1160:^ ...no, screw tomorrow.  Tonight."^\
 langen:dwave_eng 0, but_1e1161:^"Before tonight's over I'll be gripping you by the collar...!!"^\
 bg black,42
@@ -80821,7 +80828,8 @@ langen:dwave_eng 0, but_1e1195:^"......Damn it, ...damn it, damn it!!^@:dwave_en
 se1 11
 quakey 3,200
 
-langjp@　どうして、どうして…ッ！！！@　人ってのはな、殺しちまったらな、二度と生き返らねぇんだぞ？！@　竹の子みてぇにひょいひょい生えてきちゃこねぇんだぞッ？！@　………どうして殺すんだよ？！@　どうして…、/
+langjp@:dwave_jp 0, but_1e1204:　どうして、どうして…ッ！！！@:dwave_jp 0, but_1e1205:　人ってのはな、殺しちまったらな、二度と生き返らねぇんだぞ？！@:dwave_jp 0, but_1e1206:　竹の子みてぇにひょいひょい生えてきちゃこねぇんだぞッ？！\
+langjp:dwave_jp 0, but_1e1207: ………どうして殺すんだよ？！@:dwave_jp 0, but_1e1208:　どうして…、/
 langen@:dwave_eng 0, but_1e1204:^  Why, why...?!!!^@:dwave_eng 0, but_1e1205:^  You know, when people die, they don't come back to life again, right?!^@:dwave_eng 0, but_1e1206:^  They aren't gonna quickly sprout up again like bamboo shoots!"^\
 langen:dwave_eng 0, but_1e1207:^"......Why'd you kill them?!^@:dwave_eng 0, but_1e1208:^  Why, ^/
 se1 11
@@ -84634,11 +84642,11 @@ langjp:dwave_jp 0, nat_1e603:…あの４人が潔白だというなら、どう
 langen:dwave_eng 0, nat_1e603:^  ...If those four are innocent, how was that letter placed in a closed room with eight people?"^\
 ld l,$BUT_nayamuA1,23
 
-langjp「…………そうなんだよ…。@……その話が始まっちまうと、確かに４人は怪しいってことになっちまう。@………だが、@/
+langjp:dwave_jp 0, but_1e1384:「…………そうなんだよ…。@:dwave_jp 0, but_1e1385:……その話が始まっちまうと、確かに４人は怪しいってことになっちまう。@/
 langen:dwave_eng 0, but_1e1384:^"......That's right...^@:dwave_eng 0, but_1e1385:^  ...When you put it that way, those four really do seem suspicious.^@/
 
 ld l,$BUT_KuyasigaruA1,80
-langjp…^~ib~^全然駄目なんだ。^~ib~^@あぁ、^~ib~^全然駄目だぜ^~ib~^…。」\
+langjp:dwave_jp 0, but_1e1386: ………だが、@:dwave_jp 0, but_1e1387: …^~ib~^全然駄目なんだ。^~ib~^@:dwave_jp 0, but_1e1388:あぁ、^~ib~^全然駄目だぜ^~ib~^…。」\
 langen:dwave_eng 0, but_1e1386:^  ......But, ^@:dwave_eng 0, but_1e1387:^...~ib~it's all useless.~ib~^@:dwave_eng 0, but_1e1388:^  Aah, ~ib~it's all useless~ib~^^..."^\
 
 
@@ -85817,8 +85825,7 @@ langjp:voicedelay 2950:dwave_jp 0, nat_1e657:^^右代宮家の当主を引き継
 langen:dwave_eng 0, nat_1e656:^"...Both I who bear the title of representative to the Ushiromiya family...^/
 langen:voicedelay 2950:dwave_eng 0, nat_1e657:^and you who claim to succeed the Headship of the Ushiromiya family...are here right now.^@:dwave_eng 0, nat_1e658:^  ...At this point, whether you are a witch or not is a trivial matter!"^\
 langjp:dwave_jp 0, nat_1e659:　……………さぁ、/
-langjp^^!d900…決着をつけましょう。@…右代宮家を真に引き継ぐ者はどちらか。@…この右代宮夏妃か、
-langjp@…………貴女、/
+langjp:voicedelay 520:dwave_jp 0, nat_1e660:^^…決着をつけましょう。@:dwave_jp 0, nat_1e661:…右代宮家を真に引き継ぐ者はどちらか。@:dwave_jp 0, nat_1e662:…この右代宮夏妃か、@:dwave_jp 0, nat_1e663:…………貴女、/
 langjp:voicedelay 480:dwave_jp 0, nat_1e664:^^……ベアトリーチェかッ！！@:dwave_jp 0, nat_1e665:　貴女の決闘の申し出、謹んでお引き受けさせていただきます…！！」\
 langen@:dwave_eng 0, nat_1e659:^"......Come, ^/
 langen:voicedelay 520:dwave_eng 0, nat_1e660:^...let us settle this.^@:dwave_eng 0, nat_1e661:^  ...Which of us will truly succeed the Ushiromiya family?^@:dwave_eng 0, nat_1e662:^  ...I, Ushiromiya Natsuhi, ^@:dwave_eng 0, nat_1e663:^......or you, ^/
@@ -86709,8 +86716,7 @@ langjp:dwave_jp 0, geo_2e38:「惜しいな。@:dwave_jp 0, geo_2e39:譲治さ�
 langen:dwave_eng 0, geo_2e38:^"So close.^@:dwave_eng 0, geo_2e39:^  If only you'd said `When watching the sea alone with you, George-sama, it looks deep blue no matter how gray it is', ^@:dwave_eng 0, geo_2e40:^I'd have given you full marks and a prize."^@
 langjp:dwave_jp 0, sha_2e43:^^!s0「え、/
 langjp:voicedelay 560:dwave_jp 0, sha_2e44:^^あ、/
-langjp^^!d400すす、すみません……。/
-langjp^^!sd@ぅぅぅぅ…。」\
+langjp:voicedelay 990:dwave_jp 0, sha_2e45:^^すす、すみません……。^!sd@:dwave_jp 0, sha_2e46:ぅぅぅぅ…。」\
 langen:dwave_eng 0, sha_2e43:^"Uh, ^/
 langen:voicedelay 560:dwave_eng 0, sha_2e44:^ah, ^/
 langen:voicedelay 990:dwave_eng 0, sha_2e45:^I-I-I'm sorry......^!sd@:dwave_eng 0, sha_2e46:^nnnnnn..."^\
@@ -86850,7 +86856,6 @@ print 8
 
 langjp:dwave_jp 0, sha_2e71:^^!s1はい、/
 langjp:voicedelay 400:dwave_jp 0, sha_2e72:^^あ〜ん。」^!sd@
-langjp^^!sd@
 langen:dwave_eng 0, sha_2e71:^^!s1^  Ok, ^/
 langen:voicedelay 400:dwave_eng 0, sha_2e72:^say `aah'."^!sd@
 langjp 恥らうような、呆れるような表情を浮かべながら、彼女はフォークでそれを差し出す。\
@@ -86938,7 +86943,6 @@ ld l,$SHA_HajiraiA2,80
 langjp:dwave_jp 0, sha_2e80:^^!s1「えっと、/
 langjp:voicedelay 1500:dwave_jp 0, sha_2e81:^^……私は、/
 langjp:voicedelay 1040:dwave_jp 0, sha_2e82:^^……その…。」^!sd@
-langjp^^!sd@
 langen:dwave_eng 0, sha_2e80:^^!s1^"Eerh, ^/
 langen:voicedelay 1500:dwave_eng 0, sha_2e81:^......I^/
 langen:voicedelay 1040:dwave_eng 0, sha_2e82:^......umm..."^!sd@
@@ -86949,11 +86953,10 @@ langen:dwave_eng 0, geo_2e64:^"Hmm?"^\
 bg black,25
 bg o_beach_1a,22
 
-langjp^^!s1「……想像だけは、/
-langjp^^!d700……してました。@いえそのあの！@　想像というよりは、その、/
-langjp^^!d800……妄想みたいなもので……。@いつも紳士的で思いやりのある、譲治さまとご縁があったらなって、/
-langjp^^!d700……その、妄想してただけで……。」/
 langjp:dwave_jp 0, sha_2e83^^!s1「……想像だけは、/
+langjp:voicedelay 1680:dwave_jp 0, sha_2e84:^^……してました。@:dwave_jp 0, sha_2e85:いえそのあの！@:dwave_jp 0, sha_2e86:　想像というよりは、その、/
+langjp:voicedelay 2880:dwave_jp 0, sha_2e87:^^……妄想みたいなもので……。@:dwave_jp 0, sha_2e88:いつも紳士的で思いやりのある、譲治さまとご縁があったらなって、/
+langjp:voicedelay 6920:dwave_jp 0, sha_2e89:^^……その、妄想してただけで……。」^!sd\
 langen:dwave_eng 0, sha_2e83^^!s1^"...I...^/
 langen:voicedelay 1680:dwave_eng 0, sha_2e84:^...did imagine it.^@:dwave_eng 0, sha_2e85:^  No, uh, I mean...!^@:dwave_eng 0, sha_2e86:^  Maybe I should call it...^/
 langen:voicedelay 2880:dwave_eng 0, sha_2e87:^...a kind of daydream......^@:dwave_eng 0, sha_2e88:^  I did think about what it'd be like, being in a relationship with you, a boy who was always so gentlemanly and considerate...^/
@@ -87428,7 +87431,6 @@ langjp:dwave_jp 0, sha_2e123:^^!s1「…や、/
 langjp:voicedelay 1080:dwave_jp 0, sha_2e124:^^……………約束は、/
 langjp:voicedelay 1510:dwave_jp 0, sha_2e125:^^……守りました…。@:dwave_jp 0, sha_2e126:……今度は、/
 langjp:voicedelay 1320:dwave_jp 0, sha_2e127:^^………あなたが約束を守ってくれる番ですよね……？」^!sd\
-langjp^^!sd\
 langen:dwave_eng 0, sha_2e123:^^!s1^"...I-^/
 langen:voicedelay 1080:dwave_eng 0, sha_2e124:^I've kept...^/
 langen:voicedelay 1510:dwave_eng 0, sha_2e125:^...my promise...^@:dwave_eng 0, sha_2e126:^  ......Now,^/
@@ -89457,7 +89459,7 @@ langen^...After all, the next words became a `voice', and I could hear them, not
 
 bgm1 44
 
-langjp「人間は世界を構成する元素について、紀元前の昔から探求を続けてきた。@古代ギリシャ人たちは風火水土の４つで世界の説明を試みたという。@その後も数千年かけて人間たちは、その４つに様々な元素を加え、@五大、六大、七大、八大、十二大と、様々な解釈で世界を説明しようとしたが、@唯一の真実である“一なる元素”を説明することはできなかった。@………しかし、星の導きによって現れたひとりの男が、ついにこの、世界を構成する一なる元素を説明した。@何かわかるか……？」\
+langjp:dwave_jp 0, bea_2e5:「人間は世界を構成する元素について、紀元前の昔から探求を続けてきた。@:dwave_jp 0, bea_2e6:古代ギリシャ人たちは風火水土の４つで世界の説明を試みたという。@:dwave_jp 0, bea_2e7:その後も数千年かけて人間たちは、その４つに様々な元素を加え、@:dwave_jp 0, bea_2e8:五大、六大、七大、八大、十二大と、様々な解釈で世界を説明しようとしたが、@:dwave_jp 0, bea_2e9:唯一の真実である“一なる元素”を説明することはできなかった。\
 langen:dwave_eng 0, bea_2e5:^"Humans have continually searched for the elements that make up the world, since before the modern era.^@:dwave_eng 0, bea_2e6:^  It is said that in ancient times, the Greeks tried explaining the world with the four elements of wind, fire, water, and earth.^@:dwave_eng 0, bea_2e7:^  And after that, over several millennia, humans added several elements to those four,^@:dwave_eng 0, bea_2e8:^ trying to explain the world with several interpretations such as the five elements, the six elements, the seven elements, the eight elements, and the twelve elements, ^@:dwave_eng 0, bea_2e9:^but they were never able to describe the one sole truth that exists, the `single element'."^\
 
 langen:dwave_eng 0, bea_2e10:^"......However, a single man appeared by the guidance of a star...and finally explained the single element that makes up the world.^@:dwave_eng 0, bea_2e11:^  Know what it is...?"^\
@@ -92402,7 +92404,7 @@ langen:voicedelay 3600:dwave_eng 0, sha_2e407:^...what was that word I learned f
 ld l,$SHA_WaraiA2,80
 se1 3
 
-langjpそうそう、ツンドラとか言うそうですよ？@　あと十数年かすると流行るんだそうですよ？」\
+langjp:dwave_jp 0, sha_2e408:そうそう、ツンドラとか言うそうですよ？/
 langen:dwave_eng 0, sha_2e408:^  That's right, I think it was `#fefefetsundora#ffffff'.^/
 
 mov %play_scene,41
@@ -96197,13 +96199,13 @@ bg black,22
 langjp:dwave_jp 0, rud_2e39:「…例の裁判、全滅だったか。@:dwave_jp 0, rud_2e40:……うちより有利な条件だったと思ってたんだが。@:dwave_jp 0, rud_2e41:そりゃあ辛いなぁ。@:dwave_jp 0, rud_2e42:んで、良いニュースは？」\
 langen:dwave_eng 0, rud_2e39:^"...So, that trial ended up being a total bust after all.^@:dwave_eng 0, rud_2e40:^  ...And I thought their position was even more solid than ours.^@:dwave_eng 0, rud_2e41:^  That hurts.^@:dwave_eng 0, rud_2e42:^  Okay, what about the good news?"^\
 
-langjp「先方の幹部と接触できました。@先方に当方の立ち位置を説明し、@先方のブランドイメージを侵害する意図がないことを説明し、理解を得ることができました。@先方は近日中に条件提示を行ない、それらの履行が行なわれるなら告発を見送ると約束しました。@取締役会のナンバーツーによる発言です。」\
+langjp:dwave_jp 0, "voice\99\WATA2009.ogg": 「先方の幹部と接触できました。@:dwave_jp 0, "voice\99\WATA2010.ogg":先方に当方の立ち位置を説明し、@:dwave_jp 0, "voice\99\WATA2011.ogg":先方のブランドイメージを侵害する意図がないことを説明し、理解を得ることができました。@:dwave_jp 0, "voice\99\WATA2012.ogg":先方は近日中に条件提示を行ない、それらの履行が行なわれるなら告発を見送ると約束しました。\
 langen:dwave_eng 0, "voice\99\WATA2009.ogg":^"I managed to contact the executives of the other party.^@:dwave_eng 0, "voice\99\WATA2010.ogg":^  I explained the situation we're in, told them we have no intentions of tarnishing their brand's image, and managed to get an understanding.^@:dwave_eng 0, "voice\99\WATA2011.ogg":^  They'll send us their terms over the next few days, and if these are carried out, they promise to withdraw their charges.^@:dwave_eng 0, "voice\99\WATA2012.ogg":^  This is their proposal according to the number two man on their board of directors."^\
 
 langjp:dwave_jp 0, rud_2e43:「感触は？」@
 langen:dwave_eng 0, rud_2e43:^"Your impression?"^@
 br
-langjp「正直、非常に厳しいものになると予想されます。@当方の想定では避けられないものとして、社名変更、ブランド名変更。@交渉の余地のあるものとして、和解金額、大手新聞への謝罪広告掲載、それらの履行期間と見ています。」\
+langjp:dwave_jp 0, "voice\99\WATA2013.ogg": 取締役会のナンバーツーによる発言です。」@:dwave_jp 0, "voice\99\WATA2014.ogg":「正直、非常に厳しいものになると予想されます。@:dwave_jp 0, "voice\99\WATA2015.ogg":当方の想定では避けられないものとして、社名変更、ブランド名変更。@:dwave_jp 0, "voice\99\WATA2016.ogg":交渉の余地のあるものとして、和解金額、大手新聞への謝罪広告掲載、それらの履行期間と見ています。」\
 langen:dwave_eng 0, "voice\99\WATA2013.ogg":^"To be honest, I expect their terms will be extremely severe.^@:dwave_eng 0, "voice\99\WATA2014.ogg":^  We estimate that changing the company name and the brand name will be inevitable.^@:dwave_eng 0, "voice\99\WATA2015.ogg":^  I think we'll be able to earn some leeway by playing with the amount of settlement money, making a public apology in a major newspaper, ^@:dwave_eng 0, "voice\99\WATA2016.ogg":^and carrying all this out within a reasonable amount of time."^\
 
 langjp:dwave_jp 0, rud_2e44:「ウチに潰れろと一言言やぁいいのに、回りくどいやつらだぜ。」\
@@ -149223,8 +149225,7 @@ bgmvol 90
 langjp:dwave_jp 0, bea_3e1046:「うッをおおおおおおぉおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおぉおおおぉッ！！！」/
 langen:dwave_eng 0, bea_3e1046:^"Uuuooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo!!!"^/
 quakey 5,500
-langjp!d2000
-langen!d2000
+voicewait 3920
 ;＜ベアト
 
 csp_var 2
@@ -151231,7 +151232,9 @@ dllefe_off
 bg Mdin_1g,0
 mendef 22
 
-langjp「電気のスイッチを押せば灯りがつく。@……子どもは電球がなぜ発光するのか、その科学的原理を知らず、@結果だけを知っていてスイッチを押す。@原理を知らずとも結果を得られるならば、それは彼らにとって“魔法”なのではありませんか？」\
+langjp:dwave_jp 0, wal_3e184:「電気のスイッチを押せば灯りがつく。@
+langjp:dwave_jp 0, wal_3e185:……子どもは電球がなぜ発光するのか、その科学的原理を知らず、@:dwave_jp 0, wal_3e186:結果だけを知っていてスイッチを押す。@:dwave_jp 0, wal_3e187:原理を知らずとも結果を得られるならば、それは彼らにとって“魔法”なのではありませんか？」\
+
 langen:dwave_eng 0, wal_3e184:^"If you push an electrical switch, a light turns on.^@:dwave_eng 0, wal_3e185:^  ...Children do not know the scientific principles behind why a lightbulb lights up,^@:dwave_eng 0, wal_3e186:^ they only know the result when they push the switch.^@:dwave_eng 0, wal_3e187:^  If they obtain such a result without knowing the principles, doesn't that make it magic to them?"^\
 
 langjp:dwave_jp 0, but_3e725:「……………面白ぇ話だな。@:dwave_jp 0, but_3e726:…まぁ、理屈から言やぁそうだ。@:dwave_jp 0, but_3e727:…例えば俺たちはテレビのブラウン管にどうして画像が映るのか、理屈はさっぱりわかってない。@:dwave_jp 0, but_3e728:でも、テレビに物が映るのは当り前だと思ってる。@:dwave_jp 0, but_3e729:ブラウン管の原理を知らなくても、“スイッチを押せばテレビが見られる”ことだけは知っている。@:dwave_jp 0, but_3e730:…上昇気流を理解せずに雨乞いをするのとまったく同じだ。@:dwave_jp 0, but_3e731:……つまり、原理を知らないならば、テレビだって“魔法”も同然、@:dwave_jp 0, but_3e732:いや、魔法そのものだろうってわけか。」\
@@ -151794,7 +151797,8 @@ se1v 2,100
 langjp:dwave_jp 0, but_3e824:　席に着け、ベアトリーチェ！！/
 langen:dwave_eng 0, but_3e824:^"Take a seat, Beatrice!!^/
 quakey 3,300
-langjp@　ようやく第一の晩じゃねぇか、本番スタートだぜ。@ドンと来やがれッ！！！」\
+langjp@:dwave_jp 0, but_3e825:　ようやく第一の晩じゃねぇか、本番スタートだぜ。@
+langjp:dwave_jp 0, but_3e826: ドンと来やがれッ！！！」\
 langen@:dwave_eng 0, but_3e825:^  It's finally the first twilight, isn't it?  Let's start the real thing.^@:dwave_eng 0, but_3e826:^  Show me what you've got!!!"^\
 
 ;▲第８アイキャッチ　１０月５日（日）０６時２６分〜０７時００分
@@ -154568,8 +154572,8 @@ langen:dwave_eng 0, rud_3e258:^  ...Seriously.^@:dwave_eng 0, rud_3e259:^  What'
 
 ld l,$EVA_ikariA1,23
 
-langjp「…ミクロとマクロの２つの視点を持たないと、視野が狭まるわね。@……深く考えすぎないで、魚が泳いでる川、あるいは流れ、/
-langjp^^!d800…下るもの、上るもの、@そのくらいの抽象的なイメージにしておいた方が発想が柔軟になっていいかもしれないわ。」\
+langjp:dwave_jp 0, eva_3e355:「…ミクロとマクロの２つの視点を持たないと、視野が狭まるわね。@:dwave_jp 0, eva_3e356:……深く考えすぎないで、魚が泳いでる川、あるいは流れ、@:dwave_jp 0, eva_3e357:下るもの、上るもの、/
+langjp:voicedelay 2660:dwave_jp 0, eva_3e358:^^…そのくらいの抽象的なイメージにしておいた方が発想が柔軟になっていいかもしれないわ。」\
 ;＜絵羽
 langen:dwave_eng 0, eva_3e355:^"...If you don't have both a micro and a macro perspective, your field of vision grows narrow.^@:dwave_eng 0, eva_3e356:^  ...It might be better to be flexible and avoid thinking too deeply, ^@:dwave_eng 0, eva_3e357:^focusing on an abstract image of a river where fish swim, or something that can flow...^/
 langen:voicedelay 2660:dwave_eng 0, eva_3e358:^up or down."^\
@@ -155829,13 +155833,12 @@ quakex 3,300
 langjp:noclear_cw
 langen@
 
-langjp　嫌ならやめちゃえば…？@
-langjp　右代宮家の当主は霧江に譲っちゃえばぁ？！\
+langjp:dwave_jp 0, ev2_3e117:　嫌ならやめちゃえば…？@:dwave_jp 0, ev2_3e118: 右代宮家の当主は霧江に譲っちゃえばぁ？！@
 langen:dwave_eng 0, ev2_3e117:^Oh, is this too much work for you?^@:dwave_eng 0, ev2_3e118:^  If only you'd just give up...^@
 langen^If only you'd just hand the Ushiromiya Headship over to Kyrie...!^\
 
-langjp「い、…嫌よ…。@私が当主になるの。@…これがその、最初で最後のチャンスなのよ…。@……里って何？@　里ってどういう意味？！@　この“川”を下ると里なんてあるの……？！@　…………ぁ、………/
-langjpぁあぁぁぁ……！！」/
+langjp:dwave_jp 0, eva_3e434:「い、…嫌よ…。@:dwave_jp 0, eva_3e435:私が当主になるの。@:dwave_jp 0, eva_3e436:…これがその、最初で最後のチャンスなのよ…。@:dwave_jp 0, eva_3e437:……里って何？@:dwave_jp 0, eva_3e438:　里ってどういう意味？！@:dwave_jp 0, eva_3e439:　この“川”を下ると里なんてあるの……？！@:dwave_jp 0, eva_3e440:　…………ぁ、………/
+langjp:voicedelay 310:dwave_jp 0, eva_3e441:ぁあぁぁぁ……！！」/
 langen:dwave_eng 0, eva_3e434:^"I-I don't want to...^@:dwave_eng 0, eva_3e435:^  I will become the Head.^@:dwave_eng 0, eva_3e436:^  ...This is...umm, my first and last chance...^@:dwave_eng 0, eva_3e437:^  ...What is this village?^@:dwave_eng 0, eva_3e438:^  What does it mean?!^@:dwave_eng 0, eva_3e439:^  Do you find one if you go down the river...?!^@:dwave_eng 0, eva_3e440:^  ......Ah, ...^/
 langen:dwave_eng 0, eva_3e441:^aaaaaaaahhh...!!"^/
 
@@ -157551,8 +157554,7 @@ langen:dwave_eng 0, bea_3e1428:^"Indeed.^@:dwave_eng 0, bea_3e1429:^  ...One tho
 ld l,$RON_WaraiA1,80
 
 langjp:dwave_jp 0, ron_3e428:「はい。@:dwave_jp 0, ron_3e429:先代ベアトリーチェさまの最後のご命令、/
-langjp^^!d800…このロノウェ、/
-langjp^^!d600しかと聞き届けました。」\
+langjp:voicedelay 3210:dwave_jp 0, ron_3e430:^^…このロノウェ、@:dwave_jp 0, ron_3e431: しかと聞き届けました。」\
 langen:dwave_eng 0, ron_3e428:^"Yes.^@:dwave_eng 0, ron_3e429:^  I, Ronove,^/
 langen:voicedelay 3210:dwave_eng 0, ron_3e430:^ ...will obey the final order ^@:dwave_eng 0, ron_3e431:^of the former Beatrice."^\
 
@@ -175941,7 +175943,7 @@ langen:dwave_eng 0, s41_3e54:^"410, Data Received.  Nihi!^@/
 
 ld r,$S41_AkuwaraiA2,80
 
-langjp　じゃあ先代さまを先に＊しちゃえばいいだけの話だにぇ。@大ベアトリーチェ卿、攻撃許可を！」\
+langjp:dwave_jp 0, s41_3e55_b:　じゃあ先代さまを先に殺しちゃえばいいだけの話だにぇ。@:dwave_jp 0, s41_3e56:大ベアトリーチェ卿、攻撃許可を！」\
 langen:dwave_eng 0, s41_3e55:^  Then we've just gotta **** the Predecessor-sama first nyeh.^@:dwave_eng 0, s41_3e56:^  Great Lady Beatrice, your Firing Permission please!"^\
 
 ld l,$EV2_akuwaraiA2,23
@@ -182261,7 +182263,7 @@ langen:dwave_eng 0, bea_3e2278:^"You klutz.^@:dwave_eng 0, bea_3e2279:^  Shootin
 
 ;ld c,$BUT_NiramuA2,80
 
-langjp「お前こそ、何だよ…！@　カタカナで書くなよ！@　ベアトリーチェなんて洒落た名前なんだから、ちゃんと筆記体で書けよ！@　羽ペンと名前が泣いてるぜー！」@
+langjp:dwave_jp 0, but_3e1804:「お前こそ、何だよ…！@:dwave_jp 0, but_3e1805:　カタカナで書くなよ！/
 langen:dwave_eng 0, but_3e1804:^"You should talk...!^@:dwave_eng 0, but_3e1805:^  Don't write it in #fefefekatakana#ffffff!^/
 
 mov %play_scene,30281
@@ -182269,7 +182271,8 @@ mov %grim_scene,308
 mov %r_hyouji_grim,9
 ;seplay 9,1062
 
-langen:dwave_eng 0, but_3e1806:^  Beatrice is a stylish name, so write it in cursive!^@:dwave_eng 0, but_3e1807:^  You're making the quill and your name cry!"^@
+langjp:voicedelay 1370:dwave_jp 0, but_3e1806: ベアトリーチェなんて洒落た名前なんだから、ちゃんと筆記体で書けよ！@:dwave_jp 0, but_3e1807:　羽ペンと名前が泣いてるぜー！」@
+langen:voicedelay 1370:dwave_eng 0, but_3e1806:^  Beatrice is a stylish name, so write it in cursive!^@:dwave_eng 0, but_3e1807:^  You're making the quill and your name cry!"^@
 ;tttt
 
 ;ld c,$BEA_FukigenA2,80
@@ -182798,7 +182801,7 @@ mcbg 0
 se1v 2,100
 ld c,$BEA_akuwaraiA4,80
 
-langjp　悪ィなぁ戦人ァ、こんなヤツでよぉおおおおぉ！！@　あぁもう駄目だ、甘ったるい浪花節はやっぱ妾の肌にゃ合わねぇやああぁあぁ！！@　お師匠様ァ、力尽くで頼むぜぇ！！@　地味ィな役回りだったんで、すっかり退屈してたんだッ！\
+langjp:dwave_jp 0, bea_3e2308:　悪ィなぁ戦人ァ、こんなヤツでよぉおおおおぉ！！@:dwave_jp 0, bea_3e2309:　あぁもう駄目だ、甘ったるい浪花節はやっぱ妾の肌にゃ合わねぇやああぁあぁ！！/
 langen:dwave_eng 0, bea_3e2308:^  Sorry, Battleer, I am that kind of persooooooooooon!!^@:dwave_eng 0, bea_3e2309:^  Aah, it's useless now, it looks like sentimental sob stories don't suit meeeeeeeeeee!!^/
 
 mov %play_scene,30282
@@ -183735,8 +183738,7 @@ bg sky_1a,22
 
 langjp:dwave_jp 0, enj_4e6:「恩着せがましくてありがとう。@:dwave_jp 0, enj_4e7:……わかってるわ。@:dwave_jp 0, enj_4e8:……こうして、お父さんやお母さんや、/
 langjp:voicedelay 3460:dwave_jp 0, enj_4e9:^^………お兄ちゃんの元気そうな姿を、/
-langjp^^!d700……見られただけでも、@……これはとても素敵な奇跡なんだって、/
-langjp^^!d900………わかってるもの…。」\
+langjp:voicedelay 2020:dwave_jp 0, enj_4e10:^^……見られただけでも、@:dwave_jp 0, enj_4e11:……これはとても素敵な奇跡なんだって、@:dwave_jp 0, enj_4e12: ………わかってるもの…。」\
 langen:dwave_eng 0, enj_4e6:^"Thanks for being patronizing.^@:dwave_eng 0, enj_4e7:^  ...I know that.^@:dwave_eng 0, enj_4e8:^  ...I know that just seeing Father, Mother, ^/
 langen:voicedelay 3460:dwave_eng 0, enj_4e9:^......and Onii-chan healthy like this...^/
 langen:voicedelay 2020:dwave_eng 0, enj_4e10:^...even that alone...^@:dwave_eng 0, enj_4e11:^is a spectacular miracle..."^\
@@ -184011,7 +184013,8 @@ langen:dwave_eng 0, bea_4e20:^"...Th-That is...troublesome...^@:dwave_eng 0, bea
 
 ld l,$RON_akuWaraiA1,24
 
-langjp「ぷっくくくく。@無理もありますまい。@…何しろお嬢様が、/
+langjp:dwave_jp 0, ron_4e22:「ぷっくくくく。@:dwave_jp 0, ron_4e23:無理もありますまい。@
+langjp:dwave_jp 0, ron_4e24: …何しろお嬢様が、/
 langen:dwave_eng 0, ron_4e22:^"Pukukukuku.^@:dwave_eng 0, ron_4e23:^  It is only natural.^@
 langen:dwave_eng 0, ron_4e24:^  ...After all, you ^/
 langjp:voicedelay 2480:dwave_jp 0, ron_4e25:^^!s0徹・/
@@ -187350,13 +187353,13 @@ langen:dwave_eng 0, sak_4e36:^『Uryu?^@:dwave_eng 0, sak_4e37:^  Is that really
 
 ld r,$MAR_WaraiA1,80
 
-langjp「うー、全然平気〜！@　ほら、聖徳太子なのー、うー！@　だからさくたろにも好きなものを買ってあげられるよ。@一緒に食べよう！@/
+langjp:dwave_jp 0, mar_4e214:「うー、全然平気〜！@:dwave_jp 0, mar_4e215:　ほら、聖徳太子なのー、うー！/
 langen:dwave_eng 0, mar_4e214:^"Uu-, no problem!^@:dwave_eng 0, mar_4e215:^  Look, it's #fefefeShotoku Taishi-#ffffff, uu-!^/
 
 mov %grim_scene,402
 mov %r_hyouji_grim,3
-
-langen:dwave_eng 0, mar_4e216:^  So I can buy you whatever you want too, Sakutaro.^@:dwave_eng 0, mar_4e217:^  Let's eat together!^@/
+langjp:voicedelay 2670:dwave_jp 0, mar_4e216: だからさくたろにも好きなものを買ってあげられるよ。@:dwave_jp 0, mar_4e217:一緒に食べよう！@/
+langen:voicedelay 2670:dwave_eng 0, mar_4e216:^  So I can buy you whatever you want too, Sakutaro.^@:dwave_eng 0, mar_4e217:^  Let's eat together!^@/
 ;tttt
 
 ;ld r,$MAR_NiyariA1,80
@@ -194384,13 +194387,14 @@ langen:dwave_eng 0, sak_4e161:^『Uryu-!』^\
 bg garden_Se1b,0
 ld c,$BEA_majimeA1,24
 
-langjp「ふむ……。@……ぬいぐるみは依り代として優秀だ。@ゆえに、毒を持たぬ無垢な子どもが話し掛けることによって、それに応えようとする精霊が宿ることが少なくない。」\
+langjp:dwave_jp 0, bea_4e201:「ふむ……。@:dwave_jp 0, bea_4e202:……ぬいぐるみは依り代として優秀だ。/
 langen:dwave_eng 0, bea_4e201:^"Hmm...^@:dwave_eng 0, bea_4e202:^  ...A stuffed animal makes for an excellent vessel.^/
 
 mov %grim_scene,404
 mov %r_hyouji_grim,5
 
-langen:dwave_eng 0, bea_4e203:^  It is not uncommon for spirits to be made to reside in them...when they are spoken to by innocent children with no toxin."^\
+langjp:voicedelay 3880:dwave_jp 0, bea_4e203: ゆえに、毒を持たぬ無垢な子どもが話し掛けることによって、それに応えようとする精霊が宿ることが少なくない。」\
+langen:voicedelay 3880:dwave_eng 0, bea_4e203:^  It is not uncommon for spirits to be made to reside in them...when they are spoken to by innocent children with no toxin."^\
 ;tttt vessel
 
 langjp　ベアトリーチェが言うには、いわゆる子どもの頃のお人形遊びなどは、@本当に人形が意思を持って対話をし、自らの意思で動くことさえあるという。\
@@ -201196,12 +201200,12 @@ langen:dwave_eng 0, enj_4e902:^"Why?^@:dwave_eng 0, enj_4e903:^  Doesn't that fi
 
 bg black,22
 ;tttt rifle teppou
-langjp「“てっぽう”が正解だって。@カタカナは小学１年生では習わないから駄目だと言われた。@……真里亞はよくわからないから、@その日以来、テストでは全てひらがなで書くようにしたよ。@でも、なぜかママには怒られる。@先生にも怒られる。」\
+langjp:dwave_jp 0, mar_4e780:「“てっぽう”が正解だって。/
 langen:dwave_eng 0, mar_4e780:^"It was supposed to be the Japanese word for gun in hiragana, ~ib~てっぽう~ib~.^/
 mov %grim_scene,405
 mov %r_hyouji_grim,6
-
-langen:dwave_eng 0, mar_4e781:^  I was told that's wrong, because you don't learn katakana in first grade.^@:dwave_eng 0, mar_4e782:^  ...I didn't really get it,^@:dwave_eng 0, mar_4e783:^ so from that day on, on tests, I wrote everything in hiragana.^@:dwave_eng 0, mar_4e784:^  But I got in trouble with Mama for some reason.^@:dwave_eng 0, mar_4e785:^  Got in trouble with the teachers too."^\
+langjp:voicedelay 2150:dwave_jp 0, mar_4e781: カタカナは小学１年生では習わないから駄目だと言われた。@:dwave_jp 0, mar_4e782:……真里亞はよくわからないから、@:dwave_jp 0, mar_4e783:その日以来、テストでは全てひらがなで書くようにしたよ。@:dwave_jp 0, mar_4e784:でも、なぜかママには怒られる。@:dwave_jp 0, mar_4e785:先生にも怒られる。」\
+langen:voicedelay 2150:dwave_eng 0, mar_4e781:^  I was told that's wrong, because you don't learn katakana in first grade.^@:dwave_eng 0, mar_4e782:^  ...I didn't really get it,^@:dwave_eng 0, mar_4e783:^ so from that day on, on tests, I wrote everything in hiragana.^@:dwave_eng 0, mar_4e784:^  But I got in trouble with Mama for some reason.^@:dwave_eng 0, mar_4e785:^  Got in trouble with the teachers too."^\
 
 bg par_1c,0
 ld r,$ENJ_NayamuA1,26
@@ -223618,7 +223622,8 @@ langen:dwave_eng 0, gap_4e143:^  ......Among the three mentioned below,^@:dwave_
 
 ld l,$GAP_akuWaraiA1,80
 
-langjp一．自分の命。@二．紗音の命。@三．それ以外の全員の命。@………あなたが選んだのはどれ？@/
+langjp:dwave_jp 0, gap_4e145:一．自分の命。@:dwave_jp 0, gap_4e146:二．紗音の命。@
+langjp:dwave_jp 0, gap_4e147:三．それ以外の全員の命。@:dwave_jp 0, gap_4e148:………あなたが選んだのはどれ？@/
 langen:dwave_eng 0, gap_4e145:^1.  Your life.^@:dwave_eng 0, gap_4e146:^  2.  Shannon's life.^@
 langen:dwave_eng 0, gap_4e147:^3.  Everyone else's lives.^@:dwave_eng 0, gap_4e148:^  ......Which one will you choose?^@/
 
@@ -224845,7 +224850,8 @@ cl c,0
 ld l,$RON_WaraiA1,0
 ld r,$JES_ikariA3,64
 
-langjp「ぃ野郎ぉおおおおおぉ！！@　ひょろひょろと、ちょこまかと！！@　反撃して来ねぇのかよ……、舐めてんのかッ、うぜぇヤツッ！！」\
+langjp:dwave_jp 0, jes_4e210:「ぃ野郎ぉおおおおおぉ！！@
+langjp:dwave_jp 0, jes_4e211:　ひょろひょろと、ちょこまかと！！@:dwave_jp 0, jes_4e212:　反撃して来ねぇのかよ……、舐めてんのかッ、うぜぇヤツッ！！」\
 ;＜朱志香
 langen:dwave_eng 0, jes_4e210:^"Bastaaaaaaaaaaaaaard!!^@:dwave_eng 0, jes_4e211:^  Swaying around all over the place!!^@:dwave_eng 0, jes_4e212:^  Aren't you gonna strike back...?  Don't take me lightly, you fuckin' bastard!!"^\
 
@@ -228825,7 +228831,8 @@ waittimer %efe_spd2
 
 ld l,$JES_FutekiA1,23
 
-langjp「………どうしたよ！@　へばって来たんじゃねぇのかよ？！@　動きが鈍ってきてるぜ！！」\
+langjp:dwave_jp 0, jes_4e250:「………どうしたよ！@:dwave_jp 0, jes_4e251:　へばって来たんじゃねぇのかよ？！@
+langjp:dwave_jp 0, jes_4e252:　動きが鈍ってきてるぜ！！」\
 ;＜朱志香
 langen:dwave_eng 0, jes_4e250:^"......What's wrong?!^@:dwave_eng 0, jes_4e251:^  Starting to get tired?!^@:dwave_eng 0, jes_4e252:^  You're getting all slow!!"^\
 
@@ -231007,7 +231014,8 @@ bg Mjes_1aN,0
 mld c,$RON_MajimeA1,26
 mld c,$RON_OdorokiA1,80
 
-langjp「もう一度だけ言います。@お止めなさい。@あなたのためを思って言っています！」\
+langjp:dwave_jp 0, ron_4e250:「もう一度だけ言います。@
+langjp:dwave_jp 0, ron_4e251:お止めなさい。@:dwave_jp 0, ron_4e252:あなたのためを思って言っています！」\
 ;＜ロノウェ
 langen:dwave_eng 0, ron_4e250:^"I will say it just one more time.^@:dwave_eng 0, ron_4e251:^  Stop.^@:dwave_eng 0, ron_4e252:^  I say this out of consideration for you!"^\
 
@@ -231268,7 +231276,8 @@ bg garden_R1cN,0
 ld c,$GAP_ikariA1,0
 mcbg 0
 print 22
-langjp「ようこそ奈落へッ！！@　ここがあんたの終着点よッ！！！」\
+langjp:dwave_jp 0, gap_4e319:「ようこそ奈落へッ！！@
+langjp:dwave_jp 0, gap_4e320:　ここがあんたの終着点よッ！！！」\
 ;＜ガァプ
 langen:dwave_eng 0, gap_4e319:^"Welcome to the Abyss!!^@:dwave_eng 0, gap_4e320:^  This is the end of the line for you!!!"^\
 
@@ -241094,7 +241103,8 @@ fede 0,3000
 wait 1000
 
 langjp:dwave_jp 0, enj_4e1669_1:^^!s1　……………じゃあ、/
-langjp^^!d900………魔法を私が見せることが出来たなら、@……お姉ちゃんの魔法を、/
+langjp:voicedelay 1410:dwave_jp 0, enj_4e1669_2:^^………魔法を私が見せることが出来たなら、/
+langjp:voicedelay 4000:^^……お姉ちゃんの魔法を、/
 langjp:voicedelay 5850:dwave_jp 0, enj_4e1669_3:^^………信じてくれるの………？/
 langen:dwave_eng 0, enj_4e1669_1:^^!s1^......Then, ^/
 langen:voicedelay 1410:dwave_eng 0, enj_4e1669_2:^...if I can show you magic, ^/
@@ -246157,8 +246167,7 @@ bg blood_2e,1
 monocro off
 
 langjp:dwave_jp 0, bea_4e1003:　…………縁寿は誇っていい。@:dwave_jp 0, bea_4e1004:兄と最後の言葉を交わすために、/
-langjp^^!d900……その苦痛の喘ぎを、最後まで堪えたことを、/
-langjp^^!d700……誇っていい。」/
+langjp:voicedelay 2400:dwave_jp 0, bea_4e1005:^^……その苦痛の喘ぎを、最後まで堪えたことを、@:dwave_jp 0, bea_4e1006: ……誇っていい。」/
 langen:dwave_eng 0, bea_4e1003:^"......Ange should be proud.^@:dwave_eng 0, bea_4e1004:^  In order to share some last words with her brother, ^/
 langen:voicedelay 2400:dwave_eng 0, bea_4e1005:^...she stopped herself from gasping at that pain until the very end..."^/
 langjp!sd\
@@ -246465,8 +246474,7 @@ langen:dwave_eng 0, bea_4e1031:^Yes, this is a promised, ~ib~certain miracle~ib~
 
 langjp:dwave_jp 0, bea_4e1032:　………………妾の勝ちは百億にひとつも、@/
 langen:dwave_eng 0, bea_4e1032:^.........Are my chances at victory not even one in a billion...?^@/
-langjpいや………、^~ib~^ひとカケラの奇跡も絶対になく^~ib~^、/
-langjpありえぬということか。\
+langjp:dwave_jp 0, bea_4e1033:いや………、^~ib~^ひとカケラの奇跡も絶対になく^~ib~@:dwave_jp 0, bea_4e1034:^、ありえぬということか。\
 langen:dwave_eng 0, bea_4e1033:^  No, shall it be ~ib~certainly impossible, without any Fragment of a miracle~ib~?^\
 
 ;＜点処理：ひとかけらの奇跡も絶対になく
@@ -250453,7 +250461,8 @@ langen:dwave_eng 0, bea_9e510:^"...*cackle*cackle*...^@:dwave_eng 0, bea_9e511:^
 
 ld r,$BEA_IiwakeA3,80
 
-langjp　我が眷属たちの召喚！@　そして魔法による虐殺！@　それらの全てを大勢の人間たちに目撃させた…！！@　それこそが……、我が魔法の存在する証明…！！@　これを、……どう説明するのか、右代宮戦人ぁあああぁあああぁぁぁ………！！！」\
+langjp:dwave_jp 0, bea_9e514:　我が眷属たちの召喚！@:dwave_jp 0, bea_9e515:　そして魔法による虐殺！@:dwave_jp 0, bea_9e516:　それらの全てを大勢の人間たちに目撃させた…！！@:dwave_jp 0, bea_9e517:　それこそが……、我が魔法の存在する証明…！！@/
+langjp:dwave_jp 0, bea_9e518: これを、……どう説明するのか、右代宮戦人ぁあああぁあああぁぁぁ………！！！」\
 ;＜ベアト
 langen:dwave_eng 0, bea_9e514:^"The summoning of my minions!^@:dwave_eng 0, bea_9e515:^  And brutal murders due to magic!^@:dwave_eng 0, bea_9e516:^  All of those were witnessed by a great many people...!!^@:dwave_eng 0, bea_9e517:^  That is itself...proof that my magic exists...!!^@/
 langen:dwave_eng 0, bea_9e518:^  How do you explain that, Ushiromiya Battleeeeeeeeeeeeeeeeeeeeerr......?!!!"^\
@@ -250572,7 +250581,8 @@ langen!sd\
 
 
 bg Different_spiral_1a,22
-langjp　…………勝てるかもしれないと、…始めたゲームだった。@
+langjp:dwave_jp 0, bea_9e532:　…………勝てるかもしれないと、/
+langjp:voicedelay 2790: …始めたゲームだった。@
 langen:dwave_eng 0, bea_9e532:^......I began the game...^/
 langen:voicedelay 2790:^thinking I might be able to win.^@
 br
@@ -256603,12 +256613,12 @@ langen:dwave_eng 0, bea_9e138:^"...However, the human world is difficult.^@:dwav
 
 ld r,$BEA_defA2,80
 
-langjp「……そなたのそれを、妾が埋めてやるというのはどうか。@なるほど、これはいい。@妾にしか与えられぬ物だ。@そなたもさぞや喜ぼう。」\
+langjp:dwave_jp 0, bea_9e142:「……そなたのそれを、妾が埋めてやるというのはどうか。@:dwave_jp 0, bea_9e143:なるほど、これはいい。@:dwave_jp 0, bea_9e144:妾にしか与えられぬ物だ。\
 langen:dwave_eng 0, bea_9e142:^"...Why don't I fill those cracks in for you?^@:dwave_eng 0, bea_9e143:^  Yes, how about this.  It's something only I can give.^@:dwave_eng 0, bea_9e144:^  You should be very happy."^\
 
 ld r,$BEA_waraiA1,80
 
-langjp「……口にせずとも良い。@そなたの心の隙間など、顔に書いてあるからすぐにわかるぞ、くっくっく！」\
+langjp:dwave_jp 0, bea_9e145: そなたもさぞや喜ぼう。」@:dwave_jp 0, bea_9e146:「……口にせずとも良い。@:dwave_jp 0, bea_9e147:そなたの心の隙間など、顔に書いてあるからすぐにわかるぞ、くっくっく！」\
 langen:dwave_eng 0, bea_9e145:^"...No need to thank me out loud.^@:dwave_eng 0, bea_9e146:^  I can tell right away.^@:dwave_eng 0, bea_9e147:^  It's written on your face and in the corners of your heart, *cackle*cackle*!"^\
 
 langjp　楼座は、自分は一言も発してないにもかかわらず、@勝手に話を進める魔女に一抹の不安を覚えましたが、@言葉もうまく話せず、指一本動かすのにも難儀する有様では、どうすることもできず、@ただ耳を傾けることしかできませんでした。\
@@ -258047,12 +258057,13 @@ langen:dwave_eng 0, lam_9e125:^"Ehheheheheh!^@:dwave_eng 0, lam_9e126:^  I figur
 
 ld r,$LAM_AkuwaraiA3,80
 
-langjp　ほら、あの子、よく口にしてたでしょ？@　ナントカしちゃえばぁ〜？@って！@　そう、この語尾がポイントだったのよ！@　えばぁ〜？@　えばぁ〜？@　そう！\
+langjp:dwave_jp 0, lam_9e130:　ほら、あの子、よく口にしてたでしょ？@:dwave_jp 0, lam_9e131:　ナントカしちゃえばぁ〜？@:dwave_jp 0, lam_9e132:って！@:dwave_jp 0, lam_9e133:　そう、この語尾がポイントだったのよ！@:dwave_jp 0, lam_9e134:　えばぁ〜？/
 langen:dwave_eng 0, lam_9e130:^"Remember, that girl said it a lot, didn't she?^@:dwave_eng 0, lam_9e131:^  `If only you'd just blaaaah',^@:dwave_eng 0, lam_9e132:^ right?!^@:dwave_eng 0, lam_9e133:^  Yes, that phrase is the key point!^@:dwave_eng 0, lam_9e134:^  If only?  Ifffonly?^/
 
 mov %grim_scene,311
 mov %r_hyouji_grim,12
 
+langjp:voicedelay 1040:dwave_jp 0, lam_9e135: えばぁ〜？@:dwave_jp 0, lam_9e136:　そう！\
 langen:dwave_eng 0, lam_9e135:^  Evvvvonly?!^@:dwave_eng 0, lam_9e136:^  Yes!"^\
 
 se1 2
@@ -260172,8 +260183,8 @@ langjp　…しかし瞳の奥のぎらぎらした狂気はまったく収ま�
 langen^Eventually, the coughing subsided, and Eva regained her normal breathing.^@
 langen^...However, the glittering madness inside her eyes hadn't subsided in the slightest.^\
 
-langjp「くっくくくくくくくくくくくく！！@　あの呪われた莫大な黄金と右代宮家当主の家督、@……そして、/
-langjp^^!d800…………黄金の魔女、ベアトリーチェの名を、/
+langjp:dwave_jp 0, eva_9e90:「くっくくくくくくくくくくくく！！@:dwave_jp 0, eva_9e91:　あの呪われた莫大な黄金と右代宮家当主の家督、/
+langjp:voicedelay 6410:dwave_jp 0, eva_9e92:^^……そして、@:dwave_jp 0, eva_9e93: …………黄金の魔女、ベアトリーチェの名を、/
 langjp:voicedelay 3970:dwave_jp 0, eva_9e94:^^…今こそあなたに譲るわ。@:dwave_jp 0, eva_9e95:…………魔女の名に相応しい、狂って歪んだ生涯を楽しみなさい…！」\
 langen:dwave_eng 0, eva_9e90:^"*cackle*cackle*cackle*cackle*cackle*cackle*!!^@:dwave_eng 0, eva_9e91:^  Now, I will give to you...^/
 langen:voicedelay 6410:dwave_eng 0, eva_9e92:^that cursed mass of gold and the Ushiromiya Family Headship, ^@:dwave_eng 0, eva_9e93:^...as well as...^/
