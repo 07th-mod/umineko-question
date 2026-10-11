@@ -312493,7 +312493,7 @@ saveoff
 
 delay 100
 
-
+gettab
 ; for %click_observe = 0 to 1 step 0 ;ボタン入力を待つ
 textbtnwait %BtnRes
 ; if %BtnRes > -4 break ;ボタン入力があるまでループ
@@ -312502,6 +312502,7 @@ textbtnwait %BtnRes
 if %BtnRes = 0 goto *Text_cw_next
 if %BtnRes = -3 goto *Text_cw_next
 if %BtnRes = -11 goto *Text_cw_next
+if %BtnRes = -20 toggleLanguage : savegame 15 : loadgame 15
 if %BtnRes = -19 goto *Text_cw_next
 
 if %BtnRes = -1 && %rmordflg = 0 gosub *text_cw_rclk : goto *Text_cw
@@ -313896,10 +313897,9 @@ return
     ~
 return
 
+; This function is kept so most lines can be kept the same as in the 'full' patch
 *noclear_cw
-;    mov %disable_adv_clear, 1
 @/
-;    mov %disable_adv_clear, 0
 return
 
 *update_dropshadow
