@@ -52271,7 +52271,7 @@ mov ?grim[5][grim_flg],1
 mov %r_hyouji_grim,5
 
 ;seplay 9,1062
-
+langjp:voicedelay 5610:dwave_jp 0, geo_1e74: ……そう言えばないね。@:dwave_jp 0, geo_1e75:去年は確かにあったと思う。」@
 langen:dwave_eng 0, geo_1e74:^  ......And now that you mention it, they are gone, aren't they?^@:dwave_eng 0, geo_1e75:^  I'm pretty sure they were still there last year."^@
 langjp:dwave_jp 0, mar_1e66:「ない。@:dwave_jp 0, mar_1e67:ない。@:dwave_jp 0, mar_1e68:うーうーうー！」\
 langen:dwave_eng 0, mar_1e66:^"Gone.^@:dwave_eng 0, mar_1e67:^  Gone.^@:dwave_eng 0, mar_1e68:^  Uu-uu-uu-!"^\
@@ -59469,6 +59469,7 @@ langjp:dwave_jp 0, kin_1e173:　なぜならモーゼは、力ある者たちの
 langen:dwave_eng 0, kin_1e173:^"After all, Moses was able to magnificently summon a miracle engraved on but one of the countless, enumerable results on the roulette of those with power.^@:dwave_eng 0, kin_1e174:^  That is the force that can triumph over astronomical odds!!^@:dwave_eng 0, kin_1e175:^  Indeed, good fortune that can grasp miracles is magical power itself!!^@:dwave_eng 0, kin_1e176:^  To obtain this mighty power, one must face the risk of despair!!^@:dwave_eng 0, kin_1e177:^  Those who possess no magical power may call that desperation rather than a bet!"^\
 
 
+langjp:dwave_jp 0, kin_1e178:　しかし真に魔力ある者はその奇跡を掴み取り、神秘を成就させるのだッ！！@:dwave_jp 0, kin_1e179:　もしも私にその魔力があるならば！@:dwave_jp 0, kin_1e180:　私はその奇跡を掴み取るだろう、生涯を費やした願いを実現できるだろうッ！！」\
 langen:dwave_eng 0, kin_1e178:^"However, people who truly do possess magic power can grasp hold of that miracle and make the enigma come into being!!^@:dwave_eng 0, kin_1e179:^  And if that power exists within me...!^@:dwave_eng 0, kin_1e180:^  I'll seize that miracle!  I'll have a chance at making the wish I devoted my life towards come true!!"^\
 
 bg white,22
@@ -61415,6 +61416,8 @@ ld c,$EVA_IkariA2,80
 
 langjp:dwave_jp 0, eva_1e203:「馬鹿馬鹿しい、お前が下がりなさいッ！！@:dwave_jp 0, eva_1e204:　この右代宮絵羽に！\　
 langjp:dwave_jp 0, eva_1e205:当主様の左肩を許されている右代宮家序列第３位のこの絵羽に下がれとッ？！@
+langjp:dwave_jp 0, eva_1e206:　身の程を知りなさいッ！！@:dwave_jp 0, eva_1e207:　そしてお前のそのみすぼらしい姿を鏡に映してみるがいい！！@:dwave_jp 0, eva_1e208:　お前の服のどこに翼が？@:dwave_jp 0, eva_1e209:　どこに片翼の鷲が許されているのか？@
+langjp:dwave_jp 0, eva_1e210:　貴様など右代宮家の跡継ぎを残すためだけの借り腹じゃないの！！@:dwave_jp 0, eva_1e211:　身の程を弁えるがいい、この端女があッ！！」@
 langen:dwave_eng 0, eva_1e203:^"How foolish.  You stand down!!^@:dwave_eng 0, eva_1e204:^  Before Eva of the Ushiromiya family!"^\
 langen:dwave_eng 0, eva_1e205:^"You tell me to stand down?  Me, Ushiromiya Eva, the third ranked in the Ushiromiya family hierarchy and the one allowed to sit at the left shoulder of the Head?!!^@:dwave_eng 0, eva_1e206:^  Know your place!!^@:dwave_eng 0, eva_1e207:^  And then look at your shabby self in a mirror!!^@:dwave_eng 0, eva_1e208:^  Where is the symbol of the wing on your clothes?^@:dwave_eng 0, eva_1e209:^  Where are you permitted to wear the One-Winged Eagle?^@:dwave_eng 0, eva_1e210:^  Aren't you nothing more than a borrowed womb to house the next Successor to the Ushiromiya family?!!^@:dwave_eng 0, eva_1e211:^  Understand your place, you common housemaid!!"^@
 langjp　絵羽は醜く顔を歪めながら、夏妃の心に言葉で爪を突きたてて、ぎゅぅっと、捻りこむ。\
@@ -73962,7 +73965,7 @@ bg black,45
 mono off
 
 langjp:dwave_jp 0, but_1e785:「………それが、婚約指輪を渡されて、@:dwave_jp 0, but_1e786:そこで、/
-langjp:voicedelay 3850:^^……おしまいかよ。」\
+langjp:voicedelay 3850:dwave_jp 0, but_1e787:^^……おしまいかよ。」\
 ;＜戦人
 langen:dwave_eng 0, but_1e785:^"......So then she was given an engagement ring, ^/
 langen:voicedelay 3850:dwave_eng 0, but_1e787^...and it all ended right there?"^\
@@ -74848,10 +74851,12 @@ langjp:dwave_jp 0, mar_1e562:「天地と左右に書かれているのは風火
 langen:dwave_eng 0, mar_1e562:^"Written on the top and bottom and left and right are the names of the angels who preside over wind, fire, earth and water.^@/
 
 mov $Free1,"Chasan、Arel、Phorlakh、そしてTaliahad。"
+langjp:dwave_jp 0, mar_1e562_1:$Free1@
 langen:dwave_eng 0, mar_1e562_1:^  Chasan, Arel, Phorlakh, and Taliahad.^@
 langjp:dwave_jp 0, mar_1e563:そして斜め四方には四大の王たちの名。@/
 langen:dwave_eng 0, mar_1e563:^  And in the four corners are the names of the four great kings.^@/
 mov $Free1,"Ariel.、Seraph、Tharshis、そしてCherub。"
+langjp:dwave_jp 0, mar_1e563_1:$Free1@/
 langen:dwave_eng 0, mar_1e563_1:^  Ariel, Seraph, Tharshis, and Cherub.^@/
 langjp:dwave_jp 0, mar_1e564:…合ってる？」\
 langen:dwave_eng 0, mar_1e564:^  ...Is that what you saw?"^\
@@ -89464,7 +89469,7 @@ bgm1 44
 
 langjp:dwave_jp 0, bea_2e5:「人間は世界を構成する元素について、紀元前の昔から探求を続けてきた。@:dwave_jp 0, bea_2e6:古代ギリシャ人たちは風火水土の４つで世界の説明を試みたという。@:dwave_jp 0, bea_2e7:その後も数千年かけて人間たちは、その４つに様々な元素を加え、@:dwave_jp 0, bea_2e8:五大、六大、七大、八大、十二大と、様々な解釈で世界を説明しようとしたが、@:dwave_jp 0, bea_2e9:唯一の真実である“一なる元素”を説明することはできなかった。\
 langen:dwave_eng 0, bea_2e5:^"Humans have continually searched for the elements that make up the world, since before the modern era.^@:dwave_eng 0, bea_2e6:^  It is said that in ancient times, the Greeks tried explaining the world with the four elements of wind, fire, water, and earth.^@:dwave_eng 0, bea_2e7:^  And after that, over several millennia, humans added several elements to those four,^@:dwave_eng 0, bea_2e8:^ trying to explain the world with several interpretations such as the five elements, the six elements, the seven elements, the eight elements, and the twelve elements, ^@:dwave_eng 0, bea_2e9:^but they were never able to describe the one sole truth that exists, the `single element'."^\
-
+langjp:dwave_jp 0, bea_2e10: ………しかし、星の導きによって現れたひとりの男が、ついにこの、世界を構成する一なる元素を説明した。@:dwave_jp 0, bea_2e11:何かわかるか……？」\
 langen:dwave_eng 0, bea_2e10:^"......However, a single man appeared by the guidance of a star...and finally explained the single element that makes up the world.^@:dwave_eng 0, bea_2e11:^  Know what it is...?"^\
 
 bg black,1
@@ -92413,8 +92418,8 @@ langen:dwave_eng 0, sha_2e408:^  That's right, I think it was `#fefefetsundora#f
 mov %play_scene,41
 mov %r_hyouji_grim,2
 ;seplay 9,1062
-
-langen:dwave_eng 0, sha_2e409:^  Apparently, they'll be all the rage in a decade or so."^\
+langjp:voicedelay 3540:dwave_jp 0, sha_2e409: あと十数年かすると流行るんだそうですよ？」\
+langen:voicedelay 3540:dwave_eng 0, sha_2e409:^  Apparently, they'll be all the rage in a decade or so."^\
 ;tttt
 
 ld r,$JES_TohohoA2,80
@@ -115915,6 +115920,7 @@ langjp:dwave_jp 0, but_2e712:「……そうさ。@/
 langen:dwave_eng 0, but_2e712:^"...That's right.^@/
 se2v 2,100
 ;朱志香は貴賓室の鍵を開ける時、/
+langjp:dwave_jp 0, but_2e713:朱志香は貴賓室の鍵を開ける時、/
 langen:dwave_eng 0, but_2e713:^  When Jessica unlocked the VIP room, she borrowed the key from Kanon-kun,^/
 langjp:voicedelay 3180:dwave_jp 0, but_2e714:嘉音くんに鍵を借りたが、^~ib~^返さなかった^~ib~^！@:dwave_jp 0, but_2e715:　だから嘉音くんはマスターキーを持っていないんだッ！！」\
 ;＜返さなかった：点処理
@@ -137717,7 +137723,7 @@ langen:dwave_eng 0, but_3e300:^"Sorry, but I was waiting for you to take out tha
 ld l,$BUT_NiramuA2,80
 
 langjp:dwave_jp 0, but_3e302:　“犯人は１８人の中にいる”とでも言ってくれるのか？@:dwave_jp 0, but_3e303:　言っとくが、そいつは自爆だぜ？@:dwave_jp 0, but_3e304:　その時点で、お前は魔女説を自ら捨てたも同然。@:dwave_jp 0, but_3e305:まさに投了だ。」\
-langen:dwave_eng 0, but_3e303:^You aren't going to say `the culprit was one of those 18 people', are you?^@:dwave_eng 0, but_3e304:^  Be careful, since that'd mean self-destruction for you, right?^@:dwave_eng 0, but_3e305:^  That'd be the same as throwing away your own witch theory yourself.^@:dwave_eng 0, but_3e306:^  A complete resignation."^\
+langen:dwave_eng 0, but_3e302:^You aren't going to say `the culprit was one of those 18 people', are you?^@:dwave_eng 0, but_3e303:^  Be careful, since that'd mean self-destruction for you, right?^@:dwave_eng 0, but_3e304:^  That'd be the same as throwing away your own witch theory yourself.^@:dwave_eng 0, but_3e305:^  A complete resignation."^\
 
 bg black,22
 
@@ -156997,7 +157003,7 @@ langen:dwave_eng 0, ros_3e355:^~ib~to the best of my ability~ib~."^\
 bg rose_1bR,0
 ld r,$EVA_MajimeA1,24
 
-langjp「………………………。@/
+langjp:dwave_jp 0, eva_3e609:「………………………。@/
 langen:dwave_eng 0, eva_3e609:^"............^@/
 
 ld r,$EVA_futekiA1,80
@@ -182811,8 +182817,8 @@ mov %play_scene,30282
 mov %grim_scene,309
 mov %r_hyouji_grim,10
 ;seplay 9,1062
-
-langen:dwave_eng 0, bea_3e2310:^  Teacher, I'm counting on you to use all your strength!!^@:dwave_eng 0, bea_3e2311:^  That was such a plain role to play, and I got so bored!"^\
+langjp:voicedelay 9020:dwave_jp 0, bea_3e2310: お師匠様ァ、力尽くで頼むぜぇ！！@:dwave_jp 0, bea_3e2311:　地味ィな役回りだったんで、すっかり退屈してたんだッ！\
+langen:voicedelay 9020:dwave_eng 0, bea_3e2310:^  Teacher, I'm counting on you to use all your strength!!^@:dwave_eng 0, bea_3e2311:^  That was such a plain role to play, and I got so bored!"^\
 ;tttt
 
 ld c,$BEA_AkuwaraiA2,80
@@ -242860,7 +242866,7 @@ langen:dwave_eng 0, eva_4e123:^"The black witch's power is itself the source of 
 se1 43
 ld c,$EVA_AkireB1G,26
 
-l怒りと憎しみが、私に努力と不屈を教えてくれた。@それはあんたの言う、現実逃避の魔法とはまったく違うの！」\
+langjp:dwave_jp 0, eva_4e124: 怒りと憎しみが、私に努力と不屈を教えてくれた。@:dwave_jp 0, eva_4e125:それはあんたの言う、現実逃避の魔法とはまったく違うの！」\
 ;＜絵羽
 langen:dwave_eng 0, eva_4e124:^  Anger and hatred taught me how to work hard and persist.^@:dwave_eng 0, eva_4e125:^  Completely different from this magic to escape reality that you speak of!"^\
 
