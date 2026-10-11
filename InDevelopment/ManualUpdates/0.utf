@@ -313882,12 +313882,17 @@ return
 ;%witchh6  = current time
 ;%witchh6 - %witchh20 = time passed since last voice played
 ;%witchh7  = prev voice length  
+;the zero length text delay forces the text to appear immediately on a user click.
+;without it, the text display just freezes until the delay is over.
 *voicedelay
     getparam %witchh7
     gettimer %witchh6 
 
+    getreadlang %cur_read_lang
+    if %cur_read_lang != %cur_language return
+
     if (%witchh6 - %last_voice_play_time) >= (%witchh7 + VOICE_DELAY_PADDING) jumpf
-^ ^/
+^!d0^/
         delay (%witchh7 + VOICE_DELAY_PADDING - (%witchh6 - %last_voice_play_time))
     ~
 return
@@ -313898,7 +313903,7 @@ return
     gettimer %witchh6
 
     if (%witchh6 - %last_voice_play_time) >= (%witchh7 + VOICE_DELAY_PADDING) jumpf
-^ ^/
+^!d0^/
         wait (%witchh7 + VOICE_DELAY_PADDING - (%witchh6 - %last_voice_play_time))
     ~
 return
