@@ -46477,17 +46477,17 @@ stralias ku2_4e23,"voice\26\44000023.ogg"
 
 
 ;Mixed Voices (if multiple people speak at once)
-stralias but_1e255_mar_uuuu,     "voice\mx\but_1e255_and_mar_1e165_uuuu.ogg"
-stralias but_1e352_jes_saba,     "voice\mx\but_1e352_and_jes_1e197_saba.ogg"
-stralias but_1e355_mar_laugh,    "voice\mx\but_1e355_and_mar_1e220_laugh1.ogg"
-stralias but_1e356_mar_laugh2,   "voice\mx\but_1e356_mar_1e221_laugh2.ogg"
-stralias kan_1e86_sha_genjisama, "voice\mx\kan_1e86_and_sha_1e173_genjisama.ogg"
-stralias bea_1e11_mar_laugh,     "voice\mx\bea_1e11_and_mar_1e927_laugh.ogg"
-stralias sha_2e792_goh_gen_hai,  "voice\mx\sha_2e792_and_goh_2e310_and_gen_2e183_hai.ogg"
-stralias rg_3e3_all_gasp,        "voice\mx\rg1234567_gasp.ogg"
-stralias wal_3e616_ron_beatrice, "voice\mx\wal_3e616_and_ron_3e649_beatrice.ogg"
-stralias mar_4e205_sak_uryuu,    "voice\mx\mar_4e205_and_sak_4e32_uryuu.ogg"
-stralias s00_4e71_gomenasai,     "voice\mx\s00_4e71_and_s41_4e52_gomenasai.ogg"
+stralias mix_but_1e255_mar_uuuu,     "voice\mx\but_1e255_and_mar_1e165_uuuu.ogg"
+stralias mix_but_1e352_jes_saba,     "voice\mx\but_1e352_and_jes_1e197_saba.ogg"
+stralias mix_but_1e355_mar_laugh,    "voice\mx\but_1e355_and_mar_1e220_laugh1.ogg"
+stralias mix_but_1e356_mar_laugh2,   "voice\mx\but_1e356_mar_1e221_laugh2.ogg"
+stralias mix_kan_1e86_sha_genjisama, "voice\mx\kan_1e86_and_sha_1e173_genjisama.ogg"
+stralias mix_bea_1e11_mar_laugh,     "voice\mx\bea_1e11_and_mar_1e927_laugh.ogg"
+stralias mix_sha_2e792_goh_gen_hai,  "voice\mx\sha_2e792_and_goh_2e310_and_gen_2e183_hai.ogg"
+stralias mix_rg_3e3_all_gasp,        "voice\mx\rg1234567_gasp.ogg"
+stralias mix_wal_3e616_ron_beatrice, "voice\mx\wal_3e616_and_ron_3e649_beatrice.ogg"
+stralias mix_mar_4e205_sak_uryuu,    "voice\mx\mar_4e205_and_sak_4e32_uryuu.ogg"
+stralias mix_s00_4e71_gomenasai,     "voice\mx\s00_4e71_and_s41_4e52_gomenasai.ogg"
 
 
 
@@ -55509,7 +55509,7 @@ langen:dwave_eng 0, mar_1e162:^"Uu-!^@:dwave_eng 0, mar_1e163:^  We wanna know t
 br
 
 langjp:dwave_jp 0, mix_but_1e255_mar_uuuu:「「うーうーうーうー！！！」」@
-langen:dwave_eng 0, but_1e255_mar_uuuu:^""Uu-uu-uu-uu-!!!""^@
+langen:dwave_eng 0, mix_but_1e255_mar_uuuu:^""Uu-uu-uu-uu-!!!""^@
 
 br
 
@@ -60311,7 +60311,7 @@ ld r,$KUM_waraiA1,80
 langjp:dwave_jp 0, kum_1e47:……実は、お魚の鯖の絞り汁ですよぅ、ほっほっほ！」\
 langen:dwave_eng 0, kum_1e47:^juice squeezed from a mackerel, hohohoh!"^\
 langjp:dwave_jp 0, mix_but_1e352_jes_saba:^^!s0「「「ええぇーーッ、サバぁッ？！？！」」」/
-langen:dwave_eng 0, but_1e352_jes_saba:^^!s0^"""Whaaaaaat, mackerel?!?!"""^/
+langen:dwave_eng 0, mix_but_1e352_jes_saba:^^!s0^"""Whaaaaaat, mackerel?!?!"""^/
 quakey 5,400
 
 langjp!sd@
@@ -60455,7 +60455,7 @@ langen:dwave_eng 0, kum_1e50:^"Hohohoh, that's harsh.^@:dwave_eng 0, kum_1e51:^ 
 bg Mdin_1d,22
 
 langjp:dwave_jp 0, mix_but_1e355_mar_laugh:「「「わっはっはっはっはっは！！！」」」\
-langen:dwave_eng 0, but_1e355_mar_laugh:^"""Wahahahahaha!!!"""^\
+langen:dwave_eng 0, mix_but_1e355_mar_laugh:^"""Wahahahahaha!!!"""^\
 langjp　みんなが大笑いする。@
 langen^Everyone let out a huge laugh.^@
 br
@@ -60488,7 +60488,7 @@ langjp:dwave_jp 0, kum_1e56:「えぇ、ございますよぅ？@:dwave_jp 0, ku
 ;＜熊沢
 langen:dwave_eng 0, kum_1e56:^"Oh, we certainly will.^@:dwave_eng 0, kum_1e57:^  Haven't you heard of Rokkenjima's famous mackerel shochu...?"^\
 langjp:dwave_jp 0, mix_but_1e356_mar_laugh2:「「「わっはっはっはっはっは！！！」」」\
-langen:dwave_eng 0, but_1e356_mar_laugh2:^"""Wahahahahahaha!!!"""^\
+langen:dwave_eng 0, mix_but_1e356_mar_laugh2:^"""Wahahahahahaha!!!"""^\
 
 bg black,24
 bg Mdin_1f,0
@@ -69410,7 +69410,7 @@ ld l,$SHA_fumanA1,22
 
 langjp:dwave_jp 0, mix_kan_1e86_sha_genjisama:^^!sd「「はい、かしこまりました、源次さま。」」\
 ;＜紗音・嘉音
-langen:dwave_eng 0, kan_1e86_sha_genjisama:^^!sd^""Yes, certainly, Genji-sama.""^\
+langen:dwave_eng 0, mix_kan_1e86_sha_genjisama:^^!sd^""Yes, certainly, Genji-sama.""^\
 cl r,23
 
 langjp　源次は頷き返すと、衝立の向こうに行き、上着を脱いでようやく一日の緊張を解すのだった…。\
@@ -86163,7 +86163,7 @@ langjp:voicedelay 6280:dwave_jp 0, mix_bea_1e11_mar_laugh:^^「くっくっく�
 langjp:voicedelay 5080:dwave_jp 0, "voice\99\alcmix0001.ogg":^^あっはっはっはっはっはっはっはっはっはっはっはっはっはっはっはっはっはっはっはっはっはっは！！」」/
 langen:dwave_eng 0, mar_1e925:^^!s1^"Kihihihihihihihihihihihihihihihihihihihihi, ^/
 langen:voicedelay 4030:dwave_eng 0, mar_1e926:^*giggle*giggle*giggle*giggle*giggle*, ^/
-langen:voicedelay 6280:dwave_eng 0, bea_1e11_mar_laugh:^"*cackle*cackle*cackle*, *cackle*cackle*, ^/
+langen:voicedelay 6280:dwave_eng 0, mix_bea_1e11_mar_laugh:^"*cackle*cackle*cackle*, *cackle*cackle*, ^/
 langen:voicedelay 5080:dwave_eng 0, "voice\99\alcmix0001.ogg":^ah ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha!!""^/
 langjp!sd\
 langen!sd\
@@ -122170,7 +122170,7 @@ me1v 13,40
 me2v 5,40
 
 langjp:dwave_jp 0, mix_sha_2e792_goh_gen_hai:「「「はい！」」」/
-langen:dwave_eng 0, sha_2e792_goh_gen_hai:^"""Yes sir!"""^/
+langen:dwave_eng 0, mix_sha_2e792_goh_gen_hai:^"""Yes sir!"""^/
 quakey 5,500
 langjp:noclear_cw
 langen@
@@ -130203,7 +130203,7 @@ langjp:dwave_jp 0, bea_3e51:「静かにせぬか、やかましいッ！！」\
 langen:dwave_eng 0, bea_3e51:^"Aaah, must you keep up that infernal racket?!?!"^\
 se3v 52,70
 langjp:dwave_jp 0, mix_rg_3e3_all_gasp:「「「「「「「ひぃッ！！」」」」」」」/
-langen:dwave_eng 0, rg_3e3_all_gasp:^"""""""Eeep!!"""""""^/
+langen:dwave_eng 0, mix_rg_3e3_all_gasp:^"""""""Eeep!!"""""""^/
 langen:voicewait 770
 se1v 52,90
 
@@ -180850,7 +180850,7 @@ ld r,$RON_OdorokiA2,0
 se1v 2,100
 ld l,$WAL_OdorokiA1,80
 langjp:dwave_jp 0, mix_wal_3e616_ron_beatrice:^^!s0「ベアトリーチェ…！！」「お、お嬢様…！！」/
-langen:dwave_eng 0, wal_3e616_ron_beatrice:^^!s0^"Beatrice...!!" "M-Milady...!!"^/
+langen:dwave_eng 0, mix_wal_3e616_ron_beatrice:^^!s0^"Beatrice...!!" "M-Milady...!!"^/
 langjp!sd@
 langen!sd@
 
@@ -187279,7 +187279,7 @@ langen:voicedelay 3390:dwave_eng 0, enj_4e190:^right?"^@
 mld l,$MAR_WaraiA1,80
 
 langjp:dwave_jp 0, mix_mar_4e205_sak_uryuu:「うー！」『うりゅー！』@
-langen:dwave_eng 0, mar_4e205_sak_uryuu:^"Uu-!" 『Uryu-!』^@
+langen:dwave_eng 0, mix_mar_4e205_sak_uryuu:^"Uu-!" 『Uryu-!』^@
 br
 langjp　真里亞お姉ちゃんとさくたろは同時にそう言って、私が魔女の世界に関心を持ってくれたことを喜んだ。\
 langen^Maria onee-chan and Sakutaro said that at the same time, happy that I had developed an interest in the world of witches.^\
@@ -229542,7 +229542,7 @@ langen:dwave_eng 0, wal_4e123:^Y-You take your time fixing yourselves...^@:dwave
 bg se1F_S1cN,22
 
 langjp:dwave_jp 0, mix_s00_4e71_gomenasai:「「ごめんなさいいい〜！！」」/
-langen:dwave_eng 0, s00_4e71_gomenasai:^""Sorryyyyyyyyy-!!""^/
+langen:dwave_eng 0, mix_s00_4e71_gomenasai:^""Sorryyyyyyyyy-!!""^/
 E_MA
 se1 2
 quakey 3,300
